@@ -1,85 +1,78 @@
 # Current international frontier, 2024–2026
 
-This note records recent literature clusters that are especially relevant to the positioning of RGΦ.
+This document is the living recent-literature layer of the RGΦ priority audit.
+It complements the canonical bibliography and the claim-by-claim positioning table.
 
-It is not intended as a complete bibliography; canonical references are maintained in paper/references.bib and the literature matrix.
+## 1. Projective and Farey systems
 
-## 1. Farey and projective continued-fraction systems
+Giovanni Panti's **There is only one Farey map** (Annali di Matematica Pura ed Applicata, 2026; DOI 10.1007/s10231-026-01693-1) gives a sharp classification result for a class of two-branch projective iterated-function systems associated with continued-fraction algorithms.
 
-Recent work continues to classify projective iterated-function systems, Farey-type maps, inducing schemes, and natural extensions.
+**RGΦ implication:** generic claims about “new Farey maps” or projective two-branch structure would be untenable. RGΦ must define its partial radix–Möbius action precisely and locate novelty in its extremal first-hit and arithmetic-control theorems.
 
-Implication for RGΦ:
+## 2. Induced and contracted continued fractions
 
-- projective/Farey structure is established territory;
-- any trap or hidden-state theorem must be compared to the exact projective branch architecture of nearby systems;
-- “classification” claims require especially careful scope.
+Dajani, Kraaikamp, and Sanderson, **Inducing contractions of the mother of all continued fractions** (Journal of Number Theory 278, 2026; DOI 10.1016/j.jnt.2025.05.015), construct a broad family by coupling inducing and contraction inside a Farey natural-extension framework.
 
-## 2. First-return and induced systems
+**RGΦ implication:** coupling operations inside a Farey/projective setting is established methodology. Paper I therefore does not claim novelty for “coupling” itself.
 
-Contemporary work on first-return systems provides a mature language for sections, return times, induced maps, and entropy.
+## 3. Rational semigroup actions and periodic expansions
 
-Implication:
+Javaheri, **Transitive actions and purely periodic N-expansions** (Journal of Number Theory 283, 2026; DOI 10.1016/j.jnt.2025.11.013), studies semigroup actions on positive rationals and relates transitive subsets and cancellations of integer factors to periodic N-expansions.
 
-RGΦ first-hit targets should be related explicitly to established hitting/return-time frameworks while emphasizing the exact arithmetic optimization question that differs from standard recurrence statistics.
+**RGΦ implication:** rational semigroup dynamics with arithmetic cancellation is a very close structural neighborhood. The distinctive target of RGΦ is exact extremal hitting-time optimization and nonnesting in its specific partial semigroup.
 
-## 3. Statistics of rational finite orbits
+## 4. Finite rational trajectories
 
-Recent research shows that finite rational orbits can encode meaningful statistical information about broader dynamical behavior under suitable hypotheses.
+Berthé, Cantrell, Lee, and Pollicott, **Multidimensional statistics for finite orbits of generalised continued fractions** (arXiv:2507.11295, 2025), analyze the information carried by finite rational trajectories.
 
-Implication:
+**RGΦ implication:** finite rational-orbit computation is mathematically meaningful but not novel by itself. RGΦ must justify its exact finite searches through the theorem they establish, not by the size of the computation.
 
-Finite RGΦ censuses are mathematically interesting, but any extrapolation from finite denominators to global rational dynamics requires a theorem.
+## 5. Natural extensions and nonstandard continued fractions
 
-## 4. Natural extensions and nonstandard alphabets
+The 2026 frontier includes:
 
-New work on multidimensional or nonstandard continued-fraction maps reinforces the importance of augmented state spaces and natural extensions.
+- Chen, Dajani, Hu, and Kraaikamp on the Romik map;
+- Fox and Garrity on a triangle-map natural extension with internal symmetry;
+- Nakada, Natsui, and Thuswaldner on Farey graphs and geodesic expansions of complex continued fractions.
 
-Implication:
+**RGΦ implication:** any future hidden-coordinate theorem must be compared explicitly with the natural-extension literature. “Additional state is needed” is not itself a novelty claim.
 
-The hidden-state line should be framed against this literature rather than as a generic discovery that “extra state matters.”
+## 6. p-adic continued fractions and Möbius arithmetic
 
-## 5. Open expanding systems and survivor sets
+Romeo and Salvatori, **The arithmetic of continued fractions in the field of p-adic numbers** (arXiv:2512.11069, 2025), develop p-adic continued-fraction arithmetic under Möbius and bilinear fractional transformations.
 
-The 2024–2026 literature continues to develop survivor sets, holes, bifurcation structures, and symbolic descriptions in expanding maps.
+**RGΦ implication:** the future Farey/p-adic control paper has high prior-art sensitivity. It should not be submitted until a minimal state-augmentation theorem is proved and directly compared with this literature.
 
-Implication:
+## 7. Open expanding systems
 
-Finite traps in RGΦ should be positioned as arithmetic terminal-relative invariant structures with a specific modular mechanism, not as the invention of trapping in open systems.
+Kong, Sun, and Wang, **Open dynamical systems with a moving hole** (arXiv:2505.02336, 2025), study survivor sets for expanding radix-type maps with parameterized holes.
 
-## 6. \(p\)-adic and arithmetic coding
+**RGΦ implication:** trapping, survivor sets, and open-system language are established. The potential RGΦ contribution is the arithmetic classification of terminal-relative modular traps generated by a radix skeleton plus Möbius coupling.
 
-Contemporary \(p\)-adic dynamics includes shift conjugacies, cylinder decompositions, and arithmetic symbolic structures.
+## 8. Optimal continued fractions
 
-Implication:
+Classical work by Bosma and by Bosma–Kraaikamp develops “optimal continued fractions” in the sense of approximation quality and ergodic structure.
 
-The strongest future RGΦ contribution would be a theorem linking a specific Farey/\(p\)-adic coordinate to optimal control in the visible rational quotient.
+**RGΦ implication:** Paper I must define “optimal” strictly as minimum first-hitting time for the declared extremal target. It must not suggest that optimality terminology itself is new.
 
-## 7. Artin-type arithmetic
+## 9. Hitting depth
 
-Modern primitive-root and index-map work offers increasingly uniform treatments of multiplicative-order and density questions.
+The continued-fraction literature contains direct work on hitting depth, including a 2014 study in Chaos, Solitons & Fractals.
 
-Implication:
+**RGΦ implication:** the benchmark theorem should be distinguished from asymptotic/almost-everywhere hitting-depth laws: RGΦ computes exact finite first-hit optima in a branching partial rational action.
 
-The separate Artin/Kummer line must engage this literature directly and should not be merged into the dynamics papers merely for narrative breadth.
+## 10. Computer-assisted certification
 
-## 8. Computational proof standards
+Recent reachability-certificate work, including Chatterjee et al. (arXiv:2501.11467, 2025), reinforces the value of small formally checkable certificates. Zheng's 2026 audit of a computer-assisted proof (arXiv:2608.13067) is a useful warning that public code alone does not eliminate certificate risk.
 
-Current expectations increasingly favor:
+**RGΦ implication:** the correct standard is search engine + exact certificate + small checker + external clean-room reproduction, not simply “code available.”
 
-- public code;
-- exact arithmetic where possible;
-- independent checks;
-- machine-readable provenance;
-- stable identifiers;
-- clear separation of experimental and proved claims.
+## 11. Current priority conclusion
 
-The repository architecture is designed to meet these expectations.
+No item in this review was found to state the current Paper I theorem for an equivalent system:
 
-## 9. Living-review policy
+> three consecutive failures of nested exact first-hit optimality in the declared rational radix–Möbius partial semigroup, together with a positive exact threshold interval on which the failure persists.
 
-Before every public preprint revision and journal resubmission:
+This is a **search conclusion, not a proof of historical priority**.
 
-1. rerun searches for the key claim phrases;
-2. inspect references citing the nearest recent papers;
-3. update claim-to-literature-map.csv;
-4. revise novelty language if a closer precedent appears.
+The remaining priority gate is human specialist review and closed-database citation chaining.

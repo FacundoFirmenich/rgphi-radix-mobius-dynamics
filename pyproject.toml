@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "rgphi"
 version = "1.0.0rc1"
-description = "Exact rational radix-Mobius dynamics, nonnested extremal targets, and finite modular traps"
+description = "Exact rational radix–Möbius dynamics, nonnested extremal targets, and finite modular traps"
 readme = "README.md"
 requires-python = ">=3.11"
 license = "BSD-3-Clause"
@@ -14,8 +14,9 @@ authors = [
   { name = "Facundo Firmenich", email = "f.firmenich@cedesur.org" }
 ]
 keywords = [
-  "arithmetic dynamics", "radix transformations", "Mobius maps",
-  "Farey geometry", "dynamic programming", "computer-assisted proof"
+  "arithmetic dynamics", "rational dynamics", "radix transformations",
+  "Möbius transformations", "Farey geometry", "dynamic programming",
+  "finite traps", "computer-assisted proof"
 ]
 classifiers = [
   "Development Status :: 4 - Beta",

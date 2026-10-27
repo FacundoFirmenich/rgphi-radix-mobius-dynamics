@@ -1,0 +1,13 @@
+# Repository-wide scholarly and software ownership
+* @FacundoFirmenich
+
+# Manuscript and scientific documentation
+/paper/ @FacundoFirmenich
+/docs/ @FacundoFirmenich
+/data/ @FacundoFirmenich
+
+# Verification code and workflows
+/src/ @FacundoFirmenich
+/tests/ @FacundoFirmenich
+/scripts/ @FacundoFirmenich
+/.github/ @FacundoFirmenich

@@ -3,11 +3,10 @@ from __future__ import annotations
 
 from fractions import Fraction
 from pathlib import Path
-import csv
 import hashlib
 import json
 
-from .dynamics import S, T, chart, complement, portal_height, seed_family_successor
+from .dynamics import S, T, complement, seed_family_successor
 from .thresholds import intersect, load_benchmark_intervals, load_nonnesting_intervals
 from .traps import C8, audit_finite_trap, multiplicative_order
 

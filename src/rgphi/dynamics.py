@@ -8,7 +8,7 @@ from __future__ import annotations
 from dataclasses import dataclass
 from fractions import Fraction
 from math import gcd
-from typing import Iterable, Iterator, Literal
+from typing import Iterator, Literal
 
 Action = Literal["T", "S"]
 

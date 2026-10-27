@@ -1,117 +1,81 @@
-# RGΦ — Decisión de formalización ortomodular v1.0
+# Context-semantics formal boundary
 
-## Dictamen
+## 1. Purpose
 
-La estructura local prime-wise es rigurosamente un bloque booleano de cuatro modos. La estructura global RGΦ todavía **no está demostrada** como orthomodular poset ni orthomodular lattice.
+The RGΦ reduction bookkeeping naturally separates prime-wise choices between state reduction and context/Farey reduction.
 
-Por tanto:
+Earlier internal work used the term “orthomodular” too broadly. The public repository adopts a stricter algebraic boundary.
 
-\[
-\boxed{
-\text{“orthomodular” pasa de claim cerrado a programa formal.}
-}
-\]
+## 2. Exact local structure
 
-La denominación inmediata recomendada es:
-
-> **orthocomplemented contextual 2/5-adic budget semantics**.
-
----
-
-## 1. Bloque local
-
-Para cada primo `p∈{2,5}`:
+For each relevant prime \(p\mid B\), the local reduction-allocation mode records two coordinates:
 
 \[
-(s_p,\kappa_p)\in\{0,1\}^2.
+(s_p,\kappa_p),
 \]
 
-El complemento es:
+where \(s_p\) measures the exponent allocated to primitive state reduction and \(\kappa_p\) the exponent allocated to context reduction.
+
+In the decimal squarefree one-unit case, the local binary choices form four modes with complement
 
 \[
 (s_p,\kappa_p)^\perp=(1-s_p,1-\kappa_p).
 \]
 
-Este conjunto es un álgebra booleana de cuatro elementos.
+This local four-element structure is Boolean.
 
-Para los dos primos, el producto local tiene 16 modos.
+For the two decimal primes \(2\) and \(5\), the direct local product yields sixteen elementary modes.
 
----
+## 3. What is proved
 
-## 2. Lo que falta globalmente
+- exact prime-wise budget update;
+- local complement involution;
+- Boolean structure of each elementary local block;
+- exact computational context tracking;
+- strong compression of many explicit context genealogies in finite audits.
 
-Debe definirse una colección de proposiciones/eventos con:
+## 4. What is not proved
 
-- orden parcial;
-- cero y uno;
-- involución ortocomplementaria;
-- noción de ortogonalidad;
-- joins de elementos ortogonales;
-- compatibilidad o commuting;
-- bloques booleanos;
-- ley ortomodular.
+The global collection of contexts has not been shown to possess:
 
-No basta con que cada bloque local sea booleano.
+- globally defined meet and join operations;
+- an orthomodular-poset structure;
+- an orthomodular-lattice structure;
+- an effect-algebra or orthoalgebra structure satisfying all required axioms.
 
----
+Local Boolean blocks do not imply a global orthomodular object.
 
-## 3. Tres destinos posibles
+## 5. Canonical terminology
 
-### Opción A — Orthomodular poset
+Until a global theorem is established, use:
 
-Se demuestra que:
+> **orthocomplemented contextual prime-wise budget semantics**
 
-- cada par ortogonal tiene join;
-- la involución invierte el orden;
-- se cumple la ley ortomodular en el sentido poset.
+Avoid presenting “orthomodular dynamics” as a closed theorem.
 
-### Opción B — Effect algebra / orthoalgebra
+## 6. Formalization program
 
-Si las operaciones son parciales y el pegado no produce todos los joins requeridos, ésta es probablemente la formalización correcta.
+Three candidate mathematical targets remain open.
 
-### Opción C — Contextual presheaf / pasted Boolean blocks
+### A. Orthomodular poset
 
-Si el valor principal está en la familia de contextos compatibles y sus intersecciones, puede ser más natural evitar el claim OMP.
+Prove that the global pasted structure has a partial order, orthocomplement, and the required joins for orthogonal pairs, together with the orthomodular law.
 
----
+### B. Orthoalgebra/effect algebra
 
-## 4. Plan de prueba
+Model context combination as a partial binary operation and prove the corresponding algebraic axioms.
 
-1. Definir un universo finito de eventos a profundidad `H`.
-2. Construir bloques por elecciones prime-wise compatibles.
-3. Definir pasting por estados racionales compartidos.
-4. Verificar computacionalmente axiomas para `H≤40`.
-5. Buscar contraejemplos mínimos.
-6. Formular la estructura abstracta que generaliza el patrón finito.
-7. Formalizar en Lean.
+### C. Contextual pasting of Boolean blocks
 
----
+Retain only the blockwise Boolean structure and formalize compatibility/pasting without claiming a stronger global lattice.
 
-## 5. Criterio editorial
+## 7. Publication boundary
 
-### Permitido ahora
+This line is not required for Paper I.
 
-- orthocomplemented modes;
-- Boolean prime-wise blocks;
-- contextual incompatibility;
-- antichain preservation;
-- effect-algebra candidate.
+It should become a standalone mathematical claim only after:
 
-### No permitido todavía
-
-- “RGΦ forms an orthomodular lattice”;
-- “quantum logic of the dynamics”;
-- claims físicos derivados de la terminología.
-
----
-
-## 6. Criterio PASS
-
-El término “orthomodular” vuelve al título de un paper sólo si existe:
-
-- definición abstracta;
-- teorema de axiomas;
-- ejemplo no trivial;
-- contraejemplo que muestre por qué distributividad falla;
-- comparación explícita con OMP/effect-algebra literature;
-- formalización machine-checked o al menos checker finito independiente.
+1. the global carrier set is defined independently of implementation details;
+2. operations are specified;
+3. all axioms are proved or counterexamples identified;
+4. the resulting structure is compared with the established literature.

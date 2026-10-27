@@ -1,172 +1,44 @@
-# RGΦ — Portfolio de teoremas base-B v1.0
+# Base-\(B\) theorem portfolio
 
-## 0. Definiciones
+This document records the symbolic results that hold for a general integer radix \(B\ge2\).
 
-Sea un entero:
+## 1. Definitions
 
-\[
-B\ge2.
-\]
-
-Definimos:
+Let
 
 \[
 T_B(x)=\{Bx\},
 \qquad
-C(x)=x^{-1}-1,
-\qquad
 H(x)=\frac1{1+x},
+\qquad
+S_B=H\circ T_B\circ H^{-1}.
 \]
 
-
-y, en el dominio donde se usa la rama conjugada,
-
-\[
-S_B=H\circ T_B\circ C.
-\]
-
-Para un racional reducido:
-
-\[
-x=\frac ab,
-\qquad 0<a<b,
-\]
-
-la altura portal es:
+For a reduced rational \(x=a/b\in(0,1)\), define
 
 \[
 q(x)=\frac{b}{b-a}.
 \]
 
----
+## 2. Branch formulas
 
-# Teorema 1 — Conjugación radix–Möbius en base entera
+### Theorem 2.1 — Radix branch
 
-Para todo `B≥2`:
-
-\[
-\boxed{S_B=H\circ T_B\circ H^{-1}.}
-\]
-
-En una rama con:
+If
 
 \[
-d=\left\lfloor B\frac{b-a}{a}\right\rfloor,
+d=\left\lfloor\frac{Ba}{b}\right\rfloor,
 \]
 
-se tiene:
+then
 
 \[
-\boxed{
-S_B\left(\frac ab\right)
-=
-\frac{a}{Bb-(B-1+d)a}.
-}
+T_B(a/b)=\frac{Ba-db}{b},
 \]
 
-### Prueba
+followed by primitive reduction.
 
-Como:
-
-\[
-C(a/b)=\frac{b-a}{a},
-\]
-
-entonces:
-
-\[
-T_B(C(a/b))
-=
-\frac{B(b-a)-da}{a}.
-\]
-
-Aplicando `H`:
-
-\[
-H\left(\frac{B(b-a)-da}{a}\right)
-=
-\frac{a}{a+B(b-a)-da}
-=
-\frac{a}{Bb-(B-1+d)a}.
-\]
-
----
-
-# Teorema 2 — Familia exacta de semillas
-
-Sean:
-
-\[
-N\ge2,
-\qquad
-1\le r<N,
-\qquad
-x_{N,r}=\frac{N}{N+r}.
-\]
-
-Sea:
-
-\[
-s\equiv Br\pmod N,
-\qquad
-0\le s<N.
-\]
-
-Entonces:
-
-\[
-\boxed{
-S_B(x_{N,r})=\frac{N}{N+s}.
-}
-\]
-
-### Prueba
-
-\[
-C(x_{N,r})=\frac rN.
-\]
-
-Como:
-
-\[
-T_B(r/N)=s/N,
-\]
-
-se obtiene:
-
-\[
-H(s/N)=\frac{N}{N+s}.
-\]
-
-### Corolario RGΦ
-
-Para:
-
-\[
-B=10,
-\quad N=17,
-\quad r=2,
-\]
-
-se tiene:
-
-\[
-s=20\bmod17=3,
-\]
-
-por lo que:
-
-\[
-\frac{17}{19}\mapsto\frac{17}{20}.
-\]
-
-El ejemplo fundacional es un miembro de una familia aritmética, no un caso aislado.
-
----
-
-# Teorema 3 — Matrices de rama y determinante
-
-Las ramas enteras están representadas por:
+The unreduced branch matrix is
 
 \[
 M_{T_B}(d)=
@@ -176,353 +48,212 @@ B&-d\\
 \end{pmatrix},
 \]
 
+and
+
+\[
+\det M_{T_B}(d)=B.
+\]
+
+### Theorem 2.2 — Möbius-conjugate branch
+
+On an admissible branch, let
+
+\[
+d=\left\lfloor B\frac{b-a}{a}\right\rfloor.
+\]
+
+Then
+
+\[
+S_B(a/b)
+=
+\frac{a}{Bb-(B-1+d)a},
+\]
+
+before primitive reduction.
+
+The branch matrix is
+
 \[
 M_{S_B}(d)=
 \begin{pmatrix}
 1&0\\
 -(B-1+d)&B
-\end{pmatrix}.
+\end{pmatrix},
 \]
 
-En ambos casos:
+and again
 
 \[
-\boxed{\det M=B.}
+\det M_{S_B}(d)=B.
 \]
 
-Este hecho controla todo el transporte prime-wise posterior.
+## 3. Parameterized seed family
 
----
-
-# Teorema 4 — Factores de reducción del estado
-
-Para `x=a/b` reducido:
-
-## Rama T
+Let
 
 \[
-M_T(a,b)=(Ba-db,b).
-\]
-
-Luego:
-
-\[
-\boxed{g_T=\gcd(B,b).}
-\]
-
-## Rama S
-
-\[
-M_S(a,b)=\left(a,Bb-(B-1+d)a\right).
-\]
-
-Luego:
-
-\[
-\boxed{g_S=\gcd(B,a).}
-\]
-
-### Consecuencia
-
-La parte del presupuesto radix asignada al estado está determinada por el numerador o denominador visible, dependiendo de la rama.
-
----
-
-# Teorema 5 — Transporte exacto del defecto Farey
-
-Sea un estado primitivo `v=(a,b)` y una sombra primitiva `c=(p,q)`. Definimos:
-
-\[
-\Delta(v,c)=aq-bp.
-\]
-
-Sea `M` una rama de determinante `B`. Supongamos:
-
-\[
-Mv=g v',
+x_{N,r}=\frac{N}{N+r},
 \qquad
-Mc=k c',
+N\ge2,\quad1\le r<N.
 \]
 
-con `v',c'` primitivos. Entonces:
+If
+
+\[
+s\equiv Br\pmod N,
+\qquad
+0\le s<N,
+\]
+
+then
 
 \[
 \boxed{
-\Delta(v',c')
-=
-\frac{B}{gk}\Delta(v,c).
+S_B(x_{N,r})=\frac{N}{N+s}.
 }
 \]
 
-### Prueba
+### Proof
+
+Since
 
 \[
-\det(Mv,Mc)=\det(M)\det(v,c)=B\Delta(v,c).
+H^{-1}(x_{N,r})=\frac{r}{N},
 \]
 
-Pero:
+the radix map sends \(r/N\) to \(s/N\), and \(H(s/N)=N/(N+s)\).
+
+The historical benchmark \(17/19\to17/20\) is the case \(B=10,N=17,r=2,s=3\).
+
+## 4. Primitive-reduction factors
+
+For reduced \(a/b\), the radix branch reduction factor satisfies
 
 \[
-\det(gv',kc')=gk\Delta(v',c').
+g_T=\gcd(B,b).
 \]
 
-Igualando ambos términos se obtiene la fórmula.
+For the conjugate branch, the corresponding reduction is governed by the numerator and the base; in the benchmark implementation this is computed exactly before normalization.
 
----
+The important structural point is that all prime factors participating in primitive reduction divide \(B\).
 
-# Teorema 6 — Ledger prime-wise general
+## 5. Farey defect transport
 
-Sea:
+Let \(v=(a,b)^T\) be a primitive state vector and let \(c=(p,q)^T\) be a primitive Farey-context vector. Define the determinant defect
 
 \[
-h=|\Delta|,
-\qquad
-h'=|\Delta'|.
+\Delta=\det(v,c)=aq-bp.
 \]
 
-Para cada primo `p|B`, definimos:
+If a branch matrix has determinant \(B\), the state reduces by \(g\), and the context vector reduces by \(k\), then
 
 \[
-e_p=v_p(h),
-\quad
-\beta_p=v_p(B),
-\quad
-s_p=v_p(g),
-\quad
+\boxed{
+\Delta'=\frac{B}{gk}\Delta.
+}
+\]
+
+### Proof
+
+The unreduced determinant is multiplied by \(\det M=B\). Primitive normalization divides the two columns by \(g\) and \(k\).
+
+## 6. Prime-wise budget law
+
+For each prime \(p\mid B\), let
+
+\[
+e_p=v_p(|\Delta|),\qquad
+s_p=v_p(g),\qquad
 \kappa_p=v_p(k).
 \]
 
-Entonces:
+Then
 
 \[
 \boxed{
-e_p'=e_p+\beta_p-s_p-\kappa_p.
-}
-\]
-
-### Caso squarefree
-
-Si `B` es squarefree, `β_p=1`. Cada primo ejecuta pasos de tipo:
-
-\[
-1-s_p-\kappa_p.
-\]
-
-Para `B=10=2\cdot5` se recuperan los dos ledgers RGΦ.
-
-### Caso no squarefree
-
-Si `p^α||B`, los pasos pertenecen a:
-
-\[
-\alpha-s_p-\kappa_p,
-\]
-
-por lo que la generalización correcta no es siempre Motzkin: es un lattice walk de salto acotado por la multiplicidad de `p` en la base.
-
----
-
-# Teorema 7 — Umbrales portales parametrizados
-
-Definimos:
-
-\[
-P_m(B,\kappa)
+e_p'
 =
-\left\{
- x:\ q(x)>\kappa B^m
-\right\},
-\qquad \kappa>0.
+e_p+v_p(B)-s_p-\kappa_p.
+}
 \]
 
-Y la profundidad:
+For squarefree \(B\), the one-step increment belongs to a small integer alphabet analogous to a Motzkin walk. For nonsquarefree bases, larger local jumps are possible.
+
+## 7. Exact radix denominator law
+
+For reduced \(a/q\),
 
 \[
-d_{B,\kappa}(x)
+\boxed{
+\operatorname{den}(T_B^n(a/q))
 =
-\max\{m:q(x)>\kappa B^m\}.
-\]
-
-La elección histórica RGΦ es:
-
-\[
-B=10,
-\qquad
-\kappa=11.
-\]
-
-Debe tratarse como calibración experimental, no como constante intrínseca.
-
----
-
-# Teorema 8 — Robustez piecewise-constant en horizonte finito
-
-Fijemos:
-
-- base `B`;
-- semilla;
-- horizonte `H`;
-- nivel `m`.
-
-El conjunto de estados alcanzables hasta `H` es finito. Por tanto el primer hitting time de:
-
-\[
-P_m(B,\kappa)
-\]
-
-como función de `κ` sólo puede cambiar en los valores críticos:
-
-\[
-\boxed{
-\kappa=\frac{q(x)}{B^m}
+\frac{q}{\gcd(q,B^n)}.
 }
 \]
 
-para estados alcanzables `x` hasta `H`.
+### Proof
 
-### Consecuencia
-
-La sensibilidad al umbral puede certificarse exactamente mediante un atlas de intervalos, no mediante barridos flotantes arbitrarios.
-
----
-
-# Teorema 9 — Criterio de trap finito
-
-Sea `F` un conjunto finito de estados no terminales y `Z` un conjunto terminal ya certificado. Supongamos:
-
-1. para todo `x∈F`, todo hijo admisible pertenece a `F∪Z`;
-2. `F∩P_m=∅`;
-3. ningún estado de `Z` alcanza `P_m`.
-
-Entonces:
+Before reduction,
 
 \[
-\boxed{
-V_m(x)=\infty
-\quad\forall x\in F.
-}
+T_B^n(a/q)=\{B^n a/q\}.
 \]
 
-### Prueba
-
-Por inducción, toda trayectoria desde `F` permanece en `F∪Z`. Ningún elemento de ese conjunto pertenece ni conduce a `P_m`.
-
-### Aplicación
-
-`C8` satisface exactamente estas hipótesis para `m=5`.
-
----
-
-# Teorema 10 — Corte de primera divergencia
-
-Sea un testigo de longitud `L`:
+Since \(\gcd(a,q)=1\),
 
 \[
-w=w_1\cdots w_L,
+\gcd(B^n a,q)=\gcd(B^n,q).
 \]
 
-con estados:
+## 8. Eventual modular period
+
+Write
 
 \[
-x_0,x_1,\ldots,x_L.
+q=q_{\parallel}q_{\perp},
 \]
 
-Para cada tiempo `t` en el que existe una acción alternativa, sea `y_t` el hijo alternativo de `x_t`.
-
-Toda trayectoria distinta de `w` posee un primer tiempo de divergencia único y pertenece a:
+where every prime factor of \(q_{\parallel}\) divides \(B\) and
 
 \[
-\boxed{
-\bigcup_t \operatorname{Desc}(y_t).
-}
+\gcd(q_{\perp},B)=1.
 \]
 
-### Consecuencia
-
-La optimalidad global de un testigo puede verificarse mediante una búsqueda unificada sobre el corte de primeras divergencias, deduplicando descendencias compartidas.
-
----
-
-# Teorema 11 — Insuficiencia del estado visible
-
-En los sectores no puros, el mismo:
+After finitely many radix steps, the \(q_{\parallel}\) component is removed. The remaining radix orbit is periodic modulo \(q_{\perp}\), with period dividing
 
 \[
-(x,h,\text{acción})
+\operatorname{ord}_{q_{\perp}}(B).
 \]
 
-puede tener diferentes defectos sucesores según la fase p-ádica del shadow address.
+For primitive nonzero residues in the full multiplicative orbit, the exact period equals that multiplicative order.
 
-El contraejemplo mínimo RGΦ usa:
+## 9. Parameterized portal family
+
+Define
 
 \[
-x=17/19,
-\quad h=1,
-\quad T,
+P_m(B,\kappa)=\{x:q(x)>\kappa B^m\}.
 \]
 
-con diferentes valores de `t mod 10`, produciendo:
+This separates the structural base \(B\) from the benchmark calibration \(\kappa\).
+
+For a finite reachability horizon, hitting-time changes occur only at critical \(\kappa\) values generated by reachable exact portal heights.
+
+## 10. Finite-trap criterion
+
+Let \(E\) be a declared terminal set. A finite set \(F\subset\mathbb Q\cap(0,1)\setminus E\) is an \(E\)-relative trap if every admissible child of every state in \(F\) belongs to \(F\cup E\).
+
+If
 
 \[
-h'\in\{1,2,5,10\}.
+\max_{x\in F} q(x)\le\kappa B^m,
 \]
 
-Por tanto:
+then any trajectory entering \(F\) before reaching \(P_m(B,\kappa)\) has infinite hitting time to that target.
 
-\[
-\boxed{
-(x,e_2,e_5)
-\text{ no es Markov-completo en general.}
-}
-\]
+## 11. Scope boundary
 
----
+The symbolic results above are general in \(B\).
 
-# Teorema 12 — Markovización por coordenada Farey completa
-
-El estado aumentado:
-
-\[
-\boxed{
-(x,c)
-}
-\]
-
-con estado racional y sombra primitiva es suficiente para determinar exactamente todas las ramas futuras, reducciones y defectos.
-
-La representación comprimida puede sustituir `c` por coordenadas canónicas:
-
-\[
-(h,t)
-\]
-
-respecto de un vecino Farey, siempre que se preserve la precisión p-ádica necesaria para divisiones futuras.
-
----
-
-# Estado del portfolio
-
-| Teorema | Estado |
-|---|---|
-| 1–6 | demostrado simbólicamente; auditado computacionalmente en base 2–40 |
-| 7 | definición canónica propuesta |
-| 8 | demostrado para horizonte finito |
-| 9 | demostrado; C8 como instancia |
-| 10 | demostrado combinatoriamente |
-| 11 | demostrado por contraejemplo exacto |
-| 12 | demostrado a nivel de dinámica exacta; compresión mínima todavía abierta |
-
-## Auditoría asociada
-
-`rgphi_base_b_audit.py` produjo:
-
-- 193.050 verificaciones exactas de la familia de semillas;
-- 1.638 verificaciones de determinante;
-- 77.460 verificaciones aleatorias exactas del transporte de defecto;
-- 115.811 verificaciones prime-wise.
-
-Resultado:
-
-\[
-\boxed{\texttt{PASS}.}
-\]
+The strongest extremal chronology and robustness theorems in the repository are presently benchmark-specific. General base-\(B\) nonnesting remains an open research problem.

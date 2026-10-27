@@ -1,0 +1,356 @@
+{
+  "schema_version": "1.0",
+  "claim": "The declared 23-state benchmark terminal set is forward invariant under every admissible T/S branch.",
+  "base": 10,
+  "terminal_state_count": 23,
+  "branch_checks": 46,
+  "admissible_escapes": 0,
+  "all_admissible_children_terminal": true,
+  "states": [
+    {
+      "state": "0",
+      "children": [
+        {
+          "action": "T",
+          "status": "terminal",
+          "state": "0"
+        },
+        {
+          "action": "S",
+          "status": "inadmissible",
+          "state": null
+        }
+      ]
+    },
+    {
+      "state": "2/13",
+      "children": [
+        {
+          "action": "T",
+          "status": "terminal",
+          "state": "7/13"
+        },
+        {
+          "action": "S",
+          "status": "inadmissible",
+          "state": null
+        }
+      ]
+    },
+    {
+      "state": "2/11",
+      "children": [
+        {
+          "action": "T",
+          "status": "terminal",
+          "state": "9/11"
+        },
+        {
+          "action": "S",
+          "status": "inadmissible",
+          "state": null
+        }
+      ]
+    },
+    {
+      "state": "1/3",
+      "children": [
+        {
+          "action": "T",
+          "status": "terminal",
+          "state": "1/3"
+        },
+        {
+          "action": "S",
+          "status": "inadmissible",
+          "state": null
+        }
+      ]
+    },
+    {
+      "state": "4/11",
+      "children": [
+        {
+          "action": "T",
+          "status": "terminal",
+          "state": "7/11"
+        },
+        {
+          "action": "S",
+          "status": "inadmissible",
+          "state": null
+        }
+      ]
+    },
+    {
+      "state": "5/13",
+      "children": [
+        {
+          "action": "T",
+          "status": "terminal",
+          "state": "11/13"
+        },
+        {
+          "action": "S",
+          "status": "inadmissible",
+          "state": null
+        }
+      ]
+    },
+    {
+      "state": "6/13",
+      "children": [
+        {
+          "action": "T",
+          "status": "terminal",
+          "state": "8/13"
+        },
+        {
+          "action": "S",
+          "status": "inadmissible",
+          "state": null
+        }
+      ]
+    },
+    {
+      "state": "1/2",
+      "children": [
+        {
+          "action": "T",
+          "status": "terminal",
+          "state": "0"
+        },
+        {
+          "action": "S",
+          "status": "terminal",
+          "state": "1"
+        }
+      ]
+    },
+    {
+      "state": "7/13",
+      "children": [
+        {
+          "action": "T",
+          "status": "terminal",
+          "state": "5/13"
+        },
+        {
+          "action": "S",
+          "status": "terminal",
+          "state": "7/11"
+        }
+      ]
+    },
+    {
+      "state": "11/20",
+      "children": [
+        {
+          "action": "T",
+          "status": "terminal",
+          "state": "1/2"
+        },
+        {
+          "action": "S",
+          "status": "terminal",
+          "state": "11/13"
+        }
+      ]
+    },
+    {
+      "state": "7/12",
+      "children": [
+        {
+          "action": "T",
+          "status": "terminal",
+          "state": "5/6"
+        },
+        {
+          "action": "S",
+          "status": "terminal",
+          "state": "7/8"
+        }
+      ]
+    },
+    {
+      "state": "8/13",
+      "children": [
+        {
+          "action": "T",
+          "status": "terminal",
+          "state": "2/13"
+        },
+        {
+          "action": "S",
+          "status": "terminal",
+          "state": "4/5"
+        }
+      ]
+    },
+    {
+      "state": "7/11",
+      "children": [
+        {
+          "action": "T",
+          "status": "terminal",
+          "state": "4/11"
+        },
+        {
+          "action": "S",
+          "status": "terminal",
+          "state": "7/12"
+        }
+      ]
+    },
+    {
+      "state": "2/3",
+      "children": [
+        {
+          "action": "T",
+          "status": "terminal",
+          "state": "2/3"
+        },
+        {
+          "action": "S",
+          "status": "terminal",
+          "state": "1"
+        }
+      ]
+    },
+    {
+      "state": "7/10",
+      "children": [
+        {
+          "action": "T",
+          "status": "terminal",
+          "state": "0"
+        },
+        {
+          "action": "S",
+          "status": "terminal",
+          "state": "7/9"
+        }
+      ]
+    },
+    {
+      "state": "3/4",
+      "children": [
+        {
+          "action": "T",
+          "status": "terminal",
+          "state": "1/2"
+        },
+        {
+          "action": "S",
+          "status": "terminal",
+          "state": "3/4"
+        }
+      ]
+    },
+    {
+      "state": "7/9",
+      "children": [
+        {
+          "action": "T",
+          "status": "terminal",
+          "state": "7/9"
+        },
+        {
+          "action": "S",
+          "status": "terminal",
+          "state": "7/13"
+        }
+      ]
+    },
+    {
+      "state": "4/5",
+      "children": [
+        {
+          "action": "T",
+          "status": "terminal",
+          "state": "0"
+        },
+        {
+          "action": "S",
+          "status": "terminal",
+          "state": "2/3"
+        }
+      ]
+    },
+    {
+      "state": "9/11",
+      "children": [
+        {
+          "action": "T",
+          "status": "terminal",
+          "state": "2/11"
+        },
+        {
+          "action": "S",
+          "status": "terminal",
+          "state": "9/11"
+        }
+      ]
+    },
+    {
+      "state": "5/6",
+      "children": [
+        {
+          "action": "T",
+          "status": "terminal",
+          "state": "1/3"
+        },
+        {
+          "action": "S",
+          "status": "terminal",
+          "state": "1"
+        }
+      ]
+    },
+    {
+      "state": "11/13",
+      "children": [
+        {
+          "action": "T",
+          "status": "terminal",
+          "state": "6/13"
+        },
+        {
+          "action": "S",
+          "status": "terminal",
+          "state": "11/20"
+        }
+      ]
+    },
+    {
+      "state": "7/8",
+      "children": [
+        {
+          "action": "T",
+          "status": "terminal",
+          "state": "3/4"
+        },
+        {
+          "action": "S",
+          "status": "terminal",
+          "state": "7/10"
+        }
+      ]
+    },
+    {
+      "state": "1",
+      "children": [
+        {
+          "action": "T",
+          "status": "terminal",
+          "state": "0"
+        },
+        {
+          "action": "S",
+          "status": "terminal",
+          "state": "1"
+        }
+      ]
+    }
+  ]
+}

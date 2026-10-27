@@ -191,6 +191,8 @@ Other open directions include:
 
 See [Scientific status](docs/SCIENTIFIC_STATUS.md) and [Open problems](docs/OPEN_PROBLEMS.md).
 
+Current pre-DOI gate: [Validation status](docs/validation/VALIDATION_STATUS.md).
+
 ## 4. Why the project is not a “golden-ratio digit correlation”
 
 The historical seed is linked to the projective chart

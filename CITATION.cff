@@ -1,0 +1,36 @@
+cff-version: 1.2.0
+message: >-
+  If you use this software, data, or the associated mathematical results,
+  please cite both this research compendium and the preferred paper below.
+title: "RGPhi: Rational radix-Mobius dynamics research compendium"
+type: software
+abstract: >-
+  Exact research compendium for rational radix-Mobius dynamics, robust
+  nonnested extremal targets, Farey geometry, and finite modular traps.
+authors:
+  - family-names: Firmenich
+    given-names: Facundo
+    orcid: "https://orcid.org/0009-0002-6578-3811"
+    affiliation: "Centro de Estudios del Sur (CEDESUR), Universidad Nacional Arturo Jauretche"
+    email: "f.firmenich@cedesur.org"
+version: "1.0.0-rc.1"
+date-released: 2026-10-27
+repository-code: "https://github.com/FacundoFirmenich/rgphi-radix-mobius-dynamics"
+url: "https://github.com/FacundoFirmenich/rgphi-radix-mobius-dynamics"
+license: BSD-3-Clause
+keywords:
+  - arithmetic dynamics
+  - radix transformations
+  - Mobius maps
+  - Farey geometry
+  - dynamic programming
+  - computer-assisted proof
+preferred-citation:
+  type: article
+  title: "Nonnested extremal targets in a rational radix-Mobius semigroup"
+  authors:
+    - family-names: Firmenich
+      given-names: Facundo
+      orcid: "https://orcid.org/0009-0002-6578-3811"
+  year: 2026
+  url: "https://github.com/FacundoFirmenich/rgphi-radix-mobius-dynamics/blob/main/paper/main.pdf"

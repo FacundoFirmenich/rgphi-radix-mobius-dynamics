@@ -1,0 +1,31 @@
+name: Independent replication report
+description: Report an independent reproduction or discrepancy
+title: "[Replication] "
+labels: ["replication"]
+body:
+  - type: input
+    id: commit
+    attributes:
+      label: Commit or release
+      placeholder: v1.0.0 or commit SHA
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: OS, Python/compiler versions, hardware
+    validations:
+      required: true
+  - type: textarea
+    id: commands
+    attributes:
+      label: Commands executed
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: Result, logs, and hashes
+    validations:
+      required: true

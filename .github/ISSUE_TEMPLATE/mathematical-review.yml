@@ -1,0 +1,21 @@
+name: Mathematical review
+description: Report a proof issue, missing hypothesis, or priority concern
+title: "[Math review] "
+labels: ["mathematical-review"]
+body:
+  - type: textarea
+    id: claim
+    attributes:
+      label: Claim or location
+    validations:
+      required: true
+  - type: textarea
+    id: concern
+    attributes:
+      label: Concern and proposed correction
+    validations:
+      required: true
+  - type: textarea
+    id: references
+    attributes:
+      label: Relevant references or counterexamples

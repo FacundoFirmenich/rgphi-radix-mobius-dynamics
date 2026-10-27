@@ -9,3 +9,7 @@ P7,three nonnesting inequalities stable for kappa in [10.6197 11.01),global and 
 P8,all three m3 optima fail to extend an m4 optimum in common interval,three exact source searches,CLOSED,Theorem 7.4,Two states certified no-hit through162
 P9,priority of the exact coupled phenomenon,systematic open literature audit,PROVISIONAL,Section 9,To-best-of-knowledge wording and closed-database review pending
 P10,tau5 exact value,interval 179..212,OPEN,Discussion,Explicitly excluded from theorem dependencies
+P11,S_B is a partial transformation with natural domain H([0,1])=[1/2,1],symbolic conjugacy and domain calculation,CLOSED,Section 2,Prevents total-semigroup ambiguity
+P12,the 23-state benchmark terminal set is forward invariant under every admissible T/S branch,data/certificates/terminal-set-audit.json,CLOSED,Section 2.1,46 attempted branches audited with zero admissible escapes
+P13,the current public novelty statement is provisional rather than absolute,claim-by-claim literature map plus 2014-2026 frontier review,PROVISIONAL,Section 9,External specialist priority review required before stronger wording
+P14,external clean-room replication of the core finite theorem stack,docs/validation/EXTERNAL_VALIDATION_PROTOCOL.md,OPEN,Limitations,Must be completed by a third party and therefore cannot be self-certified

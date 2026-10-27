@@ -1,0 +1,19 @@
+Exact target-BFS runs used in RGΦ-019
+
+128/129, threshold Q=1100, prefix=45:
+FOUND total=87 endpoint=1100/1101 seen=55144
+
+1202/1203, threshold Q=11000, prefix=85:
+FOUND total=139 endpoint=13542/13543 seen=3955616
+
+11156/11157, threshold Q=110000, prefix=120:
+FOUND total=168 endpoint=122088/122089 seen=30380076
+
+11532/11533, threshold Q=110000, prefix=120:
+NO_HIT total<=162 seen=11442439
+
+11642/11643, threshold Q=110000, prefix=120:
+NO_HIT total<=162 seen=11769528
+
+11156/11157, threshold Q=110000, prefix=122, hub forbidden:
+FOUND total=170 endpoint=122088/122089 seen=30380075

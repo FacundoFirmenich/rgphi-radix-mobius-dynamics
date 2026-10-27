@@ -1,0 +1,7 @@
+from_depth,from_state,from_global_time,target_depth,search_result,arrival_total_time,continuation_cost,arrival_state,comparison_global_tau,delay_vs_global,evidence
+1,128/129,45,2,FOUND exact shortest,87,42,1100/1101,85,2,exact BFS
+2,1202/1203,85,3,FOUND exact shortest,139,54,13542/13543,120,19,exact BFS
+3,11156/11157,120,4,FOUND exact shortest,168,48,122088/122089,162,6,exact BFS
+3,11532/11533,120,4,NO HIT through global optimum,,,,162,>=1 if eventually found,exact BFS through total time 162
+3,11642/11643,120,4,NO HIT through global optimum,,,,162,>=1 if eventually found,exact BFS through total time 162
+4,124852/124853,162,5,constructive continuation,217,55,1257793/1257794,<=217 only,,certified witness portal 8; minimum not proved

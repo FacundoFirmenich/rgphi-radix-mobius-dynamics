@@ -1,0 +1,5 @@
+m,tau,kappa_lower_inclusive,kappa_upper_exclusive,kappa_lower_float,kappa_upper_float,q_previous_record,q_at_first_hit
+1,45,93/10,129/10,9.3,12.9,93,129
+2,85,903/100,1203/100,9.03,12.03,903,1203
+3,120,10019/1000,11643/1000,10.019,11.643,10019,11643
+4,162,106197/10000,124853/10000,10.6197,12.4853,106197,124853

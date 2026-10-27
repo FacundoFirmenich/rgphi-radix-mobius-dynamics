@@ -1,0 +1,4 @@
+target_depth,checkpoint_time,greedy_state,greedy_height,greedy_continuation_cost,greedy_arrival_time,latent_state,latent_height,latent_continuation_cost,latent_arrival_time,height_ratio_greedy_over_latent,actions_saved_by_latent
+2,45,128/129,129.0,42,87,103/131,4.678571428571429,40,85,27.572519083969464,2
+3,85,1202/1203,1203.0,54,139,956/1573,2.5494327390599674,35,120,471.8696757787667,19
+4,120,11642/11643,11643.0,48,168,11803/22160,2.139615718837501,42,162,5441.631362815884,6

@@ -1,0 +1,13 @@
+state,action,successor,status
+1/13,T,10/13,inside
+3/13,T,4/13,inside
+4/13,T,1/13,inside
+5/11,T,6/11,inside
+6/11,T,5/11,inside
+6/11,S,3/4,terminal
+9/13,T,12/13,inside
+9/13,S,9/13,inside
+10/13,T,9/13,inside
+10/13,S,1,terminal
+12/13,T,3/13,inside
+12/13,S,6/11,inside

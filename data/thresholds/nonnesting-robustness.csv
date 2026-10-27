@@ -1,0 +1,4 @@
+transition,source_state,target_depth_m,global_tau,continuation_arrival_time,delay,continuation_endpoint,continuation_kappa_lower_inclusive,continuation_kappa_upper_exclusive,global_kappa_lower_inclusive,global_kappa_upper_exclusive,nonnesting_kappa_lower_inclusive,nonnesting_kappa_upper_exclusive,nonnesting_kappa_lower_float,nonnesting_kappa_upper_float
+m1_opt_to_m2,128/129,2,85,87,2,1100/1101,1033/100,1101/100,903/100,1203/100,1033/100,1101/100,10.33,11.01
+m2_opt_to_m3,1202/1203,3,120,139,19,13542/13543,8827/1000,13543/1000,10019/1000,11643/1000,10019/1000,11643/1000,10.019,11.643
+m3_opt_11156_to_m4,11156/11157,4,162,168,6,122088/122089,44853/10000,122089/10000,106197/10000,124853/10000,106197/10000,122089/10000,10.6197,12.2089

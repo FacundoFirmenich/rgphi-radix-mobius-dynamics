@@ -1,0 +1,51 @@
+{
+  "status": "PASS",
+  "base": 10,
+  "threshold_family": "P_m(10,kappa)={x:q(x)>kappa*10^m}",
+  "global_tau_at_kappa_11": {
+    "m1": 45,
+    "m2": 85,
+    "m3": 120,
+    "m4": 162
+  },
+  "simultaneous_tau1_tau4_robustness": {
+    "lower_inclusive": "106197/10000",
+    "upper_exclusive": "11643/1000",
+    "lower_float": 10.6197,
+    "upper_float": 11.643
+  },
+  "simultaneous_three_level_nonnesting_robustness": {
+    "lower_inclusive": "106197/10000",
+    "upper_exclusive": "1101/100",
+    "lower_float": 10.6197,
+    "upper_float": 11.01,
+    "delays": [
+      2,
+      19,
+      6
+    ]
+  },
+  "other_m3_optima_nohit_through_162": [
+    {
+      "state": "11532/11533",
+      "max_q_through_162": "44400",
+      "no_hit_if_kappa_at_least": "111/25",
+      "float": 4.44
+    },
+    {
+      "state": "11642/11643",
+      "max_q_through_162": "28408",
+      "no_hit_if_kappa_at_least": "3551/1250",
+      "float": 2.8408
+    }
+  ],
+  "strictness": "lower endpoints inclusive and upper endpoints exclusive because portal membership uses q>kappa*10^m",
+  "evidence": {
+    "global_profile": "rgphi010_exact_bfs_0_162.csv",
+    "continuation_profiles": [
+      "profile_128_129_to87.csv",
+      "profile_1202_1203_to139.csv",
+      "profile_11156_11157_to168.csv"
+    ]
+  }
+}

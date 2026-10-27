@@ -1,0 +1,14 @@
+claim_id,claim,key_refs,priority_assessment,risk,required_action
+A01,Exact seed bridge and Möbius conjugacy,R01;R02;R08;R11,Ingredients canonical; exact RGΦ instance is new only as seed of larger system,LOW standalone / MEDIUM integrated,Generalize to base B and seed family
+A02,Golden/Fibonacci projective chart,R11;R22,Matrix identity elementary; no priority claim,LOW,Use only as exact operator framing
+A03,Noncommutative rational semigroup,R22;R23;R46,Möbius/matrix semigroups established,HIGH ingredient overlap,Claim novelty in arithmetic branch reductions and portal objectives
+C01,Exact portal hitting times τ1–τ4,R28;R29;R31;R32,No exact antecedent found for this system/threshold family,LOW observed overlap,Publish with full reproducibility and threshold sensitivity
+C02,Nonnested globally earliest portals,R28;R29;R30;R31,Bellman/state-augmentation literature relevant; no direct arithmetic analogue found,MEDIUM,Promote as lead theorem with explicit counterexamples
+C03,Visible height is not a Bellman value function,R29;R30;R31,General sufficient-state issue known; exact arithmetic construction appears new,MEDIUM,"State as exact counterexample, not universal Bellman novelty"
+F01,Farey shadow as hidden control coordinate,R11;R14;R15;R25;R27,Farey/p-adic coding mature; coupling to control/portals appears new,HIGH ingredients / LOW exact coupling,Generalize compiler and prove sufficient-state theorem
+G01,Defect transport Δ′=BΔ/(gk),R11;R23;R24,Likely elementary determinant consequence,LOW theorem novelty,"Use as infrastructure, not headline novelty"
+G02,2/5-adic budget/Motzkin semantics,R24;R25;R27;R35;R38-R42,p-adic and effect-algebra ingredients known,HIGH terminology risk,Formalize as effect algebra/OMP candidate before strong claim
+H01,Antichain compression of contexts,R35;R38-R42;R43-R44,Context/pasting and certificates have prior art; exact compression empirical to RGΦ,MEDIUM,Prove width bounds or present as computational theorem
+I01,Finite modular trap C8 and infinite Bellman value,R12;R13;R32;R33,Open/survivor systems mature; exact mixed modular trap appears new,MEDIUM,Build atlas and general trap criterion
+B01,Artin/Kummer density line,R50-R55,Extensive deep prior art,VERY HIGH,Separate paper; express as specialization and avoid novelty overclaim
+J01,Certified no-hit computation,R43;R44;R47-R49,Proof certificates and reproducibility standards established,HIGH method overlap,Release trusted checker + RO-Crate + clean-room replication

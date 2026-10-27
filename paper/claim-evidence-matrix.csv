@@ -1,0 +1,11 @@
+claim_id,claim,evidence,status,manuscript_location,risk_control
+P1,T_B and S_B branch matrices have determinant B,symbolic derivation,CLOSED,Section 2,Not framed as novelty
+P2,tau1=45 tau2=85 tau3=120 tau4=162,exact layer enumeration through depth162,CLOSED,Theorem 4.1,Computer-assisted proof and full ledger
+P3,first-hit portals are nonnested across three transitions,independent exact continuation BFS,CLOSED,Theorem 5.1,Exact states times and delays stated
+P4,target depth alone is not Bellman-sufficient,P3 counterexamples,CLOSED,Corollary 5.2,Restricted to this system
+P5,current q is not a Bellman value,latent precursor exact comparisons,CLOSED,Corollary 5.3,Not claimed as general Bellman novelty
+P6,tau1-4 stable for kappa in [10.6197 11.643),exact record-height atlas,CLOSED,Theorem 7.2,Endpoints exact and strictness stated
+P7,three nonnesting inequalities stable for kappa in [10.6197 11.01),global and continuation profiles,CLOSED,Theorem 7.4,Positive-width interval only
+P8,all three m3 optima fail to extend an m4 optimum in common interval,three exact source searches,CLOSED,Theorem 7.4,Two states certified no-hit through162
+P9,priority of the exact coupled phenomenon,systematic open literature audit,PROVISIONAL,Section 9,To-best-of-knowledge wording and closed-database review pending
+P10,tau5 exact value,interval 179..212,OPEN,Discussion,Explicitly excluded from theorem dependencies

@@ -1,0 +1,48 @@
+{
+  "spdxVersion": "SPDX-2.3",
+  "dataLicense": "CC0-1.0",
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "name": "RGPhi research compendium SBOM",
+  "documentNamespace": "https://github.com/FacundoFirmenich/rgphi-radix-mobius-dynamics/spdx/c2379941-05b8-4a2b-86b3-e9f7bd972134",
+  "creationInfo": {
+    "created": "2026-10-27T00:00:00Z",
+    "creators": [
+      "Person: Facundo Firmenich (ORCID: 0009-0002-6578-3811)",
+      "Tool: RG\u03a6 release builder"
+    ]
+  },
+  "packages": [
+    {
+      "name": "rgphi",
+      "SPDXID": "SPDXRef-Package-rgphi",
+      "versionInfo": "1.0.0-rc.1",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "BSD-3-Clause",
+      "licenseDeclared": "BSD-3-Clause",
+      "copyrightText": "Copyright (c) 2026 Facundo Firmenich"
+    },
+    {
+      "name": "networkx",
+      "SPDXID": "SPDXRef-Package-networkx",
+      "versionInfo": "3.2 or later, below 4",
+      "downloadLocation": "https://pypi.org/project/networkx/",
+      "filesAnalyzed": false,
+      "licenseConcluded": "BSD-3-Clause",
+      "licenseDeclared": "BSD-3-Clause",
+      "copyrightText": "NOASSERTION"
+    }
+  ],
+  "relationships": [
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-Package-rgphi"
+    },
+    {
+      "spdxElementId": "SPDXRef-Package-rgphi",
+      "relationshipType": "DEPENDS_ON",
+      "relatedSpdxElement": "SPDXRef-Package-networkx"
+    }
+  ]
+}

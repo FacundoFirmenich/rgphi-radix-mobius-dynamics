@@ -1,0 +1,374 @@
+{
+  "@context": "https://w3id.org/ro/crate/1.1/context",
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "about": {
+        "@id": "./"
+      }
+    },
+    {
+      "@id": "./",
+      "@type": [
+        "Dataset",
+        "SoftwareSourceCode"
+      ],
+      "name": "RGΦ Scientific Upgrade Package v1.0",
+      "datePublished": "2026-10-27",
+      "description": "Literature-priority audit, base-B theorem portfolio, exact trap atlas starter, and ten-front upgrade program.",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "author": {
+        "@id": "#facundo"
+      },
+      "hasPart": [
+        {
+          "@id": "CITATION.cff"
+        },
+        {
+          "@id": "README.md"
+        },
+        {
+          "@id": "RGPHI_BASE_B_THEOREM_PORTFOLIO_v1.md"
+        },
+        {
+          "@id": "RGPHI_BIBLIOGRAPHY_v1.bib"
+        },
+        {
+          "@id": "RGPHI_CLAIMS_WITH_PRIORITY_v2.csv"
+        },
+        {
+          "@id": "RGPHI_CLAIM_TO_LITERATURE_MAP_v1.csv"
+        },
+        {
+          "@id": "RGPHI_CURRENT_FRONTIER_2024_2026_v1.md"
+        },
+        {
+          "@id": "RGPHI_LITERATURE_MATRIX_v1.csv"
+        },
+        {
+          "@id": "RGPHI_LITERATURE_PRIORITY_AUDIT_v1.md"
+        },
+        {
+          "@id": "RGPHI_ORTHOMODULAR_FORMALIZATION_DECISION_v1.md"
+        },
+        {
+          "@id": "RGPHI_PUBLICATION_ARCHITECTURE_v2.md"
+        },
+        {
+          "@id": "RGPHI_REPRODUCIBILITY_AND_REPLICATION_PROTOCOL_v1.md"
+        },
+        {
+          "@id": "RGPHI_SOURCE_CLAIMS_REGISTRY.csv"
+        },
+        {
+          "@id": "RGPHI_SOURCE_EVALUATION.md"
+        },
+        {
+          "@id": "RGPHI_SOURCE_SUPERDOCUMENTO_v1.md"
+        },
+        {
+          "@id": "RGPHI_SYSTEMATIC_SEARCH_PROTOCOL_v1.md"
+        },
+        {
+          "@id": "RGPHI_TEN_FRONT_STATUS_MATRIX_v1.csv"
+        },
+        {
+          "@id": "RGPHI_TEN_FRONT_UPGRADE_PROGRAM_v1.md"
+        },
+        {
+          "@id": "RGPHI_TRAP_ATLAS_STARTER_REPORT_v1.md"
+        },
+        {
+          "@id": "RGPHI_UPGRADE_MASTER_REPORT_v1.md"
+        },
+        {
+          "@id": "SBOM.spdx.json"
+        },
+        {
+          "@id": "build_rgphi_upgrade_package.py"
+        },
+        {
+          "@id": "codemeta.json"
+        },
+        {
+          "@id": "rgphi_C8_exact_audit.csv"
+        },
+        {
+          "@id": "rgphi_base_b_audit.py"
+        },
+        {
+          "@id": "rgphi_base_b_audit.stderr"
+        },
+        {
+          "@id": "rgphi_base_b_audit.stdout"
+        },
+        {
+          "@id": "rgphi_base_b_audit_result.json"
+        },
+        {
+          "@id": "rgphi_trap_atlas.py"
+        },
+        {
+          "@id": "rgphi_trap_atlas.stderr"
+        },
+        {
+          "@id": "rgphi_trap_atlas.stdout"
+        },
+        {
+          "@id": "rgphi_trap_atlas_result_D500.json"
+        },
+        {
+          "@id": "rgphi_trap_closed_sccs_D500.csv"
+        },
+        {
+          "@id": "rgphi_trap_forward_closures_D500.csv"
+        }
+      ],
+      "identifier": "persistent-identifier-not-yet-assigned"
+    },
+    {
+      "@id": "#facundo",
+      "@type": "Person",
+      "name": "Facundo Firmenich"
+    },
+    {
+      "@id": "CITATION.cff",
+      "@type": "File",
+      "name": "CITATION.cff",
+      "contentSize": 639,
+      "sha256": "dc287c11c182f7cbe2fc776318e1fc7db2001a2989b2d863de41466c9887a5a1"
+    },
+    {
+      "@id": "README.md",
+      "@type": "File",
+      "name": "README.md",
+      "contentSize": 1179,
+      "sha256": "baef76baf786208691cefe8738c54ac7bd8dfcfc8527c8e39d9bf11cf9ad795b"
+    },
+    {
+      "@id": "RGPHI_BASE_B_THEOREM_PORTFOLIO_v1.md",
+      "@type": "File",
+      "name": "RGPHI_BASE_B_THEOREM_PORTFOLIO_v1.md",
+      "contentSize": 7000,
+      "sha256": "4d6c3630c130a4a92b05d0855f8b784f45185f5e03465cd26cc80bed4d3e6f34"
+    },
+    {
+      "@id": "RGPHI_BIBLIOGRAPHY_v1.bib",
+      "@type": "File",
+      "name": "RGPHI_BIBLIOGRAPHY_v1.bib",
+      "contentSize": 14469,
+      "sha256": "15e996394e5325f3da9eed993dd31504dac1ae5d12a4e45441d0e85e7226c4dd"
+    },
+    {
+      "@id": "RGPHI_CLAIMS_WITH_PRIORITY_v2.csv",
+      "@type": "File",
+      "name": "RGPHI_CLAIMS_WITH_PRIORITY_v2.csv",
+      "contentSize": 6344,
+      "sha256": "d82bbe82546ae76afcc2463c7d10ce618f36d15c0fdf64538318a8501ff62db9"
+    },
+    {
+      "@id": "RGPHI_CLAIM_TO_LITERATURE_MAP_v1.csv",
+      "@type": "File",
+      "name": "RGPHI_CLAIM_TO_LITERATURE_MAP_v1.csv",
+      "contentSize": 2507,
+      "sha256": "5927c446e0e1a3b509c23478301053821d2a485531872fb84aeb2c5b2298cc56"
+    },
+    {
+      "@id": "RGPHI_CURRENT_FRONTIER_2024_2026_v1.md",
+      "@type": "File",
+      "name": "RGPHI_CURRENT_FRONTIER_2024_2026_v1.md",
+      "contentSize": 3574,
+      "sha256": "69cd633abe75dc7acd981f24bbf799f228d3c5758c7a8bff115c8fda09fdecdb"
+    },
+    {
+      "@id": "RGPHI_LITERATURE_MATRIX_v1.csv",
+      "@type": "File",
+      "name": "RGPHI_LITERATURE_MATRIX_v1.csv",
+      "contentSize": 17197,
+      "sha256": "9f6af568ac7c0abe9333051c7d1195d04c37591ac46569b0e4be80b286045db0"
+    },
+    {
+      "@id": "RGPHI_LITERATURE_PRIORITY_AUDIT_v1.md",
+      "@type": "File",
+      "name": "RGPHI_LITERATURE_PRIORITY_AUDIT_v1.md",
+      "contentSize": 16261,
+      "sha256": "552aa49f30600f3bfdb6128fe10df5ed16ed2226bba5ca50199539f8e0402301"
+    },
+    {
+      "@id": "RGPHI_ORTHOMODULAR_FORMALIZATION_DECISION_v1.md",
+      "@type": "File",
+      "name": "RGPHI_ORTHOMODULAR_FORMALIZATION_DECISION_v1.md",
+      "contentSize": 2790,
+      "sha256": "9352adcdbb53d8b3d41b19ad8f3c7d6766304072bd47802c6285a11dd601a10d"
+    },
+    {
+      "@id": "RGPHI_PUBLICATION_ARCHITECTURE_v2.md",
+      "@type": "File",
+      "name": "RGPHI_PUBLICATION_ARCHITECTURE_v2.md",
+      "contentSize": 5991,
+      "sha256": "620bad57e6693d6583030592f6d0bed3ba2318a461eb988a4364a88d07b1be54"
+    },
+    {
+      "@id": "RGPHI_REPRODUCIBILITY_AND_REPLICATION_PROTOCOL_v1.md",
+      "@type": "File",
+      "name": "RGPHI_REPRODUCIBILITY_AND_REPLICATION_PROTOCOL_v1.md",
+      "contentSize": 3773,
+      "sha256": "765359e295b898298e920b5037c7c1089b7f9cfd4ac98bde656b1495b86ea7cb"
+    },
+    {
+      "@id": "RGPHI_SOURCE_CLAIMS_REGISTRY.csv",
+      "@type": "File",
+      "name": "RGPHI_SOURCE_CLAIMS_REGISTRY.csv",
+      "contentSize": 3379,
+      "sha256": "045ab4706340f9bbba01531d8572b841ba26061a8bbc0d40abbd59db3b10bc40"
+    },
+    {
+      "@id": "RGPHI_SOURCE_EVALUATION.md",
+      "@type": "File",
+      "name": "RGPHI_SOURCE_EVALUATION.md",
+      "contentSize": 12349,
+      "sha256": "0763f1b40052523688cea890f08e528701dfd876e34cc7b46f86626b5ee5696e"
+    },
+    {
+      "@id": "RGPHI_SOURCE_SUPERDOCUMENTO_v1.md",
+      "@type": "File",
+      "name": "RGPHI_SOURCE_SUPERDOCUMENTO_v1.md",
+      "contentSize": 27827,
+      "sha256": "0cc3913c207e9a19333074bc37e6fcfaf12c1220c058a6953bfb768b8aafb168"
+    },
+    {
+      "@id": "RGPHI_SYSTEMATIC_SEARCH_PROTOCOL_v1.md",
+      "@type": "File",
+      "name": "RGPHI_SYSTEMATIC_SEARCH_PROTOCOL_v1.md",
+      "contentSize": 2977,
+      "sha256": "78213f0483e5c020cc5fad24beefa537716dbd34263a9736f52d4bf23be7ff76"
+    },
+    {
+      "@id": "RGPHI_TEN_FRONT_STATUS_MATRIX_v1.csv",
+      "@type": "File",
+      "name": "RGPHI_TEN_FRONT_STATUS_MATRIX_v1.csv",
+      "contentSize": 1733,
+      "sha256": "8aa9bf9781211555a5ce23546d0375f0c720dbd31b75d53d7bb03a2196f93945"
+    },
+    {
+      "@id": "RGPHI_TEN_FRONT_UPGRADE_PROGRAM_v1.md",
+      "@type": "File",
+      "name": "RGPHI_TEN_FRONT_UPGRADE_PROGRAM_v1.md",
+      "contentSize": 8114,
+      "sha256": "d4b85db8b644296c11f47df66b92a6dda362f40b504b7bc1e9b30877bfa43657"
+    },
+    {
+      "@id": "RGPHI_TRAP_ATLAS_STARTER_REPORT_v1.md",
+      "@type": "File",
+      "name": "RGPHI_TRAP_ATLAS_STARTER_REPORT_v1.md",
+      "contentSize": 2679,
+      "sha256": "92166791c6440063b89c9714a11755d6b1240b4dd1fc6c940ef943c5fb1c0bc7"
+    },
+    {
+      "@id": "RGPHI_UPGRADE_MASTER_REPORT_v1.md",
+      "@type": "File",
+      "name": "RGPHI_UPGRADE_MASTER_REPORT_v1.md",
+      "contentSize": 8900,
+      "sha256": "6ce3ce2a0e35cf30469b61d872ef371678a84e72aab4a5757a57466056e77637"
+    },
+    {
+      "@id": "SBOM.spdx.json",
+      "@type": "File",
+      "name": "SBOM.spdx.json",
+      "contentSize": 972,
+      "sha256": "7f2aadf7b7fef9bd67069ab2ecfcfa01210f7108f0b665739149d78d29f4af53"
+    },
+    {
+      "@id": "build_rgphi_upgrade_package.py",
+      "@type": "File",
+      "name": "build_rgphi_upgrade_package.py",
+      "contentSize": 23438,
+      "sha256": "9c56fd0f2fb6baa08a4bf46c018b9742c026147a729f22ddef7af572ef9e4e40"
+    },
+    {
+      "@id": "codemeta.json",
+      "@type": "File",
+      "name": "codemeta.json",
+      "contentSize": 619,
+      "sha256": "4a273fe40a9786ad7bda454aa1fb458d6a4553da4e7751841133d169026956e4"
+    },
+    {
+      "@id": "rgphi_C8_exact_audit.csv",
+      "@type": "File",
+      "name": "rgphi_C8_exact_audit.csv",
+      "contentSize": 277,
+      "sha256": "a817d5ad4f205522f3558a34ca7dbc582077f8b71b9d824f74c4dab693907117"
+    },
+    {
+      "@id": "rgphi_base_b_audit.py",
+      "@type": "File",
+      "name": "rgphi_base_b_audit.py",
+      "contentSize": 4855,
+      "sha256": "a7f0955025323c64009f7404eafd266c6f43c6b9ac15f96c823f32f1d2b35576"
+    },
+    {
+      "@id": "rgphi_base_b_audit.stderr",
+      "@type": "File",
+      "name": "rgphi_base_b_audit.stderr",
+      "contentSize": 25,
+      "sha256": "9aef00f36e2b240fa76f799c0adba50af5bb37500240b8b8de4872d86a3563af"
+    },
+    {
+      "@id": "rgphi_base_b_audit.stdout",
+      "@type": "File",
+      "name": "rgphi_base_b_audit.stdout",
+      "contentSize": 449,
+      "sha256": "f2a0b0cf315e6ab9d2f04bdea20e1b4ed499511957325793c667edf7a5f7c688"
+    },
+    {
+      "@id": "rgphi_base_b_audit_result.json",
+      "@type": "File",
+      "name": "rgphi_base_b_audit_result.json",
+      "contentSize": 448,
+      "sha256": "134395c6ce305a170c85cefe71d75a131ea14e8aa7bc7aa3f7b2e2b13fff20b9"
+    },
+    {
+      "@id": "rgphi_trap_atlas.py",
+      "@type": "File",
+      "name": "rgphi_trap_atlas.py",
+      "contentSize": 6508,
+      "sha256": "91217a06ee0d1658ce286470a9a1e46cc19e5324e7de25065263502a7484bdcc"
+    },
+    {
+      "@id": "rgphi_trap_atlas.stderr",
+      "@type": "File",
+      "name": "rgphi_trap_atlas.stderr",
+      "contentSize": 26,
+      "sha256": "569187eba38b40359e8710b6f5185f56ddc67d40f5b4760ea40429bca4613cd1"
+    },
+    {
+      "@id": "rgphi_trap_atlas.stdout",
+      "@type": "File",
+      "name": "rgphi_trap_atlas.stdout",
+      "contentSize": 666,
+      "sha256": "814a342c63b44395ad5949daadeb7d490c7541cada47d5dcfa7dde56fa0e6a2e"
+    },
+    {
+      "@id": "rgphi_trap_atlas_result_D500.json",
+      "@type": "File",
+      "name": "rgphi_trap_atlas_result_D500.json",
+      "contentSize": 665,
+      "sha256": "4f70fb307ad21ac086d4e096bc75811b3715615d97627e406cfc5728e09ec678"
+    },
+    {
+      "@id": "rgphi_trap_closed_sccs_D500.csv",
+      "@type": "File",
+      "name": "rgphi_trap_closed_sccs_D500.csv",
+      "contentSize": 4353,
+      "sha256": "30e1d57cea04b17f85f6a9349a98ab7e79c6418dee1c93b2cd6d415bed46d706"
+    },
+    {
+      "@id": "rgphi_trap_forward_closures_D500.csv",
+      "@type": "File",
+      "name": "rgphi_trap_forward_closures_D500.csv",
+      "contentSize": 82159,
+      "sha256": "b72fcd8a11b84eb7fb4056687e46ea34e9679466745ca92e91dd77a1c9954be6"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "spdxVersion": "SPDX-2.3",
+  "dataLicense": "CC0-1.0",
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "name": "RGPhi-upgrade-package-SBOM",
+  "documentNamespace": "https://example.invalid/rgphi/upgrade/1.0.0",
+  "creationInfo": {
+    "created": "2026-10-27T00:00:00Z",
+    "creators": ["Tool: ChatGPT-GPT-5.6-Sol-Pro"]
+  },
+  "packages": [
+    {
+      "name": "Python",
+      "SPDXID": "SPDXRef-Python",
+      "versionInfo": "3.13.5",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION"
+    },
+    {
+      "name": "NetworkX",
+      "SPDXID": "SPDXRef-NetworkX",
+      "versionInfo": "3.6.1",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION"
+    },
+    {
+      "name": "GCC",
+      "SPDXID": "SPDXRef-GCC",
+      "versionInfo": "14.2.0",
+      "downloadLocation": "NOASSERTION",
+      "filesAnalyzed": false,
+      "licenseConcluded": "NOASSERTION"
+    }
+  ]
+}

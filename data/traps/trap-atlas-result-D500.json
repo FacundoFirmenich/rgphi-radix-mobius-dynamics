@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "base": 10,
+  "denominator_bound": 500,
+  "nonterminal_states_enumerated": 76094,
+  "directed_nonterminal_edges": 109254,
+  "strongly_connected_components": 23176,
+  "closed_sccs_modulo_terminal_set": 153,
+  "exact_finite_forward_closures": 1502,
+  "small_forward_closures_size_le_100": 1502,
+  "C8": {
+    "certified_forward_invariant_modulo_terminals": true,
+    "size": 8,
+    "max_q": "13",
+    "denominators": [
+      11,
+      13
+    ],
+    "ord_13_10": 6,
+    "ord_11_10": 2,
+    "present_as_exact_closure": true
+  },
+  "boundary": "Atlas is complete only for traps whose nonterminal successors all remain within denominator <=500."
+}

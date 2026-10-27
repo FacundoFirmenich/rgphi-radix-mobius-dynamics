@@ -1,0 +1,35 @@
+claim_id,domain,claim,status,evidence_class,current_role,literature_priority_assessment,priority_risk,required_action,key_refs
+A01,foundation,C(17/20)=T(C(17/19)); 2/17 maps to 3/17,CLOSED,SYMBOLIC_EXACT,central,Ingredients canonical; exact RGΦ instance is new only as seed of larger system,LOW standalone / MEDIUM integrated,Generalize to base B and seed family,R01;R02;R08;R11
+A02,golden,H(x)=1/(1+x) has matrix Q with Q^2=Q+I,CLOSED,SYMBOLIC_EXACT,central,Matrix identity elementary; no priority claim,LOW,Use only as exact operator framing,R11;R22
+A03,dynamics,T and S do not commute,CLOSED,SYMBOLIC_EXACT,central,Möbius/matrix semigroups established,HIGH ingredient overlap,Claim novelty in arithmetic branch reductions and portal objectives,R22;R23;R46
+A04,base5,On denominator 17: T10=T5^7 and (1-x)/5 maps 2/17 to 3/17,CLOSED,SYMBOLIC_EXACT,central,NOT_YET_MAPPED,PENDING,Map before manuscript submission,
+B01,arithmetic,869982 bimaximal bridge cases up to 1e9; density near conjectural constant,COMPUTATIONAL_PASS_ANALYTIC_OPEN,COMPUTATIONAL_EXACT_PLUS_CONJECTURE,separate-paper,Extensive deep prior art,VERY HIGH,Separate paper; express as specialization and avoid novelty overclaim,R50-R55
+C01,portals,tau1=45 tau2=85 tau3=120 tau4=162,CLOSED,COMPUTATIONAL_EXACT,central,No exact antecedent found for this system/threshold family,LOW observed overlap,Publish with full reproducibility and threshold sensitivity,R28;R29;R31;R32
+C02,portals,Globally earliest portals are nonnested,CLOSED,COMPUTATIONAL_EXACT,central,Bellman/state-augmentation literature relevant; no direct arithmetic analogue found,MEDIUM,Promote as lead theorem with explicit counterexamples,R28;R29;R30;R31
+C03,bellman,Current portal height q is not a Bellman value function,CLOSED,COMPUTATIONAL_EXACT,central,General sufficient-state issue known; exact arithmetic construction appears new,MEDIUM,"State as exact counterexample, not universal Bellman novelty",R29;R30;R31
+C04,bellman,Full rational state is Markovian but threshold depth alone is not sufficient,CLOSED,SYMBOLIC_PLUS_COMPUTATIONAL,central,NOT_YET_MAPPED,PENDING,Map before manuscript submission,
+D01,local_m5,Old 217 witness has exact local 55-action geodesic from its m4 state,CLOSED_LEGACY_VALID,COMPUTATIONAL_EXACT,local-theorem,NOT_YET_MAPPED,PENDING,Map before manuscript submission,
+D02,local_m5,Portal renewal is destructive: cone exit -> bulk -> Farey reset,CLOSED,SYMBOLIC_PLUS_COMPUTATIONAL,central,NOT_YET_MAPPED,PENDING,Map before manuscript submission,
+D03,local_m5,Old claim tau5=217,REFUTED,COUNTEREXAMPLE_212,do-not-use,NOT_YET_MAPPED,PENDING,Map before manuscript submission,
+E01,global_m5,A 212-action witness reaches 1350416/1350417,CLOSED_UPPER_BOUND,COMPUTATIONAL_EXACT,frontier,NOT_YET_MAPPED,PENDING,Map before manuscript submission,
+E02,global_m5,179 <= tau5 <= 212,OPEN_INTERVAL,COMPUTATIONAL_EXACT,frontier,NOT_YET_MAPPED,PENDING,Map before manuscript submission,
+E03,global_m5,V5(x_t)=212-t for 89<=t<=212,CLOSED,COMPUTATIONAL_EXACT,frontier,NOT_YET_MAPPED,PENDING,Map before manuscript submission,
+F01,farey,Farey shadow is a genuine hidden control coordinate,CLOSED,COMPUTATIONAL_EXACT,central,Farey/p-adic coding mature; coupling to control/portals appears new,HIGH ingredients / LOW exact coupling,Generalize compiler and prove sufficient-state theorem,R11;R14;R15;R25;R27
+F02,farey,212 and 217 addresses share 146 digits and differ at digit 147,CLOSED,COMPUTATIONAL_EXACT,central,NOT_YET_MAPPED,PENDING,Map before manuscript submission,
+F03,farey,Lexicographic control maximizes gk then k,CLOSED_FOR_CERTIFIED_WITNESSES,COMPUTATIONAL_EXACT,compiler,NOT_YET_MAPPED,PENDING,Map before manuscript submission,
+G01,orthomodular,Delta'=10 Delta/(gk),CLOSED,SYMBOLIC_EXACT,central,Likely elementary determinant consequence,LOW theorem novelty,"Use as infrastructure, not headline novelty",R11;R23;R24
+G02,orthomodular,e_p'=e_p+1-s_p-kappa_p,CLOSED,SYMBOLIC_EXACT,central,p-adic and effect-algebra ingredients known,HIGH terminology risk,Formalize as effect algebra/OMP candidate before strong claim,R24;R25;R27;R35;R38-R42
+G03,orthomodular,"(a/b,e2,e5) alone is Markov-incomplete",CLOSED,EXACT_COUNTEREXAMPLE,central,NOT_YET_MAPPED,PENDING,Map before manuscript submission,
+G04,orthomodular,All-context projection equals full rational graph,CLOSED_TO_DEPTH40_PLUS_THEOREM,EXACT_AUDIT,architecture,NOT_YET_MAPPED,PENDING,Map before manuscript submission,
+G05,orthomodular,Budget sets are downward ideals with antichain width <=2,OBSERVED_EXACT_TO_DEPTH40,COMPUTATIONAL_EXACT,open-generalization,NOT_YET_MAPPED,PENDING,Map before manuscript submission,
+H01,traps,C8 is a finite nonterminal trap kernel,CLOSED,SYMBOLIC_EXACT,central-new,Context/pasting and certificates have prior art; exact compression empirical to RGΦ,MEDIUM,Prove width bounds or present as computational theorem,R35;R38-R42;R43-R44
+H02,traps,V5(7/260)=infinity,CLOSED,SYMBOLIC_EXACT,central-new,NOT_YET_MAPPED,PENDING,Map before manuscript submission,
+H03,traps,Finite traps are unions of T modular cycles coupled by S,CONJECTURAL_CLASSIFICATION,STRUCTURAL_HYPOTHESIS,next-program,NOT_YET_MAPPED,PENDING,Map before manuscript submission,
+R01,refutation,39/59 is mandatory,REFUTED,EXACT_BYPASS,legacy,NOT_YET_MAPPED,PENDING,Map before manuscript submission,
+R02,refutation,All portals have h=1,REFUTED,EXACT_H2_FAMILY,legacy,NOT_YET_MAPPED,PENDING,Map before manuscript submission,
+R03,refutation,Greedy q or short q-lookahead finds Bellman winner,REFUTED,EXACT_COUNTEREXAMPLES,central,NOT_YET_MAPPED,PENDING,Map before manuscript submission,
+R04,refutation,Expanding all orthomodular contexts shrinks reachability,REFUTED,PROJECTION_THEOREM,architecture,NOT_YET_MAPPED,PENDING,Map before manuscript submission,
+O01,open,Determine tau5 exactly,OPEN,INTERVAL_179_212,highest-priority-benchmark,NOT_YET_MAPPED,PENDING,Map before manuscript submission,
+O02,open,Classify all finite traps and basins,OPEN,NEW_AFTER_C8,highest-priority-theory,NOT_YET_MAPPED,PENDING,Map before manuscript submission,
+O03,open,Prove Artin/Kummer density,OPEN,ANALYTIC,independent-paper,NOT_YET_MAPPED,PENDING,Map before manuscript submission,
+O04,open,Prove bounded orthomodular antichain width,OPEN,COMPUTATIONAL_EVIDENCE,architecture,NOT_YET_MAPPED,PENDING,Map before manuscript submission,

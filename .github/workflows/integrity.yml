@@ -1,0 +1,28 @@
+name: Build integrity ledger
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  integrity:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+      - name: Generate canonical manifest and SHA-256 ledger
+        run: python tools/update_manifest.py
+      - name: Upload integrity ledger
+        uses: actions/upload-artifact@v7
+        with:
+          name: rgphi-integrity-ledger
+          path: |
+            MANIFEST.json
+            SHA256SUMS.txt
+          if-no-files-found: error

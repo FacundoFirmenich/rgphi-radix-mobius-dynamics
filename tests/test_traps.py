@@ -1,5 +1,3 @@
-from fractions import Fraction
-
 from rgphi.traps import C8, audit_finite_trap, multiplicative_order
 
 

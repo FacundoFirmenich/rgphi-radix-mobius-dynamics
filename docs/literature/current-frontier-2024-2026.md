@@ -1,97 +1,85 @@
-# RGΦ — Frontera internacional 2024–2026
+# Current international frontier, 2024–2026
 
-## 1. Farey y continued fractions
+This note records recent literature clusters that are especially relevant to the positioning of RGΦ.
 
-### Panti 2025 — clasificación de Farey maps
+It is not intended as a complete bibliography; canonical references are maintained in paper/references.bib and the literature matrix.
 
-Impide formular una supuesta clasificación general RGΦ sin confrontar su teorema de projective IFS de dos ramas.
+## 1. Farey and projective continued-fraction systems
 
-### Schmidt 2025 — first-return systems
+Recent work continues to classify projective iterated-function systems, Farey-type maps, inducing schemes, and natural extensions.
 
-Proporciona un marco contemporáneo para secciones, returns y entropía en familias de continued-fraction maps.
+Implication for RGΦ:
 
-### Berthé–Cantrell–Lee–Pollicott 2025
+- projective/Farey structure is established territory;
+- any trap or hidden-state theorem must be compared to the exact projective branch architecture of nearby systems;
+- “classification” claims require especially careful scope.
 
-Muestra que las órbitas racionales finitas pueden capturar estadística ergódica de órbitas infinitas bajo hipótesis amplias. Es central para posicionar los censos RGΦ.
+## 2. First-return and induced systems
 
-### Fox–Garrity 2026
+Contemporary work on first-return systems provides a mature language for sections, return times, induced maps, and entropy.
 
-Natural extensions multidimensionales con simetrías internas. Relevante para generalizaciones vectoriales.
+Implication:
 
-### Chen–Dajani–Hu–Kraaikamp 2026
+RGΦ first-hit targets should be related explicitly to established hitting/return-time frameworks while emphasizing the exact arithmetic optimization question that differs from standard recurrence statistics.
 
-Romik map, racionales, natural extension y expansión con alfabeto no estándar. Próximo metodológicamente al estudio de ramas racionales exactas.
+## 3. Statistics of rational finite orbits
 
-### Nakada–Natsui–Thuswaldner 2026
+Recent research shows that finite rational orbits can encode meaningful statistical information about broader dynamical behavior under suitable hypotheses.
 
-Farey graphs y expansiones geodésicas complejas. Abre una vía de generalización a campos cuadráticos imaginarios.
+Implication:
 
-## 2. Radix y sistemas abiertos
+Finite RGΦ censuses are mathematically interesting, but any extrapolation from finite denominators to global rational dynamics requires a theorem.
 
-### Akiyama–Ei–Ito 2026
+## 4. Natural extensions and nonstandard alphabets
 
-Natural extension de la `(-β)`-transformation mediante Markov diagrams. Referencia obligatoria si RGΦ construye una natural extension propia.
+New work on multidimensional or nonstandard continued-fraction maps reinforces the importance of augmented state spaces and natural extensions.
 
-### Kong–Sun–Wang 2025
+Implication:
 
-Survivor sets para mapas enteros radix con agujeros móviles. Es el antecedente reciente más directo para la narrativa escape/trap en mapas de base entera.
+The hidden-state line should be framed against this literature rather than as a generic discovery that “extra state matters.”
 
-### Ding–Steiner–Sun 2026
+## 5. Open expanding systems and survivor sets
 
-Open systems en decreasing Lorenz maps y survivor subshifts. Relevante para plateaux, symbolic survivors y entropy.
+The 2024–2026 literature continues to develop survivor sets, holes, bifurcation structures, and symbolic descriptions in expanding maps.
 
-## 3. p-adic dynamics
+Implication:
 
-### Pérez-Buendía 2026
+Finite traps in RGΦ should be positioned as arithmetic terminal-relative invariant structures with a specific modular mechanism, not as the invention of trapping in open systems.
 
-Rational interpreters sobre cuerpos p-ádicos, cylinder partitions y dynamic CRT. Eleva el estándar de comparación para lazy cylinders y p-adic phase en RGΦ.
+## 6. \(p\)-adic and arithmetic coding
 
-### Liu 2023 y desarrollos posteriores
+Contemporary \(p\)-adic dynamics includes shift conjugacies, cylinder decompositions, and arithmetic symbolic structures.
 
-Conjugación topológica de continued-fraction maps p-ádicos con shifts. Impide presentar el p-adic shift coding como novedad aislada.
+Implication:
 
-## 4. Orthomodular structures
+The strongest future RGΦ contribution would be a theorem linking a specific Farey/\(p\)-adic coordinate to optimal control in the visible rational quotient.
 
-### Chajda–Länger 2025
+## 7. Artin-type arithmetic
 
-Operadores en skew/strong skew orthomodular posets cuando joins y meets no son globales.
+Modern primitive-root and index-map work offers increasingly uniform treatments of multiplicative-order and density questions.
 
-### Harding–Jenča–Lindenhovius 2026
+Implication:
 
-Coreflection de strong orthoposets hacia OMPs. Es una vía concreta para formalizar el pasting RGΦ o demostrar que pertenece a una clase diferente.
+The separate Artin/Kummer line must engage this literature directly and should not be merged into the dynamics papers merely for narrative breadth.
 
-## 5. Formalización y certificación
+## 8. Computational proof standards
 
-### Yan–Shum 2026
+Current expectations increasingly favor:
 
-Formalización Lean de Möbius transformations y cross ratio. Puede reducir drásticamente el trabajo de formalización base.
+- public code;
+- exact arithmetic where possible;
+- independent checks;
+- machine-readable provenance;
+- stable identifiers;
+- clear separation of experimental and proved claims.
 
-### Proof certificates
+The repository architecture is designed to meet these expectations.
 
-La línea Heath–Miller sigue siendo el estándar conceptual: producir evidencia verificable por un checker confiable en vez de confiar en el model checker completo.
+## 9. Living-review policy
 
-## 6. Artin/Kummer
+Before every public preprint revision and journal resubmission:
 
-### Perucca–Shparlinski 2024
-
-Bounds uniformes de densidad Artin-type.
-
-### Fan–Pollack 2025
-
-Artin–Hooley uniformemente en el generador bajo GRH y bounds para el menor primo.
-
-### Consecuencia
-
-La línea de densidad RGΦ debe reformularse inmediatamente en el lenguaje contemporáneo de index maps, uniformity y Kummer extensions.
-
-## 7. Lectura estratégica
-
-La frontera actual no contiene un reemplazo evidente del programa RGΦ, pero sí contiene antecedentes suficientemente cercanos para exigir:
-
-1. teoremas base-B;
-2. comparación formal con natural extensions;
-3. definición de shadows como estado aumentado;
-4. clasificación de traps, no sólo ejemplos;
-5. formalización algebraica conservadora;
-6. certificados machine-checkable;
-7. Artin line separada y técnicamente situada.
+1. rerun searches for the key claim phrases;
+2. inspect references citing the nearest recent papers;
+3. update claim-to-literature-map.csv;
+4. revise novelty language if a closer precedent appears.

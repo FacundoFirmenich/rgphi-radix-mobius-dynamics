@@ -1,212 +1,127 @@
-# RGΦ — Protocolo de reproducibilidad, certificación y réplica externa v1.0
+# External replication and certification protocol
 
-## 1. Principio
+## 1. Principle
 
-Un paper computacional no queda reproducido por adjuntar código. Deben preservarse:
+Publishing source code is not sufficient to claim independent reproducibility.
 
-- código;
-- entorno;
-- entradas;
-- ejecución;
-- outputs;
+A computational mathematical result should preserve:
+
+- mathematical specification;
+- source code;
+- environment;
+- inputs;
+- exact outputs;
 - provenance;
-- claims;
-- verificador.
+- claim-to-evidence mapping;
+- a verifier smaller than the discovery system when possible.
 
----
+## 2. Replication levels
 
-## 2. Estructura del repositorio
+### Level A — repository reproduction
 
-```text
-rgphi/
-  README.md
-  LICENSES/
-  CITATION.cff
-  codemeta.json
-  pyproject.toml / CMakeLists.txt
-  lockfiles/
-  container/
-  src/
-    exact_core/
-    engines/
-    certificate_writer/
-    trusted_checker/
-  proofs/
-  experiments/
-    tau1_tau4/
-    witness212/
-    traps/
-    base_b/
-  data/
-    inputs/
-    expected/
-  ro-crate-metadata.json
-  claims/claims.json
-  scripts/build
-  scripts/run
-  scripts/verify
-  tests/
-```
+Run the reference implementation and reproduce its declared outputs.
 
----
+### Level B — independent engine
 
-## 3. Identidad persistente
+Reimplement the transition system independently and compare exact states, counts, intervals, and hashes.
 
-Cada release debe tener:
+### Level C — proof/certificate checking
 
-- tag Git firmado;
-- commit SHA;
-- DOI Zenodo;
-- SWHID;
-- digest OCI;
-- SHA-256 de cada artefacto;
-- versión del claim registry.
+Verify a compact proof artifact without trusting the original search engine.
 
----
+RGΦ currently supports Level A strongly, contains partial Level B historical cross-checks, and treats stronger Level C certification as an active engineering goal.
 
-## 4. Entorno
+## 3. Clean-room implementation specification
 
-- imagen OCI apineada por digest;
-- compilador y flags registrados;
-- lockfiles de dependencias;
-- SBOM CycloneDX o SPDX;
-- arquitectura y endianness;
-- límites de memoria/disco;
-- número de threads;
-- determinismo declarado.
+A clean-room implementation should use only the mathematical definitions, not the reference source structure.
 
----
+Required objects:
 
-## 5. Provenance
+1. reduced rational state \(a/b\);
+2. \(T_B\);
+3. admissible \(S_B\);
+4. declared terminal set;
+5. portal-height predicate;
+6. exact per-level set semantics;
+7. optional pruning only after a separate mathematical proof.
 
-Cada run debe producir Workflow Run RO-Crate con:
+## 4. First replication targets
 
-- input hashes;
-- command line;
-- environment digest;
-- source commit;
-- start/end timestamps;
-- hardware metadata;
-- outputs y hashes;
-- claim IDs afectados;
-- exit status;
-- logs completos.
+A new implementation should reproduce, in order:
 
----
+1. benchmark first-hit times \(45,85,120,162\);
+2. continuation times \(87,139,168\);
+3. exact robustness intervals;
+4. \(C_8\) forward invariance;
+5. denominator-\(\le500\) trap-atlas counts.
 
-## 6. Proof certificates
+Only after these small/medium targets agree should a replicator attempt depth-five large searches.
 
-### Reachability
+## 5. Large-search reporting
 
-- palabra de control;
-- replay exacto;
-- estado final;
-- target predicate.
+Every proof-relevant large run should record:
 
-### Non-reachability finita
+- exact source state and global time;
+- target predicate;
+- terminal convention;
+- pruning theorem;
+- visited states;
+- raw child events;
+- pruning counts;
+- maximum frontier;
+- final frontier;
+- canonical hash;
+- hardware/software environment;
+- wall time and memory.
 
-- capas o commitments Merkle por capa;
-- reglas de transición;
-- terminal set;
-- certificados de poda;
-- total de estados/hijos;
-- root hash final.
+## 6. Persistent identity
 
-### Trap
+For an archival release record:
 
-- lista finita de estados;
-- tabla completa de hijos;
-- clasificación inside/terminal;
-- prueba de disjunción con target.
+- Git tag;
+- Git commit SHA;
+- Zenodo version DOI;
+- Zenodo concept DOI;
+- Software Heritage identifier when available;
+- container digest when published;
+- SHA-256 manifest;
+- claim-registry version.
 
-### Bellman
+Identifiers not yet assigned must be reported as pending, never fabricated.
 
-- padre;
-- acciones;
-- valores de sucesores;
-- inferencia mínima.
+## 7. Environment
 
----
+The current public release includes Python environment descriptors, a Dockerfile, CI workflows, and exact source.
 
-## 7. Trusted checker
+Future high-cost campaigns should additionally publish a pinned OCI image or equivalent container digest.
 
-El checker debe ser sustancialmente menor que el engine y no compartir su lógica de optimización.
+## 8. Certificate architecture
 
-Requisitos:
+The long-term preferred architecture separates:
 
-- aritmética entera exacta;
-- sin red;
-- sin dependencias científicas grandes;
-- verificación streaming;
-- mensajes de error localizados;
-- test vectors adversariales.
+\[
+\text{search engine}
+\rightarrow
+\text{certificate writer}
+\rightarrow
+\text{small trusted checker}.
+\]
 
----
+The checker should verify mathematical validity without reproducing the full search strategy.
 
-## 8. Clean-room replication
+## 9. External replication report
 
-### Información entregada
+An independent report should state:
 
-- definición matemática;
-- claim registry;
-- protocolo;
-- formatos de certificate;
-- casos pequeños de entrenamiento.
+- repository release/tag;
+- whether the implementation was clean-room;
+- all deviations from the reference environment;
+- exact matching and nonmatching outputs;
+- checksums;
+- unresolved discrepancies.
 
-### Información retenida
+## 10. Scientific boundary
 
-- implementación del engine;
-- estructuras internas;
-- resultados de checkpoints holdout.
+Until a genuinely independent external group has reproduced the central computations, the repository should say:
 
-### Casos holdout
-
-1. uno de `τ1–τ4`;
-2. un no-hit gate medio;
-3. un no-hit gate grande;
-4. un trap no publicado en el texto principal;
-5. una base `B≠10`;
-6. una semilla paramétrica.
-
----
-
-## 9. Criterios de réplica
-
-- igualdad exacta de estados finales;
-- igualdad de cardinalidades por capa;
-- igualdad de hashes preregistrados;
-- reproducción de todos los claims cerrados seleccionados;
-- explicación pública de cualquier discrepancia.
-
----
-
-## 10. Publicación de la réplica
-
-Opciones:
-
-- ReScience C;
-- companion technical report;
-- reproducibility appendix firmado por equipo externo;
-- artifact evaluation de la conferencia/revista si existe.
-
----
-
-## 11. FAIR4RS
-
-El software debe ser:
-
-- Findable: DOI, SWHID, metadata;
-- Accessible: repositorio y archive;
-- Interoperable: formatos abiertos, RO-Crate, JSON/CSV;
-- Reusable: licencia, documentación, tests, ejemplos.
-
----
-
-## 12. Gate de publicación
-
-Ningún manuscript que dependa centralmente de un cálculo masivo se marca `submission-ready` hasta que:
-
-1. el run esté empaquetado;
-2. el checker pase;
-3. exista una ejecución limpia;
-4. al menos un subconjunto haya sido replicado externamente.
+> **internally reproducible and independently checkable in parts; external clean-room replication pending.**

@@ -1,101 +1,98 @@
-# RGΦ — Protocolo de revisión bibliográfica sistemática v1.0
+# Systematic literature-review protocol
 
-## Objetivo
+## Objective
 
-Determinar antecedentes, solapamientos, prioridad y frontera contemporánea para cada claim RGΦ.
+Identify prior art, overlap, priority risk, and current-frontier developments for every headline RGΦ claim.
 
-## Ventanas
+## Time windows
 
-- Canónica: sin límite temporal.
-- Frontera: 2024-01-01 a 2026-10-27.
-- Living update: actualización antes de cada preprint y antes de cada resubmission.
+- **Canonical:** no date restriction.
+- **Current frontier:** 1 January 2024 through the current review date.
+- **Living update:** before each preprint version and each journal resubmission.
 
-## Fuentes
+## Sources
 
-### Abiertas
+### Open sources
 
 - arXiv
-- Crossref/DOI
-- páginas oficiales de revistas/editoriales
+- Crossref
+- publisher/journal sites
 - zbMATH Open
-- Google Scholar
-- Semantic Scholar/OpenAlex como apoyo de citation chaining
+- OpenAlex
+- Semantic Scholar
+- Google Scholar for citation chaining
 
-### Institucionales requeridas
+### Institutional sources when available
 
 - MathSciNet
 - Web of Science
 - Scopus
 
-## Queries nucleares
+## Core query families
 
-1. `beta transformation rational periodic orbit Mobius conjugacy`
-2. `integer base transformation continued fraction conjugacy`
-3. `Farey map hidden coordinate p-adic phase`
-4. `rational Mobius semigroup exact dynamics`
-5. `nonnested hitting times dynamic programming arithmetic`
-6. `finite rational invariant trap continued fraction map`
-7. `survivor set integer base rational points`
-8. `p-adic transducer Farey neighbor dynamics`
-9. `orthomodular poset effect algebra contextual state`
-10. `proof certificate nonreachability exact model checking`
-11. `Artin primitive root simultaneous maximal order density`
-12. `computer-assisted proof rational dynamical system`
+1. “beta transformation rational periodic orbit Möbius conjugacy”
+2. “integer radix transformation projective continued fraction”
+3. “Farey map hidden coordinate natural extension”
+4. “rational Möbius semigroup exact dynamics”
+5. “nonnested hitting times dynamic programming arithmetic”
+6. “finite rational invariant trap continued fraction map”
+7. “survivor set integer base rational point”
+8. “p-adic phase symbolic dynamics rational map”
+9. “computer assisted proof reachability exact rational dynamics”
+10. “multiplicative order finite invariant set radix map”
 
-## Inclusión
+Queries should be expanded with synonyms and names found during citation chaining.
 
-- resultado matemático directamente comparable;
-- algoritmo o formalismo capaz de subsumir un claim RGΦ;
-- survey o monografía canónica;
-- trabajo 2024–2026 que modifique prioridad o método;
-- software/estándar directamente relevante para reproducibilidad.
+## Claim-centered workflow
 
-## Exclusión
+For each claim:
 
-- analogías nominales sin relación matemática;
-- papers de física cuántica que sólo compartan “orthomodular”;
-- resultados puramente numéricos sin objeto comparable;
-- referencias secundarias cuando existe fuente primaria;
-- contenido no verificable o sin versión estable.
+1. state the claim in theorem-level language;
+2. identify the closest standard object;
+3. search by object, not by RGΦ terminology;
+4. find canonical references;
+5. find recent papers;
+6. follow references backward;
+7. follow citations forward;
+8. record nearest overlap;
+9. classify novelty risk;
+10. rewrite the public claim conservatively.
 
-## Screening
+## Risk levels
 
-Cada referencia recibe:
+### Low
 
-- cluster;
-- claim RGΦ afectado;
-- tipo de solapamiento: ingrediente / método / teorema / aplicación;
-- riesgo de prioridad;
-- acción editorial;
-- estado de verificación de metadatos.
+The exact theorem appears structurally distinct after direct comparison.
 
-## Citation chasing
+### Medium
 
-Se requiere backward y forward search para:
+Nearby literature contains similar constructions but not the same theorem.
 
-- Rényi 1957;
-- Parry 1960;
-- Series 1985;
-- Nakada 1981;
-- Janvresse–Rittaud–de la Rue 2011;
-- Panti 2025;
-- Pérez-Buendía 2026;
-- Foulis–Bennett 1994;
-- Jenča 2021;
-- Heath–Miller 2015;
-- Hooley 1967;
-- Järviniemi–Perucca–Sgobba 2022;
-- Kong–Sun–Wang 2025;
-- Bellman 1952;
-- Brafman–De Giacomo–Patrizi 2017.
+### High
 
-## Criterio de cierre
+A close theorem, natural extension, invariant-set construction, or equivalent reformulation may already exist.
 
-La revisión se considera submission-ready cuando:
+High-risk claims require specialist review before submission.
 
-1. no quedan duplicados;
-2. todos los claims centrales tienen al menos una búsqueda directa y una por citas;
-3. todas las referencias de alto riesgo fueron leídas completas;
-4. la matriz claim→literatura fue revisada por un segundo investigador;
-5. el manuscript incluye una declaración de búsqueda fechada;
-6. los claims “to our knowledge” corresponden exactamente a la matriz.
+## Current high-risk areas
+
+- hidden \(p\)-adic/Farey state;
+- projective/Farey classification language;
+- global trap classification;
+- orthomodular/contextual algebra terminology;
+- Artin/Kummer density claims.
+
+## Output artifacts
+
+- literature-matrix.csv
+- claim-to-literature-map.csv
+- claims-with-priority.csv
+- literature-priority-audit.md
+- current-frontier-2024-2026.md
+- paper/references.bib
+
+## Review standard
+
+A literature search can support “we are not aware of” language.
+
+It cannot, by itself, prove absolute historical priority.

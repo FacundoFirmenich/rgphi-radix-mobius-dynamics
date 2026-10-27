@@ -42,7 +42,7 @@ The results give exact arithmetic counterexamples to current target height and a
 
 \section{Introduction}
 
-Integer-radix transformations of the form $x\mapsto\{Bx\}$ are classical objects in the theory of expansions and interval dynamics \cite{Renyi1957Representations,Parry1960On,Dajani2002Ergodic}.  M\"obius and Farey-type maps, their natural extensions, and their symbolic and geodesic codings form another mature line of research \cite{Nakada1981Metrical,Series1985The,Isola2003On,Panti2025There,Schmidt2025First}.  The present work studies a concrete coupling of these structures in which an integer-radix map and a M\"obius-conjugate branch act on primitive rationals, with exact reduction after every action.
+Integer-radix transformations of the form $x\mapsto\{Bx\}$ are classical objects in the theory of expansions and interval dynamics \cite{Renyi1957Representations,Parry1960On,Dajani2002Ergodic}.  M\"obius and Farey-type maps, their natural extensions, and their symbolic and geodesic codings form another mature line of research \cite{Nakada1981Metrical,Series1985The,Isola2003On,Panti2026There,Schmidt2025First,Dajani2026Inducing}.  Recent work also emphasizes finite rational orbits in generalized continued-fraction systems and rational semigroup actions \cite{Berthe2025Multidimensional,Javaheri2026Transitive}, while new natural-extension constructions continue to broaden the class of projective arithmetic maps \cite{Chen2026Strange,Fox2026Natural,Nakada2026Farey}.  The present work studies a concrete coupling of these structures in which an integer-radix map and a M\"obius-conjugate branch act on primitive rationals, with exact reduction after every action.
 
 Our focus is not the introduction of a new radix map or a new version of Bellman's principle.  Rather, we isolate an exact arithmetic phenomenon that arises from their interaction: the state that first reaches one extremal target need not be the best precursor for the next, deeper target.  In the benchmark system considered here, three consecutive target transitions exhibit this failure of nesting.  The effect is large: states with present height of order one can outperform already attained portals with heights of order $10^3$ or $10^4$.
 
@@ -63,9 +63,17 @@ The depth-five hitting time is not needed here.  Its current exact interval is $
 
 Fix an integer $B\ge2$.  Define
 \[
-T_B(x)=\{Bx\},\qquad H(x)=\frac1{1+x},\qquad S_B=H\circ T_B\circ H^{-1}
+T_B(x)=\{Bx\},\qquad H(x)=\frac1{1+x}.
 \]
-on the branch where $S_B$ is admissible.  If $x=a/b$ is reduced, then the active branch digits are
+We regard $T_B$ as a self-map of $[0,1]$ (with $T_B(1)=0$) and define the conjugate generator
+\[
+S_B=H\circ T_B\circ H^{-1}
+\]
+as a partial transformation with natural domain
+\[
+D_S=H([0,1])=[1/2,1].
+\]
+Thus the generated object is a semigroup of partial rational transformations; a word is admissible at a state only when every partial generator occurring in it is defined.  If $x=a/b$ is reduced, then the active branch digits are
 \[
 d_T=\left\lfloor\frac{Ba}{b}\right\rfloor,
 \qquad
@@ -110,7 +118,7 @@ We remove the following certified forward-invariant terminal set:
 E=\{&0,1,1/2,1/3,2/3,3/4,4/5,5/6,7/8,7/9,7/10,\\
 &2/11,4/11,7/11,9/11,11/20,7/12,2/13,5/13,6/13,7/13,8/13,11/13\}.
 \end{align*}
-Direct child auditing shows that every admissible child of every element of $E$ remains in $E$.
+Direct child auditing shows that every admissible child of every element of $E$ remains in $E$.  The accompanying terminal-set audit records all $23$ states and all $46$ attempted $T/S$ branches (admissible or not), with zero admissible escapes from $E$.
 
 \section{Extremal target sets}
 
@@ -275,9 +283,11 @@ The global layer profile through depth $162$ and the five continuation profiles 
 
 \section{Relation to previous work}
 
-The radix generator belongs to the classical theory of $\beta$-transformations and expansions \cite{Renyi1957Representations,Parry1960On,Dajani2002Ergodic}.  Farey and continued-fraction systems, their natural extensions, and their geodesic codings are developed in \cite{Nakada1981Metrical,Series1985The,Isola2003On,Merriman2023Geodesic,Panti2025There,Schmidt2025First}.  Arithmetic dynamics supplies the broader setting for rational iteration \cite{Silverman2007The,Anashin2009Applied}.  The need for sufficient state in dynamic programming is classical \cite{Bellman1952On,Light2023The}; automata-based state augmentation for non-Markovian objectives appears, for example, in \cite{Brafman2017Specifying}.
+The radix generator belongs to the classical theory of $\beta$-transformations and expansions \cite{Renyi1957Representations,Parry1960On,Dajani2002Ergodic}.  Farey and continued-fraction systems, their natural extensions, induced transformations, and their geodesic codings are developed in \cite{Nakada1981Metrical,Series1985The,Isola2003On,Merriman2023Geodesic,Panti2026There,Schmidt2025First,Dajani2026Inducing,Chen2026Strange}.  Recent finite-orbit results show that rational trajectories can encode nontrivial statistical information in generalized continued-fraction systems \cite{Berthe2025Multidimensional}, and recent work on rational semigroup actions gives structurally nearby examples of periodic and transitive arithmetic dynamics \cite{Javaheri2026Transitive}.  Arithmetic dynamics supplies the broader setting for rational iteration \cite{Silverman2007The,Anashin2009Applied}.
 
-The claim here is narrower.  To the best of our knowledge, the literature does not contain this exact arithmetic system together with (i) certified extremal first-hit times, (ii) explicit nonnesting of consecutive first-hit targets, and (iii) a positive exact threshold interval on which the nonnesting persists.  A systematic priority search and claim-to-literature matrix are included in the project supplement.
+The need for sufficient state in dynamic programming is classical \cite{Bellman1952On,Light2023The}; automata-based state augmentation for non-Markovian objectives appears, for example, in \cite{Brafman2017Specifying}.  Likewise, invariant or survivor sets in open expanding systems are established objects \cite{Kong2025Open}, and independently checkable certificates are an active topic in formal reachability verification \cite{Chatterjee2025Fixed}.  We therefore do not claim novelty for radix dynamics, projective/Farey methods, state augmentation, trapping, or certification as general concepts.
+
+The claim here is narrower.  After comparison with these nearby literatures, we are not aware of a result for this exact rational radix--M\"obius system that simultaneously provides (i) certified extremal first-hit times, (ii) explicit nonnesting across consecutive extremal targets, and (iii) a positive exact threshold interval on which that nonnesting persists.  This is a provisional priority statement rather than a proof of historical uniqueness; the repository contains a claim-by-claim literature matrix, and specialist review remains part of the pre-submission validation plan.
 
 \section{Discussion}
 
@@ -295,7 +305,7 @@ Several questions remain open.  Does nonnesting persist for infinite families of
 
 \section{Limitations and evidence boundary}
 
-The exact threshold atlas in this paper is complete through depth $162$ for the benchmark seed, base, and terminal convention.  The robustness theorems are exact on their stated intervals, but no universality in $B$, seed, or $\kappa$ is claimed.  The hidden-state interpretation is supported by exact counterexamples; minimality of any particular augmented coordinate system is not proved here.  Finally, the priority claim remains provisional pending closed-database citation chaining and external specialist review.
+The exact threshold atlas in this paper is complete through depth $162$ for the benchmark seed, base, and terminal convention.  The robustness theorems are exact on their stated intervals, but no universality in $B$, seed, or $\kappa$ is claimed.  The hidden-state interpretation is supported by exact counterexamples; minimality of any particular augmented coordinate system is not proved here.  The large layer enumeration is internally reproducible and accompanied by independent checking infrastructure, but an external clean-room replication has not yet been completed.  Finally, the priority claim remains provisional pending closed-database citation chaining and external specialist review.
 
 \section{Data and code availability}
 
@@ -360,15 +370,45 @@ C. Merriman,
 \emph{Geodesic flows and slow downs of continued fraction maps},
 arXiv:2307.11700 (2023).
 
-\bibitem{Panti2025There}
+\bibitem{Panti2026There}
 G. Panti,
 \emph{There is only one Farey map},
-arXiv:2506.02984 (2025).
+Ann. Mat. Pura Appl. (2026), doi:10.1007/s10231-026-01693-1; arXiv:2506.02984.
 
 \bibitem{Schmidt2025First}
 T. A. Schmidt,
 \emph{First return systems for some continued fraction maps},
 arXiv:2511.12835 (2025).
+
+\bibitem{Dajani2026Inducing}
+K. Dajani, C. Kraaikamp, and S. Sanderson,
+\emph{Inducing contractions of the mother of all continued fractions},
+J. Number Theory 278 (2026), 816--874, doi:10.1016/j.jnt.2025.05.015.
+
+\bibitem{Berthe2025Multidimensional}
+V. Berth\'e, S. Cantrell, J. Lee, and M. Pollicott,
+\emph{Multidimensional statistics for finite orbits of generalised continued fractions},
+arXiv:2507.11295 (2025).
+
+\bibitem{Javaheri2026Transitive}
+M. Javaheri,
+\emph{Transitive actions and purely periodic $N$-expansions},
+J. Number Theory 283 (2026), doi:10.1016/j.jnt.2025.11.013.
+
+\bibitem{Chen2026Strange}
+Y. Chen, K. Dajani, Y. Hu, and C. Kraaikamp,
+\emph{A strange continued fraction associated with the Romik map},
+arXiv:2605.21098 (2026).
+
+\bibitem{Fox2026Natural}
+J. Fox and T. Garrity,
+\emph{The natural extension for the triangle map (a multi-dimensional continued fraction) with an internal symmetry from Young conjugation},
+arXiv:2606.28014 (2026).
+
+\bibitem{Nakada2026Farey}
+H. Nakada, R. Natsui, and J. Thuswaldner,
+\emph{Farey graphs and geodesic expansions of complex continued fractions},
+arXiv:2603.28468 (2026).
 
 \bibitem{Silverman2007The}
 J. H. Silverman,
@@ -399,6 +439,16 @@ arXiv:1706.08100 (2017).
 M. Jones and M. Peet,
 \emph{A generalization of Bellman's equation with application to path planning, obstacle avoidance and invariant set estimation},
 Automatica / arXiv:2006.08175 (2021).
+
+\bibitem{Kong2025Open}
+D. Kong, B. Sun, and Z. Wang,
+\emph{Open dynamical systems with a moving hole},
+arXiv:2505.02336 (2025).
+
+\bibitem{Chatterjee2025Fixed}
+K. Chatterjee, T. Quatmann, M. Sch\"affeler, M. Weininger, T. Winkler, and D. Zilken,
+\emph{Fixed point certificates for reachability and expected rewards in MDPs},
+arXiv:2501.11467 (2025).
 
 \end{thebibliography}
 

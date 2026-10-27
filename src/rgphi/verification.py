@@ -23,6 +23,7 @@ def verify_repository(root: str | Path) -> dict[str, object]:
     root = Path(root).resolve()
     threshold_dir = root / "data" / "thresholds"
     trap_dir = root / "data" / "traps"
+    certificate_dir = root / "data" / "certificates"
 
     # Foundational exact identity and noncommutativity.
     assert complement(Fraction(17, 20)) == T(complement(Fraction(17, 19)))
@@ -53,6 +54,14 @@ def verify_repository(root: str | Path) -> dict[str, object]:
     assert multiplicative_order(10, 13) == 6
     assert multiplicative_order(10, 11) == 2
 
+    terminal_audit = json.loads(
+        (certificate_dir / "terminal-set-audit.json").read_text(encoding="utf-8")
+    )
+    assert terminal_audit["terminal_state_count"] == 23
+    assert terminal_audit["branch_checks"] == 46
+    assert terminal_audit["admissible_escapes"] == 0
+    assert terminal_audit["all_admissible_children_terminal"] is True
+
     trap_result = json.loads((trap_dir / "trap-atlas-result-D500.json").read_text(encoding="utf-8"))
     assert trap_result["status"] == "PASS"
     assert trap_result["nonterminal_states_enumerated"] == 76094
@@ -76,6 +85,7 @@ def verify_repository(root: str | Path) -> dict[str, object]:
         "seed_family_checks": checks,
         "benchmark_chronology_interval": [str(common_chronology[0]), str(common_chronology[1])],
         "robust_nonnesting_interval": [str(nonnesting_lower), str(nonnesting_upper)],
+        "terminal_set_branch_checks": terminal_audit["branch_checks"],
         "C8_max_q": c8["max_q"],
         "paper_pdf_sha256": sha256(root / "paper" / "main.pdf"),
     }

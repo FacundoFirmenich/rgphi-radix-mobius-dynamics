@@ -1,0 +1,12 @@
+{
+  "time": 185,
+  "states": 2462600671,
+  "buckets": 128,
+  "packed_state_bytes": 8,
+  "total_bytes": 19700805368,
+  "partition": "SplitMix64 & 127; each bucket sorted unique uint64 packed (a<<32)|b",
+  "bucket_hash_manifest": "RGPHI_FRONTIER185_BUCKET_SHA256SUMS.txt",
+  "bucket_manifest_sha256": "dbd2f4adda52315e05261b9328c03f8a44d2a31b8e293f3dd3ff7b80b3d2a6b7",
+  "resumable_with": "scripts/stage_b2/run_stage_b2.py",
+  "not_in_repository": true
+}

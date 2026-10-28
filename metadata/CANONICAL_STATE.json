@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0",
+  "canonical_date": "2026-10-28",
+  "benchmark": {
+    "base": 10,
+    "seed": "17/19",
+    "kappa": 11
+  },
+  "exact_tau": {
+    "1": 45,
+    "2": 85,
+    "3": 120,
+    "4": 162
+  },
+  "tau5": {
+    "lower_bound": 186,
+    "upper_bound": 212,
+    "exact": null,
+    "upper_witness_endpoint": "1350416/1350417",
+    "status": "OPEN"
+  },
+  "bellman_ladder": {
+    "start_time": 89,
+    "end_time": 212,
+    "formula": "V5(x_t)=212-t",
+    "states": 124
+  },
+  "stage_b2": {
+    "start_time": 186,
+    "end_time": 211,
+    "checkpoint_time": 185,
+    "checkpoint_states": 2462600671,
+    "checkpoint_buckets": 128,
+    "checkpoint_bytes": 19700805368,
+    "checkpoint_manifest_sha256": "dbd2f4adda52315e05261b9328c03f8a44d2a31b8e293f3dd3ff7b80b3d2a6b7",
+    "payload_status": "ABSENT_FROM_PUBLIC_REPOSITORY"
+  },
+  "authority": {
+    "mainline": "CANONICAL_ACTIVE",
+    "paper_i": "PUBLICATION_TRACK",
+    "rgphi_gen": "PARALLEL_ISOLATED",
+    "u5_hd_hm_odt_bq": "EXPERIMENTAL_ISOLATED"
+  }
+}

@@ -57,7 +57,7 @@ The contributions are:
 \item a reproducible computer-assisted proof protocol based entirely on primitive integer arithmetic.
 \end{enumerate}
 
-The depth-five hitting time is not needed here.  Its current exact interval is $179\le \tau_5\le212$, but none of the claims below depends on closing that interval.
+The depth-five hitting time is not needed here.  Its current exact interval is $186\le \tau_5\le212$, but none of the claims below depends on closing that interval.
 
 \section{The rational radix--M\"obius semigroup}
 
@@ -186,106 +186,128 @@ and
 \[
 11156/11157\xrightarrow[48\text{ actions}]{}122088/122089.
 \]
-The searches enumerate $55{,}144$, $3{,}955{,}616$, and $30{,}380{,}076$ distinct states, respectively, before the first hit.  Separate exact searches from $11532/11533$ and $11642/11643$ find no hit through total time $162$.
+The searches enumerate $57{,}470$, $150{,}522$, and $113{,}274$ distinct states, respectively.  Independent no-hit certificates through time $162$ for the remaining depth-three first-hit states rule out a global tie.
 \end{proof}
 
-This proves that globally earliest targets do not form an optimal nested chain.  The phenomenon is not merely that one optimal path is nonunique; the target-optimal state itself can be future-suboptimal.
-
-\begin{corollary}[Target depth is not a sufficient Bellman state]
-No dynamic program whose state records only elapsed time and attained target depth can satisfy the principle of optimality for this system.
+\begin{corollary}
+Attained target depth is not a Bellman-sufficient state variable.
 \end{corollary}
 
-\begin{corollary}[Current height is not a Bellman value]
-The scalar $q(x)$ cannot order states by future portal value.  At the relevant checkpoints, future-winning latent states have heights approximately $4.68$, $2.55$, and $2.14$, while the target-optimal competitors have heights $129$, $1203$, and above $11{,}000$.
+\begin{corollary}
+Current height $q(x)$ is not a Bellman value function.
 \end{corollary}
 
-\section{Threshold robustness}
+Indeed, immediately before each global target hit, there exist much smaller-height states whose future value is larger.  Their heights are
+\[
+q(524/679)=679/155<5,
+\]
+\[
+q(6897/9503)=9503/2606<4,
+\]
+and
+\[
+q(3277/5599)=5599/2322<3.
+\]
 
-Let
-\[
-M_d=\max\{q(x):x\text{ is reachable at depth }d\}.
-\]
-The function $\tau_m(\kappa)$ is piecewise constant at finite horizon: it can change only when $\kappa=M_d/10^m$ for a record height $M_d$.
+\section{All depth-three first-hit states fail to extend optimally}
 
-\begin{proposition}[First-hit interval]
-If $d$ is a record time for $M_d$ and $M_{<d}=\max_{j<d}M_j$, then
-\[
-\tau_m(\kappa)=d
-\]
-for
-\[
-\kappa\in\left[\frac{M_{<d}}{10^m},\frac{M_d}{10^m}\right).
-\]
-\end{proposition}
-
-\begin{theorem}[Simultaneous robustness of the benchmark chronology]
-The vector
-\[
-(\tau_1,\tau_2,\tau_3,\tau_4)=(45,85,120,162)
-\]
-remains unchanged for every
-\[
-\boxed{
-\kappa\in\left[\frac{106197}{10000},\frac{11643}{1000}\right)
-=[10.6197,11.643).
-}
-\]
-\end{theorem}
-
-The individual intervals are:
+The first-hit set for $P_3$ has three states.  Exact continuation profiles show:
 \begin{center}
-\begin{tabular}{ccc}
+\begin{tabular}{lcc}
 \toprule
-$m$&$\tau_m$&exact $\kappa$ interval\\
+source at time $120$ & arrival by time $162$ & best certified status\\
 \midrule
-1&45&$[93/10,129/10)$\\
-2&85&$[903/100,1203/100)$\\
-3&120&$[10019/1000,11643/1000)$\\
-4&162&$[106197/10000,124853/10000)$\\
+$11156/11157$&no&first $P_4$ hit at global time $168$\\
+$11532/11533$&no&no $P_4$ hit through global time $162$\\
+$11642/11643$&no&no $P_4$ hit through global time $162$\\
 \bottomrule
 \end{tabular}
 \end{center}
+Therefore every depth-three first-hit optimum fails to be a depth-four optimum.
+
+\section{Threshold robustness}
+
+For a state with height $M$ at time $d$, it enters $P_m(10,\kappa)$ precisely when
+\[
+\kappa<\frac{M}{10^m}.
+\]
+Thus $\tau_m(\kappa)$ is piecewise constant at finite horizon: it can change only when $\kappa=M_d/10^m$ for some exact layer maximum $M_d$.
+
+\begin{lemma}[Exact robustness interval for a fixed first hit]
+Suppose the first depth-$m$ hit at parameter $\kappa_0$ occurs at time $d_*$ with hit height $M_{d_*}$ and previous maximum $M^-$.  Then
+\[
+\tau_m(\kappa)=d_*
+\]
+for every
+\[
+\kappa\in\left[\frac{M^-}{10^m},\frac{M_{d_*}}{10^m}\right).
+\]
+\end{lemma}
+
+The left endpoint is included because the target inequality is strict.
+
+\begin{theorem}[Four-level chronology is not fine-tuned]
+All four exact hitting times
+\[
+(\tau_1,\tau_2,\tau_3,\tau_4)=(45,85,120,162)
+\]
+remain unchanged for
+\[
+\boxed{\kappa\in[10.6197,11.643).}
+\]
+\end{theorem}
 
 \begin{theorem}[Robust nonnesting interval]
-All three nonnesting inequalities of Theorem 5.1 hold simultaneously for
+All three nonnesting inequalities remain simultaneously valid for
 \[
-\boxed{
-\kappa\in\left[\frac{106197}{10000},\frac{1101}{100}\right)
-=[10.6197,11.01).
-}
+\boxed{\kappa\in[10.6197,11.01).}
 \]
-Within this interval all three depth-three first-hit states remain optimal at time $120$, both depth-four first-hit states remain optimal at time $162$, and none of the three depth-three optima reaches depth four by time $162$.
 \end{theorem}
 
 \begin{proof}
-The exact continuation stability intervals are
+For each source continuation we combine the exact source earliest-arrival profile with the global record-height profile.  The three inequalities persist on
 \[
-[10.33,11.01),\qquad[8.827,13.543),\qquad[4.4853,12.2089),
+[10.6197,12.6088),
 \]
-for the three displayed continuations.  Intersecting each with the corresponding global first-hit interval and then intersecting the three results gives $[10.6197,11.01)$.  The maximum heights reached by the other two depth-three optima through time $162$ are $44{,}400$ and $28{,}408$, so they cannot reach the depth-four target anywhere in this interval.
+\[
+[2.823093281,11.01),
+\]
+and
+\[
+[2.641898181,12.2088),
+\]
+respectively.  Their intersection is $[10.6197,11.01)$.
 \end{proof}
 
-The positive-width interval rules out the interpretation that nonnesting is an artifact of the particular calibration $\kappa=11$.
+The interval is of positive width and contains the benchmark value $\kappa=11$.
 
-\section{Certified computational method}
+\section{Computational protocol and evidence}
 
-All computations use reduced pairs of nonnegative integers.  No floating-point comparison decides target membership.  The proof stack contains:
+The computation uses exact integer arithmetic only.
+
 \begin{enumerate}
-\item exact branch generation;
-\item exact terminal-set removal;
-\item exact state deduplication;
-\item independent target searches for continuation costs;
-\item canonical CSV ledgers of layer counts and maxima;
-\item independent verifiers and cryptographic hashes in the larger project archive.
+\item Every state is stored as a primitive pair $(a,b)$ with $\gcd(a,b)=1$ and $0\le a\le b$.
+\item Every admissible child is generated from the exact branch formulae.
+\item Target membership is checked before terminal and viability pruning.
+\item The finite terminal set is pruned only after independent forward-invariance certification.
+\item Layer states are deduplicated exactly by integer pairs.
+\item First-hit layers are certified by the complete absence of earlier hits and the explicit presence of hit states at the claimed layer.
 \end{enumerate}
 
-The global layer profile through depth $162$ and the five continuation profiles required by Theorems 5.1 and 7.4 accompany the manuscript.  The result is therefore a computer-assisted theorem with a finite, replayable evidence chain, rather than a numerical simulation.
+The accompanying repository includes:
+\begin{itemize}
+\item the global layer maxima and counts through depth $162$;
+\item exact continuation profiles from the first-hit states;
+\item exact threshold intervals;
+\item SHA-256 manifests;
+\item an independently written checker for the headline claims.
+\end{itemize}
 
-\section{Relation to previous work}
+\section{Relation to the literature and scope of novelty}
 
-The radix generator belongs to the classical theory of $\beta$-transformations and expansions \cite{Renyi1957Representations,Parry1960On,Dajani2002Ergodic}.  Farey and continued-fraction systems, their natural extensions, induced transformations, and their geodesic codings are developed in \cite{Nakada1981Metrical,Series1985The,Isola2003On,Merriman2023Geodesic,Panti2026There,Schmidt2025First,Dajani2026Inducing,Chen2026Strange}.  Recent finite-orbit results show that rational trajectories can encode nontrivial statistical information in generalized continued-fraction systems \cite{Berthe2025Multidimensional}, and recent work on rational semigroup actions gives structurally nearby examples of periodic and transitive arithmetic dynamics \cite{Javaheri2026Transitive}.  Arithmetic dynamics supplies the broader setting for rational iteration \cite{Silverman2007The,Anashin2009Applied}.
+The two ingredients of the construction belong to well-developed theories.  Radix and $\beta$-transformations originate in the work of R\'enyi and Parry and have a large ergodic literature \cite{Renyi1957Representations,Parry1960On,Dajani2002Ergodic}.  Continued-fraction, Farey, and projective M\"obius maps admit natural extensions, geodesic codings, and transfer-operator descriptions \cite{Nakada1981Metrical,Series1985The,Isola2003On,Merriman2023Geodesic,Panti2026There,Schmidt2025First,Dajani2026Inducing,Nakada2026Farey}.  Recent work studies finite rational orbits and transitive rational actions in generalized continued-fraction settings \cite{Berthe2025Multidimensional,Javaheri2026Transitive}; neighboring natural-extension constructions continue to appear for other projective algorithms \cite{Chen2026Strange,Fox2026Natural}.
 
-The need for sufficient state in dynamic programming is classical \cite{Bellman1952On,Light2023The}; automata-based state augmentation for non-Markovian objectives appears, for example, in \cite{Brafman2017Specifying}.  Likewise, invariant or survivor sets in open expanding systems are established objects \cite{Kong2025Open}, and independently checkable certificates are an active topic in formal reachability verification \cite{Chatterjee2025Fixed}.  We therefore do not claim novelty for radix dynamics, projective/Farey methods, state augmentation, trapping, or certification as general concepts.
+The Bellman principle and state augmentation for non-Markovian objectives are likewise classical or well-developed \cite{Bellman1952On,Light2023The,Brafman2017Specifying,Jones2021A}.  Survivor sets or trapping in open expanding systems are established objects \cite{Kong2025Open}, and independently checkable certificates are an active topic in formal reachability verification \cite{Chatterjee2025Fixed}.  We therefore do not claim novelty for radix dynamics, projective/Farey methods, state augmentation, trapping, or certification as general concepts.
 
 The claim here is narrower.  After comparison with these nearby literatures, we are not aware of a result for this exact rational radix--M\"obius system that simultaneously provides (i) certified extremal first-hit times, (ii) explicit nonnesting across consecutive extremal targets, and (iii) a positive exact threshold interval on which that nonnesting persists.  This is a provisional priority statement rather than a proof of historical uniqueness; the repository contains a claim-by-claim literature matrix, and specialist review remains part of the pre-submission validation plan.
 

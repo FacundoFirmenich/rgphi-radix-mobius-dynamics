@@ -1,0 +1,37 @@
+{
+  "audit_date": "2026-10-28",
+  "repository": "FacundoFirmenich/rgphi-radix-mobius-dynamics",
+  "audited_commit": "725c1ae4944a5ec913f0acb9c24a1e9f5a7b2223",
+  "primary_line": "GitHub canonical repository",
+  "secondary_line": "live MULTIFRONT-005 corpus",
+  "scores": {
+    "repo_canonical": 83.9,
+    "live_multifront": 73.4
+  },
+  "critical_findings": [
+    "paper/main.tex, paper/main.pdf and paper/claim-evidence-matrix.csv still encode 179<=tau5<=212 while README/docs canon encode 186<=tau5<=212",
+    "reviewer-bundle workflow copies committed paper/main.pdf rather than compiling PDF from the current TeX",
+    "verify_repository checks presence of paper assets but not canonical-claim synchronization",
+    "Stage B2 cannot execute without the absent 19.7 GB t=185 checkpoint payload"
+  ],
+  "major_findings": [
+    "default branch is Ulalito's-Island rather than main",
+    "no GitHub release or DOI exists",
+    "external specialist review, clean-room replication and closed-database priority review remain open",
+    "ODT-009, BQ-010A and HM-010 are absent from the public experimental archive"
+  ],
+  "integration_scope": [
+    "ODT-009",
+    "BQ-010A",
+    "HM-010",
+    "paper sync",
+    "canonical consistency test",
+    "reviewer PDF rebuild"
+  ],
+  "non_integration_scope": [
+    "mainline claim changes beyond interval sync",
+    "tau5 closure",
+    "physical/ontological promotion",
+    "duplicate Stage B2 engine"
+  ]
+}

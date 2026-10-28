@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
   "project": "RGΦ",
   "artifacts": [
     {"id":"A-001","path":"paper/main.pdf","role":"manuscript-rendered","evidence_class":"meta","license":"CC-BY-4.0","media_type":"application/pdf"},
@@ -16,6 +16,13 @@
     {"id":"A-012","path":"docs/literature/literature-matrix.csv","role":"literature-positioning-matrix","evidence_class":"meta","license":"CC-BY-4.0","media_type":"text/csv"},
     {"id":"A-013","path":"metadata/VALIDATION_TARGETS.json","role":"external-replication-oracle","evidence_class":"meta","license":"CC-BY-4.0","media_type":"application/json"},
     {"id":"A-014","path":"CITATION.cff","role":"citation-metadata","evidence_class":"meta","license":"CC-BY-4.0","media_type":"text/yaml"},
-    {"id":"A-015","path":"metadata/ro-crate-metadata.json","role":"research-object-metadata","evidence_class":"meta","license":"CC-BY-4.0","media_type":"application/ld+json"}
+    {"id":"A-015","path":"metadata/ro-crate-metadata.json","role":"research-object-metadata","evidence_class":"meta","license":"CC-BY-4.0","media_type":"application/ld+json"},
+    {"id":"A-016","path":"data/certificates/paper-I/benchmark_receipt.json","role":"compact-paper-I-claim-receipt","evidence_class":"F/meta","license":"CC-BY-4.0","media_type":"application/json"},
+    {"id":"A-017","path":"data/certificates/paper-I/paper-I-profiles.zip","role":"exact-continuation-layer-profiles","evidence_class":"F","license":"CC-BY-4.0","media_type":"application/zip"},
+    {"id":"A-018","path":"data/certificates/paper-I/EVIDENCE_BOUNDARY.md","role":"compact-global-evidence-boundary","evidence_class":"meta","license":"CC-BY-4.0","media_type":"text/markdown"},
+    {"id":"A-019","path":"docs/validation/BRANCH_FUSION_AUDIT_2026-10-28.md","role":"branch-comparison-and-fusion-audit","evidence_class":"meta","license":"CC-BY-4.0","media_type":"text/markdown"},
+    {"id":"A-020","path":"docs/validation/TRUSTED_CHECKER_SPEC.md","role":"trusted-checker-contract","evidence_class":"meta","license":"CC-BY-4.0","media_type":"text/markdown"},
+    {"id":"A-021","path":"docs/theorems/STATE_MINIMALITY_PROGRAM.md","role":"hidden-state-minimality-program","evidence_class":"O/meta","license":"CC-BY-4.0","media_type":"text/markdown"},
+    {"id":"A-022","path":"paper/CLAIM_FREEZE.md","role":"paper-I-claim-freeze","evidence_class":"meta","license":"CC-BY-4.0","media_type":"text/markdown"}
   ]
 }

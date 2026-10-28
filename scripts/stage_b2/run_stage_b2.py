@@ -75,7 +75,9 @@ def main():
         final=ns.work_root/f"level_{child_time:03d}"
         if final.exists():
             manifest=json.loads((final/"manifest.json").read_text())
-            ledger.append({"time":int(manifest["time"]),"states":int(manifest["states"]),"bytes":int(manifest["bytes"]),"manifest_sha256":sha256(final/"manifest.json"),"seconds":float(manifest.get("seconds",0.0)),"resumed":True})
+            runtime_path=final/"runtime.json"
+            runtime=json.loads(runtime_path.read_text()) if runtime_path.exists() else {"seconds":0.0}
+            ledger.append({"time":int(manifest["time"]),"states":int(manifest["states"]),"bytes":int(manifest["bytes"]),"manifest_sha256":sha256(final/"manifest.json"),"seconds":float(runtime.get("seconds",0.0)),"resumed":True})
             source_root=final
             continue
         if tmp.exists(): shutil.rmtree(tmp)
@@ -106,13 +108,15 @@ def main():
         for i in range(BUCKETS):
             p=outdir/f"b{i:04d}.bin"; meta=json.loads(Path(str(p)+".json").read_text())
             total += int(meta["count"]); total_bytes += int(meta["bytes"]); buckets.append(meta)
-        manifest={"gate":"RGPHI-GLOBAL-TRAP-CUT-088-STAGE-B2","source_time":source_time,"time":child_time,"states":total,"bytes":total_bytes,"buckets":buckets,"worker_stats":stats,"hits":0,"seconds":time.time()-started,"format":"little-endian uint64 key=(a<<32)|b; SplitMix64(key)&127"}
-        mpath=tmp/"manifest.json"; mpath.write_text(json.dumps(manifest,indent=2)+"\n")
+        elapsed=time.time()-started
+        manifest={"gate":"RGPHI-GLOBAL-TRAP-CUT-088-STAGE-B2","source_time":source_time,"time":child_time,"states":total,"bytes":total_bytes,"buckets":buckets,"worker_stats":stats,"hits":0,"format":"little-endian uint64 key=(a<<32)|b; SplitMix64(key)&127"}
+        mpath=tmp/"manifest.json"; mpath.write_text(json.dumps(manifest,indent=2,sort_keys=True)+"\n")
         (tmp/"manifest.sha256").write_text(f"{sha256(mpath)}  manifest.json\n")
+        (tmp/"runtime.json").write_text(json.dumps({"seconds":elapsed},indent=2)+"\n")
         for p in outdir.iterdir(): shutil.move(str(p),tmp/p.name)
         outdir.rmdir(); shutil.rmtree(runroot)
         os.sync(); tmp.rename(final)
-        ledger.append({"time":child_time,"states":total,"bytes":total_bytes,"manifest_sha256":sha256(final/"manifest.json"),"seconds":manifest["seconds"]})
+        ledger.append({"time":child_time,"states":total,"bytes":total_bytes,"manifest_sha256":sha256(final/"manifest.json"),"seconds":elapsed})
         (ns.work_root/"STAGE_B2_LEDGER.json").write_text(json.dumps(ledger,indent=2)+"\n")
         if ns.delete_previous_generated and source_root!=initial_root and source_root.exists(): shutil.rmtree(source_root)
         source_root=final

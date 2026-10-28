@@ -1,0 +1,80 @@
+{
+  "schema_version": "1.0",
+  "audit_date": "2026-10-29",
+  "canonical_repo": "FacundoFirmenich/rgphi-radix-mobius-dynamics",
+  "canonical_branch": "main",
+  "canonical_head_at_audit_start": "91dbf2c707856c3597ff5bdd9e1ffdda9ae5e2b3",
+  "canonical_tau5_interval": [186, 212],
+  "attachments": [
+    {
+      "name": "RGPHI_PAPER_I_SUBMISSION_DRAFT_v1_1.tex",
+      "sha256": "3e7ab1c3088e3fe043e3f7759f0bcac3149b5fec61e93f993465647fc296a4f7",
+      "decision": "ARCHIVE_SNAPSHOT"
+    },
+    {
+      "name": "RGPHI_PAPER_I_SUPPLEMENT_v1_1.md",
+      "sha256": "78b536ea9066d7af89c55584975c0f1519e48edad981a141fc378d3639115c77",
+      "decision": "MERGE_DELTA"
+    },
+    {
+      "name": "RGPHI_PAPER_I_CLAIM_EVIDENCE_MATRIX_v1_1.csv",
+      "sha256": "45522f53a41909c965efd1fb910c5ebc3dda782c82439aa6a3a5b44dabddf48f",
+      "decision": "MERGE_P10_ONLY"
+    },
+    {
+      "name": "RGPHI_PAPER_I_COVER_LETTER_JMD_v1_1.md",
+      "sha256": "d22c222db36e381ddbc601f5dc0b9c74a8c1ff31363bf0df3513f04017cbfda4",
+      "decision": "MERGE_AND_QUALIFY"
+    },
+    {
+      "name": "FRESH_SESSION_PROMPT.md",
+      "sha256": "49601bc7642a9ba29999f5bd2976cf38c7b0e5e473fd1303cd0c6f25567a1b8f",
+      "decision": "SUPERSEDED"
+    },
+    {
+      "name": "STAGE_B2_EXECUTION_HANDOFF.md",
+      "sha256": "41d78aa91246130c2515bdeff0f49a27d8ac7643f8f6bcb9f1e9173403ba995c",
+      "decision": "ARCHIVE_SEMANTICS_ONLY"
+    },
+    {
+      "name": "RGPHI_FRONTIER185_BUCKET_SHA256SUMS.txt",
+      "sha256": "dbd2f4adda52315e05261b9328c03f8a44d2a31b8e293f3dd3ff7b80b3d2a6b7",
+      "decision": "DUPLICATE_EXACT"
+    },
+    {
+      "name": "RGPHI_CIERRE_OPERATIVO_Y_HANDOFF_CANONICO_2026-10-28.docx",
+      "sha256": "65fb9baccd3da78adfbed4be7d8a0ac60cbec692ee056d667fd708fc752b5a69",
+      "decision": "ARCHIVE_PROVENANCE"
+    },
+    {
+      "name": "RGPHI_SUPERCIERRE_CANONICO_HANDOFF_2026-10-28.zip",
+      "sha256": "17e2248ae0a9b3675a0f469c415d5f9603abb3e0428134f4827e1e21d208625e",
+      "decision": "ARCHIVE_PROVENANCE"
+    },
+    {
+      "name": "U5_HD_RGPHI_MULTIFRONT_005_BUNDLE.zip",
+      "sha256": "aaef46f70073bb5ff7dd21443395fcb4b27bea5cbb89a938fd33839f046169c0",
+      "decision": "RELEASE_ASSET_ONLY"
+    }
+  ],
+  "integrated_deltas": [
+    "paper/supplement.md:S9 depth-five status and checkpoint boundary",
+    "paper/cover-letter-jmd.md:repository URL and qualified evidence statement",
+    "paper/claim-evidence-matrix.csv:P10 precise Stage A/B2 scope"
+  ],
+  "held_claims": [
+    {
+      "claim": "trap-atlas counts for D=2500,5000,10000",
+      "status": "HOLD_UNVERIFIED_ARTIFACT_MISSING"
+    }
+  ],
+  "governance_issue": {
+    "issue": "GitHub default branch remains Ulalito's-Island rather than main",
+    "status": "OPEN"
+  },
+  "scientific_effect": {
+    "tau5_interval_changed": false,
+    "paper_i_theorems_changed": false,
+    "experimental_claim_promoted": false
+  }
+}

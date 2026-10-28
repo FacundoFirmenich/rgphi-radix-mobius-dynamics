@@ -1,0 +1,73 @@
+{
+  "schema": "rgphi.paperI.receipt.v1",
+  "canonical_date": "2026-10-28",
+  "system": {
+    "base": 10,
+    "seed": "17/19",
+    "kappa": "11",
+    "portal_rule": "q(x)>kappa*10^m",
+    "terminal_states": [
+      "2/11", "9/11", "0/1", "1/1", "1/2", "1/3", "2/3", "3/4",
+      "4/5", "5/6", "7/8", "7/9", "7/10", "4/11", "7/11", "7/12",
+      "2/13", "5/13", "6/13", "7/13", "8/13", "11/13", "11/20"
+    ]
+  },
+  "global_first_hits": {
+    "evidence_scope": "canonical external payload / not regenerated in compact deployment",
+    "tau": {"1": 45, "2": 85, "3": 120, "4": 162},
+    "states": {
+      "1": ["128/129"],
+      "2": ["1202/1203"],
+      "3": ["11156/11157", "11532/11533", "11642/11643"],
+      "4": ["115482/115483", "124852/124853"]
+    }
+  },
+  "continuation_searches": [
+    {
+      "label": "m1_to_m2", "source": "128/129", "source_global_time": 45,
+      "target_m": 2, "local_cost": 42, "arrival_global_time": 87,
+      "endpoint": "1100/1101", "seen_states": 55144, "csv": "m1_to_m2.csv"
+    },
+    {
+      "label": "m2_to_m3", "source": "1202/1203", "source_global_time": 85,
+      "target_m": 3, "local_cost": 54, "arrival_global_time": 139,
+      "endpoint": "13542/13543", "seen_states": 3955616, "csv": "m2_to_m3.csv"
+    },
+    {
+      "label": "m3a_to_m4", "source": "11156/11157", "source_global_time": 120,
+      "target_m": 4, "local_cost": 48, "arrival_global_time": 168,
+      "endpoint": "122088/122089", "seen_states": 30380076, "csv": "m3a_to_m4.csv"
+    },
+    {
+      "label": "m3b_nohit_to162", "source": "11532/11533", "source_global_time": 120,
+      "target_m": 4, "local_horizon": 42, "result": "NO_HIT",
+      "seen_states": 11442439, "csv": "m3b_nohit_to162.csv"
+    },
+    {
+      "label": "m3c_nohit_to162", "source": "11642/11643", "source_global_time": 120,
+      "target_m": 4, "local_horizon": 42, "result": "NO_HIT",
+      "seen_states": 11769528, "csv": "m3c_nohit_to162.csv"
+    }
+  ],
+  "robustness": {
+    "chronology_interval": ["106197/10000", "11643/1000"],
+    "nonnesting_interval": ["106197/10000", "1101/100"],
+    "individual_first_hit_intervals": {
+      "1": ["93/10", "129/10"],
+      "2": ["903/100", "1203/100"],
+      "3": ["10019/1000", "11643/1000"],
+      "4": ["106197/10000", "124853/10000"]
+    },
+    "continuation_stability_intervals": [
+      ["1033/100", "1101/100"],
+      ["8827/1000", "13543/1000"],
+      ["44853/10000", "122089/10000"]
+    ]
+  },
+  "current_tau5_interval": [186, 212],
+  "limitations": [
+    "The compact checker replays the continuation searches and symbolic audits.",
+    "It does not regenerate the full depth-162 global layer enumeration.",
+    "External clean-room replication remains open."
+  ]
+}

@@ -1,0 +1,13 @@
+item,source,decision,action
+Paper interval and claim P10,Repo defect,INTEGRATE_NOW,Replace 179..212 with 186..212 in main.tex and claim-evidence matrix.
+Canonical consistency checker,Repo defect,INTEGRATE_NOW,"Test paper, status and claim matrix against one machine-readable canon."
+Reviewer bundle PDF provenance,Repo defect,INTEGRATE_NOW,Compile PDF from current TeX in workflow instead of copying a potentially stale committed PDF.
+ODT-009,Live multifront,ARCHIVE_EXPERIMENTAL,"Integrate report, adjudication, freeze, code and hashes; no RGΦ promotion."
+BQ-010A,Live multifront,ARCHIVE_EXPERIMENTAL,Integrate exact no-go for root-first nonadaptive route; preserve 35<=M3<=36.
+HM-010,Live multifront,ARCHIVE_EXPERIMENTAL,Integrate stabilized nonsplit interface and scope boundary; no physical promotion.
+Stage B2 smoke/readiness,Both,KEEP_REPO_VERSION,"Repo already has stronger production engine, validator and workflows; do not duplicate."
+MULTIFRONT narrative wrappers,Live multifront,DO_NOT_MERGE_TO_CANON,Retain as provenance/bundle only; avoid duplicating canonical status.
+Large ODT feature/prediction tables,Live multifront,RELEASE_ASSET_ONLY,Keep out of ordinary Git; record hashes and publish via Release/Zenodo.
+U5-HD ontology/physical claims,Live multifront,NO_PROMOTION,Remain experimental-isolated pending external predictive validation.
+Default branch,Repo governance,MANUAL_FIX,Switch default from Ulalito's-Island to main after confirming identical heads.
+v1.0.0 DOI/release,Repo governance,OPEN_GATE,"Do not mint until paper sync, external review, clean-room replication and Stage B2 policy are resolved."

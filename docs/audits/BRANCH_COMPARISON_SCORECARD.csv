@@ -1,0 +1,9 @@
+dimension,weight,repo_canonical_score,live_multifront_score,assessment
+Canon matemático y estado mainline,20,18.5,18.5,"Empate sustantivo: ambos conservan el canon exacto y [186,212]."
+Profundidad de frentes experimentales,15,10.5,14.2,"La línea viva llega a ODT-009, BQ-010A y HM-010."
+Disciplina de claims y autoridad,15,14.3,12.0,El repo separa S/F/C/O y aísla U5-HD explícitamente.
+"Reproducibilidad, tests y CI",15,14.4,9.7,"Repo con package, tests, workflows y bundles fijados; la línea viva usa bundles locales."
+Preparación editorial/publicación,15,13.0,7.2,"Paper, bibliografía y reviewer packet en repo; falta sincronización y DOI."
+Consistencia interna actual,10,7.4,8.3,El repo conserva un intervalo viejo en paper/PDF/matriz; la línea viva está más sincronizada.
+Validación externa y archivo,10,5.8,3.5,"Ambas abiertas; el repo tiene protocolos e issues públicos, pero no DOI ni réplica."
+TOTAL,100,83.9,73.4,Repo canonical wins overall; live line wins experimental frontier depth.

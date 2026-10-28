@@ -202,3 +202,21 @@ Paper I must not claim:
 6. Preserve all refutations, abstentions, HOLD states, and superseded evidence.
 
 See [the strategic centrum](canon/CENTRUM_2026-10-28.md) and [open problems](OPEN_PROBLEMS.md).
+
+## 13. Integrated experimental delta archive
+
+The audit branch integrates three later experimental results without changing
+mainline RGΦ authority:
+
+- **ODT-009**: the hierarchical architecture replicates on a second resolution
+  shell; local arithmetic O5 does not replicate; a narrow pentadic increment
+  does not beat the strongest baseline and receives no global promotion.
+- **BQ-010A**: exact obstruction to the nonadaptive root-first `4+31` route;
+  the unrestricted interval remains `35 <= M_3 <= 36`.
+- **HM-010**: stabilized nonsplit extension class with a nonzero bulk-to-endpoint
+  boundary map; the explicit Busby/spectral/APS refinement remains open.
+
+All three remain `EXPERIMENTAL_ISOLATED`. Their reports, claim ledgers, compact
+evidence tables, source and verifiers are archived under `research/experimental/`.
+Large generated tables and ZIP bundles remain release assets identified by
+SHA-256 rather than ordinary Git blobs.

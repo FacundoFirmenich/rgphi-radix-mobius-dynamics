@@ -21,3 +21,5 @@ jobs:
           python-version: '3.12'
       - name: Compile and compare exact external-memory propagation
         run: python scripts/stage_b2/smoke_test.py
+      - name: Verify deterministic semantic manifests
+        run: python scripts/stage_b2/determinism_test.py

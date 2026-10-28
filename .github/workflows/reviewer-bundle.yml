@@ -74,6 +74,6 @@ jobs:
         with:
           name: rgphi-reviewer-bundle-${{ github.sha }}
           path: |
-            dist/RGPHI_REVIEWER_BUNDLE_${GITHUB_SHA}.zip
-            dist/RGPHI_REVIEWER_BUNDLE_${GITHUB_SHA}.zip.sha256
+            dist/RGPHI_REVIEWER_BUNDLE_${{ github.sha }}.zip
+            dist/RGPHI_REVIEWER_BUNDLE_${{ github.sha }}.zip.sha256
           if-no-files-found: error

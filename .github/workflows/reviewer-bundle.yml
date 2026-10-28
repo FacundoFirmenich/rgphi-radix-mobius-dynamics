@@ -6,6 +6,8 @@ on:
     branches: [main]
     paths:
       - "paper/**"
+      - "data/certificates/paper-I/**"
+      - "scripts/paper_i/**"
       - "docs/SCIENTIFIC_STATUS.md"
       - "docs/EVIDENCE_MODEL.md"
       - "docs/validation/**"
@@ -32,17 +34,25 @@ jobs:
         run: |
           pdflatex -interaction=nonstopmode -halt-on-error main.tex
           pdflatex -interaction=nonstopmode -halt-on-error main.tex
-      - name: Verify canonical evidence before bundling
+      - name: Verify canonical and compact Paper I evidence
         run: |
           python -m pip install -e '.[dev]'
           rgphi verify
+          python scripts/paper_i/verify_receipt.py
       - name: Assemble pinned reviewer bundle
         shell: bash
         run: |
           set -euo pipefail
           OUT="dist/reviewer-bundle"
-          mkdir -p "$OUT/paper" "$OUT/docs/validation" "$OUT/docs/literature" "$OUT/metadata"
-          cp paper/main.pdf paper/main.tex paper/claim-evidence-matrix.csv "$OUT/paper/"
+          mkdir -p "$OUT/paper" "$OUT/data/certificates/paper-I" \
+            "$OUT/docs/validation" "$OUT/docs/literature" "$OUT/metadata"
+          cp paper/main.pdf paper/main.tex paper/claim-evidence-matrix.csv \
+            paper/CLAIM_FREEZE.md "$OUT/paper/"
+          cp data/certificates/paper-I/benchmark_receipt.json \
+            data/certificates/paper-I/EVIDENCE_BOUNDARY.md \
+            data/certificates/paper-I/paper-I-profiles.zip \
+            data/certificates/paper-I/paper-I-profiles.zip.sha256 \
+            "$OUT/data/certificates/paper-I/"
           cp docs/SCIENTIFIC_STATUS.md docs/EVIDENCE_MODEL.md "$OUT/docs/"
           cp docs/validation/REFEREE_PACKET.md "$OUT/docs/validation/"
           cp docs/validation/REVIEW_SCORECARD.md "$OUT/docs/validation/"
@@ -50,6 +60,7 @@ jobs:
           cp docs/validation/COI_AND_INDEPENDENCE_POLICY.md "$OUT/docs/validation/"
           cp docs/validation/REVIEWER_DECLARATION_TEMPLATE.md "$OUT/docs/validation/"
           cp docs/validation/REPLICATION_REPORT_TEMPLATE.md "$OUT/docs/validation/"
+          cp docs/validation/TRUSTED_CHECKER_SPEC.md "$OUT/docs/validation/"
           cp docs/literature/CLAIM_BY_CLAIM_POSITIONING.md "$OUT/docs/literature/"
           cp docs/literature/SPECIALIST_PRIORITY_QUERY_PACKET.md "$OUT/docs/literature/"
           cp metadata/VALIDATION_TARGETS.json metadata/CANONICAL_STATE.json "$OUT/metadata/"

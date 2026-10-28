@@ -14,7 +14,9 @@
 \title[Nonnested extremal targets]{Nonnested extremal targets in a rational radix--M\"obius semigroup}
 \author{Facundo Firmenich}
 \thanks{Centro de Estudios del Sur (CEDESUR), Universidad Nacional Arturo Jauretche, Buenos Aires, Argentina. Current address: Barcelona, Spain. ORCID: 0009-0002-6578-3811. Correspondence: f.firmenich@cedesur.org.}
-\date{27 October 2026}
+\date{28 October 2026}
+\subjclass[2020]{37E05, 11K55, 49L20, 68V15}
+\keywords{arithmetic dynamics, radix transformations, M\"obius maps, first passage, Bellman nonnesting, computer-assisted proof}
 
 \begin{document}
 
@@ -57,7 +59,7 @@ The contributions are:
 \item a reproducible computer-assisted proof protocol based entirely on primitive integer arithmetic.
 \end{enumerate}
 
-The depth-five hitting time is not needed here.  Its current exact interval is $179\le \tau_5\le212$, but none of the claims below depends on closing that interval.
+The depth-five hitting time is not needed here.  Its current exact interval is $186\le \tau_5\le212$, but none of the claims below depends on closing that interval.
 
 \section{The rational radix--M\"obius semigroup}
 
@@ -279,7 +281,7 @@ All computations use reduced pairs of nonnegative integers.  No floating-point c
 \item independent verifiers and cryptographic hashes in the larger project archive.
 \end{enumerate}
 
-The global layer profile through depth $162$ and the five continuation profiles required by Theorems 5.1 and 7.4 accompany the manuscript.  The result is therefore a computer-assisted theorem with a finite, replayable evidence chain, rather than a numerical simulation.
+The five continuation profiles required by the nonnesting theorem are regenerated in this deployment by an exact rational BFS and stored as layer receipts.  The global depth-162 lower-bound computation remains referenced by the canonical research object rather than duplicated in the compact package.  Accordingly, the local continuation claims are directly replayable here, whereas the global first-hit theorem retains an explicitly declared external-payload dependency.
 
 \section{Relation to previous work}
 
@@ -309,7 +311,7 @@ The exact threshold atlas in this paper is complete through depth $162$ for the 
 
 \section{Data and code availability}
 
-The submission package contains the global layer profile, exact continuation profiles, threshold-atlas generator, trap-independent verifiers, and SHA-256 manifests.  A public archival DOI and Software Heritage identifier will be assigned at release; no identifier is claimed before deposition.
+The compact submission package contains the claim--evidence matrix, exact continuation-search engine and receipts, threshold statements, and SHA-256 manifests.  The full depth-162 global layer payload is not duplicated in this compact repository; its absence is declared in the evidence-boundary file and must be remedied by archival deposition or clean regeneration before a definitive computational-companion submission.  A public archival DOI and Software Heritage identifier will be assigned at release; no identifier is claimed before deposition.
 
 \appendix
 \section{Exact evidence tables}

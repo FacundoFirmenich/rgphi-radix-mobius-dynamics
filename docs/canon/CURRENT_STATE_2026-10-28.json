@@ -1,0 +1,56 @@
+{
+  "canonical_date": "2026-10-28",
+  "repository": "FacundoFirmenich/rgphi-radix-mobius-dynamics",
+  "system": {
+    "T": "T_B(x)={B x}",
+    "H": "H(x)=1/(1+x)",
+    "S": "S_B=H o T_B o H^{-1}",
+    "benchmark": {"B": 10, "seed": "17/19", "kappa": 11}
+  },
+  "closed_results": {"tau1": 45, "tau2": 85, "tau3": 120, "tau4": 162},
+  "tau5": {"lower": 186, "upper": 212, "status": "OPEN"},
+  "best_witness": {"time": 212, "endpoint": "1350416/1350417"},
+  "bellman_ladder": {"from": 89, "to": 212, "formula": "V5(x_t)=212-t"},
+  "stage_A": {
+    "divergences": 89,
+    "partition": {"inadmissible": 23, "immediate_terminal": 4, "finite_trap_basin": 3, "residual_bulk": 59},
+    "no_hit_through": 185,
+    "checkpoint": {
+      "time": 185,
+      "states": 2462600671,
+      "buckets": 128,
+      "bytes": 19700805368,
+      "manifest_sha256": "dbd2f4adda52315e05261b9328c03f8a44d2a31b8e293f3dd3ff7b80b3d2a6b7",
+      "payloads_available_in_public_research_object": false
+    }
+  },
+  "stage_B2": {
+    "software": "READY",
+    "smoke": "PASS",
+    "production": "BLOCKED_ONLY_BY_PAYLOAD_LOCATION",
+    "required_layers": "186..211"
+  },
+  "paper_I": {"status": "PRE_DOI_RELEASE_CANDIDATE", "independent_of_tau5": true},
+  "branches": {
+    "RGPHI_mainline": "CANONICAL_ACTIVE",
+    "Paper_I": "PUBLICATION_TRACK",
+    "RGPHI_GEN": "PARALLEL_ISOLATED",
+    "Artin_Kummer": "PARALLEL_ISOLATED",
+    "U5_HD_HM_BQ_ODT": "EXPERIMENTAL_ISOLATED"
+  },
+  "next_actions_ordered": [
+    "Recover or regenerate and archive the exact t=185 checkpoint payloads.",
+    "Run Stage B2 through t=211 with independent verification.",
+    "Freeze Paper I for specialist external review.",
+    "Build a minimal trusted checker distinct from the search generator.",
+    "Prove infinite families of terminal-relative traps and basin criteria.",
+    "Resume preregistered GEN/ODT experiments without changing mainline authority."
+  ],
+  "forbidden_claims": [
+    "tau_5=212 before Stage B2 no-hit through 211",
+    "global trap classification from the denominator <=500 atlas",
+    "direct decimal-digit correlation with phi",
+    "physical, quantum, cosmological or ontological interpretation of U5-HD",
+    "universal pentadic predictive value after O3 non-promotion"
+  ]
+}

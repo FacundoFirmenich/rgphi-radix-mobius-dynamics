@@ -1,0 +1,21 @@
+{
+  "gate": "RGPHI-GLOBAL-TRAP-CUT-088-STAGE-B2-CHECKPOINT-DISCOVERY",
+  "date": "2026-10-28",
+  "required_checkpoint": {
+    "time": 185,
+    "states": 2462600671,
+    "buckets": 128,
+    "bytes": 19700805368,
+    "manifest_sha256": "dbd2f4adda52315e05261b9328c03f8a44d2a31b8e293f3dd3ff7b80b3d2a6b7"
+  },
+  "searched": {
+    "current_container": "ABSENT",
+    "chatgpt_library": "ABSENT_PAYLOADS__MANIFEST_AND_HASHES_PRESENT",
+    "google_drive": "ABSENT",
+    "public_github_repository": "ABSENT",
+    "legacy_library_checkpoint_archive_2026_09_29": "REJECTED_WRONG_CHECKPOINT"
+  },
+  "status": "BLOCKED_ONLY_BY_PAYLOAD_LOCATION",
+  "action_completed": "Production runner, validator, runbook and smoke verification constructed.",
+  "next_physical_action": "Mount or transfer the exact 128 Stage-A bucket payloads and run validate_checkpoint.py."
+}

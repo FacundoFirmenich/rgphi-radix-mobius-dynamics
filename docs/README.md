@@ -1,30 +1,42 @@
 # RGΦ research documentation
 
-This directory contains the research-program documentation that is broader than the current journal manuscript. The documentation is organized by scientific function rather than by internal chronology.
+This directory contains the documentation of the full research program, beyond any single paper or software release. The public repository uses academic English as its canonical language.
+
+## Current canonical closure
+
+- [Session closure — 28 October 2026](SESSION_CLOSURE_2026-10-28.md)
+- [Fresh-session handoff](FRESH_SESSION_HANDOFF_2026-10-28.md)
+- [Referee-style assessment](REFEREE_ASSESSMENT_2026-10-28.md)
+- [Current literature-positioning closure](literature/LITERATURE_CLOSURE_2026-10-28.md)
+- [Repository freeze checklist](REPOSITORY_FREEZE_2026-10-28.md)
+- [Machine-readable current state](canon/CURRENT_STATE_2026-10-28.json)
 
 ## Start here
 
 - [Audience-specific reading paths](START_HERE.md)
 - [Scientific and evidence architecture](ARCHITECTURE.md)
 - [Scientific status](SCIENTIFIC_STATUS.md)
+- [Strategic centrum](canon/CENTRUM_2026-10-28.md)
 - [Artifact catalog](ARTIFACT_CATALOG.md)
 - [Evidence model](EVIDENCE_MODEL.md)
 - [FAIR and archival richness](FAIR_AND_ARCHIVAL_RICHNESS.md)
 
 ## Canonical scientific reading order
 
-1. [Scientific status](SCIENTIFIC_STATUS.md) — current proved/open/superseded claims.
-2. [Integrated research closure](integrated-research-closure.md) — how the main strands fit together.
-3. [Paper I](../paper/main.pdf) — current submission-oriented theorem package.
-4. [Evidence model](EVIDENCE_MODEL.md) — symbolic, finite exhaustive, large computer-assisted, and open claims.
-5. [Open problems](OPEN_PROBLEMS.md) — active research frontier.
-6. [Base-B theorem portfolio](theorems/base-B-theorem-portfolio.md) — general symbolic structure.
-7. [Threshold robustness](theorems/threshold-robustness-atlas.md) — exact parameter intervals.
-8. [Finite-trap classification](theorems/trap-classification-theorem.md) — modular trap structure.
-9. [Context semantics boundary](theorems/context-semantics-boundary.md) — what is and is not proved about the contextual prime-wise semantics.
+1. [Scientific status](SCIENTIFIC_STATUS.md).
+2. [Session closure](SESSION_CLOSURE_2026-10-28.md).
+3. [Paper I](../paper/main.pdf).
+4. [Evidence model](EVIDENCE_MODEL.md).
+5. [Open problems](OPEN_PROBLEMS.md).
+6. [Stage A status](STAGE_A_STATUS_2026-10-28.md).
+7. [Stage B2 runbook](STAGE_B2_RUNBOOK.md).
+8. [Base-B theorem portfolio](theorems/base-B-theorem-portfolio.md).
+9. [Threshold robustness](theorems/threshold-robustness-atlas.md).
+10. [Finite-trap classification](theorems/trap-classification-theorem.md).
 
 ## Literature and priority
 
+- [Literature closure — 28 October 2026](literature/LITERATURE_CLOSURE_2026-10-28.md)
 - [Literature priority audit](literature/literature-priority-audit.md)
 - [Claim-by-claim positioning](literature/CLAIM_BY_CLAIM_POSITIONING.md)
 - [2026 Q4 literature update](literature/LITERATURE_UPDATE_2026Q4.md)
@@ -36,11 +48,10 @@ This directory contains the research-program documentation that is broader than 
 - [Validation center](validation/README.md)
 - [Current validation status](validation/VALIDATION_STATUS.md)
 - [External validation protocol](validation/EXTERNAL_VALIDATION_PROTOCOL.md)
-- [Outreach status](validation/OUTREACH_STATUS.md)
 - [Reviewer nomination matrix](validation/REVIEWER_NOMINATION_MATRIX.md)
 - [Clean-room replication report template](validation/REPLICATION_REPORT_TEMPLATE.md)
 
-## Reproducibility, metadata, and publication
+## Reproducibility, metadata and publication
 
 - [Repository reproducibility guide](../REPRODUCIBILITY.md)
 - [Independent replication protocol](reproducibility/protocol.md)
@@ -50,8 +61,6 @@ This directory contains the research-program documentation that is broader than 
 
 ## Documentation policy
 
-The public repository uses academic English as its canonical language.
+Historical chronological notes remain available for genealogy, but current claims must be cited from `SCIENTIFIC_STATUS.md`, the canonical closure, and the machine-readable state.
 
-Historical internal notes may have originated in Spanish, but public scientific claims are maintained in English and should be cited from the canonical documents above.
-
-Chronological gate numbers are retained only when they identify a reproducible historical computation. They are not the conceptual structure of the research program.
+Experimental branches do not update the mainline unless their results pass an explicit promotion gate.

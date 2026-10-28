@@ -1,0 +1,23 @@
+name: Stage B2 exact smoke
+
+on:
+  pull_request:
+    paths:
+      - 'scripts/stage_b2/**'
+      - 'data/stage_b2/**'
+      - '.github/workflows/stage-b2-smoke.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  exact-smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+      - name: Compile and compare exact external-memory propagation
+        run: python scripts/stage_b2/smoke_test.py

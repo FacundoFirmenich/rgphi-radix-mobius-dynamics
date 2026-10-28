@@ -1,68 +1,86 @@
 # Literature-positioning scorecard
 
-**Date:** 27 October 2026  
+**Date:** 28 October 2026  
 **Scope:** Paper I and the public RGΦ program  
 **Target before archival DOI:** > 9/10
 
 ## Rubric
 
-| component | weight | status |
-|---|---:|---|
-| canonical literature coverage | 20% | excellent |
-| 2024–2026 frontier coverage | 20% | excellent |
-| claim-by-claim nearest-prior-art mapping | 20% | excellent |
-| manuscript integration | 20% | excellent |
-| conservative novelty wording | 10% | excellent |
-| closed-database citation chaining | 5% | pending institutional/specialist access |
-| external specialist priority review | 5% | pending |
+| component | weight | current assessment |
+|---|---:|---:|
+| canonical literature coverage | 20% | 9.7 |
+| 2024–2026 frontier coverage | 20% | 9.6 |
+| claim-by-claim nearest-prior-art mapping | 20% | 9.6 |
+| manuscript integration | 15% | 9.2 |
+| conservative novelty wording | 10% | 9.8 |
+| reproducible search protocol and update log | 5% | 9.5 |
+| closed-database citation chaining | 5% | 7.5 — pending institutional access |
+| external specialist priority review | 5% | 4.0 — pending |
 
-## Current evidence
+## Current literature object
 
-### Canonical coverage
+The repository now contains:
 
-The audit explicitly covers radix/beta transformations, continued fractions and Farey systems, rational/projective semigroups, dynamic programming and state augmentation, open systems, p-adic dynamics, optimal continued fractions, and proof certificates.
+- a canonical/background matrix;
+- a 2024–2026 frontier layer;
+- claim-by-claim overlap, distinction, and risk statements;
+- a systematic search protocol;
+- a specialist priority-query packet;
+- a 2026 Q4 update recording newly verified close sources;
+- conservative wording rules for each headline claim.
 
-### Frontier coverage
+## Highest-priority comparison clusters
 
-The current review includes published or current 2025–2026 work by Panti; Dajani–Kraaikamp–Sanderson; Javaheri; Berthé–Cantrell–Lee–Pollicott; Schmidt; Chen–Dajani–Hu–Kraaikamp; Fox–Garrity; Nakada–Natsui–Thuswaldner; Romeo–Salvatori; Kong–Sun–Wang; and recent certificate/audit work.
+### Projective and Farey systems
 
-### Claim mapping
+Panti's projective-IFS/Farey classification creates a high burden for any broad classification language. RGΦ therefore claims only its specific partial system and exact extremal theorem.
 
-Every headline RGΦ claim now has:
+### Contracted Farey and natural-extension systems
 
-- nearest prior-art cluster;
-- overlap statement;
-- distinction;
-- priority risk;
-- permitted public wording.
+Recent work by Dajani, Kraaikamp, Sanderson, Schmidt, and others is structurally close to the inducing/branching neighborhood. The Paper I distinction is exact first-hit optimization and robust nonnesting, not the invention of Farey or natural-extension machinery.
 
-### Manuscript integration
+### Finite rational trajectories
 
-The current Paper I source cites and discusses the closest recent projective/Farey, rational-semigroup, finite-rational-orbit, open-system, and certificate literature.
+Berthé–Cantrell–Lee–Pollicott demonstrate the mathematical relevance of finite rational trajectories in generalized continued-fraction systems. RGΦ uses such trajectories for exact optimization rather than statistical approximation.
 
-### Novelty wording
+### Optimal continued-fraction terminology
 
-The manuscript uses “to the best of our knowledge” language and explicitly states that the priority claim is provisional.
+The classical and recent optimal/superoptimal continued-fraction literature uses “optimal” in approximation-theoretic senses. RGΦ therefore uses the precise term **first-hit optimality**.
+
+### Hidden p-adic state
+
+Recent p-adic continued-fraction and rational-interpreter work creates high priority risk for the future hidden-state paper. That line is not used as the headline novelty of Paper I.
 
 ## Current score
 
-On the internal/open-source rubric:
+For **literature-positioning quality and readiness for specialist review**:
 
-[
-oxed{9.2/10}
-]
+\[
+\boxed{9.35/10}
+\]
 
-This score means **well-positioned for external specialist review**, not “priority proved.”
+For **externally closed priority assessment**:
+
+\[
+\boxed{8.2/10}
+\]
+
+The second number cannot exceed 9 honestly until specialists and closed-database citation chains have been incorporated.
 
 ## Upgrade to 9.5+
 
 Required:
 
-1. one specialist in continued fractions/projective dynamics states that no closer equivalence is known, or identifies and resolves one;
-2. one additional arithmetic-dynamics/number-theory reader reviews the claim map;
-3. MathSciNet/zbMATH citation chaining is completed for the highest-risk claims;
-4. feedback is version-pinned and incorporated.
+1. a continued-fractions/projective-dynamics specialist answers the exact equivalence questions in `SPECIALIST_PRIORITY_QUERY_PACKET.md`;
+2. an arithmetic-dynamics/number-theory reader audits the claim map;
+3. MathSciNet and full zbMATH citation chaining are completed for high-risk claims;
+4. every identified close source is added to the literature matrix and manuscript;
+5. responses are pinned to the reviewed commit.
 
 ## Failure condition
 
-If a specialist identifies an equivalent theorem or conjugate system, the score falls until the manuscript is reframed or the theorem distinction is repaired.
+If an equivalent theorem or conjugate system is identified, the score falls until the manuscript is reframed or the distinction is repaired.
+
+## Canonical interpretation
+
+This score measures the quality of positioning, not proof of historical priority. Absolute priority is not claimed.

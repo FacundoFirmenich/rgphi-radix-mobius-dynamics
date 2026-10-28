@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0",
+  "repository": "https://github.com/FacundoFirmenich/rgphi-radix-mobius-dynamics",
+  "review_commit_required": true,
+  "arithmetic_policy": "exact integer or rational arithmetic for theorem-critical decisions",
+  "targets": [
+    {"id":"VT-001","claim":"terminal_state_count","expected":23,"evidence":["data/certificates/terminal-set-audit.json"]},
+    {"id":"VT-002","claim":"terminal_branch_checks","expected":46,"evidence":["data/certificates/terminal-set-audit.json"]},
+    {"id":"VT-003","claim":"admissible_terminal_escapes","expected":0,"evidence":["data/certificates/terminal-set-audit.json"]},
+    {"id":"VT-004","claim":"tau_1","expected":45,"evidence":["data/thresholds/exact-bfs-depth-0-162.csv"]},
+    {"id":"VT-005","claim":"tau_2","expected":85,"evidence":["data/thresholds/exact-bfs-depth-0-162.csv"]},
+    {"id":"VT-006","claim":"tau_3","expected":120,"evidence":["data/thresholds/exact-bfs-depth-0-162.csv"]},
+    {"id":"VT-007","claim":"tau_4","expected":162,"evidence":["data/thresholds/exact-bfs-depth-0-162.csv"]},
+    {"id":"VT-008","claim":"continuation_128_129","expected_global_time":87,"evidence":["data/thresholds/portal-continuation-costs.csv"]},
+    {"id":"VT-009","claim":"continuation_1202_1203","expected_global_time":139,"evidence":["data/thresholds/portal-continuation-costs.csv"]},
+    {"id":"VT-010","claim":"continuation_11156_11157","expected_global_time":168,"evidence":["data/thresholds/portal-continuation-costs.csv"]},
+    {"id":"VT-011","claim":"chronology_kappa_interval","lower":{"numerator":106197,"denominator":10000,"closed":true},"upper":{"numerator":11643,"denominator":1000,"closed":false},"evidence":["data/thresholds/benchmark-robustness.csv"]},
+    {"id":"VT-012","claim":"nonnesting_kappa_interval","lower":{"numerator":106197,"denominator":10000,"closed":true},"upper":{"numerator":1101,"denominator":100,"closed":false},"evidence":["data/thresholds/nonnesting-robustness.csv"]},
+    {"id":"VT-013","claim":"C8_size","expected":8,"evidence":["data/traps/C8-exact-audit.csv"]},
+    {"id":"VT-014","claim":"C8_max_portal_height","expected":13,"evidence":["data/traps/C8-exact-audit.csv"]},
+    {"id":"VT-015","claim":"trap_atlas_states_D500","expected":76094,"evidence":["data/traps/trap-atlas-result-D500.json"]},
+    {"id":"VT-016","claim":"trap_atlas_edges_D500","expected":109254,"evidence":["data/traps/trap-atlas-result-D500.json"]},
+    {"id":"VT-017","claim":"trap_atlas_sccs_D500","expected":23176,"evidence":["data/traps/trap-atlas-result-D500.json"]},
+    {"id":"VT-018","claim":"trap_atlas_closed_sccs_D500","expected":153,"evidence":["data/traps/trap-atlas-result-D500.json"]},
+    {"id":"VT-019","claim":"trap_atlas_finite_closures_D500","expected":1502,"evidence":["data/traps/trap-atlas-result-D500.json"]}
+  ]
+}

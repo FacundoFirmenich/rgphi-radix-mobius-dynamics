@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0",
+  "project": "RGΦ",
+  "artifacts": [
+    {"id":"A-001","path":"paper/main.pdf","role":"manuscript-rendered","evidence_class":"meta","license":"CC-BY-4.0","media_type":"application/pdf"},
+    {"id":"A-002","path":"paper/main.tex","role":"manuscript-source","evidence_class":"S/F","license":"CC-BY-4.0","media_type":"text/x-tex"},
+    {"id":"A-003","path":"paper/claim-evidence-matrix.csv","role":"claim-evidence-map","evidence_class":"meta","license":"CC-BY-4.0","media_type":"text/csv"},
+    {"id":"A-004","path":"docs/SCIENTIFIC_STATUS.md","role":"canonical-status-boundary","evidence_class":"meta","license":"CC-BY-4.0","media_type":"text/markdown"},
+    {"id":"A-005","path":"docs/EVIDENCE_MODEL.md","role":"evidence-policy","evidence_class":"meta","license":"CC-BY-4.0","media_type":"text/markdown"},
+    {"id":"A-006","path":"data/certificates/terminal-set-audit.json","role":"terminal-convention-certificate","evidence_class":"F","license":"CC-BY-4.0","media_type":"application/json"},
+    {"id":"A-007","path":"data/thresholds/exact-bfs-depth-0-162.csv","role":"first-hit-ledger","evidence_class":"F","license":"CC-BY-4.0","media_type":"text/csv"},
+    {"id":"A-008","path":"data/thresholds/nonnesting-robustness.csv","role":"robustness-certificate","evidence_class":"F","license":"CC-BY-4.0","media_type":"text/csv"},
+    {"id":"A-009","path":"data/traps/C8-exact-audit.csv","role":"finite-trap-certificate","evidence_class":"F","license":"CC-BY-4.0","media_type":"text/csv"},
+    {"id":"A-010","path":"data/traps/trap-atlas-result-D500.json","role":"finite-atlas-summary","evidence_class":"F","license":"CC-BY-4.0","media_type":"application/json"},
+    {"id":"A-011","path":"src/rgphi/verification.py","role":"small-reference-verifier","evidence_class":"meta","license":"BSD-3-Clause","media_type":"text/x-python"},
+    {"id":"A-012","path":"docs/literature/literature-matrix.csv","role":"literature-positioning-matrix","evidence_class":"meta","license":"CC-BY-4.0","media_type":"text/csv"},
+    {"id":"A-013","path":"metadata/VALIDATION_TARGETS.json","role":"external-replication-oracle","evidence_class":"meta","license":"CC-BY-4.0","media_type":"application/json"},
+    {"id":"A-014","path":"CITATION.cff","role":"citation-metadata","evidence_class":"meta","license":"CC-BY-4.0","media_type":"text/yaml"},
+    {"id":"A-015","path":"metadata/ro-crate-metadata.json","role":"research-object-metadata","evidence_class":"meta","license":"CC-BY-4.0","media_type":"application/ld+json"}
+  ]
+}

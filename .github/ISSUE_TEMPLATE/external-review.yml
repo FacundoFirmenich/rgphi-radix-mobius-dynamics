@@ -1,0 +1,52 @@
+name: External mathematical review
+about: Submit an independent mathematical review pinned to a commit
+title: "[External review] "
+labels: []
+body:
+  - type: input
+    id: commit
+    attributes:
+      label: Repository commit SHA
+    validations:
+      required: true
+  - type: input
+    id: profile
+    attributes:
+      label: Reviewer public profile or ORCID
+    validations:
+      required: true
+  - type: dropdown
+    id: role
+    attributes:
+      label: Review role
+      options:
+        - Dynamics / continued fractions
+        - Arithmetic dynamics / number theory
+        - Computational verification
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: coi
+    attributes:
+      label: Conflict-of-interest disclosure
+    validations:
+      required: true
+  - type: textarea
+    id: findings
+    attributes:
+      label: Critical, major, minor, and positive findings
+    validations:
+      required: true
+  - type: dropdown
+    id: verdict
+    attributes:
+      label: Publication verdict
+      options:
+        - Not publishable in current form
+        - Potentially publishable after major revision
+        - Publishable after moderate revision
+        - Publishable after minor revision
+        - Publishable in current form
+    validations:
+      required: true

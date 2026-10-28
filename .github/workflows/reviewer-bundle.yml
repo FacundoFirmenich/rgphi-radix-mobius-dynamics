@@ -1,0 +1,52 @@
+name: Build external-review bundle
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "paper/**"
+      - "docs/SCIENTIFIC_STATUS.md"
+      - "docs/EVIDENCE_MODEL.md"
+      - "docs/validation/**"
+      - "docs/literature/**"
+      - "metadata/VALIDATION_TARGETS.json"
+      - ".github/workflows/reviewer-bundle.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  bundle:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - name: Assemble pinned reviewer bundle
+        shell: bash
+        run: |
+          set -euo pipefail
+          OUT="dist/reviewer-bundle"
+          mkdir -p "$OUT/paper" "$OUT/docs/validation" "$OUT/docs/literature" "$OUT/metadata"
+          cp paper/main.pdf paper/main.tex paper/claim-evidence-matrix.csv "$OUT/paper/"
+          cp docs/SCIENTIFIC_STATUS.md docs/EVIDENCE_MODEL.md "$OUT/docs/"
+          cp docs/validation/REFEREE_PACKET.md "$OUT/docs/validation/"
+          cp docs/validation/REVIEW_SCORECARD.md "$OUT/docs/validation/"
+          cp docs/validation/EXTERNAL_VALIDATION_PROTOCOL.md "$OUT/docs/validation/"
+          cp docs/validation/COI_AND_INDEPENDENCE_POLICY.md "$OUT/docs/validation/"
+          cp docs/validation/REVIEWER_DECLARATION_TEMPLATE.md "$OUT/docs/validation/"
+          cp docs/validation/REPLICATION_REPORT_TEMPLATE.md "$OUT/docs/validation/"
+          cp docs/literature/CLAIM_BY_CLAIM_POSITIONING.md "$OUT/docs/literature/"
+          cp docs/literature/SPECIALIST_PRIORITY_QUERY_PACKET.md "$OUT/docs/literature/"
+          cp metadata/VALIDATION_TARGETS.json "$OUT/metadata/"
+          printf '%s\n' "$GITHUB_SHA" > "$OUT/REVIEW_COMMIT.txt"
+          printf '%s\n' "https://github.com/${GITHUB_REPOSITORY}/commit/${GITHUB_SHA}" > "$OUT/REVIEW_COMMIT_URL.txt"
+          find "$OUT" -type f -print0 | sort -z | xargs -0 sha256sum > "$OUT/SHA256SUMS.txt"
+          (cd dist && zip -r "RGPHI_REVIEWER_BUNDLE_${GITHUB_SHA}.zip" reviewer-bundle)
+          sha256sum "dist/RGPHI_REVIEWER_BUNDLE_${GITHUB_SHA}.zip" > "dist/RGPHI_REVIEWER_BUNDLE_${GITHUB_SHA}.zip.sha256"
+      - uses: actions/upload-artifact@v7
+        with:
+          name: rgphi-reviewer-bundle-${{ github.sha }}
+          path: |
+            dist/RGPHI_REVIEWER_BUNDLE_${{ github.sha }}.zip
+            dist/RGPHI_REVIEWER_BUNDLE_${{ github.sha }}.zip.sha256
+          if-no-files-found: error

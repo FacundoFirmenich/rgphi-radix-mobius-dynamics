@@ -1,0 +1,26 @@
+name: Research-object audit
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+      - name: Validate research-object metadata and evidence links
+        run: python tools/validate_research_object.py --report research-object-audit.json
+      - uses: actions/upload-artifact@v7
+        with:
+          name: rgphi-research-object-audit
+          path: research-object-audit.json
+          if-no-files-found: error

@@ -1,0 +1,9 @@
+{
+  "status": "COMPLETED_NO_HIT_THROUGH_90",
+  "tau5_claim_changed": false,
+  "independent_reference_equal": true,
+  "final_time": 90,
+  "final_states": 158,
+  "scope": "noncanonical smoke only",
+  "interpretation": "The external-memory worker/merge pipeline reproduced an independent in-memory exact implementation; this does not alter tau_5."
+}

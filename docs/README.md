@@ -5,6 +5,7 @@ This directory contains the research-program documentation that is broader than 
 ## Start here
 
 - [Audience-specific reading paths](START_HERE.md)
+- [Scientific and evidence architecture](ARCHITECTURE.md)
 - [Scientific status](SCIENTIFIC_STATUS.md)
 - [Artifact catalog](ARTIFACT_CATALOG.md)
 - [Evidence model](EVIDENCE_MODEL.md)
@@ -35,13 +36,15 @@ This directory contains the research-program documentation that is broader than 
 - [Validation center](validation/README.md)
 - [Current validation status](validation/VALIDATION_STATUS.md)
 - [External validation protocol](validation/EXTERNAL_VALIDATION_PROTOCOL.md)
+- [Outreach status](validation/OUTREACH_STATUS.md)
 - [Reviewer nomination matrix](validation/REVIEWER_NOMINATION_MATRIX.md)
 - [Clean-room replication report template](validation/REPLICATION_REPORT_TEMPLATE.md)
 
-## Reproducibility and publication
+## Reproducibility, metadata, and publication
 
 - [Repository reproducibility guide](../REPRODUCIBILITY.md)
 - [Independent replication protocol](reproducibility/protocol.md)
+- [Metadata index](../metadata/README.md)
 - [Publication architecture](publication-architecture.md)
 - [Release and archival policy](../RELEASE.md)
 

@@ -19,8 +19,12 @@ jobs:
           python-version: "3.12"
       - name: Validate research-object metadata and evidence links
         run: python tools/validate_research_object.py --report research-object-audit.json
+      - name: Validate internal Markdown navigation
+        run: python tools/check_internal_links.py --report internal-link-audit.json
       - uses: actions/upload-artifact@v7
         with:
           name: rgphi-research-object-audit
-          path: research-object-audit.json
+          path: |
+            research-object-audit.json
+            internal-link-audit.json
           if-no-files-found: error

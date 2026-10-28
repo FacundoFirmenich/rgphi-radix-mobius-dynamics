@@ -1,0 +1,65 @@
+{
+  "@context": {
+    "prov": "http://www.w3.org/ns/prov#",
+    "schema": "https://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "spdx": "http://spdx.org/rdf/terms#"
+  },
+  "@graph": [
+    {
+      "@id": "https://orcid.org/0009-0002-6578-3811",
+      "@type": ["prov:Person", "schema:Person"],
+      "schema:name": "Facundo Firmenich"
+    },
+    {
+      "@id": "https://github.com/FacundoFirmenich/rgphi-radix-mobius-dynamics",
+      "@type": ["prov:Entity", "schema:SoftwareSourceCode", "schema:Dataset"],
+      "schema:name": "RGΦ: Exact rational radix–Möbius dynamics research compendium",
+      "schema:version": "1.0.0-rc.1",
+      "prov:wasAttributedTo": {"@id": "https://orcid.org/0009-0002-6578-3811"}
+    },
+    {
+      "@id": "urn:rgphi:activity:symbolic-development",
+      "@type": "prov:Activity",
+      "prov:wasAssociatedWith": {"@id": "https://orcid.org/0009-0002-6578-3811"},
+      "schema:description": "Derivation of the base-B branch formulas, seed-family identity, denominator law, and evidence boundaries."
+    },
+    {
+      "@id": "urn:rgphi:activity:finite-enumeration",
+      "@type": "prov:Activity",
+      "prov:wasAssociatedWith": {"@id": "https://orcid.org/0009-0002-6578-3811"},
+      "schema:description": "Exact finite enumeration of benchmark hitting times, threshold cells, terminal closure, and finite modular traps."
+    },
+    {
+      "@id": "urn:rgphi:entity:paper-i",
+      "@type": ["prov:Entity", "schema:ScholarlyArticle"],
+      "schema:name": "Nonnested extremal targets in a rational radix–Möbius semigroup",
+      "schema:contentUrl": "paper/main.pdf",
+      "prov:wasGeneratedBy": {"@id": "urn:rgphi:activity:symbolic-development"}
+    },
+    {
+      "@id": "urn:rgphi:entity:threshold-evidence",
+      "@type": ["prov:Entity", "schema:Dataset"],
+      "schema:name": "RGΦ exact threshold evidence",
+      "schema:contentUrl": "data/thresholds/",
+      "prov:wasGeneratedBy": {"@id": "urn:rgphi:activity:finite-enumeration"}
+    },
+    {
+      "@id": "urn:rgphi:entity:trap-evidence",
+      "@type": ["prov:Entity", "schema:Dataset"],
+      "schema:name": "RGΦ finite modular-trap atlas",
+      "schema:contentUrl": "data/traps/",
+      "prov:wasGeneratedBy": {"@id": "urn:rgphi:activity:finite-enumeration"}
+    },
+    {
+      "@id": "urn:rgphi:activity:external-validation",
+      "@type": "prov:Activity",
+      "schema:description": "Independent specialist review and clean-room replication campaign; currently open.",
+      "prov:used": [
+        {"@id": "urn:rgphi:entity:paper-i"},
+        {"@id": "urn:rgphi:entity:threshold-evidence"},
+        {"@id": "urn:rgphi:entity:trap-evidence"}
+      ]
+    }
+  ]
+}

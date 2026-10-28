@@ -1,0 +1,46 @@
+{
+  "schema_version": "1.0",
+  "status": "OPEN",
+  "doi_gate": "HOLD",
+  "infrastructure_readiness_score": 9.8,
+  "external_evidence_score": 4.0,
+  "review_commit_policy": "Every report must identify the exact Git commit reviewed.",
+  "roles": [
+    {
+      "id": "RV-A",
+      "role": "dynamics_continued_fractions_projective_systems",
+      "status": "unassigned",
+      "required": true,
+      "report": null,
+      "publication_verdict": null,
+      "critical_issues_open": null,
+      "major_issues_open": null
+    },
+    {
+      "id": "RV-B",
+      "role": "arithmetic_dynamics_number_theory",
+      "status": "unassigned",
+      "required": true,
+      "report": null,
+      "publication_verdict": null,
+      "critical_issues_open": null,
+      "major_issues_open": null
+    },
+    {
+      "id": "REP-C",
+      "role": "clean_room_exact_replication",
+      "status": "unassigned",
+      "required": true,
+      "implementation_archive": null,
+      "report": null,
+      "all_core_targets_reproduced": null,
+      "unexplained_discrepancies": null
+    }
+  ],
+  "passing_rule": {
+    "independent_mathematical_reports": 2,
+    "clean_room_replications": 1,
+    "maximum_unresolved_critical_issues": 0,
+    "major_issues_must_be_resolved_or_claim_removed": true
+  }
+}

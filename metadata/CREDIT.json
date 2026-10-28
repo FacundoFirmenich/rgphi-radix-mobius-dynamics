@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0",
+  "taxonomy": "https://credit.niso.org/",
+  "release_scope": "current sole-author pre-DOI research compendium",
+  "contributors": [
+    {
+      "name": "Facundo Firmenich",
+      "orcid": "https://orcid.org/0009-0002-6578-3811",
+      "affiliation": "Centro de Estudios del Sur (CEDESUR), Universidad Nacional Arturo Jauretche",
+      "roles": [
+        {"term": "Conceptualization", "uri": "https://credit.niso.org/contributor-roles/conceptualization/"},
+        {"term": "Formal analysis", "uri": "https://credit.niso.org/contributor-roles/formal-analysis/"},
+        {"term": "Investigation", "uri": "https://credit.niso.org/contributor-roles/investigation/"},
+        {"term": "Methodology", "uri": "https://credit.niso.org/contributor-roles/methodology/"},
+        {"term": "Software", "uri": "https://credit.niso.org/contributor-roles/software/"},
+        {"term": "Data curation", "uri": "https://credit.niso.org/contributor-roles/data-curation/"},
+        {"term": "Validation", "uri": "https://credit.niso.org/contributor-roles/validation/", "note": "Internal exact verification only; independent external validation remains pending."},
+        {"term": "Visualization", "uri": "https://credit.niso.org/contributor-roles/visualization/"},
+        {"term": "Writing – original draft", "uri": "https://credit.niso.org/contributor-roles/writing-original-draft/"},
+        {"term": "Writing – review & editing", "uri": "https://credit.niso.org/contributor-roles/writing-review-editing/"},
+        {"term": "Project administration", "uri": "https://credit.niso.org/contributor-roles/project-administration/"}
+      ]
+    }
+  ]
+}

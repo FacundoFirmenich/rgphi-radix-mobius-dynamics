@@ -1,0 +1,96 @@
+{
+  "profile": "data-package",
+  "name": "rgphi-exact-evidence",
+  "title": "RGΦ exact evidence package",
+  "description": "Machine-readable exact evidence for extremal hitting times, threshold robustness, terminal conventions, and finite modular traps in the RGΦ rational radix–Möbius system.",
+  "version": "1.0.0-rc.1",
+  "homepage": "https://github.com/FacundoFirmenich/rgphi-radix-mobius-dynamics",
+  "licenses": [
+    {
+      "name": "CC-BY-4.0",
+      "path": "https://creativecommons.org/licenses/by/4.0/",
+      "title": "Creative Commons Attribution 4.0 International"
+    }
+  ],
+  "contributors": [
+    {
+      "title": "Facundo Firmenich",
+      "role": "author",
+      "path": "https://orcid.org/0009-0002-6578-3811"
+    }
+  ],
+  "resources": [
+    {
+      "name": "terminal-set-audit",
+      "path": "data/certificates/terminal-set-audit.json",
+      "profile": "data-resource",
+      "format": "json",
+      "mediatype": "application/json",
+      "description": "Exact audit of the 23-state terminal convention and all attempted outgoing branches."
+    },
+    {
+      "name": "exact-bfs-depth-0-162",
+      "path": "data/thresholds/exact-bfs-depth-0-162.csv",
+      "profile": "tabular-data-resource",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "description": "Exact layer summaries supporting the benchmark first-hit chronology through depth four."
+    },
+    {
+      "name": "portal-continuation-costs",
+      "path": "data/thresholds/portal-continuation-costs.csv",
+      "profile": "tabular-data-resource",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "description": "Exact continuation times from earlier extremal states."
+    },
+    {
+      "name": "benchmark-robustness",
+      "path": "data/thresholds/benchmark-robustness.csv",
+      "profile": "tabular-data-resource",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "description": "Exact threshold intervals preserving individual first-hit times."
+    },
+    {
+      "name": "nonnesting-robustness",
+      "path": "data/thresholds/nonnesting-robustness.csv",
+      "profile": "tabular-data-resource",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "description": "Exact common interval preserving the three nonnesting inequalities."
+    },
+    {
+      "name": "C8-exact-audit",
+      "path": "data/traps/C8-exact-audit.csv",
+      "profile": "tabular-data-resource",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "description": "Complete transition audit for the canonical eight-state modular trap."
+    },
+    {
+      "name": "trap-atlas-D500",
+      "path": "data/traps/trap-atlas-result-D500.json",
+      "profile": "data-resource",
+      "format": "json",
+      "mediatype": "application/json",
+      "description": "Canonical summary counts for the finite denominator-500 trap atlas."
+    },
+    {
+      "name": "closed-sccs-D500",
+      "path": "data/traps/closed-sccs-D500.csv",
+      "profile": "tabular-data-resource",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "description": "Strongly connected components closed modulo the terminal convention."
+    },
+    {
+      "name": "forward-closures-D500",
+      "path": "data/traps/forward-closures-D500.csv",
+      "profile": "tabular-data-resource",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "description": "Exact finite forward-invariant closures in the denominator-500 graph."
+    }
+  ]
+}

@@ -16,7 +16,11 @@ The computational results use primitive integer arithmetic, exact target compari
 
 We believe the work fits the journal because it combines discrete and arithmetic dynamics, symbolic branch structure, exact hitting-time phenomena, and computer-assisted proof in a rational dynamical system.
 
-The manuscript is not under consideration elsewhere. No public DOI is claimed before archival deposition. All data and code required for replay are included in the submission package.
+The manuscript is not under consideration elsewhere. No public DOI is claimed before archival deposition. The submission package and public repository contain the code, compact exact certificates, replay scripts, ledgers, and hashes required to audit the manuscript claims:
+
+https://github.com/FacundoFirmenich/rgphi-radix-mobius-dynamics
+
+The active depth-five Stage B2 computation is explicitly outside the theorem dependency graph of this submission. Its 19.7 GB checkpoint payload is not part of the lightweight Paper I package, and no claim in the manuscript depends on completing that computation.
 
 Sincerely,
 

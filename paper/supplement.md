@@ -8,8 +8,6 @@ This supplement supports the manuscript **Nonnested extremal targets in a ration
 
 The terminal set has 23 states:
 
-
-e
 \[
 \{0,1,1/2,1/3,2/3,3/4,4/5,5/6,7/8,7/9,7/10,
 2/11,4/11,7/11,9/11,11/20,7/12,2/13,5/13,6/13,7/13,8/13,11/13\}.
@@ -114,3 +112,13 @@ States are stored as primitive integer pairs. Target comparison uses integer cro
 ## S8. Evidence boundary
 
 The finite-horizon threshold atlas is exact through depth 162. It does not claim a global formula for all `kappa`, all bases, or all seeds. The main nonnesting theorem is exact on its stated interval and uses only the benchmark system.
+
+## S9. Current depth-five status — non-dependent update
+
+As of 28 October 2026, the rigorous depth-five interval is
+
+\[
+186 \le \tau_5 \le 212.
+\]
+
+This update does not change any theorem in Paper I: the manuscript depends only on the exact depth-one through depth-four chronology and its continuation searches. The active Stage B2 computation requires the verified 19.7 GB checkpoint at global time 185; the payload is not part of the lightweight submission package.

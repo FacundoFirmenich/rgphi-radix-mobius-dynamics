@@ -21,13 +21,22 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
+      - name: Install TeX
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends texlive-latex-base texlive-latex-extra texlive-fonts-recommended
+      - name: Compile pinned manuscript from source
+        working-directory: paper
+        run: |
+          pdflatex -interaction=nonstopmode -halt-on-error main.tex
+          pdflatex -interaction=nonstopmode -halt-on-error main.tex
       - name: Assemble pinned reviewer bundle
         shell: bash
         run: |
           set -euo pipefail
           OUT="dist/reviewer-bundle"
           mkdir -p "$OUT/paper" "$OUT/docs/validation" "$OUT/docs/literature" "$OUT/metadata"
-          cp paper/main.pdf paper/main.tex paper/claim-evidence-matrix.csv "$OUT/paper/"
+          cp paper/main.pdf paper/main.tex paper/claim-evidence-matrix.csv paper/CLAIM_FREEZE.md "$OUT/paper/"
           cp docs/SCIENTIFIC_STATUS.md docs/EVIDENCE_MODEL.md "$OUT/docs/"
           cp docs/validation/REFEREE_PACKET.md "$OUT/docs/validation/"
           cp docs/validation/REVIEW_SCORECARD.md "$OUT/docs/validation/"
@@ -35,6 +44,7 @@ jobs:
           cp docs/validation/COI_AND_INDEPENDENCE_POLICY.md "$OUT/docs/validation/"
           cp docs/validation/REVIEWER_DECLARATION_TEMPLATE.md "$OUT/docs/validation/"
           cp docs/validation/REPLICATION_REPORT_TEMPLATE.md "$OUT/docs/validation/"
+          cp docs/validation/TRUSTED_CHECKER_SPEC.md "$OUT/docs/validation/"
           cp docs/literature/CLAIM_BY_CLAIM_POSITIONING.md "$OUT/docs/literature/"
           cp docs/literature/SPECIALIST_PRIORITY_QUERY_PACKET.md "$OUT/docs/literature/"
           cp metadata/VALIDATION_TARGETS.json "$OUT/metadata/"

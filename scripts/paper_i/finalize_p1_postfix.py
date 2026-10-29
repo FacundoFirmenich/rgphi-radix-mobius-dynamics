@@ -2,6 +2,7 @@
 """Small deterministic layout and exactness fixes after Paper I generation."""
 from pathlib import Path
 
+# This script is intentionally idempotent and safe to rerun after governance edits.
 ROOT = Path(__file__).resolve().parents[2]
 TEX = ROOT / "paper" / "main.tex"
 

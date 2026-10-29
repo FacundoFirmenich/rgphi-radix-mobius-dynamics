@@ -18,6 +18,7 @@ on:
       - "metadata/VALIDATION_TARGETS.json"
       - "metadata/CANONICAL_STATE.json"
       - "metadata/PAPER_I_STATE.json"
+      - "metadata/PAPER_I_FRONTIERS.json"
       - ".github/workflows/reviewer-bundle.yml"
   pull_request:
     paths:
@@ -34,6 +35,7 @@ on:
       - "metadata/VALIDATION_TARGETS.json"
       - "metadata/CANONICAL_STATE.json"
       - "metadata/PAPER_I_STATE.json"
+      - "metadata/PAPER_I_FRONTIERS.json"
       - ".github/workflows/reviewer-bundle.yml"
 
 permissions:
@@ -59,7 +61,7 @@ jobs:
           python -m pip install -e '.[dev]'
           rgphi verify
           python scripts/paper_i/verify_receipt.py
-          pytest -q tests/test_paper_i_finalization.py
+          pytest -q tests/test_paper_i_finalization.py tests/test_paper_i_frontier_registry.py
       - name: Assemble pinned reviewer bundle
         shell: bash
         run: |
@@ -100,11 +102,13 @@ jobs:
             docs/validation/PAPER_I_REFEREE_PREBUTTAL_2026-10-29.md \
             docs/validation/PAPER_I_BRANCH_CHARTER_2026-10-29.md \
             docs/validation/PAPER_I_SPECIALIST_REVIEW_INVITATION.md \
+            docs/validation/PAPER_I_FRONTIER_ADJUDICATION_PROTOCOL_2026-10-30.md \
             "$OUT/docs/validation/"
           cp docs/literature/CLAIM_BY_CLAIM_POSITIONING.md "$OUT/docs/literature/"
           cp docs/literature/SPECIALIST_PRIORITY_QUERY_PACKET.md "$OUT/docs/literature/"
           cp metadata/VALIDATION_TARGETS.json metadata/CANONICAL_STATE.json \
-            metadata/PAPER_I_STATE.json "$OUT/metadata/"
+            metadata/PAPER_I_STATE.json metadata/PAPER_I_FRONTIERS.json \
+            "$OUT/metadata/"
           printf '%s\n' "$GITHUB_SHA" > "$OUT/REVIEW_COMMIT.txt"
           printf '%s\n' "https://github.com/${GITHUB_REPOSITORY}/commit/${GITHUB_SHA}" > "$OUT/REVIEW_COMMIT_URL.txt"
           (
@@ -129,6 +133,6 @@ jobs:
         with:
           name: rgphi-reviewer-bundle-${{ github.sha }}
           path: |
-            dist/RGPHI_REVIEWER_BUNDLE_${{ github.sha }}.zip
-            dist/RGPHI_REVIEWER_BUNDLE_${{ github.sha }}.zip.sha256
+            dist/RGPHI_REVIEWER_BUNDLE_${GITHUB_SHA}.zip
+            dist/RGPHI_REVIEWER_BUNDLE_${GITHUB_SHA}.zip.sha256
           if-no-files-found: error

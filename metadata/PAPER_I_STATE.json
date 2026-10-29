@@ -1,0 +1,54 @@
+{
+  "schema_version": "1.0",
+  "canonical_date": "2026-10-29",
+  "authority": "PUBLICATION_TRACK_P1_EXCLUSIVE",
+  "title": "Nonnested extremal targets in a rational radix–Mobius semigroup",
+  "system": {
+    "base": 10,
+    "seed": "17/19",
+    "kappa": 11,
+    "terminal_states": 23
+  },
+  "closed_claims": {
+    "tau": {"1": 45, "2": 85, "3": 120, "4": 162},
+    "nonnesting_delays": [2, 19, 6],
+    "chronology_interval": ["106197/10000", "11643/1000"],
+    "nonnesting_interval": ["106197/10000", "1101/100"],
+    "terminal_branch_checks": 46,
+    "layer_recursion": "EXACT_BY_INDUCTION"
+  },
+  "context_only": {
+    "tau5_interval": [186, 212],
+    "stage_b2": "OUTSIDE_THEOREM_DEPENDENCY_GRAPH"
+  },
+  "evidence": {
+    "compact_receipt": "data/certificates/paper-I/benchmark_receipt.json",
+    "terminal_audit": "data/certificates/terminal-set-audit.json",
+    "continuation_bundle": "data/certificates/paper-I/paper-I-profiles.zip",
+    "global_layer_profile": "data/thresholds/exact-bfs-depth-0-162.csv",
+    "robustness_result": "data/thresholds/robustness-result.json",
+    "full_depth162_payload": "NOT_DUPLICATED_IN_ORDINARY_GIT"
+  },
+  "excluded_programs": [
+    "P2_STAGE_B2_AND_TAU5_CLOSURE",
+    "PAPER_II_FAREY_PADIC_STATE",
+    "PAPER_III_TRAPS_ESCAPE",
+    "RGPHI_GEN",
+    "ARTIN_KUMMER",
+    "U5_HD_HM_EO_ODT_BQ_OMNI_HDH"
+  ],
+  "external_gates": {
+    "specialist_reviews_required": 2,
+    "closed_database_priority_review": "OPEN",
+    "external_replay_or_clean_room": "OPEN",
+    "full_certificate_archive_or_regeneration": "OPEN",
+    "journal_format_audit": "OPEN"
+  },
+  "candidate_venues": [
+    "Journal of Modern Dynamics",
+    "Experimental Mathematics",
+    "Dynamical Systems",
+    "Ergodic Theory and Dynamical Systems"
+  ],
+  "status": "INTERNAL_FINALIZATION_COMPLETE_EXTERNAL_GATES_OPEN"
+}

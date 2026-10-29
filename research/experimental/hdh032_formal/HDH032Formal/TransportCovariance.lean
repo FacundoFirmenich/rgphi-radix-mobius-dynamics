@@ -22,15 +22,15 @@ theorem retained_inverse_covariance_generic
   constructor
   · calc
       (r * c * q) * (r * e * q) = r * c * (q * r) * e * q := by noncomm_ring
-      _ = r * c * e * q := by rw [hQR, mul_one]
+      _ = r * c * e * q := by rw [hQR]; simp
       _ = r * (c * e) * q := by noncomm_ring
-      _ = r * q := by rw [hCE, mul_one]
+      _ = r * q := by rw [hCE]; simp
       _ = 1 := hRQ
   · calc
       (r * e * q) * (r * c * q) = r * e * (q * r) * c * q := by noncomm_ring
-      _ = r * e * c * q := by rw [hQR, mul_one]
+      _ = r * e * c * q := by rw [hQR]; simp
       _ = r * (e * c) * q := by noncomm_ring
-      _ = r * q := by rw [hEC, mul_one]
+      _ = r * q := by rw [hEC]; simp
       _ = 1 := hRQ
 
 theorem memory_derivative_covariance_generic
@@ -43,7 +43,7 @@ theorem memory_derivative_covariance_generic
   calc
     r * da * q + (r * e * q) * (r * dc * q) * (r * e * q) =
         r * da * q + r * e * (q * r) * dc * (q * r) * e * q := by noncomm_ring
-    _ = r * da * q + r * e * dc * e * q := by rw [hQR, mul_one]
+    _ = r * da * q + r * e * dc * e * q := by rw [hQR]; simp
     _ = r * (da + e * dc * e) * q := by noncomm_ring
 
 theorem finite_matrix_memory_derivative_covariance

@@ -1,0 +1,30 @@
+⚠ [9047/9049] Building HDH026Formal.BlockSchur (3.7s)
+trace: .> LEAN_PATH=/home/runner/work/rgphi-radix-mobius-dynamics/rgphi-radix-mobius-dynamics/research/experimental/hdh026_formal/.lake/packages/Cli/.lake/build/lib/lean:/home/runner/work/rgphi-radix-mobius-dynamics/rgphi-radix-mobius-dynamics/research/experimental/hdh026_formal/.lake/packages/batteries/.lake/build/lib/lean:/home/runner/work/rgphi-radix-mobius-dynamics/rgphi-radix-mobius-dynamics/research/experimental/hdh026_formal/.lake/packages/Qq/.lake/build/lib/lean:/home/runner/work/rgphi-radix-mobius-dynamics/rgphi-radix-mobius-dynamics/research/experimental/hdh026_formal/.lake/packages/aesop/.lake/build/lib/lean:/home/runner/work/rgphi-radix-mobius-dynamics/rgphi-radix-mobius-dynamics/research/experimental/hdh026_formal/.lake/packages/proofwidgets/.lake/build/lib/lean:/home/runner/work/rgphi-radix-mobius-dynamics/rgphi-radix-mobius-dynamics/research/experimental/hdh026_formal/.lake/packages/importGraph/.lake/build/lib/lean:/home/runner/work/rgphi-radix-mobius-dynamics/rgphi-radix-mobius-dynamics/research/experimental/hdh026_formal/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/home/runner/work/rgphi-radix-mobius-dynamics/rgphi-radix-mobius-dynamics/research/experimental/hdh026_formal/.lake/packages/plausible/.lake/build/lib/lean:/home/runner/work/rgphi-radix-mobius-dynamics/rgphi-radix-mobius-dynamics/research/experimental/hdh026_formal/.lake/packages/mathlib/.lake/build/lib/lean:/home/runner/work/rgphi-radix-mobius-dynamics/rgphi-radix-mobius-dynamics/research/experimental/hdh026_formal/.lake/build/lib/lean /home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean /home/runner/work/rgphi-radix-mobius-dynamics/rgphi-radix-mobius-dynamics/research/experimental/hdh026_formal/HDH026Formal/BlockSchur.lean -o /home/runner/work/rgphi-radix-mobius-dynamics/rgphi-radix-mobius-dynamics/research/experimental/hdh026_formal/.lake/build/lib/lean/HDH026Formal/BlockSchur.olean -i /home/runner/work/rgphi-radix-mobius-dynamics/rgphi-radix-mobius-dynamics/research/experimental/hdh026_formal/.lake/build/lib/lean/HDH026Formal/BlockSchur.ilean -c /home/runner/work/rgphi-radix-mobius-dynamics/rgphi-radix-mobius-dynamics/research/experimental/hdh026_formal/.lake/build/ir/HDH026Formal/BlockSchur.c --setup /home/runner/work/rgphi-radix-mobius-dynamics/rgphi-radix-mobius-dynamics/research/experimental/hdh026_formal/.lake/build/ir/HDH026Formal/BlockSchur.setup.json --json
+warning: HDH026Formal/BlockSchur.lean:27:5: Variable name `hde` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hde
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: HDH026Formal/BlockSchur.lean:29:5: Variable name `hsf` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hsf
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: HDH026Formal/BlockSchur.lean:61:5: Variable name `hed` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hed
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: HDH026Formal/BlockSchur.lean:63:5: Variable name `hfs` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hfs
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✔ [9048/9049] Built HDH026Formal (248ms)
+Some required targets logged failures:
+- HDH026Formal.BlockSchur
+error: build failed

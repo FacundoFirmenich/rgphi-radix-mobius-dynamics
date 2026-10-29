@@ -1,0 +1,58 @@
+✖ [9047/9049] Building HDH028Formal.SchurComposition (4.7s)
+trace: .> LEAN_PATH=/home/runner/work/rgphi-radix-mobius-dynamics/rgphi-radix-mobius-dynamics/research/experimental/hdh028_formal/.lake/packages/Cli/.lake/build/lib/lean:/home/runner/work/rgphi-radix-mobius-dynamics/rgphi-radix-mobius-dynamics/research/experimental/hdh028_formal/.lake/packages/batteries/.lake/build/lib/lean:/home/runner/work/rgphi-radix-mobius-dynamics/rgphi-radix-mobius-dynamics/research/experimental/hdh028_formal/.lake/packages/Qq/.lake/build/lib/lean:/home/runner/work/rgphi-radix-mobius-dynamics/rgphi-radix-mobius-dynamics/research/experimental/hdh028_formal/.lake/packages/aesop/.lake/build/lib/lean:/home/runner/work/rgphi-radix-mobius-dynamics/rgphi-radix-mobius-dynamics/research/experimental/hdh028_formal/.lake/packages/proofwidgets/.lake/build/lib/lean:/home/runner/work/rgphi-radix-mobius-dynamics/rgphi-radix-mobius-dynamics/research/experimental/hdh028_formal/.lake/packages/importGraph/.lake/build/lib/lean:/home/runner/work/rgphi-radix-mobius-dynamics/rgphi-radix-mobius-dynamics/research/experimental/hdh028_formal/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/home/runner/work/rgphi-radix-mobius-dynamics/rgphi-radix-mobius-dynamics/research/experimental/hdh028_formal/.lake/packages/plausible/.lake/build/lib/lean:/home/runner/work/rgphi-radix-mobius-dynamics/rgphi-radix-mobius-dynamics/research/experimental/hdh028_formal/.lake/packages/mathlib/.lake/build/lib/lean:/home/runner/work/rgphi-radix-mobius-dynamics/rgphi-radix-mobius-dynamics/research/experimental/hdh028_formal/.lake/build/lib/lean /home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean /home/runner/work/rgphi-radix-mobius-dynamics/rgphi-radix-mobius-dynamics/research/experimental/hdh028_formal/HDH028Formal/SchurComposition.lean -o /home/runner/work/rgphi-radix-mobius-dynamics/rgphi-radix-mobius-dynamics/research/experimental/hdh028_formal/.lake/build/lib/lean/HDH028Formal/SchurComposition.olean -i /home/runner/work/rgphi-radix-mobius-dynamics/rgphi-radix-mobius-dynamics/research/experimental/hdh028_formal/.lake/build/lib/lean/HDH028Formal/SchurComposition.ilean -c /home/runner/work/rgphi-radix-mobius-dynamics/rgphi-radix-mobius-dynamics/research/experimental/hdh028_formal/.lake/build/ir/HDH028Formal/SchurComposition.c --setup /home/runner/work/rgphi-radix-mobius-dynamics/rgphi-radix-mobius-dynamics/research/experimental/hdh028_formal/.lake/build/ir/HDH028Formal/SchurComposition.setup.json --json
+info: HDH028Formal/SchurComposition.lean:47:2: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+error: HDH028Formal/SchurComposition.lean:44:24: unsolved goals
+K : Type u_1
+inst✝⁶ : Field K
+m : Type u_2
+n : Type u_3
+p : Type u_4
+inst✝⁵ : Fintype m
+inst✝⁴ : DecidableEq m
+inst✝³ : Fintype n
+inst✝² : DecidableEq n
+inst✝¹ : Fintype p
+inst✝ : DecidableEq p
+A : Matrix m m K
+B : Matrix m n K
+C : Matrix m p K
+D : Matrix n m K
+E : Matrix n n K
+F : Matrix n p K
+G : Matrix p m K
+H : Matrix p n K
+J Kinv : Matrix p p K
+Sinv : Matrix n n K
+_hKJ : Kinv * J = 1
+_hJK : J * Kinv = 1
+_hLS : Sinv * (E - F * Kinv * H) = 1
+_hSL : (E - F * Kinv * H) * Sinv = 1
+i j : m
+⊢ A i j - ∑ x, ∑ x_1, C i x_1 * Kinv x_1 x * G x j -
+      ∑ x,
+        ∑ x_1,
+          (B i x_1 * Sinv x_1 x * D x j - B i x_1 * Sinv x_1 x * ∑ x_2, ∑ x_3, F x x_3 * Kinv x_3 x_2 * G x_2 j -
+              (∑ x, ∑ x_2, C i x_2 * Kinv x_2 x * H x x_1) * Sinv x_1 x * D x j +
+            (∑ x, ∑ x_2, C i x_2 * Kinv x_2 x * H x x_1) * Sinv x_1 x *
+              ∑ x_2, ∑ x_3, F x x_3 * Kinv x_3 x_2 * G x_2 j) =
+    A i j - ∑ x, ∑ x_1, C i x_1 * Kinv x_1 x * G x j - ∑ x, ∑ x_1, B i x_1 * Sinv x_1 x * D x j +
+          ∑ x, ∑ x_1, ∑ x_2, ∑ x_3, B i x_3 * Sinv x_3 x_2 * F x_2 x_1 * Kinv x_1 x * G x j +
+        ∑ x, ∑ x_1, ∑ x_2, ∑ x_3, C i x_3 * Kinv x_3 x_2 * H x_2 x_1 * Sinv x_1 x * D x j -
+      ∑ x,
+        ∑ x_1,
+          ∑ x_2, ∑ x_3, ∑ x_4, ∑ x_5, C i x_5 * Kinv x_5 x_4 * H x_4 x_3 * Sinv x_3 x_2 * F x_2 x_1 * Kinv x_1 x * G x j
+warning: HDH028Formal/SchurComposition.lean:46:26: This simp argument is unused:
+  Finset.mul_sum
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Matrix.mul_apply, Finset.sum_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Some required targets logged failures:
+- HDH028Formal.SchurComposition
+error: build failed

@@ -45,7 +45,7 @@ def directUnionSchur {R : Type*} [Ring R]
     c * k * g + c * k * h * l * f * k * g)
 
 def sequentialSchur {R : Type*} [Ring R]
-    (a b c d e f g h k l : R) : R :=
+    (a b c d _e f g h k l : R) : R :=
   schur2 (schur2 a c g k) (b - c * k * h) (d - f * k * g) l
 
 theorem explicit_quotient_formula_generic

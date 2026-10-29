@@ -16,17 +16,16 @@ jobs:
             echo 'Unproved placeholder detected' >&2
             exit 1
           fi
-      - name: Install pinned Lean toolchain
-        uses: leanprover/lean-action@v1
-        with:
-          lake-package-directory: research/experimental/hdh025_formal
-          auto-config: false
-          build: false
-          test: false
-          use-mathlib-cache: false
+      - name: Install pinned Lean via elan
+        shell: bash
+        run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
       - name: Resolve pinned Mathlib dependency
         working-directory: research/experimental/hdh025_formal
-        run: lake update
+        run: |
+          lake --version
+          lake update
       - name: Restore Mathlib oleans
         working-directory: research/experimental/hdh025_formal
         run: lake exe cache get

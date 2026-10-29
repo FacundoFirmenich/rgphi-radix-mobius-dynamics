@@ -119,5 +119,6 @@ theorem hidden_union_contraction_rectangular
       B * L * D - B * L * F * Kinv * G - C * Kinv * H * L * D +
         C * Kinv * H * L * F * Kinv * G := by
     simp [Matrix.sub_mul, Matrix.mul_sub, Matrix.mul_assoc]
+    abel
   rw [h1, h2, h3, h4]
   abel

@@ -2,7 +2,9 @@ name: Finalize Paper I candidate
 
 on:
   push:
-    branches: [paper-i/finalization-2026-10-29]
+    branches:
+      - paper-i/finalization-2026-10-29
+      - paper-i/literature-hardening-2026-10-29
     paths:
       - "scripts/paper_i/finalize_p1.py"
       - "scripts/paper_i/finalize_p1_postfix.py"
@@ -45,6 +47,6 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add paper docs/validation tests/test_paper_i_finalization.py
           if ! git diff --cached --quiet; then
-            git commit -m "Finalize Paper I theorem architecture and submission packet"
+            git commit -m "Harden Paper I literature positioning"
             git push origin "HEAD:${GITHUB_REF_NAME}"
           fi

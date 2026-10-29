@@ -2,7 +2,6 @@
 """Small deterministic layout, exactness and literature fixes after generation."""
 from pathlib import Path
 
-# This script is intentionally idempotent and safe to rerun after governance edits.
 ROOT = Path(__file__).resolve().parents[2]
 TEX = ROOT / "paper" / "main.tex"
 
@@ -40,7 +39,8 @@ Thus states of much smaller current height can have strictly smaller exact cost 
 \end{corollary}"""
 text = text.replace(old_corollary, new_corollary)
 
-if "Peng2014Hitting" not in text:
+literature_sentence = "Quantitative hitting depth for the Gauss map has also been studied"
+if literature_sentence not in text:
     literature_anchor = (
         "The need for sufficient state in dynamic programming is classical \\cite{Bellman1952On,Light2023The}; automata-based state augmentation for non-Markovian objectives appears, for example, in \\cite{Brafman2017Specifying}.  Likewise, invariant or survivor sets in open expanding systems are established objects \\cite{Kong2025Open}, and independently checkable certificates are an active topic in formal reachability verification \\cite{Chatterjee2025Fixed}.  We therefore do not claim novelty for radix dynamics, projective/Farey methods, state augmentation, trapping, or certification as general concepts."
     )
@@ -51,6 +51,7 @@ if "Peng2014Hitting" not in text:
         raise RuntimeError("literature paragraph anchor not found")
     text = text.replace(literature_anchor, literature_expanded, 1)
 
+if "\\bibitem{Peng2014Hitting}" not in text:
     bibliography_anchor = r"""\bibitem{Silverman2007The}
 J. H. Silverman,
 \emph{The Arithmetic of Dynamical Systems},

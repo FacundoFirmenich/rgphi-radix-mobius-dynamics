@@ -7,13 +7,33 @@ on:
     paths:
       - "paper/**"
       - "data/certificates/paper-I/**"
+      - "data/certificates/terminal-set-audit.json"
+      - "data/thresholds/**"
       - "scripts/paper_i/**"
       - "docs/SCIENTIFIC_STATUS.md"
       - "docs/EVIDENCE_MODEL.md"
+      - "docs/theorems/threshold-robustness-atlas.md"
       - "docs/validation/**"
       - "docs/literature/**"
       - "metadata/VALIDATION_TARGETS.json"
       - "metadata/CANONICAL_STATE.json"
+      - "metadata/PAPER_I_STATE.json"
+      - ".github/workflows/reviewer-bundle.yml"
+  pull_request:
+    paths:
+      - "paper/**"
+      - "data/certificates/paper-I/**"
+      - "data/certificates/terminal-set-audit.json"
+      - "data/thresholds/**"
+      - "scripts/paper_i/**"
+      - "docs/SCIENTIFIC_STATUS.md"
+      - "docs/EVIDENCE_MODEL.md"
+      - "docs/theorems/threshold-robustness-atlas.md"
+      - "docs/validation/**"
+      - "docs/literature/**"
+      - "metadata/VALIDATION_TARGETS.json"
+      - "metadata/CANONICAL_STATE.json"
+      - "metadata/PAPER_I_STATE.json"
       - ".github/workflows/reviewer-bundle.yml"
 
 permissions:
@@ -39,20 +59,35 @@ jobs:
           python -m pip install -e '.[dev]'
           rgphi verify
           python scripts/paper_i/verify_receipt.py
+          pytest -q tests/test_paper_i_finalization.py
       - name: Assemble pinned reviewer bundle
         shell: bash
         run: |
           set -euo pipefail
           OUT="dist/reviewer-bundle"
           mkdir -p "$OUT/paper" "$OUT/data/certificates/paper-I" \
+            "$OUT/data/certificates" "$OUT/data/thresholds" \
+            "$OUT/scripts/paper_i" "$OUT/docs/theorems" \
             "$OUT/docs/validation" "$OUT/docs/literature" "$OUT/metadata"
-          cp paper/main.pdf paper/main.tex paper/claim-evidence-matrix.csv \
-            paper/CLAIM_FREEZE.md "$OUT/paper/"
+          cp paper/main.pdf paper/main.tex paper/supplement.md \
+            paper/claim-evidence-matrix.csv paper/CLAIM_FREEZE.md \
+            paper/PAPER_I_FINALIZATION_STATUS.md paper/PAPER_I_ONE_PAGE_BRIEF.md \
+            "$OUT/paper/"
           cp data/certificates/paper-I/benchmark_receipt.json \
             data/certificates/paper-I/EVIDENCE_BOUNDARY.md \
             data/certificates/paper-I/paper-I-profiles.zip \
             data/certificates/paper-I/paper-I-profiles.zip.sha256 \
             "$OUT/data/certificates/paper-I/"
+          cp data/certificates/terminal-set-audit.json "$OUT/data/certificates/"
+          cp data/thresholds/exact-bfs-depth-0-162.csv \
+            data/thresholds/benchmark-robustness.csv \
+            data/thresholds/portal-continuation-costs.csv \
+            data/thresholds/nonnesting-robustness.csv \
+            data/thresholds/robustness-result.json \
+            "$OUT/data/thresholds/"
+          cp scripts/paper_i/replay_exact.sh scripts/paper_i/verify_receipt.py \
+            "$OUT/scripts/paper_i/"
+          cp docs/theorems/threshold-robustness-atlas.md "$OUT/docs/theorems/"
           cp docs/SCIENTIFIC_STATUS.md docs/EVIDENCE_MODEL.md "$OUT/docs/"
           cp docs/validation/REFEREE_PACKET.md "$OUT/docs/validation/"
           cp docs/validation/REVIEW_SCORECARD.md "$OUT/docs/validation/"
@@ -61,9 +96,15 @@ jobs:
           cp docs/validation/REVIEWER_DECLARATION_TEMPLATE.md "$OUT/docs/validation/"
           cp docs/validation/REPLICATION_REPORT_TEMPLATE.md "$OUT/docs/validation/"
           cp docs/validation/TRUSTED_CHECKER_SPEC.md "$OUT/docs/validation/"
+          cp docs/validation/PAPER_I_JOURNAL_DECISION_2026-10-29.md \
+            docs/validation/PAPER_I_REFEREE_PREBUTTAL_2026-10-29.md \
+            docs/validation/PAPER_I_BRANCH_CHARTER_2026-10-29.md \
+            docs/validation/PAPER_I_SPECIALIST_REVIEW_INVITATION.md \
+            "$OUT/docs/validation/"
           cp docs/literature/CLAIM_BY_CLAIM_POSITIONING.md "$OUT/docs/literature/"
           cp docs/literature/SPECIALIST_PRIORITY_QUERY_PACKET.md "$OUT/docs/literature/"
-          cp metadata/VALIDATION_TARGETS.json metadata/CANONICAL_STATE.json "$OUT/metadata/"
+          cp metadata/VALIDATION_TARGETS.json metadata/CANONICAL_STATE.json \
+            metadata/PAPER_I_STATE.json "$OUT/metadata/"
           printf '%s\n' "$GITHUB_SHA" > "$OUT/REVIEW_COMMIT.txt"
           printf '%s\n' "https://github.com/${GITHUB_REPOSITORY}/commit/${GITHUB_SHA}" > "$OUT/REVIEW_COMMIT_URL.txt"
           (

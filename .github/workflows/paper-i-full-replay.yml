@@ -1,0 +1,43 @@
+name: Replay Paper I exact continuation certificates
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [paper-i/finalization-2026-10-29]
+    paths:
+      - "data/certificates/paper-I/**"
+      - "scripts/paper_i/replay_exact.sh"
+      - ".github/workflows/paper-i-full-replay.yml"
+  pull_request:
+    paths:
+      - "data/certificates/paper-I/**"
+      - "scripts/paper_i/replay_exact.sh"
+      - "paper/**"
+      - "docs/validation/**"
+      - ".github/workflows/paper-i-full-replay.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  exact-replay:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v7
+      - name: Install exact replay toolchain
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends g++ unzip
+      - name: Replay all five continuation certificates
+        run: bash scripts/paper_i/replay_exact.sh
+      - name: Record successful replay
+        run: |
+          printf '%s\n' "commit=${GITHUB_SHA}" > PAPER_I_EXACT_REPLAY_RECEIPT.txt
+          printf '%s\n' "status=PASS_PAPER_I_FULL_EXACT_REPLAY" >> PAPER_I_EXACT_REPLAY_RECEIPT.txt
+          sha256sum data/certificates/paper-I/paper-I-profiles.zip >> PAPER_I_EXACT_REPLAY_RECEIPT.txt
+      - uses: actions/upload-artifact@v7
+        with:
+          name: paper-i-exact-replay-receipt-${{ github.sha }}
+          path: PAPER_I_EXACT_REPLAY_RECEIPT.txt
+          if-no-files-found: error

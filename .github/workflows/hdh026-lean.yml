@@ -1,0 +1,35 @@
+name: HDH-026 Lean formal gate
+
+on:
+  push:
+    branches: ["hdh-026-formal-gate"]
+  workflow_dispatch:
+
+jobs:
+  compile:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Reject proof placeholders
+        run: |
+          if grep -R -n -E '\b(sorry|admit|axiom)\b' research/experimental/hdh026_formal --include='*.lean'; then
+            echo 'Unproved placeholder detected' >&2
+            exit 1
+          fi
+      - name: Install pinned Lean via elan
+        shell: bash
+        run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Resolve pinned Mathlib dependency
+        working-directory: research/experimental/hdh026_formal
+        run: |
+          lake --version
+          lake update
+      - name: Restore Mathlib oleans
+        working-directory: research/experimental/hdh026_formal
+        run: lake exe cache get
+      - name: Compile theorems with warnings as errors
+        working-directory: research/experimental/hdh026_formal
+        shell: bash
+        run: lake build --wfail

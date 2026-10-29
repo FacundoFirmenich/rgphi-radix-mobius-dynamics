@@ -5,6 +5,9 @@ on:
     branches: ["hdh-026-formal-gate"]
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   compile:
     runs-on: ubuntu-latest
@@ -23,13 +26,26 @@ jobs:
           echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
       - name: Resolve pinned Mathlib dependency
         working-directory: research/experimental/hdh026_formal
-        run: |
-          lake --version
-          lake update
+        run: lake update
       - name: Restore Mathlib oleans
         working-directory: research/experimental/hdh026_formal
         run: lake exe cache get
       - name: Compile theorems with warnings as errors
         working-directory: research/experimental/hdh026_formal
         shell: bash
-        run: lake build --wfail
+        run: |
+          set +e
+          lake build --wfail 2>&1 | tee lean-build.log
+          status=${PIPESTATUS[0]}
+          exit "$status"
+      - name: Publish compiler log on diagnostic branch
+        if: failure()
+        shell: bash
+        run: |
+          mkdir -p research/experimental/hdh026_formal_diagnostic
+          cp research/experimental/hdh026_formal/lean-build.log research/experimental/hdh026_formal_diagnostic/lean-build.log
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add research/experimental/hdh026_formal_diagnostic/lean-build.log
+          git commit -m 'HDH-026: publish Lean compiler diagnostic' || true
+          git push --force origin HEAD:refs/heads/hdh-026-formal-log

@@ -108,6 +108,16 @@ theorem hidden_union_contraction_rectangular
       C * (Kinv + Kinv * H * L * F * Kinv) * G) =
     A - C * Kinv * G -
       (B - C * Kinv * H) * L * (D - F * Kinv * G) := by
-  simp only [Matrix.mul_assoc, Matrix.mul_add, Matrix.add_mul,
-    Matrix.mul_sub, Matrix.sub_mul]
-  noncomm_ring
+  have h1 : B * (-(L * F * Kinv)) * G = -(B * L * F * Kinv * G) := by
+    simp [Matrix.mul_assoc]
+  have h2 : C * (-(Kinv * H * L)) * D = -(C * Kinv * H * L * D) := by
+    simp [Matrix.mul_assoc]
+  have h3 : C * (Kinv + Kinv * H * L * F * Kinv) * G =
+      C * Kinv * G + C * Kinv * H * L * F * Kinv * G := by
+    simp [Matrix.mul_add, Matrix.add_mul, Matrix.mul_assoc]
+  have h4 : (B - C * Kinv * H) * L * (D - F * Kinv * G) =
+      B * L * D - B * L * F * Kinv * G - C * Kinv * H * L * D +
+        C * Kinv * H * L * F * Kinv * G := by
+    simp [Matrix.sub_mul, Matrix.mul_sub, Matrix.mul_assoc]
+  rw [h1, h2, h3, h4]
+  abel

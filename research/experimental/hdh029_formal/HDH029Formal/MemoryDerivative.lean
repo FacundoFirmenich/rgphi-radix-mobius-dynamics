@@ -78,7 +78,7 @@ theorem quotient_formula_block_contraction_generic
         retainedRow2 b c * hiddenInverse2 f h k l * retainedCol2 d g =
       !![sequentialSchur a b c d e f g h k l] := by
   ext i j
-  fin_cases i <;> fin_cases j
-  simp [retainedRow2, hiddenInverse2, retainedCol2,
-    sequentialSchur, schur2, Matrix.mul_apply, Fin.sum_univ_two]
+  fin_cases i
+  fin_cases j
+  simp [retainedRow2, hiddenInverse2, retainedCol2, sequentialSchur, schur2]
   noncomm_ring

@@ -1,0 +1,26 @@
+⚠ [9047/9049] Building HDH029Formal.MemoryDerivative (3.0s)
+trace: .> LEAN_PATH=/home/runner/work/rgphi-radix-mobius-dynamics/rgphi-radix-mobius-dynamics/research/experimental/hdh029_formal/.lake/packages/Cli/.lake/build/lib/lean:/home/runner/work/rgphi-radix-mobius-dynamics/rgphi-radix-mobius-dynamics/research/experimental/hdh029_formal/.lake/packages/batteries/.lake/build/lib/lean:/home/runner/work/rgphi-radix-mobius-dynamics/rgphi-radix-mobius-dynamics/research/experimental/hdh029_formal/.lake/packages/Qq/.lake/build/lib/lean:/home/runner/work/rgphi-radix-mobius-dynamics/rgphi-radix-mobius-dynamics/research/experimental/hdh029_formal/.lake/packages/aesop/.lake/build/lib/lean:/home/runner/work/rgphi-radix-mobius-dynamics/rgphi-radix-mobius-dynamics/research/experimental/hdh029_formal/.lake/packages/proofwidgets/.lake/build/lib/lean:/home/runner/work/rgphi-radix-mobius-dynamics/rgphi-radix-mobius-dynamics/research/experimental/hdh029_formal/.lake/packages/importGraph/.lake/build/lib/lean:/home/runner/work/rgphi-radix-mobius-dynamics/rgphi-radix-mobius-dynamics/research/experimental/hdh029_formal/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/home/runner/work/rgphi-radix-mobius-dynamics/rgphi-radix-mobius-dynamics/research/experimental/hdh029_formal/.lake/packages/plausible/.lake/build/lib/lean:/home/runner/work/rgphi-radix-mobius-dynamics/rgphi-radix-mobius-dynamics/research/experimental/hdh029_formal/.lake/packages/mathlib/.lake/build/lib/lean:/home/runner/work/rgphi-radix-mobius-dynamics/rgphi-radix-mobius-dynamics/research/experimental/hdh029_formal/.lake/build/lib/lean /home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean /home/runner/work/rgphi-radix-mobius-dynamics/rgphi-radix-mobius-dynamics/research/experimental/hdh029_formal/HDH029Formal/MemoryDerivative.lean -o /home/runner/work/rgphi-radix-mobius-dynamics/rgphi-radix-mobius-dynamics/research/experimental/hdh029_formal/.lake/build/lib/lean/HDH029Formal/MemoryDerivative.olean -i /home/runner/work/rgphi-radix-mobius-dynamics/rgphi-radix-mobius-dynamics/research/experimental/hdh029_formal/.lake/build/lib/lean/HDH029Formal/MemoryDerivative.ilean -c /home/runner/work/rgphi-radix-mobius-dynamics/rgphi-radix-mobius-dynamics/research/experimental/hdh029_formal/.lake/build/ir/HDH029Formal/MemoryDerivative.c --setup /home/runner/work/rgphi-radix-mobius-dynamics/rgphi-radix-mobius-dynamics/research/experimental/hdh029_formal/.lake/build/ir/HDH029Formal/MemoryDerivative.setup.json --json
+warning: HDH029Formal/MemoryDerivative.lean:83:29: This simp argument is unused:
+  Matrix.mul_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [retainedRow2, hiddenInverse2, retainedCol2, sequentialSchur, schur2, Fin.sum_univ_two]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: HDH029Formal/MemoryDerivative.lean:83:47: This simp argument is unused:
+  Fin.sum_univ_two
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [retainedRow2, hiddenInverse2, retainedCol2, sequentialSchur, schur2, Matrix.mul_apply]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: HDH029Formal/MemoryDerivative.lean:81:14: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: HDH029Formal/MemoryDerivative.lean:81:14: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [9048/9049] Built HDH029Formal (214ms)
+Some required targets logged failures:
+- HDH029Formal.MemoryDerivative
+error: build failed

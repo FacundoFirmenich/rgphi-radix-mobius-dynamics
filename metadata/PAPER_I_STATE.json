@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
   "canonical_date": "2026-10-29",
   "authority": "PUBLICATION_TRACK_P1_EXCLUSIVE",
   "title": "Nonnested extremal targets in a rational radix–Mobius semigroup",
@@ -28,6 +28,15 @@
     "global_layer_profile": "data/thresholds/exact-bfs-depth-0-162.csv",
     "robustness_result": "data/thresholds/robustness-result.json",
     "full_depth162_payload": "NOT_DUPLICATED_IN_ORDINARY_GIT"
+  },
+  "internal_validation": {
+    "exact_verification": "PASS",
+    "research_object_audit": "PASS",
+    "paper_build": "PASS_8_PAGE_CANDIDATE",
+    "reviewer_bundle_unpack_and_sha": "PASS",
+    "full_exact_continuation_replay": "PASS_PAPER_I_FULL_EXACT_REPLAY",
+    "visual_pdf_review": "PASS_ALL_PAGES",
+    "scope": "INTERNAL_ONLY_NOT_EXTERNAL_VALIDATION"
   },
   "excluded_programs": [
     "P2_STAGE_B2_AND_TAU5_CLOSURE",

@@ -1,0 +1,51 @@
+name: HDH-030 Lean formal gate
+
+on:
+  push:
+    branches: ["hdh-030-formal-gate"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  compile:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Reject proof placeholders
+        run: |
+          if grep -R -n -E '\b(sorry|admit|axiom)\b' research/experimental/hdh030_formal --include='*.lean'; then
+            echo 'Unproved placeholder detected' >&2
+            exit 1
+          fi
+      - name: Install pinned Lean via elan
+        shell: bash
+        run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Resolve pinned Mathlib dependency
+        working-directory: research/experimental/hdh030_formal
+        run: lake update
+      - name: Restore Mathlib oleans
+        working-directory: research/experimental/hdh030_formal
+        run: lake exe cache get
+      - name: Compile theorem with warnings as errors
+        working-directory: research/experimental/hdh030_formal
+        shell: bash
+        run: |
+          set +e
+          lake build --wfail 2>&1 | tee lean-build.log
+          status=${PIPESTATUS[0]}
+          exit "$status"
+      - name: Publish compiler log on diagnostic branch
+        if: failure()
+        shell: bash
+        run: |
+          mkdir -p research/experimental/hdh030_formal_diagnostic
+          cp research/experimental/hdh030_formal/lean-build.log research/experimental/hdh030_formal_diagnostic/lean-build.log
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add research/experimental/hdh030_formal_diagnostic/lean-build.log
+          git commit -m 'HDH-030: publish Lean compiler diagnostic' || true
+          git push --force origin HEAD:refs/heads/hdh-030-formal-log

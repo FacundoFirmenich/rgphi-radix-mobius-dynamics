@@ -1,11 +1,12 @@
-import Mathlib.Data.Matrix.Notation
-import Mathlib.Tactic
+module
+
+import Mathlib
 
 open Matrix
 
 /-!
 Machine-checked finite block-Schur factorization used by HDH-025.
-The generic theorem is noncommutative.  Instantiating the coefficient ring
+The generic theorem is noncommutative. Instantiating the coefficient ring
 with a finite square matrix ring yields the finite block identity.
 -/
 

@@ -110,4 +110,4 @@ theorem hidden_union_contraction_rectangular
       (B - C * Kinv * H) * L * (D - F * Kinv * G) := by
   simp only [Matrix.mul_assoc, Matrix.mul_add, Matrix.add_mul,
     Matrix.mul_sub, Matrix.sub_mul]
-  abel_nf
+  noncomm_ring

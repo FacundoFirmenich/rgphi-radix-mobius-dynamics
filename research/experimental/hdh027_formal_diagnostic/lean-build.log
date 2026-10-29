@@ -1,0 +1,50 @@
+✖ [9047/9049] Building HDH027Formal.RectangularSchur (3.0s)
+trace: .> LEAN_PATH=/home/runner/work/rgphi-radix-mobius-dynamics/rgphi-radix-mobius-dynamics/research/experimental/hdh027_formal/.lake/packages/Cli/.lake/build/lib/lean:/home/runner/work/rgphi-radix-mobius-dynamics/rgphi-radix-mobius-dynamics/research/experimental/hdh027_formal/.lake/packages/batteries/.lake/build/lib/lean:/home/runner/work/rgphi-radix-mobius-dynamics/rgphi-radix-mobius-dynamics/research/experimental/hdh027_formal/.lake/packages/Qq/.lake/build/lib/lean:/home/runner/work/rgphi-radix-mobius-dynamics/rgphi-radix-mobius-dynamics/research/experimental/hdh027_formal/.lake/packages/aesop/.lake/build/lib/lean:/home/runner/work/rgphi-radix-mobius-dynamics/rgphi-radix-mobius-dynamics/research/experimental/hdh027_formal/.lake/packages/proofwidgets/.lake/build/lib/lean:/home/runner/work/rgphi-radix-mobius-dynamics/rgphi-radix-mobius-dynamics/research/experimental/hdh027_formal/.lake/packages/importGraph/.lake/build/lib/lean:/home/runner/work/rgphi-radix-mobius-dynamics/rgphi-radix-mobius-dynamics/research/experimental/hdh027_formal/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/home/runner/work/rgphi-radix-mobius-dynamics/rgphi-radix-mobius-dynamics/research/experimental/hdh027_formal/.lake/packages/plausible/.lake/build/lib/lean:/home/runner/work/rgphi-radix-mobius-dynamics/rgphi-radix-mobius-dynamics/research/experimental/hdh027_formal/.lake/packages/mathlib/.lake/build/lib/lean:/home/runner/work/rgphi-radix-mobius-dynamics/rgphi-radix-mobius-dynamics/research/experimental/hdh027_formal/.lake/build/lib/lean /home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean /home/runner/work/rgphi-radix-mobius-dynamics/rgphi-radix-mobius-dynamics/research/experimental/hdh027_formal/HDH027Formal/RectangularSchur.lean -o /home/runner/work/rgphi-radix-mobius-dynamics/rgphi-radix-mobius-dynamics/research/experimental/hdh027_formal/.lake/build/lib/lean/HDH027Formal/RectangularSchur.olean -i /home/runner/work/rgphi-radix-mobius-dynamics/rgphi-radix-mobius-dynamics/research/experimental/hdh027_formal/.lake/build/lib/lean/HDH027Formal/RectangularSchur.ilean -c /home/runner/work/rgphi-radix-mobius-dynamics/rgphi-radix-mobius-dynamics/research/experimental/hdh027_formal/.lake/build/ir/HDH027Formal/RectangularSchur.c --setup /home/runner/work/rgphi-radix-mobius-dynamics/rgphi-radix-mobius-dynamics/research/experimental/hdh027_formal/.lake/build/ir/HDH027Formal/RectangularSchur.setup.json --json
+error: HDH027Formal/RectangularSchur.lean:27:40: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ?a * ?b * ?c
+in the target expression
+  B * E * D = B * (E * D)
+
+K : Type u_1
+inst✝⁴ : Field K
+m : Type u_2
+n : Type u_3
+inst✝³ : Fintype m
+inst✝² : DecidableEq m
+inst✝¹ : Fintype n
+inst✝ : DecidableEq n
+A : Matrix m m K
+B : Matrix m n K
+C : Matrix n m K
+D E : Matrix n n K
+hED : E * D = 1
+⊢ B * E * D = B * (E * D)
+error: HDH027Formal/RectangularSchur.lean:28:27: Tactic `rewrite` failed: Did not find an occurrence of the pattern
+  ?a * 1
+in the target expression
+  B * 1 = B
+
+K : Type u_1
+inst✝⁴ : Field K
+m : Type u_2
+n : Type u_3
+inst✝³ : Fintype m
+inst✝² : DecidableEq m
+inst✝¹ : Fintype n
+inst✝ : DecidableEq n
+A : Matrix m m K
+B : Matrix m n K
+C : Matrix n m K
+D E : Matrix n n K
+hED : E * D = 1
+⊢ B * 1 = B
+warning: HDH027Formal/RectangularSchur.lean:30:14: This simp argument is unused:
+  mul_assoc
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [hBED]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+Some required targets logged failures:
+- HDH027Formal.RectangularSchur
+error: build failed

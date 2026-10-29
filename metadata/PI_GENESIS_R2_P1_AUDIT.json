@@ -1,0 +1,65 @@
+{
+  "schema_version": "1.0",
+  "audit_date": "2026-10-30",
+  "rgphi_authority": "PUBLICATION_TRACK_P1_EXCLUSIVE",
+  "source_packages": [
+    {
+      "name": "RGPHI_SUPERCIERRE_CANONICO_HANDOFF_2026-10-28.zip",
+      "bytes": 21681495,
+      "sha256": "17e2248ae0a9b3675a0f469c415d5f9603abb3e0428134f4827e1e21d208625e",
+      "decision": "DUPLICATE_EXACT_PREVIOUSLY_CANONIZED"
+    },
+    {
+      "name": "PI_GENESIS_v033_R2_REENFOQUE.zip",
+      "bytes": 1109383,
+      "sha256": "ab4174481a5d05bd316befce153fd3d102720cf49654ed9f30fbee769246b30d",
+      "decision": "CROSS_PROJECT_GOVERNANCE_DELTA_ONLY"
+    }
+  ],
+  "pi_genesis_integrity": {
+    "zip_test": "PASS",
+    "manifest_entries": 15,
+    "manifest_size_hash_checks": "15_OF_15_PASS",
+    "aperture_pages": 3,
+    "master_pages": 37,
+    "aperture_text_equals_master_first_three_pages": true,
+    "parent_originals_present": false,
+    "new_research_experiments_claimed": 0,
+    "new_scientific_theorems_claimed": 0,
+    "score_changes_claimed": false,
+    "source_authority": "SHADOW"
+  },
+  "scientific_overlap_with_paper_i": {
+    "radix_mobius": false,
+    "bellman_first_hit": false,
+    "farey": false,
+    "seed_17_19": false,
+    "portal_chronology": false,
+    "nonnesting": false,
+    "paper_i_evidence": false
+  },
+  "integrated_governance_principles": [
+    "open_partial_or_unattempted_is_not_inaccessible",
+    "five_field_specific_blocker_record",
+    "conditional_impossibility_is_scoped",
+    "local_closure_does_not_imply_universal_closure",
+    "internal_rerun_is_not_external_independence",
+    "strategic_reframing_does_not_create_theorems_experiments_or_scores"
+  ],
+  "not_integrated": [
+    "PI_Genesis_24_obligations",
+    "PI_Genesis_six_planes",
+    "PI_Genesis_Q4_semantics",
+    "PI_Genesis_scientific_theorems",
+    "PI_Genesis_scores",
+    "PI_Genesis_parent_canon",
+    "PI_Genesis_SHADOW_authority"
+  ],
+  "paper_i_scientific_effect": {
+    "theorem_changed": false,
+    "numerical_claim_changed": false,
+    "evidence_changed": false,
+    "novelty_claim_changed": false,
+    "governance_hardened": true
+  }
+}

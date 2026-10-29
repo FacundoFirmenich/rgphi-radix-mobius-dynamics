@@ -1,0 +1,31 @@
+✖ [9047/9049] Building HDH030Formal.HiddenUnionInverse (3.7s)
+trace: .> LEAN_PATH=/home/runner/work/rgphi-radix-mobius-dynamics/rgphi-radix-mobius-dynamics/research/experimental/hdh030_formal/.lake/packages/Cli/.lake/build/lib/lean:/home/runner/work/rgphi-radix-mobius-dynamics/rgphi-radix-mobius-dynamics/research/experimental/hdh030_formal/.lake/packages/batteries/.lake/build/lib/lean:/home/runner/work/rgphi-radix-mobius-dynamics/rgphi-radix-mobius-dynamics/research/experimental/hdh030_formal/.lake/packages/Qq/.lake/build/lib/lean:/home/runner/work/rgphi-radix-mobius-dynamics/rgphi-radix-mobius-dynamics/research/experimental/hdh030_formal/.lake/packages/aesop/.lake/build/lib/lean:/home/runner/work/rgphi-radix-mobius-dynamics/rgphi-radix-mobius-dynamics/research/experimental/hdh030_formal/.lake/packages/proofwidgets/.lake/build/lib/lean:/home/runner/work/rgphi-radix-mobius-dynamics/rgphi-radix-mobius-dynamics/research/experimental/hdh030_formal/.lake/packages/importGraph/.lake/build/lib/lean:/home/runner/work/rgphi-radix-mobius-dynamics/rgphi-radix-mobius-dynamics/research/experimental/hdh030_formal/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/home/runner/work/rgphi-radix-mobius-dynamics/rgphi-radix-mobius-dynamics/research/experimental/hdh030_formal/.lake/packages/plausible/.lake/build/lib/lean:/home/runner/work/rgphi-radix-mobius-dynamics/rgphi-radix-mobius-dynamics/research/experimental/hdh030_formal/.lake/packages/mathlib/.lake/build/lib/lean:/home/runner/work/rgphi-radix-mobius-dynamics/rgphi-radix-mobius-dynamics/research/experimental/hdh030_formal/.lake/build/lib/lean /home/runner/.elan/toolchains/leanprover--lean4---v4.35.0/bin/lean /home/runner/work/rgphi-radix-mobius-dynamics/rgphi-radix-mobius-dynamics/research/experimental/hdh030_formal/HDH030Formal/HiddenUnionInverse.lean -o /home/runner/work/rgphi-radix-mobius-dynamics/rgphi-radix-mobius-dynamics/research/experimental/hdh030_formal/.lake/build/lib/lean/HDH030Formal/HiddenUnionInverse.olean -i /home/runner/work/rgphi-radix-mobius-dynamics/rgphi-radix-mobius-dynamics/research/experimental/hdh030_formal/.lake/build/lib/lean/HDH030Formal/HiddenUnionInverse.ilean -c /home/runner/work/rgphi-radix-mobius-dynamics/rgphi-radix-mobius-dynamics/research/experimental/hdh030_formal/.lake/build/ir/HDH030Formal/HiddenUnionInverse.c --setup /home/runner/work/rgphi-radix-mobius-dynamics/rgphi-radix-mobius-dynamics/research/experimental/hdh030_formal/.lake/build/ir/HDH030Formal/HiddenUnionInverse.setup.json --json
+error: HDH030Formal/HiddenUnionInverse.lean:120:43: unsolved goals
+K : Type u_1
+inst✝⁶ : Field K
+m : Type u_2
+n : Type u_3
+p : Type u_4
+inst✝⁵ : Fintype m
+inst✝⁴ : DecidableEq m
+inst✝³ : Fintype n
+inst✝² : DecidableEq n
+inst✝¹ : Fintype p
+inst✝ : DecidableEq p
+A : Matrix m m K
+B : Matrix m n K
+C : Matrix m p K
+D : Matrix n m K
+G : Matrix p m K
+F : Matrix n p K
+H : Matrix p n K
+Kinv : Matrix p p K
+L : Matrix n n K
+h1 : B * -(L * F * Kinv) * G = -(B * L * F * Kinv * G)
+h2 : C * -(Kinv * H * L) * D = -(C * Kinv * H * L * D)
+h3 : C * (Kinv + Kinv * H * L * F * Kinv) * G = C * Kinv * G + C * Kinv * H * L * F * Kinv * G
+⊢ B * (L * D) - C * (Kinv * (H * (L * D))) - (B * (L * (F * (Kinv * G))) - C * (Kinv * (H * (L * (F * (Kinv * G)))))) =
+    B * (L * D) - B * (L * (F * (Kinv * G))) - C * (Kinv * (H * (L * D))) + C * (Kinv * (H * (L * (F * (Kinv * G)))))
+Some required targets logged failures:
+- HDH030Formal.HiddenUnionInverse
+error: build failed

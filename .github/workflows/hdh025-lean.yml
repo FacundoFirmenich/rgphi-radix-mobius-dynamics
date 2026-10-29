@@ -16,10 +16,31 @@ jobs:
             echo 'Unproved placeholder detected' >&2
             exit 1
           fi
-      - uses: leanprover/lean-action@v1
+      - name: Install pinned Lean toolchain
+        uses: leanprover/lean-action@v1
         with:
           lake-package-directory: research/experimental/hdh025_formal
-          build: true
+          auto-config: false
+          build: false
           test: false
-          use-mathlib-cache: true
-          build-args: "--wfail"
+          use-mathlib-cache: false
+      - name: Resolve pinned Mathlib dependency
+        working-directory: research/experimental/hdh025_formal
+        run: lake update
+      - name: Restore Mathlib oleans
+        working-directory: research/experimental/hdh025_formal
+        run: lake exe cache get
+      - name: Compile theorem with warnings as errors
+        working-directory: research/experimental/hdh025_formal
+        shell: bash
+        run: |
+          set +e
+          lake build --wfail 2>&1 | tee lean-build.log
+          status=${PIPESTATUS[0]}
+          {
+            echo '## HDH-025 Lean build log'
+            echo '```text'
+            cat lean-build.log
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+          exit "$status"

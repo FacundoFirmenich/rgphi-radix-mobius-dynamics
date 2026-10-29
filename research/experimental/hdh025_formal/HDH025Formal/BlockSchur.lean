@@ -18,8 +18,7 @@ theorem schur_factorization_generic
       !![a, b; c, d] := by
   ext i j
   fin_cases i <;> fin_cases j <;>
-    simp [Matrix.mul_apply, Fin.sum_univ_two, hed, mul_assoc] <;>
-    noncomm_ring
+    simp [Matrix.mul_apply, Fin.sum_univ_two, hed, mul_assoc]
 
 theorem finite_block_schur_factorization
     {K : Type*} [Field K]

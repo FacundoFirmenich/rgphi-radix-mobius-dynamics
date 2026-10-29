@@ -23,8 +23,6 @@ theorem rectangular_schur_factorization
         Matrix.fromBlocks (A - B * E * C) 0 C D =
       Matrix.fromBlocks A B C D := by
   have hBED : B * E * D = B := by
-    calc
-      B * E * D = B * (E * D) := by rw [mul_assoc]
-      _ = B := by rw [hED, mul_one]
+    rw [Matrix.mul_assoc, hED, Matrix.mul_one]
   rw [Matrix.fromBlocks_multiply]
-  simp [hBED, mul_assoc]
+  simp [hBED]

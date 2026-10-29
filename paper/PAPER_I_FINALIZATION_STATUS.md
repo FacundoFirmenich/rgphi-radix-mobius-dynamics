@@ -11,7 +11,7 @@ remain outside the theorem dependency graph.
 | Main theorem clarity | 9.3 | Chronology, nonnesting and robustness stated exactly |
 | Computer-assisted proof architecture | 9.1 | Exact layer recursion now formalized; compact checker separated |
 | Claim hygiene | 9.5 | Narrow freeze and explicit nonclaims |
-| Literature positioning | 8.2 | Strong open-literature map; specialist closed-database check pending |
+| Literature positioning | 8.4 | Adjacent hitting-depth and Farey-tree work now cited explicitly; specialist closed-database check pending |
 | Reproducibility | 8.7 | Compact replay strong; full depth-162 payload archival gate open |
 | Generality | 7.1 | Exact benchmark theorem; family theorem intentionally deferred |
 | External validation | 4.0 | Two specialist reviews and clean-room replay still open |
@@ -23,9 +23,11 @@ remain outside the theorem dependency graph.
 - inserted a logical paper graph;
 - proved exactness of the finite layer recursion by induction;
 - made target-before-pruning semantics explicit;
+- replaced approximate Bellman-height examples by an exact rational table;
 - sharpened the evidence and payload boundary;
 - expanded the supplement with exact replay commands;
 - strengthened the referee packet;
+- cited the adjacent Gauss-map hitting-depth and generalized Farey-tree literatures in the manuscript body;
 - added venue-specific cover letters and a journal decision memo;
 - expanded the reviewer bundle with the supplement, replay scripts and compact exact data.
 

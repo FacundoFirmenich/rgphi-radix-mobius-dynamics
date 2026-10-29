@@ -1,6 +1,6 @@
 {
-  "schema_version": "1.0",
-  "canonical_date": "2026-10-28",
+  "schema_version": "1.1",
+  "canonical_date": "2026-10-29",
   "benchmark": {
     "base": 10,
     "seed": "17/19",
@@ -25,6 +25,21 @@
     "formula": "V5(x_t)=212-t",
     "states": 124
   },
+  "stage_a": {
+    "gate": "RGPHI-GLOBAL-TRAP-CUT-088-STAGE-A",
+    "status": "PASS_WITH_BOUNDARY",
+    "first_divergences": 89,
+    "inadmissible": 23,
+    "immediate_terminal": 4,
+    "finite_trap_basins": 3,
+    "residual_bulk_D10000": 59,
+    "exact_search_through": 185,
+    "trap_atlas_max_denominator": 10000,
+    "trap_atlas_states": 30397464,
+    "trap_atlas_closed_sccs": 467,
+    "trap_atlas_safe_states": 18472,
+    "evidence_bundle_sha256": "a07640fb6b86b14dc52e19095d927505efc36a737acd9023fa677a26f3d3b7ee"
+  },
   "stage_b2": {
     "start_time": 186,
     "end_time": 211,
@@ -39,6 +54,7 @@
     "mainline": "CANONICAL_ACTIVE",
     "paper_i": "PUBLICATION_TRACK",
     "rgphi_gen": "PARALLEL_ISOLATED",
-    "u5_hd_hm_odt_bq": "EXPERIMENTAL_ISOLATED"
+    "artin_kummer": "PARALLEL_ISOLATED",
+    "u5_hd_hm_eo_odt_bq_omni_hdh": "EXPERIMENTAL_ISOLATED"
   }
 }

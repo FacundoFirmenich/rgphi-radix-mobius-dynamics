@@ -24,11 +24,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
-      - name: Install TeX
+      - name: Install TeX and ZIP tools
         run: |
           sudo apt-get update
           sudo apt-get install -y --no-install-recommends \
-            texlive-latex-base texlive-latex-extra texlive-fonts-recommended
+            texlive-latex-base texlive-latex-extra texlive-fonts-recommended unzip zip
       - name: Compile the reviewed PDF from the current TeX
         working-directory: paper
         run: |
@@ -66,10 +66,24 @@ jobs:
           cp metadata/VALIDATION_TARGETS.json metadata/CANONICAL_STATE.json "$OUT/metadata/"
           printf '%s\n' "$GITHUB_SHA" > "$OUT/REVIEW_COMMIT.txt"
           printf '%s\n' "https://github.com/${GITHUB_REPOSITORY}/commit/${GITHUB_SHA}" > "$OUT/REVIEW_COMMIT_URL.txt"
-          find "$OUT" -type f -print0 | sort -z | xargs -0 sha256sum > "$OUT/SHA256SUMS.txt"
+          (
+            cd "$OUT"
+            find . -type f ! -name SHA256SUMS.txt -print0 \
+              | sort -z \
+              | xargs -0 sha256sum > SHA256SUMS.txt
+            sha256sum -c SHA256SUMS.txt
+          )
           (cd dist && zip -r "RGPHI_REVIEWER_BUNDLE_${GITHUB_SHA}.zip" reviewer-bundle)
           sha256sum "dist/RGPHI_REVIEWER_BUNDLE_${GITHUB_SHA}.zip" > \
             "dist/RGPHI_REVIEWER_BUNDLE_${GITHUB_SHA}.zip.sha256"
+      - name: Verify packed reviewer bundle
+        shell: bash
+        run: |
+          set -euo pipefail
+          VERIFY_DIR="$(mktemp -d)"
+          unzip -q "dist/RGPHI_REVIEWER_BUNDLE_${GITHUB_SHA}.zip" -d "$VERIFY_DIR"
+          (cd "$VERIFY_DIR/reviewer-bundle" && sha256sum -c SHA256SUMS.txt)
+          rm -rf "$VERIFY_DIR"
       - uses: actions/upload-artifact@v7
         with:
           name: rgphi-reviewer-bundle-${{ github.sha }}

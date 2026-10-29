@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0",
+  "audit_date": "2026-10-29",
+  "canonical_effect": {
+    "tau5_interval": [186, 212],
+    "stage_a_evidence_promoted": true,
+    "stage_b2_executed": false,
+    "paper_i_theorems_changed": false,
+    "experimental_claim_promoted": false
+  },
+  "stage_a_asset": {
+    "name": "RGPHI_GLOBAL_TRAP_CUT_088_STAGE_A_BUNDLE.zip",
+    "bytes": 185993,
+    "sha256": "a07640fb6b86b14dc52e19095d927505efc36a737acd9023fa677a26f3d3b7ee",
+    "decision": "INTEGRATE_COMPACT_EXACT_EVIDENCE"
+  },
+  "hdh013_asset": {
+    "name": "HDH_013_BUNDLE.zip",
+    "bytes": 33290,
+    "sha256": "f3559cacf8ee165ed025dc91b681014a01de4cb53cab2f9830c524a0043bd17c",
+    "decision": "INTEGRATE_EXPERIMENTAL_ISOLATED"
+  },
+  "reviewer_bundle": {
+    "name": "RGPHI_REVIEWER_BUNDLE_FUSED_2026-10-28.zip",
+    "sha256": "78ad98285cb66b7cba32d6186587b190f3a612cca2ded59d344584503b2745c8",
+    "outer_integrity": "PASS",
+    "internal_manifest": "FAIL_PATHS_AND_SELF_REFERENCE",
+    "workflow_fix_required": true
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "gate": "HDH-013",
+  "status": {
+    "finite_candidate_class": "PASS_PREREGISTERED",
+    "nontrivial_scalar_fixed_point": "FAIL_UNDER_DECLARED_NORMALIZATION",
+    "spectral_function_closure_on_defects": "FAIL_EXACT",
+    "exact_full_kernel_rg": "PASS",
+    "kernel_composition": "PASS",
+    "green_function_restriction": "PASS",
+    "elimination_order_independence": "PASS",
+    "permutation_covariance": "PASS",
+    "causal_set_hidden_benchmark": "PASS_IMPLEMENTATION; FAIL_SELECTOR",
+    "promotion": "FULL_CONSTITUTIVE_KERNEL_IS_RG_STATE_VARIABLE",
+    "discrete_einstein_equation": "NOT_DERIVED"
+  },
+  "candidate_class": {
+    "microscopic_operators": "K=kappa I+L_sym; kappa in {0.01,0.1,1}",
+    "projected_actions": ["degree1 polynomial","degree2 polynomial","degree3 polynomial","arbitrary scalar spectral function f(L)"],
+    "topologies": ["sphere_regular","sphere_defect_flip40","torus_regular","torus_defect_flip32"],
+    "rows": 21,
+    "maximum_regular_arbitrary_spectral_residual": 0.00424362772332719,
+    "minimum_defect_arbitrary_spectral_residual": 0.009714983353186905,
+    "maximum_defect_arbitrary_spectral_residual": 0.08226640479500033,
+    "maximum_defect_commutator_ratio": 0.0075907028254052185,
+    "maximum_nonlocal_mass_beyond_one_hop": 0.21896649769578777,
+    "minimum_screened_parameter_span_across_levels": 2.762664243405697,
+    "maximum_screened_parameter_span_across_levels": 108204.09201427217
+  },
+  "exact_kernel_flow": {
+    "rows": 9,
+    "path_trials": 72,
+    "maximum_composition_relative_error": 3.7777722099720987e-16,
+    "maximum_green_restriction_relative_error": 1.0649735637860472e-15,
+    "maximum_one_by_one_elimination_error": 6.352940338423736e-16,
+    "maximum_permutation_covariance_error": 3.5568710946157294e-16,
+    "rank_one_update": "K'_{ij}=K_{ij}-K_{iv}K_{vj}/K_{vv}"
+  },
+  "causal_benchmark": {
+    "maximum_flat_benchmark_z_score": 1.5962664992729128,
+    "flat_benchmark_pass": true,
+    "benchmark_formula": "S_2=N-2N1+4N2-2N3"
+  },
+  "runtime_seconds": 10.460153579711914
+}

@@ -1,0 +1,49 @@
+{
+  "schema_version": "1.0",
+  "gate": "RGPHI-GLOBAL-TRAP-CUT-088-STAGE-A",
+  "status": "PASS_WITH_BOUNDARY",
+  "tau5_interval": [186, 212],
+  "first_divergence_counts": {
+    "total": 89,
+    "inadmissible": 23,
+    "immediate_terminal": 4,
+    "finite_trap_basin": 3,
+    "residual_bulk_D10000": 59
+  },
+  "trap_atlas_scaling": [
+    {"D":500,"states":76094,"edges":109254,"SCCs":23176,"closed_mod_terminal_SCCs":153,"safe_SCCs":1502,"safe_states":1624},
+    {"D":2500,"states":1899856,"edges":2735455,"SCCs":565564,"closed_mod_terminal_SCCs":248,"safe_SCCs":5483,"safe_states":5933},
+    {"D":5000,"states":7600436,"edges":10944352,"SCCs":2255011,"closed_mod_terminal_SCCs":314,"safe_SCCs":9672,"safe_states":10418},
+    {"D":10000,"states":30397464,"edges":43771910,"SCCs":9009037,"closed_mod_terminal_SCCs":467,"safe_SCCs":17094,"safe_states":18472}
+  ],
+  "exact_search": {
+    "through_global_time": 185,
+    "hits": 0,
+    "frontier_states_t185": 2462600671,
+    "maximum_q_in_hybrid": 482677.0
+  },
+  "checkpoint": {
+    "time": 185,
+    "states": 2462600671,
+    "buckets": 128,
+    "bytes": 19700805368,
+    "bucket_manifest_sha256": "dbd2f4adda52315e05261b9328c03f8a44d2a31b8e293f3dd3ff7b80b3d2a6b7",
+    "payload_status": "ABSENT_FROM_PUBLIC_REPOSITORY"
+  },
+  "independent_session_checks": {
+    "bundle_internal_manifest": "PASS",
+    "stage_a_bundle_verifier": "PASS",
+    "D500_replay": "PASS",
+    "D2500_replay": "PASS_BYTE_IDENTICAL_SAFE_STATES",
+    "D10000_safe_closure": "PASS_FROM_COMPLETE_SAFE_STATE_ASSET"
+  },
+  "source_asset": {
+    "name": "RGPHI_GLOBAL_TRAP_CUT_088_STAGE_A_BUNDLE.zip",
+    "bytes": 185993,
+    "sha256": "a07640fb6b86b14dc52e19095d927505efc36a737acd9023fa677a26f3d3b7ee"
+  },
+  "omitted_large_asset_hashes": {
+    "D2500_safe_states.csv": "d5f1be28b795ddeb0d71ce39142384634404e257ab5f2a6af39b576421959d6f",
+    "D10000_safe_states.csv": "276431f5e8330bef10f6e1cf656bca7c7b24821af060a8c8aedfad38fb24e27b"
+  }
+}

@@ -6,7 +6,7 @@ open Matrix
 
 /-!
 HDH-028: sequential Schur elimination equals direct elimination of the
-union hidden block.  The first theorem is the noncommutative algebraic core;
+union hidden block. The first theorem is the noncommutative algebraic core;
 the second enforces rectangular block types explicitly.
 -/
 
@@ -42,6 +42,11 @@ theorem schur_sequential_direct_rectangular
       A - B * Sinv * D + B * Sinv * F * Kinv * G +
         C * Kinv * H * Sinv * D - C * Kinv * H * Sinv * F * Kinv * G -
         C * Kinv * G := by
-  ext i j
-  simp [Matrix.mul_apply, Finset.mul_sum, Finset.sum_mul]
-  ring
+  have hprod :
+      (B - C * Kinv * H) * Sinv * (D - F * Kinv * G) =
+        B * Sinv * D - B * Sinv * F * Kinv * G -
+          C * Kinv * H * Sinv * D + C * Kinv * H * Sinv * F * Kinv * G := by
+    simp only [Matrix.sub_mul, Matrix.mul_sub, Matrix.mul_assoc]
+    abel
+  rw [hprod]
+  abel

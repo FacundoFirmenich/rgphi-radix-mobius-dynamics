@@ -1,0 +1,154 @@
+{
+  "schema_version": "1.0",
+  "canonical_date": "2026-10-30",
+  "authority": "PUBLICATION_TRACK_P1_EXCLUSIVE",
+  "protocol": "docs/validation/PAPER_I_FRONTIER_ADJUDICATION_PROTOCOL_2026-10-30.md",
+  "status_vocabulary": [
+    "CLOSED_SCOPED",
+    "READY_FOR_EXTERNAL_ACTION",
+    "ACTIVE_PARTIAL",
+    "BLOCKED_SPECIFIC",
+    "DEPENDENCY_BLOCKED",
+    "REFUTED_SCOPED",
+    "SUPERSEDED"
+  ],
+  "frontiers": [
+    {
+      "id": "P1-G0-INTERNAL-CANDIDATE",
+      "question": "Is the internally frozen Paper I candidate exact, coherent and replayable inside the declared evidence boundary?",
+      "status": "CLOSED_SCOPED",
+      "operation_or_requirement": "Pass repository verification, exact continuation replay, PDF build and unpacked reviewer-bundle SHA validation on one pinned commit.",
+      "obstacle_evidence": null,
+      "scope": "Internal candidate quality only; it does not constitute external validation or archival completeness.",
+      "alternatives": [],
+      "reopening_condition": "Any change to a theorem, numerical claim, terminal convention, evidence file or manuscript dependency reopens this gate.",
+      "evidence": [
+        "metadata/PAPER_I_STATE.json",
+        "paper/PAPER_I_FINALIZATION_STATUS.md",
+        "scripts/paper_i/replay_exact.sh",
+        ".github/workflows/reviewer-bundle.yml",
+        ".github/workflows/paper-i-full-replay.yml"
+      ],
+      "next_action": "Preserve the pinned internal candidate while external gates proceed."
+    },
+    {
+      "id": "P1-G1-SPECIALIST-REVIEWS",
+      "question": "Do two independent specialists endorse correctness, significance and venue fit on the same pinned commit?",
+      "status": "READY_FOR_EXTERNAL_ACTION",
+      "operation_or_requirement": "Obtain two conflict-disclosed specialist reports pinned to the reviewed commit.",
+      "obstacle_evidence": "No independent report has yet been received; internal review cannot satisfy this requirement.",
+      "scope": "Prevents claims of external validation and final submission freeze; does not prevent internal verification, packaging or reviewer outreach.",
+      "alternatives": [
+        "Invite one arithmetic-dynamics specialist and one computer-assisted-proof specialist.",
+        "Use the structured scorecard or a free-form report with commit identity and execution disclosure."
+      ],
+      "reopening_condition": "Status advances when two qualifying reports are archived and adjudicated.",
+      "evidence": [
+        "docs/validation/REFEREE_PACKET.md",
+        "docs/validation/PAPER_I_SPECIALIST_REVIEW_INVITATION.md",
+        "docs/validation/REVIEWER_NOMINATION_MATRIX.md"
+      ],
+      "next_action": "Send the final reviewer bundle to two independent specialists."
+    },
+    {
+      "id": "P1-G2-PRIORITY-CHAINING",
+      "question": "Does closed-database and specialist citation chaining reveal a prior result equivalent to the frozen novelty claim?",
+      "status": "ACTIVE_PARTIAL",
+      "operation_or_requirement": "Complete MathSciNet/zbMATH or equivalent citation chaining for the exact coupled claim and record specialist feedback.",
+      "obstacle_evidence": "Open-literature positioning is complete enough for internal review, but closed-database chaining and specialist priority judgment are absent.",
+      "scope": "Keeps the priority wording provisional; it does not affect the exact theorem itself.",
+      "alternatives": [
+        "Institutional database access.",
+        "Specialist-assisted backward and forward citation chaining.",
+        "Author queries for the nearest adjacent systems."
+      ],
+      "reopening_condition": "Gate closes when the search protocol, query set, results and claim-by-claim adjudication are archived.",
+      "evidence": [
+        "docs/literature/CLAIM_BY_CLAIM_POSITIONING.md",
+        "docs/literature/SPECIALIST_PRIORITY_QUERY_PACKET.md",
+        "paper/main.tex"
+      ],
+      "next_action": "Execute closed-database chaining without broadening the frozen novelty claim."
+    },
+    {
+      "id": "P1-G3-CLEAN-ROOM-REPLICATION",
+      "question": "Can an independent implementation reproduce the chronology, continuation costs and robustness intervals?",
+      "status": "READY_FOR_EXTERNAL_ACTION",
+      "operation_or_requirement": "A genuinely independent actor must implement or replay the frozen specification and submit a signed replication report.",
+      "obstacle_evidence": "Internal exact replay passes, but it is controlled by the same research process and is not independent evidence.",
+      "scope": "Prevents the label clean-room or externally replicated; does not weaken the internal exact certificates.",
+      "alternatives": [
+        "Independent implementation from the mathematical specification.",
+        "Independent execution of the published replay package with environment and provenance disclosure."
+      ],
+      "reopening_condition": "Gate closes when a qualifying external report, code identity and outputs are archived against the pinned commit.",
+      "evidence": [
+        "docs/validation/EXTERNAL_VALIDATION_PROTOCOL.md",
+        "docs/validation/REPLICATION_REPORT_TEMPLATE.md",
+        "data/certificates/paper-I/benchmark_receipt.json"
+      ],
+      "next_action": "Recruit an external replication actor and provide the frozen packet."
+    },
+    {
+      "id": "P1-G4-FULL-CERTIFICATE-ARCHIVE",
+      "question": "Is the complete depth-162 certificate durably archived or independently regenerated?",
+      "status": "BLOCKED_SPECIFIC",
+      "operation_or_requirement": "Deposit the complete depth-162 state certificate with cryptographic manifest, or regenerate it cleanly and archive the result.",
+      "obstacle_evidence": "The compact layer ledger and receipts are present, but the complete 329,106,757-state payload is not duplicated in ordinary Git or the current lightweight reviewer package.",
+      "scope": "Blocks archival-complete status and the strongest long-term replay posture; it does not invalidate the compact exact theorem stack or continuation certificates.",
+      "alternatives": [
+        "Locate and deposit the original payload in a research-data archive.",
+        "Cleanly regenerate the exact layer with an independent engine.",
+        "Produce a checker-complete streamed certificate with explicit cryptographic commitments."
+      ],
+      "reopening_condition": "A complete payload or checker-complete regenerated certificate becomes available and passes format, count, primitive-state, deduplication and hash validation.",
+      "evidence": [
+        "data/thresholds/exact-bfs-depth-0-162.csv",
+        "data/certificates/paper-I/EVIDENCE_BOUNDARY.md",
+        "paper/supplement.md"
+      ],
+      "next_action": "Search archival storage first; if absent, design a clean regeneration and deposition plan."
+    },
+    {
+      "id": "P1-G5-JOURNAL-AND-FORMAT",
+      "question": "Which journal is selected, and does the final candidate satisfy its complete submission specification?",
+      "status": "DEPENDENCY_BLOCKED",
+      "operation_or_requirement": "Choose the venue after specialist feedback, perform the journal-specific format audit and freeze the signed submission candidate.",
+      "obstacle_evidence": "Candidate venues, cover letters and a decision rule exist, but the venue decision is intentionally conditioned on specialist assessment.",
+      "scope": "Blocks the final formatted submission package; it does not block review outreach or theorem validation.",
+      "alternatives": [
+        "Journal of Modern Dynamics if conceptual significance is endorsed.",
+        "Experimental Mathematics if the artifact-aware framing dominates.",
+        "Dynamical Systems for a concise specialist route.",
+        "Ergodic Theory and Dynamical Systems only with stronger conceptual endorsement or extension."
+      ],
+      "reopening_condition": "Specialist reports are adjudicated and one venue is selected under the frozen decision rule.",
+      "evidence": [
+        "docs/validation/PAPER_I_JOURNAL_DECISION_2026-10-29.md",
+        "paper/cover-letter-jmd.md",
+        "paper/cover-letter-experimental-mathematics.md",
+        "paper/cover-letter-dynamical-systems.md"
+      ],
+      "next_action": "Defer final formatting until review feedback is received; keep all candidate packages synchronized."
+    },
+    {
+      "id": "P1-G6-ARCHIVAL-RELEASE",
+      "question": "Is the reviewed Paper I object frozen, citable and durably archived?",
+      "status": "DEPENDENCY_BLOCKED",
+      "operation_or_requirement": "Create a signed tag, immutable release, DOI deposit and Software Heritage archival record for the final reviewed commit.",
+      "obstacle_evidence": "The internal candidate is complete, but specialist review, priority review, external replication and the full-certificate gate remain open.",
+      "scope": "Blocks claims of final DOI-backed release; it does not prevent internal candidate distribution for review.",
+      "alternatives": [
+        "Pre-DOI reviewer artifact pinned to a commit.",
+        "Release candidate without final publication claims."
+      ],
+      "reopening_condition": "All required predecessor gates close and the final journal-specific candidate is frozen.",
+      "evidence": [
+        "metadata/PAPER_I_STATE.json",
+        "paper/PAPER_I_FINALIZATION_STATUS.md",
+        "docs/validation/PAPER_I_BRANCH_CHARTER_2026-10-29.md"
+      ],
+      "next_action": "Do not mint the final DOI before predecessor gates close."
+    }
+  ]
+}

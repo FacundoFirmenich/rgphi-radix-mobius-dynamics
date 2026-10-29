@@ -122,3 +122,46 @@ As of 28 October 2026, the rigorous depth-five interval is
 \]
 
 This update does not change any theorem in Paper I: the manuscript depends only on the exact depth-one through depth-four chronology and its continuation searches. The active Stage B2 computation requires the verified 19.7 GB checkpoint at global time 185; the payload is not part of the lightweight submission package.
+
+## S10. Formal layer recursion and reviewer replay
+
+Let `L_0={x_0}\E` and recursively form `L_{n+1}` from every admissible exact
+`T/S` child of `L_n`, remove the certified forward-invariant terminal set, reduce
+every fraction primitively, and deduplicate exact rational pairs. Proposition
+8.1 of the manuscript proves by induction that `L_n` is precisely the
+nonterminal reachable set at time `n`. Thus first-hit absence and presence are
+finite reachability statements, not heuristic properties of sampled paths.
+
+Minimal compact verification:
+
+```bash
+python -m pip install -e '.[dev]'
+rgphi verify
+python scripts/paper_i/verify_receipt.py
+```
+
+Full exact replay of the five continuation searches:
+
+```bash
+scripts/paper_i/replay_exact.sh
+```
+
+The replay output must end in:
+
+```text
+PASS_PAPER_I_FULL_EXACT_REPLAY
+```
+
+## S11. Submission evidence boundary
+
+The lightweight reviewer bundle contains the manuscript, supplement, claim
+freeze, claim-evidence matrix, compact benchmark receipt, evidence boundary,
+terminal-set audit, exact layer profile, robustness tables, continuation
+profiles, replay scripts and independent checker. The complete depth-162 state
+payload is intentionally not duplicated in ordinary Git. Before archival DOI
+freeze it must either be deposited in an external research-data archive with a
+cryptographic manifest or regenerated cleanly by an independent implementation.
+This open archival item does not alter the exact finite theorems stated in the
+manuscript, but it remains a submission-quality and long-term reproducibility
+gate.
+

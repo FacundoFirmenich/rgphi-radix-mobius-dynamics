@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0",
+  "audit_date": "2026-10-29",
+  "source_bundle": {
+    "name": "RGPHI_PAPER_I_SUPERBUNDLE_UNICO_TOTAL_2026-10-29.zip",
+    "bytes": 125644563,
+    "sha256": "2845194a9d4656e08d2de35021b04a3a50d1b814c101d7d0b7bc1b82679f5516"
+  },
+  "secondary_bundle": {
+    "name": "RGPHI_SUPERCIERRE_CANONICO_HANDOFF_2026-10-28.zip",
+    "bytes": 21681495,
+    "sha256": "17e2248ae0a9b3675a0f469c415d5f9603abb3e0428134f4827e1e21d208625e",
+    "decision": "DUPLICATE_PREVIOUSLY_CANONIZED"
+  },
+  "file_instances": 463,
+  "unique_hashes": 282,
+  "duplicate_groups": 172,
+  "redundant_instances": 181,
+  "integrated_genealogy": [
+    "HM-001",
+    "EO-001",
+    "BQ-009",
+    "ODT-008",
+    "OMNI-002..008 composite lineage"
+  ],
+  "mainline_effect": {
+    "tau5_changed": false,
+    "paper_i_theorems_changed": false,
+    "stage_b2_executed": false,
+    "experimental_promotion": false
+  }
+}

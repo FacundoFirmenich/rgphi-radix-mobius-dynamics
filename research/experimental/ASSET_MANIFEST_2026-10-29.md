@@ -1,0 +1,26 @@
+# Experimental asset manifest — 29 October 2026
+
+Large bundles and generated tables are not committed as ordinary Git blobs.
+An archival upload is valid only when its bytes match these identities.
+
+| Gate | Asset | Bytes | SHA-256 |
+|---|---|---:|---|
+| OMNIBUS | `RGPHI_PAPER_I_SUPERBUNDLE_UNICO_TOTAL_2026-10-29.zip` | 125644563 | `2845194a9d4656e08d2de35021b04a3a50d1b814c101d7d0b7bc1b82679f5516` |
+| HM-001 | `U5_HD_HM_001_BUNDLE.zip` | 132585 | `1bf10c1f1fd7380ee3c68d0aaa93f8b8e501c37a56106397040624c314eb160a` |
+| EO-001 | `U5_HD_EO_001_BUNDLE.zip` | 379492 | `ff765a258b1fb417ff275415d273726e547ac609b3e0da1805c9822d51497ec6` |
+| BQ-009 | `U5_HD_BQ_009_BUNDLE.zip` | 4420648 | `e1ba463a9e83a1c1878007a097d6f8072e5b8a4bce7eb81fd26987b196e2c445` |
+| ODT-008 | `U5_HD_ODT_008_CANONICAL_BUNDLE.zip` | 11661307 | `15a2f67569d931e7a49a8be0ea35b609987029c18bb020a22068eae1d36058d2` |
+| OMNI-002 | `U5_HD_OMNI_002_BUNDLE.zip` | 218187 | `a95fb4f7f4f8a07d0011229b1246314e0457a2287d8639919198d62b4aa09c67` |
+| OMNI-003 | `U5_HD_OMNI_003_BUNDLE.zip` | 34534 | `bd688e22949a3235bda698d9a31f13914208c2af04a1871d0e9c9d6f8d9a317d` |
+| OMNI-004 | `U5_HD_OMNI_004_BUNDLE.zip` | 57961 | `978d0ba29b6f3e3d1062dd88316bc030e16cb8dea23c77e754295a358a2f836f` |
+| OMNI-005 | `U5_HD_OMNI_005_BUNDLE.zip` | 24847 | `25bb275b470d607007a5a6adb5cd8f78c1440ea3674be52a37b2afc8947829a5` |
+| OMNI-006 | `U5_HD_OMNI_006_BUNDLE.zip` | 32107 | `8aa9c7b4325effd567830fed9faba68e7dfa5de15ecead2cc9d3bdb78029b18f` |
+| OMNI-007 | `U5_HD_OMNI_007_BUNDLE.zip` | 58889 | `ccdcd33f1582eed93c4cc5595f926bad94ce868fb626d794621d8cef4041d38c` |
+| OMNI-008 | `U5_HD_OMNI_008_BUNDLE.zip` | 53953 | `72be9f7e74fe00c9ae89e5f237af9e1485868592b0b6b7ac8c5b2d1512294289` |
+| HM-001 | `U5_HD_HM_001_PATCH.png` | 133501 | `26b73cd9b10f0bd171959d0881db3de7b130c3c1808c3e94c827fefdf5bc15ae` |
+| HM-001 | `U5_HD_HM_001_PATCH.svg` | 5552 | `ac94fa732782858070b02653c9932066296254c3b2375f1dc1fe3257992cf1b4` |
+| EO-001 | `U5_HD_EO_001_OBSERVER_ATLAS.png` | 94475 | `d358c5260c9069245589c94f687132e7011ae38174c0b6fcd8dce1bf15383d5c` |
+| EO-001 | `U5_HD_EO_001_KNOWLEDGE_LATTICE.png` | 188375 | `d6658df425e551d6d7e6a583682bb3bff1d94f4144c4bca78637a639ddfd7068` |
+
+The Paper I omnibus itself is provenance, not a source of canonical scientific claims.
+Current RGΦ claims continue to be governed by `metadata/CANONICAL_STATE.json`.

@@ -1,0 +1,25 @@
+name: HDH-025 Lean formal gate
+
+on:
+  push:
+    branches: ["hdh-025-formal-gate"]
+  workflow_dispatch:
+
+jobs:
+  compile:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Reject proof placeholders
+        run: |
+          if grep -R -n -E '\b(sorry|admit|axiom)\b' research/experimental/hdh025_formal --include='*.lean'; then
+            echo 'Unproved placeholder detected' >&2
+            exit 1
+          fi
+      - uses: leanprover/lean-action@v1
+        with:
+          lake-package-directory: research/experimental/hdh025_formal
+          build: true
+          test: false
+          use-mathlib-cache: true
+          build-args: "--wfail"

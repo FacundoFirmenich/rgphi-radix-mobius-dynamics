@@ -24,9 +24,9 @@ theorem block_inverse_left_generic
     {R : Type*} [Ring R]
     (a b c d e f : R)
     (hed : e * d = 1)
-    (hde : d * e = 1)
+    (_hde : d * e = 1)
     (hfs : f * (a - b * e * c) = 1)
-    (hsf : (a - b * e * c) * f = 1) :
+    (_hsf : (a - b * e * c) * f = 1) :
     !![f, -(f * b * e); -(e * c * f), e + e * c * f * b * e] *
         !![a, b; c, d] =
       !![1, 0; 0, 1] := by
@@ -58,9 +58,9 @@ theorem block_inverse_left_generic
 theorem block_inverse_right_generic
     {R : Type*} [Ring R]
     (a b c d e f : R)
-    (hed : e * d = 1)
+    (_hed : e * d = 1)
     (hde : d * e = 1)
-    (hfs : f * (a - b * e * c) = 1)
+    (_hfs : f * (a - b * e * c) = 1)
     (hsf : (a - b * e * c) * f = 1) :
     !![a, b; c, d] *
         !![f, -(f * b * e); -(e * c * f), e + e * c * f * b * e] =

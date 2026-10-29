@@ -6,8 +6,8 @@ open Matrix
 
 /-!
 HDH-030 machine-checked hidden-union block inverse and its connection to the
-Schur quotient formula.  The inverse theorem is first proved over an arbitrary
-noncommutative ring.  A typed rectangular contraction theorem then permits
+Schur quotient formula. The inverse theorem is first proved over an arbitrary
+noncommutative ring. A typed rectangular contraction theorem then permits
 different retained and hidden index types.
 -/
 
@@ -110,4 +110,4 @@ theorem hidden_union_contraction_rectangular
       (B - C * Kinv * H) * L * (D - F * Kinv * G) := by
   simp only [Matrix.mul_assoc, Matrix.mul_add, Matrix.add_mul,
     Matrix.mul_sub, Matrix.sub_mul]
-  abel
+  abel_nf

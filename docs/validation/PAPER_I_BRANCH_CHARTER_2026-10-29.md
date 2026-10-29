@@ -58,6 +58,25 @@ Paper I may move from internal candidate to submission candidate only after:
 5. the complete depth-162 certificate is archived or independently regenerated;
 6. a journal is selected and its format audit passes.
 
+## Frontier adjudication
+
+The six promotion gates and the archival release gate are governed by:
+
+```text
+docs/validation/PAPER_I_FRONTIER_ADJUDICATION_PROTOCOL_2026-10-30.md
+metadata/PAPER_I_FRONTIERS.json
+```
+
+Open, partial and unattempted gates are not described as inaccessible. A
+specific blocker must identify the operation, evidence, scope, alternatives and
+reopening condition. Impossibility and refutation remain limited to their frozen
+contract and may not be erased by silently changing hypotheses.
+
+Internal replay, reimplementation or review strengthens internal validation but
+is not external independence. Strategic reframing may type gates and priorities;
+it may not create experiments, theorems, efficacy claims, score changes or
+external validation.
+
 ## Failure discipline
 
 Negative reviews, failed replications, missing artifacts and priority conflicts

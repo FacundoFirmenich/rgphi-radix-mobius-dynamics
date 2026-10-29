@@ -1,0 +1,7 @@
+claim_id,claim,status,evidence
+R01,a nontrivial scalar susceptibility is a common RG fixed point across audited topologies,REFUTED_UNDER_DECLARED_NORMALIZATION,screened parameter drifts across levels; defect spectral residual is nonzero
+R02,effective response is always a scalar function f(L_coarse),REFUTED,nonzero best arbitrary spectral residual and commutator on defect holdouts
+K01,full positive constitutive kernel closes exactly under coarse-graining,CLOSED_EXACT,Schur complement composition and Green restriction
+K02,kernel flow is independent of elimination order,CLOSED_NUMERIC_TO_MACHINE_PRECISION,rank-one elimination audits
+C01,2D Benincasa-Dowker action benchmark is reproduced on flat Poisson sprinklings,CLOSED_STATISTICAL,means within three standard errors of 1-exp(-rho V)
+E01,HDH-013 derives a unique discrete Einstein equation,DO_NOT_CLAIM,kernel is promoted as RG state; physical time dynamics and causal coupling remain open

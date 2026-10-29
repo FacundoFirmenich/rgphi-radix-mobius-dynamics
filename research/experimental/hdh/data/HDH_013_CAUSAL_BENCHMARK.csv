@@ -1,0 +1,10 @@
+family,mean_cardinality,replicates,empirical_mean_action,standard_error,theoretical_mean_action,z_score,mean_realized_cardinality,verdict
+poisson_2d_alexandrov_interval,10.0,30000,0.9176,0.06216950179959285,0.9999546000702375,1.3246784626924077,10.000666666666667,PASS_WITHIN_3SE
+poisson_2d_alexandrov_interval,20.0,20000,0.95395,0.14730346698378916,0.9999999979388464,0.3126199191490468,19.97795,PASS_WITHIN_3SE
+poisson_2d_alexandrov_interval,50.0,10000,0.2888,0.44553963910408834,1.0,1.5962664992729128,50.0056,PASS_WITHIN_3SE
+chain_negative_control,20,1,20,0.0,20,0.0,20,NONMANIFOLD_CONTROL
+antichain_negative_control,20,1,20,0.0,20,0.0,20,NONMANIFOLD_CONTROL
+chain_negative_control,50,1,50,0.0,50,0.0,50,NONMANIFOLD_CONTROL
+antichain_negative_control,50,1,50,0.0,50,0.0,50,NONMANIFOLD_CONTROL
+chain_negative_control,100,1,100,0.0,100,0.0,100,NONMANIFOLD_CONTROL
+antichain_negative_control,100,1,100,0.0,100,0.0,100,NONMANIFOLD_CONTROL

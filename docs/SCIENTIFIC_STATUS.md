@@ -1,6 +1,6 @@
 # Scientific status
 
-**Canonical date:** 28 October 2026  
+**Canonical date:** 29 October 2026  
 **Repository status:** public pre-DOI release candidate  
 **Primary manuscript:** *Nonnested extremal targets in a rational radix–Möbius semigroup*
 
@@ -88,15 +88,19 @@ is forward-invariant modulo the terminal set, with maximum portal height 13. Hen
 \boxed{V_5(7/260)=\infty.}
 \]
 
-The exact denominator-bound-500 atlas contains:
+The exact multiscale atlas contains:
 
-- 76,094 nonterminal states;
-- 109,254 directed nonterminal edges;
-- 23,176 SCCs;
-- 153 SCCs closed modulo the terminal set;
-- 1,502 exact finite forward-invariant closures.
+| D | states | edges | SCCs | closed SCCs | safe SCCs | safe states |
+|---:|---:|---:|---:|---:|---:|---:|
+| 500 | 76,094 | 109,254 | 23,176 | 153 | 1,502 | 1,624 |
+| 2,500 | 1,899,856 | 2,735,455 | 565,564 | 248 | 5,483 | 5,933 |
+| 5,000 | 7,600,436 | 10,944,352 | 2,255,011 | 314 | 9,672 | 10,418 |
+| 10,000 | 30,397,464 | 43,771,910 | 9,009,037 | 467 | 17,094 | 18,472 |
 
-These counts certify the finite atlas only; they are not a global trap-classification theorem.
+The denominator-10,000 audit is exact and bounded. It does not constitute a
+global theorem that every finite trap occurs below this denominator. The
+modular-skeleton theorem characterizes the anatomy of finite traps; a fully
+parameterized unbounded family theorem remains open.
 
 ## 5. Current depth-five status
 
@@ -124,13 +128,18 @@ The repository does **not** currently claim \(\tau_5=212\).
 
 ## 6. Global trap-cut program
 
-Stage A classified the first 89 divergences:
+Stage A classified all 89 first divergences:
 
 - 23 inadmissible branches;
 - 4 immediate terminal branches;
-- 3 finite-trap basins;
-- 59 unresolved bulk branches under the \(D=10{,}000\) cut;
-- exact search completed through time 185.
+- 3 exact finite-trap basins;
+- 59 residual bulk branches after the \(D=10{,}000\) cut.
+
+The exact joint search contains no depth-five hit through time 185. The
+first-arrival phase reached 932,586,690 unique states through time 171; the
+complete level envelope ends at time 185 with 2,462,600,671 states. The compact
+Stage A evidence, exact source and independent checker are now integrated under
+`data/stage_a/`, `scripts/stage_a/`, and `docs/stage_a/`.
 
 The binding gate is **RGΦ–GLOBAL–TRAP–CUT–088 Stage B2**. It requires the verified checkpoint at time 185 and propagation through times 186–211.
 
@@ -140,7 +149,7 @@ Binding outcomes:
 - `NO_HIT through 211`: proves \(\tau_5=212\);
 - interrupted run: preserves checkpoint, residual frontier, and hashes without a scientific conclusion beyond the completed horizon.
 
-Stage B2 is not considered executed without the verified checkpoint and its bucket hashes.
+Stage B2 is not considered executed without the verified 19.7 GB checkpoint payload and its 128 bucket hashes.
 
 ## 7. Hidden-state program
 
@@ -165,9 +174,9 @@ with eigenvalues \(\phi\) and \(-\phi^{-1}\), together with an exact rational Fi
 - **Paper I — `PUBLICATION_TRACK`**: publishable independently of the exact value of \(\tau_5\).
 - **RGΦ-GEN — `PARALLEL_ISOLATED`**: external generalization with preregistered holdouts.
 - **Artin–Kummer — `PARALLEL_ISOLATED`**: separate arithmetic program.
-- **U5-HD/HM and related branches — `EXPERIMENTAL_ISOLATED`**: abstract mathematical work with no retroactive authority over RGΦ and no physical, cosmological, or ontological promotion.
+- **U5-HD/HM, EO, ODT, BQ, OMNI and HDH — `EXPERIMENTAL_ISOLATED`**: abstract or empirical research with no retroactive authority over RGΦ and no automatic physical, cosmological or ontological promotion.
 
-The archived U5-HD-HM gates are under `research/experimental/u5-hd-hm/`.
+The experimental genealogy is under `research/experimental/`.
 
 ## 10. Superseded statements retained for genealogy
 
@@ -194,29 +203,30 @@ Paper I must not claim:
 
 ## 12. Immediate priorities
 
-1. Verify and execute Stage B2.
+1. Locate, verify and execute the exact Stage B2 checkpoint.
 2. Freeze Paper I for specialist external review and pre-DOI release.
-3. Separate the trusted checker from the search generator.
-4. Resume preregistered RGΦ-GEN holdouts after the main checkpoint.
-5. Keep U5-HD-HM mathematically bounded and experimentally isolated.
-6. Preserve all refutations, abstentions, HOLD states, and superseded evidence.
+3. Publish Stage A, Stage B2 and experimental bundles as citable release assets.
+4. Complete independent clean-room replication.
+5. Prove an unbounded theorem-family for modular traps or a minimal sufficient hidden state.
+6. Continue HDH-014 only under its preregistered experimental boundary.
+7. Preserve all refutations, abstentions, HOLD states, and superseded evidence.
 
-See [the strategic centrum](canon/CENTRUM_2026-10-28.md) and [open problems](OPEN_PROBLEMS.md).
+See [the strategic centrum](canon/CENTRUM_2026-10-28.md), [Stage A status](STAGE_A_STATUS_2026-10-28.md), and [open problems](OPEN_PROBLEMS.md).
 
-## 13. Integrated experimental delta archive
+## 13. Integrated experimental archive
 
-The audit branch integrates three later experimental results without changing
-mainline RGΦ authority:
+The archive includes, without mainline promotion:
 
-- **ODT-009**: the hierarchical architecture replicates on a second resolution
-  shell; local arithmetic O5 does not replicate; a narrow pentadic increment
-  does not beat the strongest baseline and receives no global promotion.
-- **BQ-010A**: exact obstruction to the nonadaptive root-first `4+31` route;
-  the unrestricted interval remains `35 <= M_3 <= 36`.
-- **HM-010**: stabilized nonsplit extension class with a nonzero bulk-to-endpoint
-  boundary map; the explicit Busby/spectral/APS refinement remains open.
+- **ODT-008/009**: resolution-dependent support, hierarchical architecture,
+  replication failure of O5, and no global U5 promotion;
+- **BQ-009/010A**: exact 31-symbol signed-permutation optimum and no-go of the
+  nonadaptive root-first `4+31` route; unrestricted `35 <= M_3 <= 36` remains open;
+- **HM-001…010** and **EO-001**: local atlas, holonomy, higher cocycles, and
+  stabilized nonsplit interface;
+- **OMNI-002…008**: composite formal/provenance lineage;
+- **HDH-013**: exact full-kernel Schur/Kron RG closure, exact composition and
+  Green restriction, together with refutation of scalar spectral closure on
+  defective holdouts. HDH-014 is preregistered and open.
 
-All three remain `EXPERIMENTAL_ISOLATED`. Their reports, claim ledgers, compact
-evidence tables, source and verifiers are archived under `research/experimental/`.
-Large generated tables and ZIP bundles remain release assets identified by
-SHA-256 rather than ordinary Git blobs.
+All remain `EXPERIMENTAL_ISOLATED`. Large generated tables and ZIP bundles are
+release assets identified by SHA-256 rather than ordinary Git blobs.

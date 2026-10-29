@@ -1,0 +1,9 @@
+{
+  "asset": "HDH_013_BUNDLE.zip",
+  "bytes": 33290,
+  "sha256": "f3559cacf8ee165ed025dc91b681014a01de4cb53cab2f9830c524a0043bd17c",
+  "internal_sha256_manifest": "PASS",
+  "primary_run": "PASS_WITH_DECLARED_NEGATIVE_RESULTS",
+  "independent_checker": "PASS",
+  "authority": "EXPERIMENTAL_ISOLATED"
+}

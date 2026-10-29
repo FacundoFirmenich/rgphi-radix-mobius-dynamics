@@ -1,6 +1,6 @@
 {
-  "schema_version": "1.1",
-  "canonical_date": "2026-10-29",
+  "schema_version": "1.2",
+  "canonical_date": "2026-10-30",
   "authority": "PUBLICATION_TRACK_P1_EXCLUSIVE",
   "title": "Nonnested extremal targets in a rational radix–Mobius semigroup",
   "system": {
@@ -38,20 +38,29 @@
     "visual_pdf_review": "PASS_ALL_PAGES",
     "scope": "INTERNAL_ONLY_NOT_EXTERNAL_VALIDATION"
   },
+  "frontier_governance": {
+    "protocol": "docs/validation/PAPER_I_FRONTIER_ADJUDICATION_PROTOCOL_2026-10-30.md",
+    "registry": "metadata/PAPER_I_FRONTIERS.json",
+    "rule": "OPEN_PARTIAL_OR_UNATTEMPTED_IS_NOT_INACCESSIBLE",
+    "scientific_import_from_source_program": false,
+    "source_audit": "metadata/PI_GENESIS_R2_P1_AUDIT.json"
+  },
   "excluded_programs": [
     "P2_STAGE_B2_AND_TAU5_CLOSURE",
     "PAPER_II_FAREY_PADIC_STATE",
     "PAPER_III_TRAPS_ESCAPE",
     "RGPHI_GEN",
     "ARTIN_KUMMER",
-    "U5_HD_HM_EO_ODT_BQ_OMNI_HDH"
+    "U5_HD_HM_EO_ODT_BQ_OMNI_HDH",
+    "PI_GENESIS_SCIENTIFIC_PROGRAM"
   ],
   "external_gates": {
     "specialist_reviews_required": 2,
     "closed_database_priority_review": "OPEN",
     "external_replay_or_clean_room": "OPEN",
     "full_certificate_archive_or_regeneration": "OPEN",
-    "journal_format_audit": "OPEN"
+    "journal_format_audit": "OPEN",
+    "typed_registry": "metadata/PAPER_I_FRONTIERS.json"
   },
   "candidate_venues": [
     "Journal of Modern Dynamics",
@@ -59,5 +68,5 @@
     "Dynamical Systems",
     "Ergodic Theory and Dynamical Systems"
   ],
-  "status": "INTERNAL_FINALIZATION_COMPLETE_EXTERNAL_GATES_OPEN"
+  "status": "INTERNAL_FINALIZATION_COMPLETE_EXTERNAL_GATES_TYPED_AND_OPEN"
 }

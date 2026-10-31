@@ -1,0 +1,43 @@
+name: HDH-033 V2 formal covariance replay
+
+on:
+  push:
+    branches:
+      - research/hdh-033-v2-lean-replay
+    paths:
+      - "research/experimental/hdh033_v2_formal/**"
+      - ".github/workflows/hdh033-v2-lean.yml"
+  pull_request:
+    paths:
+      - "research/experimental/hdh033_v2_formal/**"
+      - ".github/workflows/hdh033-v2-lean.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  formal-replay:
+    runs-on: ubuntu-latest
+    timeout-minutes: 50
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fail on proof placeholders
+        run: |
+          if grep -R -n -E '\b(sorry|admit|axiom)\b' research/experimental/hdh033_v2_formal --include='*.lean'; then
+            echo "Proof placeholder detected" >&2
+            exit 1
+          fi
+      - name: Install Lean 4.35.0
+        shell: bash
+        run: |
+          curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain leanprover/lean4:v4.35.0
+          echo "$HOME/.elan/bin" >> "$GITHUB_PATH"
+      - name: Pin and cache Mathlib v4.35.0
+        working-directory: research/experimental/hdh033_v2_formal
+        run: |
+          lake update
+          lake exe cache get
+      - name: Compile frozen retained-basis covariance (warnings as errors)
+        working-directory: research/experimental/hdh033_v2_formal
+        run: lake build --wfail

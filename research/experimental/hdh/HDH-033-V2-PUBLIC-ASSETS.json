@@ -1,0 +1,43 @@
+{
+  "schema": "1.0",
+  "date": "2026-10-31",
+  "authority": "EXPERIMENTAL_ISOLATED",
+  "release_status": "LOCAL_PUBLIC_SAFE_ARTIFACTS_NOT_UPLOADED_TO_GITHUB_RELEASE_OR_ARXIV",
+  "assets": [
+    {
+      "name": "HDH_033_PUBLIC_RELEASE_PATCHED.zip",
+      "bytes": null,
+      "sha256": "13d991dd68197b435607e184947942eaf0a94c27350589ecc5bdfc3c2deba39d",
+      "classification": "PUBLIC_SAFE_QA_PASS"
+    },
+    {
+      "name": "HDH033_PUBLIC_CHALLENGE_V2.zip",
+      "sha256": "bdcc44e050c4e82a3247403404f030b93762b83edd51d6737cc29a5f0702da83",
+      "classification": "PUBLIC_SAFE_QA_PASS"
+    },
+    {
+      "name": "HDH_033_PAPER_A_ARXIV_SOURCE_PATCHED.zip",
+      "sha256": "7c293e18963181b50669884ebf6b55c73d8f37f0ea80ffb405ad8fb6977f1623",
+      "classification": "REVISED_SOURCE_CANDIDATE_NOT_SUBMITTED"
+    },
+    {
+      "name": "HDH_033_PAPER_B_ARXIV_SOURCE_PATCHED.zip",
+      "sha256": "72b1ac128862e90ec287a9800be7cfd24d0c99911cae0bf16488215c6bd5e184",
+      "classification": "METHODS_NOTE_RC_EXTERNALITY_HOLD"
+    }
+  ],
+  "private_policy": {
+    "original_HDH033_bundle": "PRIVATE_ARCHIVE_ONLY",
+    "new_seed_values": "NEVER_PUBLIC",
+    "new_reference_outputs": "NEVER_PUBLIC",
+    "private_archive": "NEVER_UPLOAD_TO_GITHUB_ARXIV_RELEASE",
+    "private_digest_not_recorded_publicly": true
+  },
+  "scientific_claims": {
+    "conditional_spectral_summation": "PROVED_FROM_EXPLICIT_ASSUMPTIONS",
+    "modewise_specific_PDE_estimate": "OPEN",
+    "same_genealogy_full_reference": "PASS_INTERNAL_768",
+    "independent_external_replication": "NOT_EXECUTED",
+    "physical_causal_claim": "NOT_CLAIMED"
+  }
+}

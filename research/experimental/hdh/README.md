@@ -2,21 +2,41 @@
 
 **Authority:** `EXPERIMENTAL_ISOLATED`
 
-HDH studies constitutive laws under exact coarse-graining. It does not modify
-RGΦ mainline and does not establish a physical, gravitational, cosmological or
-ontological model.
+HDH studies constitutive laws under exact coarse-graining. It does not modify RGΦ
+mainline, Paper I or the first-hit chronology, and does not establish physical,
+gravitational, cosmological or ontological dynamics.
 
-## Current frontier
+## Scientific genealogy and currently audited frontiers
 
-| Gate | Result |
-|---|---|
-| HDH-013 | scalar local/spectral closure fails on defective holdouts; the full positive kernel closes exactly under Schur/Kron reduction |
-| HDH-014 | preregistered bridge to causal order and spectral-measure closure; open |
+| Gate | Scoped result | Status |
+|---|---|---|
+| HDH-013 | scalar local/spectral closure fails on defective holdouts; full positive kernel closes under Schur/Kron reduction | VERIFIED_INTERNAL |
+| HDH-014–030 | constitutive-memory, causal and nonsmooth investigations; historical ancestry retained in private original bundles | HISTORICAL/SCOPED |
+| HDH-031 | integration of Schur inverse, memory derivative and rectangular typed contraction in Lean | FORMAL_CI_PASS |
+| HDH-032 | retained-basis transport covariance in Lean | FORMAL_CI_PASS |
+| [HDH-033-V2](gates/HDH-033-V2.md) | corrected conditional spectral bound; repaired public challenge and fresh 768-set internal reference | PASS_WITH_EXTERNAL_AND_PDE_HOLDS |
+| [HDH-034](gates/HDH-034-REPAIR-AND-EXTERNALITY.md) | independent executor and derivation/refutation of specific PDE/FEM estimate | OPEN |
 
-HDH-013 promotes the nonlocal positive kernel as the exact **RG-scale state
-variable** within the audited model. It explicitly does not derive a discrete
-Einstein equation and does not identify coarse-graining scale with physical
-time.
+The complete proof of the **conditional** norm estimate is
+[HDH-033-V2-ENERGY-PROOF.md](HDH-033-V2-ENERGY-PROOF.md).
+Public-safe ZIP/source identities and private-custody exclusions are in
+[HDH-033-V2-PUBLIC-ASSETS.json](HDH-033-V2-PUBLIC-ASSETS.json).
 
-Full generated evidence is tracked by SHA-256. The compact report, claim
-ledger, source and independent checker are stored in Git.
+## Critical boundaries
+
+- The moving-interface FEM modewise `O(h² (jk)^(3/2))` estimate is a
+  **hypothesis**, not derived from the audited PDE/discretization.
+- The three-family 768-set experiment is same-genealogy **internal**
+  validation; it is not an independent second-team result.
+- The historical HDH-033 integral bundle includes private custodian data in a
+  nested parent and **must not be publicly released**.
+- The repaired public release and the confidential new V2 custody are
+  physically separated. Do **not** commit either seed values or private
+  expected outputs to GitHub or arXiv.
+- The repaired source candidates are **not deposited on arXiv** and have no DOI.
+- Fresh Lean CI for the *V2 package* has not run in this runtime; inherited
+  HDH-032 formal CI PASS is a distinct statement.
+
+The full patched source bundles are separately available as SHA-256-identified
+public release assets. Git stores compact scoped claims and governance, not
+historical duplicate ZIPs or private payloads.

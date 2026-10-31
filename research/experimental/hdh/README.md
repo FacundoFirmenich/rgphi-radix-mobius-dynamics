@@ -34,8 +34,10 @@ Public-safe ZIP/source identities and private-custody exclusions are in
   physically separated. Do **not** commit either seed values or private
   expected outputs to GitHub or arXiv.
 - The repaired source candidates are **not deposited on arXiv** and have no DOI.
-- Fresh Lean CI for the *V2 package* has not run in this runtime; inherited
-  HDH-032 formal CI PASS is a distinct statement.
+- A byte-identical retained-basis covariance source now passes a **fresh**
+  GitHub Lean 4.35.0/Mathlib v4.35.0 `lake build --wfail` under
+  `research/experimental/hdh033_v2_formal/`. This covers only the
+  inherited covariance theorem, not the new spectral bound or the PDE gate.
 
 The full patched source bundles are separately available as SHA-256-identified
 public release assets. Git stores compact scoped claims and governance, not

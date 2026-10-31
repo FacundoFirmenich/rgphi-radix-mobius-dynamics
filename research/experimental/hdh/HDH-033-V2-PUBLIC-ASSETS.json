@@ -39,5 +39,11 @@
     "same_genealogy_full_reference": "PASS_INTERNAL_768",
     "independent_external_replication": "NOT_EXECUTED",
     "physical_causal_claim": "NOT_CLAIMED"
+  },
+  "formal_replay": {
+    "source_git_blob": "48f9bd2b1fd07c8eb090b62a311a5fe1a4e3296b",
+    "status": "PASS_FRESH_PINNED_LEAN_COVARIANCE_ONLY",
+    "github_ci_run": "https://github.com/FacundoFirmenich/rgphi-radix-mobius-dynamics/actions/runs/41198224179",
+    "scope": "retained-basis covariance algebra; not HDH-033 new spectral bound or specific PDE estimate"
   }
 }

@@ -37,11 +37,12 @@ Status: `READY_FOR_EXTERNAL_ACTION`, not `PASS_EXTERNAL`.
 
 ## Formal proof artifact
 
-Inherited HDH-032 Lean CI status is PASS for the retained-basis covariance.
-HDH-033-V2 includes pinned Lean/Mathlib source metadata but has not performed
-a fresh `lake build` in this runtime (Lean unavailable). This is an
-independent formal replay gate, not a reason to mislabel algebraic proof
-status.
+The retained-basis covariance source, byte-identical to HDH-032 and to
+Paper A `anc/formal/TransportCovariance.lean`, passed **fresh** GitHub
+CI under pinned Lean 4.35.0/Mathlib v4.35.0 and `lake build --wfail`.
+This closes **only** the inherited covariance replay gate. The new conditional
+energy spectral theorem and its specific unproved PDE/FEM hypothesis are not
+machine-checked.
 
 All HDH-032 frozen negative evidence, especially the raw square-root gate
 failure, remains valid under its original jurisdiction.

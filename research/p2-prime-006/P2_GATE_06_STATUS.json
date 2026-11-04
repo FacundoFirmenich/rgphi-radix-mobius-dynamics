@@ -17,7 +17,9 @@
   "specialist_review": {
     "github_issue": 28,
     "status": "HOLD_NO_NAMED_REPORT",
-    "comments_received": 0
+    "issue_comments_total": 1,
+    "specialist_reports_received": 0,
+    "status_comment_id": 6637914930
   },
   "literature": {
     "open_web_chaining": "PASS",

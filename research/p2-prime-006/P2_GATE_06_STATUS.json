@@ -1,0 +1,35 @@
+{
+  "gate": "P2-06",
+  "date": "2026-11-04",
+  "verdict": "PASS_INTERNAL_AND_OPEN_LITERATURE__HOLD_SPECIALIST__HOLD_INSTITUTIONAL_DATABASES",
+  "mainline_modified": false,
+  "canonical_tau5_interval": [186, 212],
+  "stage_b2": "OPEN_BLOCKED_BY_CHECKPOINT_PAYLOAD_LOCATION",
+  "external_runner": {
+    "status": "PASS",
+    "workflow_run_id": 40884089456,
+    "job_id": 123483026135,
+    "head_sha": "2f3eb2f11b1ddfecc7648f84c86bef4406b345f8",
+    "rows_verified": 2000999,
+    "independent_team_validation": false,
+    "large_bellman_search_recomputed": false
+  },
+  "specialist_review": {
+    "github_issue": 28,
+    "status": "HOLD_NO_NAMED_REPORT",
+    "issue_comments_total": 1,
+    "specialist_reports_received": 0,
+    "status_comment_id": 6637914930
+  },
+  "literature": {
+    "open_web_chaining": "PASS",
+    "mathscinet": "HOLD_NOT_ACCESSED",
+    "scopus": "HOLD_NOT_ACCESSED",
+    "web_of_science": "HOLD_NOT_ACCESSED"
+  },
+  "submission": {
+    "freeze_candidate_ready": true,
+    "submission_ready": false,
+    "primary_target": "Journal of Modern Dynamics"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "gate": "HDH-034",
+  "authority": "EXPERIMENTAL_ISOLATED",
+  "global_verdict": "PASS_ANALYTIC_STRENGTHENING_PREPRINT_FREEZE_EXTERNALITY_HOLD",
+  "regular": {
+    "status": "PASS_PERIODIC_STRIP_EXACT_LIFT_P1_MODEWISE_THEOREM",
+    "output_bound": "C h^2 (1+j^2)^(3/4)(1+k^2)^(3/4)",
+    "raw_bound": "O(h^2 J^4)",
+    "energy_bound": "O(h^2 J^3)",
+    "general_curved_interface": "OPEN_STRANG_GEOMETRIC_CONSISTENCY"
+  },
+  "causal": {
+    "public_challenge": "READY",
+    "second_team_execution": "NOT_EXECUTED",
+    "status": "HOLD_EXTERNALITY"
+  },
+  "publication": {
+    "paper_a": "AUTHOR_UPLOAD_READY",
+    "paper_b": "PREPRINT_RC_WITH_EXTERNALITY_HOLD",
+    "arxiv_submission": "NOT_EXECUTED_NO_CONNECTED_AUTHOR_SUBMISSION_CHANNEL",
+    "external_specialist_report": "NOT_RECEIVED",
+    "external_methods_report": "NOT_RECEIVED"
+  }
+}

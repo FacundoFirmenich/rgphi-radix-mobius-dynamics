@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 from fractions import Fraction
 from pathlib import Path
-import csv, json
+import csv
+import gzip
+import json
 
 R = Path(__file__).resolve().parent
 summary = json.loads((R / "SUMMARY_014.json").read_text())
@@ -10,10 +12,11 @@ assert summary["closed_symbolically"]["four_cycle_TTSS_plus_one"] == "IMPOSSIBLE
 assert summary["canonical_candidate_classes"] == 560
 
 for name, expected in [
-    ("HAMILTONIAN_TSTSS_CLASSES.csv", 228),
-    ("FOUR_CORE_TSTS_PLUS_ONE_CLASSES.csv", 332),
+    ("HAMILTONIAN_TSTSS_CLASSES.csv.gz", 228),
+    ("FOUR_CORE_TSTS_PLUS_ONE_CLASSES.csv.gz", 332),
 ]:
-    rows = list(csv.DictReader((R / name).open()))
+    with gzip.open(R / name, "rt", newline="") as fh:
+        rows = list(csv.DictReader(fh))
     assert len(rows) == expected
     assert len({row["canonical_key"] for row in rows}) == expected
     for row in rows:

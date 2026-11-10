@@ -1,0 +1,9 @@
+PASS
+source_classes=560
+state_collision=432
+strict_fibre_conflict=60
+unreduced_injectivity_conflict=34
+cycle_budget_conflict=10
+exact_survivors=24
+structural_normal_forms=12
+five_state_rigidity=OPEN_PARTIAL

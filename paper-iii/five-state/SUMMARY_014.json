@@ -1,0 +1,25 @@
+{
+  "gate": "FIVE_STATE_CLOSURE_014",
+  "date": "2026-11-10",
+  "closed_symbolically": {
+    "hamiltonian_TTSSS": "IMPOSSIBLE_SCALE_ARGUMENT",
+    "four_cycle_TTSS_plus_one": "IMPOSSIBLE_CORE_SCALE_ARGUMENT"
+  },
+  "open_architectures": {
+    "hamiltonian_TSTSS": {
+      "raw_assignments": 31250,
+      "canonical_classes": 228,
+      "strict_factors": [2, 3],
+      "exact_high_witnesses": true
+    },
+    "four_cycle_TSTS_plus_one": {
+      "raw_assignments": 125000,
+      "canonical_classes": 332,
+      "strict_factors": [2, 3],
+      "exact_high_witnesses": true
+    }
+  },
+  "canonical_candidate_classes": 560,
+  "status": "OPEN_PARTIAL",
+  "promotion_boundary": "No five-state rigidity claim until every surviving canonical class is eliminated or realized exactly."
+}

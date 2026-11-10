@@ -1,0 +1,22 @@
+{
+  "object": "RGPHI_PAPER_III",
+  "date": "2026-11-10",
+  "status": "ACTIVE_RESEARCH_PREPRINT_NOT_FROZEN",
+  "theorem_stack": "v1.4-integrated",
+  "closed": {
+    "binary_scc_classification": true,
+    "ternary_scc_classification": true,
+    "all_low_arbitrary_cardinality": true,
+    "one_high_arbitrary_cardinality": true,
+    "universal_predecessor_calculus": true,
+    "fixed_base_high_finiteness": true,
+    "all_high_rigidity_cardinalities": [2, 3, 4]
+  },
+  "open": {
+    "five_state_all_high_rigidity": true,
+    "global_all_high_permutation_rigidity": true,
+    "sharp_fixed_base_bound": true
+  },
+  "binding_gate": "RGPHI_FIVE_STATE_CLOSURE_014_REVISED",
+  "claim_boundary": "No global all-high rigidity claim beyond the closed jurisdictions."
+}

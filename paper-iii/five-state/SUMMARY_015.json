@@ -1,0 +1,20 @@
+{
+  "gate": "RGPHI_FIVE_STATE_DIOPHANTINE_QUOTIENT_015",
+  "date": "2026-11-11",
+  "source_classes": 560,
+  "adjudication_counts": {
+    "STATE_COLLISION": 432,
+    "STRICT_FIBRE_CONFLICT": 60,
+    "SURVIVES_TO_NORMAL_FORM": 24,
+    "UNREDUCED_INJECTIVITY_CONFLICT": 34,
+    "CYCLE_BUDGET_CONFLICT": 10
+  },
+  "exact_survivors": 24,
+  "structural_normal_forms": 12,
+  "families": {
+    "FOUR_CORE_TSTS_PLUS_ONE": 7,
+    "HAMILTONIAN_TSTSS": 5
+  },
+  "status": "OPEN_PARTIAL",
+  "claim_boundary": "No five-state rigidity claim. The 12 exact normal forms remain to be eliminated or realized."
+}

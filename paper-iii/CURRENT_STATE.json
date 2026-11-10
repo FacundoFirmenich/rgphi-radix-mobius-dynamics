@@ -2,7 +2,7 @@
   "object": "RGPHI_PAPER_III",
   "date": "2026-11-10",
   "status": "ACTIVE_RESEARCH_PREPRINT_NOT_FROZEN",
-  "theorem_stack": "v1.4-integrated",
+  "theorem_stack": "v1.5",
   "closed": {
     "binary_scc_classification": true,
     "ternary_scc_classification": true,
@@ -10,13 +10,20 @@
     "one_high_arbitrary_cardinality": true,
     "universal_predecessor_calculus": true,
     "fixed_base_high_finiteness": true,
-    "all_high_rigidity_cardinalities": [2, 3, 4]
+    "all_high_rigidity_cardinalities": [2, 3, 4],
+    "five_state_hamiltonian_TTSSS_impossible": true,
+    "five_state_TTSS_core_extension_impossible": true
+  },
+  "partial": {
+    "five_state_canonical_classes": 560,
+    "hamiltonian_TSTSS_classes": 228,
+    "TSTS_core_plus_one_classes": 332
   },
   "open": {
     "five_state_all_high_rigidity": true,
     "global_all_high_permutation_rigidity": true,
     "sharp_fixed_base_bound": true
   },
-  "binding_gate": "RGPHI_FIVE_STATE_CLOSURE_014_REVISED",
-  "claim_boundary": "No global all-high rigidity claim beyond the closed jurisdictions."
+  "binding_gate": "RGPHI_FIVE_STATE_DIOPHANTINE_QUOTIENT_015",
+  "claim_boundary": "Five-state gate is OPEN_PARTIAL; no global all-high rigidity claim beyond the closed jurisdictions."
 }

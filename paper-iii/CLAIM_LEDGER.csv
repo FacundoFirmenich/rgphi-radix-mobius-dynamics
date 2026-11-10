@@ -1,0 +1,12 @@
+claim_id,claim,status,evidence
+P3-001,Complete binary closed-SCC classification,CLOSED_SYMBOLIC,theorems/RGPHI_COMPLETE_BINARY_SCC_CLASSIFICATION_005.md
+P3-002,Complete ternary closed-SCC classification,CLOSED_SYMBOLIC,theorems/RGPHI_COMPLETE_TERNARY_SCC_CLASSIFICATION_010.md
+P3-003,All-low SCCs classified for every finite cardinality,CLOSED_SYMBOLIC,theorems/RGPHI_ALL_LOW_SCC_ARBITRARY_N_009.md
+P3-004,Exactly-one-high SCCs classified for every finite cardinality,CLOSED_SYMBOLIC,theorems/RGPHI_FINITE_CARDINALITY_STRUCTURE_011.md
+P3-005,Exact universal-predecessor divisor calculus,CLOSED_SYMBOLIC,theorems/RGPHI_UNIVERSAL_PREDECESSOR_CALCULUS_006.md
+P3-006,High universal basin finite for every fixed base and finite trap,CLOSED_S_UNIT_REDUCTION,theorems/RGPHI_FIXED_BASE_HIGH_FINITE_THEOREM_008.md
+P3-007,Rigidity for directed diameter at most two,CLOSED_SYMBOLIC,theorems/DIAMETER_LE2_RIGIDITY_012.md
+P3-008,Cycle reduction budget and least-prime criterion,CLOSED_SYMBOLIC,theorems/RGPHI_CYCLE_REDUCTION_BUDGET_012.md
+P3-009,All-high permutation rigidity for cardinality four,CLOSED_SYMBOLIC_PLUS_FINITE_CERTIFICATE,theorems/RGPHI_FOUR_STATE_RIGIDITY_013.md
+P3-010,All-high permutation rigidity for cardinality five,OPEN,gates/RGPHI_FIVE_STATE_CLOSURE_014_REVISED.md
+P3-011,Global all-high permutation rigidity,OPEN,gates/RGPHI_FIVE_STATE_CLOSURE_014_REVISED.md

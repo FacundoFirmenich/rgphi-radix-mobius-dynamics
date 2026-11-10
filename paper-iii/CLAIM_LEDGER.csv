@@ -8,5 +8,9 @@ P3-006,High universal basin finite for every fixed base and finite trap,CLOSED_S
 P3-007,Rigidity for directed diameter at most two,CLOSED_SYMBOLIC,theorems/DIAMETER_LE2_RIGIDITY_012.md
 P3-008,Cycle reduction budget and least-prime criterion,CLOSED_SYMBOLIC,theorems/RGPHI_CYCLE_REDUCTION_BUDGET_012.md
 P3-009,All-high permutation rigidity for cardinality four,CLOSED_SYMBOLIC_PLUS_FINITE_CERTIFICATE,theorems/RGPHI_FOUR_STATE_RIGIDITY_013.md
-P3-010,All-high permutation rigidity for cardinality five,OPEN,gates/RGPHI_FIVE_STATE_CLOSURE_014_REVISED.md
-P3-011,Global all-high permutation rigidity,OPEN,gates/RGPHI_FIVE_STATE_CLOSURE_014_REVISED.md
+P3-010,Hamiltonian five-state TTSSS strict architecture is impossible,CLOSED_SYMBOLIC,theorems/RGPHI_FIVE_STATE_ADVANCE_014.md
+P3-011,A strict TTSS core cannot be repaired by a fifth closure state,CLOSED_SYMBOLIC,theorems/RGPHI_FIVE_STATE_ADVANCE_014.md
+P3-012,Remaining Hamiltonian TSTSS architecture classes,OPEN_PARTIAL,five-state/HAMILTONIAN_TSTSS_CLASSES.csv.gz
+P3-013,Remaining TSTS core plus fifth-state architecture classes,OPEN_PARTIAL,five-state/FOUR_CORE_TSTS_PLUS_ONE_CLASSES.csv.gz
+P3-014,All-high permutation rigidity for cardinality five,OPEN,gates/RGPHI_FIVE_STATE_DIOPHANTINE_QUOTIENT_015.md
+P3-015,Global all-high permutation rigidity,OPEN,gates/RGPHI_FIVE_STATE_DIOPHANTINE_QUOTIENT_015.md

@@ -6,7 +6,14 @@ OR-C4,n<=19 after sharpening,CLOSED_SYMBOLIC
 OR-C5,F19 has a strict real chamber point,CLOSED_REAL
 OR-C6,F19 has an admissible rational/integral point,OPEN
 OR-C7,17/19 is historically independent of the 19 curves,OPEN_PARTIAL
-OR-C8,first exact n6 class has DUAL_TRIAD signature,PREREGISTERED
-OR-C9,first exact n6 class has ALTERNATING_HEXAGON signature,PREREGISTERED_SECONDARY
-OR-C10,five is a universal short defect cell,PREREGISTERED
-OR-C11,a Paper III ratio is formally hyperaccess,NOT_CLAIMED
+OR-C8,F17 has a primitive non-torsion strict-chamber point,CLOSED_EXACT
+OR-C9,rank F17(Q) >= 1,CLOSED_EXACT
+OR-C10,F17 has infinitely many rational chamber points,CLOSED
+OR-C11,n17 is the unique positive-rank chamber curve among n=1..19,PREREGISTERED_POSTSELECTION
+OR-C12,17 arithmetic / 19 envelope is a structural split,POSTHOC_CANDIDATE
+OR-C13,C/d divides g and D/d divides f on F_n,CLOSED_SYMBOLIC
+OR-C14,the obstruction prime is universally 23,NOT_CLAIMED
+OR-C15,first exact n6 class has DUAL_TRIAD signature,PREREGISTERED
+OR-C16,first exact n6 class has ALTERNATING_HEXAGON signature,PREREGISTERED_SECONDARY
+OR-C17,five is a universal short defect cell,PREREGISTERED
+OR-C18,a Paper III ratio is formally hyperaccess,NOT_CLAIMED

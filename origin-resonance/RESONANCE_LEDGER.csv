@@ -1,0 +1,8 @@
+id,motif,kind,status,evidence,boundary
+R-001,4/9 constant,algebraic,REFUTED_AS_SHARP,Exact supremum is 2/5,Do not count as structural constant
+R-002,1..19 index range,algebraic,SURVIVES_SHARPENING,Exact continuous envelope 892/45; F19 has strict real point,Rational/integral F19 open
+R-003,19 versus historical 17/19,historical-numerical,CURRENT_FORMAL_INDEPENDENCE,No edge in present theorem DAG,Full historical archive audit open
+R-004,five as minimal rigidity rupture,cross-branch structural,STRONG_RESONANCE_CANDIDATE,Canonical result: rigidity 2 3 4; rupture 5,No causal identification
+R-005,six / hexagon / dual triad,prospective,PREREGISTERED,Exact graph signatures frozen,Await exact n6 class
+R-006,open interval and hyperaccess,conceptual,CONCEPTUAL_ONLY,No operational access functional exists,Formal bridge required
+R-007,five as universal defect cell,prospective,PREREGISTERED,Short defect cycle and quotient endpoints frozen,Await n>=6 classifications

@@ -1,0 +1,38 @@
+{
+  "gate": "RGPHI_STRENGTHENING_ROUND_018",
+  "verdicts": [
+    "PASS_GLOBAL_STRICT_EDGE_UNIQUENESS_N5",
+    "PASS_COUNTERGRAPH_CRT_CLASSIFICATION",
+    "PASS_SCOPE_REPAIR_ROUND015",
+    "PASS_DF015_0015_ZERO_BRANCH_NO_GO",
+    "OPEN_COMPLETE_FIVE_STATE_CLASSIFICATION",
+    "OPEN_DF015_0015_NONEXCEPTIONAL"
+  ],
+  "multi_strict": {
+    "raw_labelled_assignments": 156250,
+    "marked_maps_after_graph_filters": 4071,
+    "max_compatible_strict_edges": 2,
+    "two_strict_labelled_profiles": 2820,
+    "two_strict_canonical_profiles": 840,
+    "high_infeasible_farkas": 728,
+    "state_collision": 56,
+    "fibre_injectivity": 50,
+    "arithmetic_exclusions": 6,
+    "realisable_two_strict_profiles": 0,
+    "verdict": "PASS_GLOBAL_STRICT_EDGE_UNIQUENESS_N5"
+  },
+  "secondary": {
+    "form_id": "DF015-0015",
+    "status": "OPEN_REDUCED",
+    "z_max": 3000,
+    "zw_pairs": 4498500,
+    "admissible_divisor_candidates": 213800681,
+    "first_cycle_survivors": 587,
+    "second_cycle_survivors": 0,
+    "hits": 0,
+    "maximum_A_enumerated": 53973008999,
+    "maximum_A_passing_first_cycle": 389279,
+    "zero_remainder_branch": "CLOSED_SYMBOLIC"
+  },
+  "checker": "PASS\nraw_assignments=156250\ncanonical_two_strict_profiles=840\nfarkas_infeasible=728\nstate_collision=56\nfibre_injectivity=50\narithmetic_exclusions=6\nrealisable_two_strict_profiles=0\nglobal_strict_edge_uniqueness_n5=PASS\nPASS_ROUND_018\ncountergraph_base_class=PASS\nsmall_height_state_tuple_audit=UNIQUE_IN_JURISDICTION\nDF015_0015=OPEN_REDUCED"
+}

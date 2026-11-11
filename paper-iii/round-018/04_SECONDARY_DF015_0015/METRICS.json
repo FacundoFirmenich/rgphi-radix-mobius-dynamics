@@ -1,0 +1,13 @@
+{
+  "form_id": "DF015-0015",
+  "status": "OPEN_REDUCED",
+  "z_max": 3000,
+  "zw_pairs": 4498500,
+  "admissible_divisor_candidates": 213800681,
+  "first_cycle_survivors": 587,
+  "second_cycle_survivors": 0,
+  "hits": 0,
+  "maximum_A_enumerated": 53973008999,
+  "maximum_A_passing_first_cycle": 389279,
+  "zero_remainder_branch": "CLOSED_SYMBOLIC"
+}

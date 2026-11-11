@@ -1,0 +1,2 @@
+Z=3000 pairs=4498500 divisors=213800681 stageD=587 stageC=0 stageCong=0 hits=0 maxA=53973008999 maxAD=389279
+TIME 21.23

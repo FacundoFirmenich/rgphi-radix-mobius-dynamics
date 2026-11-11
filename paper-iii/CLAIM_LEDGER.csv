@@ -22,8 +22,16 @@ P3-020,Global all-high permutation rigidity,REFUTED,theorems/RGPHI_SHARP_RIGIDIT
 P3-021,Exact infinite five-state nonpermutation counterfamily,CLOSED_SYMBOLIC_PLUS_CRT,theorems/RGPHI_FIVE_STATE_COUNTERFAMILY_017.md
 P3-022,Minimal all-high nonpermutation cardinality equals five,CLOSED,theorems/RGPHI_SHARP_RIGIDITY_THRESHOLD_017.md
 P3-023,Conditional branch DF015-0007-B2 is realizable,CLOSED_EXACT,round-017/STATES_AND_ACTIONS.csv
-P3-024,Complete classification of five-state nonpermutation SCCs,OPEN,gates/RGPHI_FIVE_STATE_CLASSIFICATION_018.md
+P3-024,Complete classification of five-state nonpermutation SCCs,OPEN,gates/RGPHI_FIVE_STATE_CLASSIFICATION_019.md
 P3-025,DF015-0015 zero-factor subcase is impossible,CLOSED_SYMBOLIC,round-017/DF015_0015_EXACT_BOUNDARY_017.md
 P3-026,DF015-0015 necessary-condition audit for z<=5000,FINITE_EXHAUSTIVE,round-017/AUDIT_Z5000_OUTPUT.txt
-P3-027,Global DF015-0015 adjudication,OPEN,gates/RGPHI_FIVE_STATE_CLASSIFICATION_018.md
-P3-028,Existence of all-high nonpermutation SCCs for every cardinality n>=5,OPEN,gates/RGPHI_FIVE_STATE_CLASSIFICATION_018.md
+P3-027,Global DF015-0015 adjudication,OPEN,gates/RGPHI_FIVE_STATE_CLASSIFICATION_019.md
+P3-028,Existence of all-high nonpermutation SCCs for every cardinality n>=5,OPEN,gates/RGPHI_FIVE_STATE_CLASSIFICATION_019.md
+P3-029,Global strict-edge uniqueness for five-state nonpermutation all-high SCCs,CLOSED_COMPUTER_ASSISTED_EXACT,theorems/FIVE_STATE_STRICT_EDGE_UNIQUENESS_018.md
+P3-030,Defect-one hypothesis is discharged for five-state classification,CLOSED_USING_ROUND018_SCOPE_REPAIR,round-018/SCOPE_REPAIR_018.md
+P3-031,CRT classification of bases for the realized five-state action graph,CLOSED_SYMBOLIC,theorems/COUNTERGRAPH_CRT_CLASSIFICATION_018.md
+P3-032,Only known state tuple in explicitly bounded search,FINITE_EXHAUSTIVE,round-018/02_COUNTERGRAPH/SAME_GRAPH_SEARCH_Q1_LE_10000_D_LE_30000.csv
+P3-033,Global uniqueness of state tuple for that action graph,OPEN,gates/RGPHI_FIVE_STATE_CLASSIFICATION_019.md
+P3-034,DF015-0015 factorized divisor reduction and zero branch,CLOSED_PARTIAL_SYMBOLIC,theorems/DF015_0015_DIVISOR_REDUCTION_018.md
+P3-035,DF015-0015 full nonexceptional branch,OPEN_REDUCED,gates/RGPHI_FIVE_STATE_CLASSIFICATION_019.md
+P3-036,Complete five-state nonpermutation classification,OPEN,gates/RGPHI_FIVE_STATE_CLASSIFICATION_019.md

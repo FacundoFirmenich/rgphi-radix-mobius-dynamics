@@ -1,0 +1,9 @@
+claim_id,claim,status,evidence
+018-C1,Every five-state nonpermutation all-high SCC has exactly one strict edge,CLOSED_COMPUTER_ASSISTED_EXACT,01_THEOREMS/FIVE_STATE_STRICT_EDGE_UNIQUENESS_018.md
+018-C2,The Round-015 defect-one quotient is globally applicable at n=5,CLOSED_USING_018_C1,00_SOURCE_BOUNDARY/SOURCE_BOUNDARY.md
+018-C3,Complete CRT criterion for the realized action graph,CLOSED_SYMBOLIC,01_THEOREMS/COUNTERGRAPH_CRT_CLASSIFICATION_018.md
+018-C4,The displayed fixed state tuple has a unique base residue class,CLOSED_SYMBOLIC_CRT,02_COUNTERGRAPH/FIXED_STATE_BASE_CLASS.json
+018-C5,The fixed state tuple is globally isolated,OPEN,07_NEXT_GATE/RGPHI_FIVE_STATE_CLASSIFICATION_019.md
+018-C6,DF015-0015 zero-remainder branch is impossible,CLOSED_SYMBOLIC,01_THEOREMS/DF015_0015_DIVISOR_REDUCTION_018.md
+018-C7,DF015-0015 nonexceptional branch is impossible,OPEN,07_NEXT_GATE/RGPHI_FIVE_STATE_CLASSIFICATION_019.md
+018-C8,Complete five-state nonpermutation SCC classification,OPEN,07_NEXT_GATE/RGPHI_FIVE_STATE_CLASSIFICATION_019.md

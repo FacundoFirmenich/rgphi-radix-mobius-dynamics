@@ -1,0 +1,13 @@
+{
+  "raw_labelled_assignments": 156250,
+  "marked_maps_after_graph_filters": 4071,
+  "max_compatible_strict_edges": 2,
+  "two_strict_labelled_profiles": 2820,
+  "two_strict_canonical_profiles": 840,
+  "high_infeasible_farkas": 728,
+  "state_collision": 56,
+  "fibre_injectivity": 50,
+  "arithmetic_exclusions": 6,
+  "realisable_two_strict_profiles": 0,
+  "verdict": "PASS_GLOBAL_STRICT_EDGE_UNIQUENESS_N5"
+}

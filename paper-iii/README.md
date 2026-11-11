@@ -1,53 +1,31 @@
-# RGΦ Paper III — estado canónico revisado
+# RGΦ Paper III — estado canónico v1.9 (2026-11-11)
 
-Objeto exclusivo: trampas modulares, SCC racionales, cuencas universales y rigidez all-high de Paper III. No modificar la autoridad de Paper I, II, Stage B2 u otras ramas.
+Objeto exclusivo: trampas modulares, SCC racionales, cuencas universales y rigidez all-high. Paper I, Paper II, Stage B2 y otras líneas no se modifican.
 
-## Teorema central actualizado
+## Resultado principal
 
-La rigidez all-high está probada para cardinalidades 2, 3 y 4. Round 017 construye una familia infinita exacta de SCC all-high cerradas de cardinalidad 5 con `S_B` no permutacional. Por tanto:
+- Rigidez all-high probada para cardinalidades 2, 3 y 4.
+- Round 017: contrafamilia infinita exacta de cardinalidad cinco; umbral mínimo de ruptura = **5**; rigidez permutacional global **REFUTADA**.
+- Round 018: unicidad global de la arista estricta para una SCC all-high no permutacional de cinco estados, bajo certificado combinatorio y racional exacto (teorema asistido por ordenador).
+- El quotient defect-one/lollipop de Round 015 ya tiene resuelta para n=5 su hipótesis adicional de unicidad; conservar la auditoría histórica sin borrarla.
+- Clasificación CRT completa de las bases para cada tupla primitiva que realice el grafo conocido; **no** se prueba unicidad global de la tupla.
+- La rama excepcional de DF015-0015 está cerrada; su sector general continúa **OPEN_REDUCED**.
 
-\[
-\boxed{|F|\le4\Rightarrow T_B|_F,S_B|_F\text{ son permutaciones},}
-\]
+## Canon de Round 018
 
-mientras que cardinalidad 5 ya admite fallo exacto. La cardinalidad mínima de fallo es **cinco** y la conjetura global de rigidez permutacional all-high queda **refutada**.
+- [Teorema de unicidad strict-edge](theorems/FIVE_STATE_STRICT_EDGE_UNIQUENESS_018.md)
+- [Clasificación CRT del grafo realizado](theorems/COUNTERGRAPH_CRT_CLASSIFICATION_018.md)
+- [Reducción de divisores DF015-0015](theorems/DF015_0015_DIVISOR_REDUCTION_018.md)
+- [Theorem stack v1.9](PAPER_III_THEOREM_STACK_v1_9.md)
+- [Certificados y verificación Round 018](round-018/)
+- [Gate 019](gates/RGPHI_FIVE_STATE_CLASSIFICATION_019.md)
 
-## Contrafamilia exacta
+## Controles de autoridad
 
-\[
-B_t=88\,011\,536\,665\,779+t\,223\,336\,848\,698\,040,
-\qquad t\ge0,
-\]
-con estados
+- `FIVE_STATE_GLOBAL_STRICT_EDGE_UNIQUENESS = CLOSED_COMPUTER_ASSISTED_EXACT`;
+- `GLOBAL_ALL_HIGH_PERMUTATION_RIGIDITY = REFUTED`;
+- `COMPLETE_FIVE_STATE_CLASSIFICATION = OPEN`;
+- `DF015_0015_NONEXCEPTIONAL = OPEN_REDUCED`;
+- `EXISTENCE_FOR_EVERY_N_GE5 = OPEN`.
 
-\[
-406/731,\quad712/731,\quad712/1265,\quad1218/1265,\quad406/557.
-\]
-
-La tabla de acciones, el certificado CRT y dos checkers independientes están en [`round-017/`](round-017/). La familia realiza la rama condicionada `DF015-0007-B2`, pero el contraejemplo y el teorema de umbral son independientes de que el quotient Round 015/016 sea globalmente exhaustivo.
-
-## Boundary Round 015/016
-
-Round 014 proporciona 560 clases de arquitecturas combinatorias bajo restricciones necesarias de un ciclo testigo. El bundle Round 015 comprobado produce 20 formas bajo una hipótesis adicional: **exactamente una arista estricta en todo el grafo**. El presupuesto Round 012 establece unicidad sólo en el ciclo testigo, no en las restantes aristas de la SCC.
-
-El checker de Round 015 dio PASS contable, pero no convierte esa restricción adicional en un teorema global. Los cierres Round 016 siguen siendo resultados condicionados a esa jurisdicción. Esta cautela permanece vigente para la **clasificación completa**, aunque ya no afecta al contraejemplo exacto de Round 017.
-
-Ver [auditoría de jurisdicción](audits/ROUND015_016_SCOPE_AUDIT_2026-11-11.md), [Round 016](round-016/) y [Round 017](round-017/).
-
-## Fronteras abiertas
-
-1. Clasificación completa de las SCC all-high no permutacionales de cinco estados, incluyendo arquitecturas con múltiples aristas estrictas fuera del ciclo testigo.
-2. Adjudicación de las ramas condicionadas restantes.
-3. Resolución global de `DF015-0015`; Round 017 sólo cierra un subcaso y una jurisdicción finita `z<=5000`.
-4. Extensión de existencia a cardinalidades mayores o identificación de nuevas obstrucciones.
-
-El gate vinculante es [`gates/RGPHI_FIVE_STATE_CLASSIFICATION_018.md`](gates/RGPHI_FIVE_STATE_CLASSIFICATION_018.md).
-
-## Política de claims
-
-- rigidez all-high para 2,3,4: `CLOSED`;
-- contrafamilia de cardinalidad 5: `CLOSED_SYMBOLIC_PLUS_CRT`;
-- cardinalidad mínima de fallo = 5: `CLOSED`;
-- rigidez all-high global: `REFUTED`;
-- clasificación completa de cardinalidad 5: `OPEN`;
-- quotient defect-one Round 015/016: `CONDITIONAL_SCOPE`.
+La prueba asistida por ordenador depende de la exhaustividad del generador de perfiles y de los certificados correspondientes. El bundle fuente íntegro Round 018 sigue identificado por SHA-256 en `round-018/README.md`, incluidos los componentes de auditoría no duplicados en este mirror de trabajo.

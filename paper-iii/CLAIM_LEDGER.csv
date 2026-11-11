@@ -11,27 +11,30 @@ P3-009,All-high permutation rigidity for cardinality four,CLOSED_SYMBOLIC_PLUS_F
 P3-010,Hamiltonian five-state TTSSS strict architecture is impossible,INTERNAL_SYMBOLIC,theorems/RGPHI_FIVE_STATE_ADVANCE_014.md
 P3-011,A strict TTSS core cannot be repaired by a fifth closure state,INTERNAL_SYMBOLIC,theorems/RGPHI_FIVE_STATE_ADVANCE_014.md
 P3-012,Defect-one functional lollipop theorem conditional on single global strict edge,CLOSED_CONDITIONAL,round-015/RGPHI_DEFECT_ONE_LOLLIPOP_THEOREM_015.md
-P3-013,Complete elimination of 540 of 560 five-state graph architectures,PENDING_EXHAUSTIVENESS_AUDIT,audits/ROUND015_016_SCOPE_AUDIT_2026-11-11.md
+P3-013,Complete elimination of 540 of 560 five-state graph architectures,SCOPE_REPAIRED_BY_ROUND018,audits/ROUND015_016_SCOPE_AUDIT_2026-11-11.md
 P3-014,24 factor-specific classes historical,SUPERSEDED,five-state/SURVIVING_24_EXACT_CLASSES.csv
 P3-015,12 structural forms historical,SUPERSEDED,five-state/DIOPHANTINE_NORMAL_FORMS_12.csv
-P3-016,20 defect-one forms from attached Round015 bundle,CONDITIONAL_SCOPE_INTERNAL_CHECKED,round-015/DIOPHANTINE_NORMAL_FORMS.csv
-P3-017,7 of 20 defect-one forms closed in Round016,CONDITIONAL_SCOPE_INTERNAL_CLAIM,round-016/FORM_ADJUDICATION_20.csv
-P3-018,Remaining 13 defect-one forms and 15 branches,OPEN_PARTIAL,round-016/REMAINING_ARITHMETIC_BRANCHES.csv
+P3-016,20 defect-one forms from attached Round015 bundle,GLOBALIZED_BY_ROUND018_AND_ROUND019,theorems/FIVE_STATE_GLOBAL_CATALOGUE_019.md
+P3-017,7 of 20 defect-one forms closed in Round016,CLOSED_WITHIN_GLOBAL_CATALOGUE,round-016/FORM_ADJUDICATION_20.csv
+P3-018,Remaining defect-one arithmetic branches,OPEN_PARTIAL,gates/RGPHI_ARITHMETIC_REALIZABILITY_020.md
 P3-019,Five-state all-high permutation rigidity,REFUTED_BY_COUNTEREXAMPLE,theorems/RGPHI_FIVE_STATE_COUNTERFAMILY_017.md
 P3-020,Global all-high permutation rigidity,REFUTED,theorems/RGPHI_SHARP_RIGIDITY_THRESHOLD_017.md
 P3-021,Exact infinite five-state nonpermutation counterfamily,CLOSED_SYMBOLIC_PLUS_CRT,theorems/RGPHI_FIVE_STATE_COUNTERFAMILY_017.md
 P3-022,Minimal all-high nonpermutation cardinality equals five,CLOSED,theorems/RGPHI_SHARP_RIGIDITY_THRESHOLD_017.md
 P3-023,Conditional branch DF015-0007-B2 is realizable,CLOSED_EXACT,round-017/STATES_AND_ACTIONS.csv
-P3-024,Complete classification of five-state nonpermutation SCCs,OPEN,gates/RGPHI_FIVE_STATE_CLASSIFICATION_019.md
+P3-024,Complete arithmetic classification of five-state nonpermutation SCCs,OPEN,gates/RGPHI_ARITHMETIC_REALIZABILITY_020.md
 P3-025,DF015-0015 zero-factor subcase is impossible,CLOSED_SYMBOLIC,round-017/DF015_0015_EXACT_BOUNDARY_017.md
-P3-026,DF015-0015 necessary-condition audit for z<=5000,FINITE_EXHAUSTIVE,round-017/AUDIT_Z5000_OUTPUT.txt
-P3-027,Global DF015-0015 adjudication,OPEN,gates/RGPHI_FIVE_STATE_CLASSIFICATION_019.md
-P3-028,Existence of all-high nonpermutation SCCs for every cardinality n>=5,OPEN,gates/RGPHI_FIVE_STATE_CLASSIFICATION_019.md
+P3-026,DF015-0015 necessary-condition audits,FINITE_EXHAUSTIVE,round-019/README.md
+P3-027,Global DF015-0015 adjudication,OPEN_ELLIPTIC_REDUCED,gates/RGPHI_ARITHMETIC_REALIZABILITY_020.md
+P3-028,Existence of all-high nonpermutation SCCs for every cardinality n>=5,OPEN,gates/RGPHI_ARITHMETIC_REALIZABILITY_020.md
 P3-029,Global strict-edge uniqueness for five-state nonpermutation all-high SCCs,CLOSED_COMPUTER_ASSISTED_EXACT,theorems/FIVE_STATE_STRICT_EDGE_UNIQUENESS_018.md
-P3-030,Defect-one hypothesis is discharged for five-state classification,CLOSED_USING_ROUND018_SCOPE_REPAIR,round-018/SCOPE_REPAIR_018.md
+P3-030,Defect-one hypothesis is discharged for five-state classification,CLOSED_USING_ROUND018_SCOPE_REPAIR,theorems/FIVE_STATE_GLOBAL_CATALOGUE_019.md
 P3-031,CRT classification of bases for the realized five-state action graph,CLOSED_SYMBOLIC,theorems/COUNTERGRAPH_CRT_CLASSIFICATION_018.md
-P3-032,Only known state tuple in explicitly bounded search,FINITE_EXHAUSTIVE,round-018/02_COUNTERGRAPH/SAME_GRAPH_SEARCH_Q1_LE_10000_D_LE_30000.csv
-P3-033,Global uniqueness of state tuple for that action graph,OPEN,gates/RGPHI_FIVE_STATE_CLASSIFICATION_019.md
+P3-032,Known graph tuple unique in expanded bounded search,FINITE_EXHAUSTIVE,round-019/README.md
+P3-033,Global uniqueness of state tuple for that action graph,OPEN,gates/RGPHI_ARITHMETIC_REALIZABILITY_020.md
 P3-034,DF015-0015 factorized divisor reduction and zero branch,CLOSED_PARTIAL_SYMBOLIC,theorems/DF015_0015_DIVISOR_REDUCTION_018.md
-P3-035,DF015-0015 full nonexceptional branch,OPEN_REDUCED,gates/RGPHI_FIVE_STATE_CLASSIFICATION_019.md
-P3-036,Complete five-state nonpermutation classification,OPEN,gates/RGPHI_FIVE_STATE_CLASSIFICATION_019.md
+P3-035,DF015-0015 lies on nineteen smooth elliptic curves,CLOSED_SYMBOLIC_PLUS_CAS,theorems/DF015_0015_ELLIPTIC_REDUCTION_019.md
+P3-036,Global twenty-form combinatorial classification at n=5,CLOSED_COMPUTER_ASSISTED_EXACT,theorems/FIVE_STATE_GLOBAL_CATALOGUE_019.md
+P3-037,Universal fixed-tuple CRT realization theorem,CLOSED_SYMBOLIC,theorems/UNIVERSAL_CRT_REALIZATION_019.md
+P3-038,Only DF015-0007 is realizable among all twenty forms,OPEN,gates/RGPHI_ARITHMETIC_REALIZABILITY_020.md
+P3-039,Declared six-state extension architecture has no realization,FINITE_EXPLORATORY_ONLY,round-019/README.md

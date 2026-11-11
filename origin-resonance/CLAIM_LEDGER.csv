@@ -26,3 +26,11 @@ OR-C24,All six candidate defect values are realized in n=6,PREREGISTERED
 OR-C25,Every periodic word in the 16 certified closed SCCs for B=2..40 and n<=5 has Delta=1 log pitch=0 alpha=0,CLOSED_BOUNDED_39_BASES
 OR-C26,The bounded 39-base audit proves absence of nonpermutation five-state SCCs for every base,NOT_CLAIMED
 OR-C27,This audit activates OR4 OR5 or the n6 strict defect spectrum,NOT_TRIGGERED
+OR-C28,On a finite closed strongly connected high RGPhi component nonpermutation is equivalent to a strict content edge and a positive-content simple cycle,BRANCH_PROVED_THEOREM_OR21
+OR-C29,Closed-walk products classify positive rational edge decorations up to positive rational vertex gauge on a fixed strongly connected labelled graph,BRANCH_PROVED_THEOREM_OR21
+OR-C30,Positive pressure derivative at zero is equivalent to finite-component nonpermutation; derivative is a rational prime-resolved log combination,BRANCH_PROVED_THEOREM_OR21
+OR-C31,Periodic content shares are rational precisely when valuations of Delta and B are proportional over Q,BRANCH_PROVED_THEOREM_OR21
+OR-C32,Canonical finite-cardinality strict bound together with defect divisibility yields a prime-factor necessary sieve in n=5 and n=6,BRANCH_DERIVED_FROM_CANONICAL_BOUND_OR21
+OR-C33,The exact five-state counterfamily has pressure mean log(3)/28 and asymptotic variance 3(log(3))^2/112 under independent fair generator choices,BRANCH_PROVED_SYMBOLIC_CHECKED_OR21
+OR-C34,The same infinite five-state family retains strict monodromy but its maximal radix-normalized periodic share converges to zero,BRANCH_PROVED_THEOREM_OR21
+OR-C35,The OR21 finite-state content receipt is identical to broader hyperaccess,NOT_CLAIMED

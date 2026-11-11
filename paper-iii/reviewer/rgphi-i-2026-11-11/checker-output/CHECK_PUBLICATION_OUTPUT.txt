@@ -1,0 +1,7 @@
+PASS_PUBLICATION
+nonsquare_certificate_rows=37
+counterfamily_bases_checked=1001
+closed_strongly_connected_five_state_family=PASS
+unique_strict_edge=S_factor_3
+spectral_cycle_identity=PASS
+finite_type_bound_regression_n=2..20

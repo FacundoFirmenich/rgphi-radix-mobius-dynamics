@@ -1,0 +1,13 @@
+claim_id,claim,status,evidence
+P3-060,RGΦ has a canonical primitive projective content-reduction formulation,CLOSED_SYMBOLIC,00_OBJECT_FREEZE/RGPHI_OBJECT_DEFINITION_022.md
+P3-061,Rational and projective-integral formulations are exactly conjugate,CLOSED_SYMBOLIC,00_OBJECT_FREEZE/RGPHI_OBJECT_DEFINITION_022.md
+P3-062,Matrix and defect products form a multiplicative cocycle,CLOSED_SYMBOLIC,01_THEOREMS/PROJECTIVE_CONTENT_COCYCLE_022.md
+P3-063,Every rational cycle satisfies the spectral trace identity,CLOSED_SYMBOLIC,01_THEOREMS/CYCLE_SPECTRAL_THEOREM_022.md
+P3-064,Every cycle branch product has square discriminant,CLOSED_SYMBOLIC,01_THEOREMS/CYCLE_SPECTRAL_THEOREM_022.md
+P3-065,Fixed cardinality has finitely many abstract RGΦ types,CLOSED_SYMBOLIC,01_THEOREMS/FINITE_MODULI_DECOMPOSITION_022.md
+P3-066,Each abstract type has an explicit Diophantine realization space,CLOSED_SYMBOLIC,01_THEOREMS/FINITE_MODULI_DECOMPOSITION_022.md
+P3-067,DF015-0015 admits the boundary-coordinate cubic normal form,CLOSED_SYMBOLIC,01_THEOREMS/ELLIPTIC_BOUNDARY_NORMAL_FORM_022.md
+P3-068,Boundary projection gives the simplified quartic,CLOSED_SYMBOLIC,01_THEOREMS/ELLIPTIC_BOUNDARY_NORMAL_FORM_022.md
+P3-069,Coprime candidates reduce to a binary perfect-square equation,OPEN_EFFECTIVE_FRAMEWORK,01_THEOREMS/COPRIME_SLOPE_REDUCTION_022.md
+P3-070,Complete effective relative-integral list,OPEN,07_NEXT_GATE/RGPHI_MODULI_CLASSIFICATION_023.md
+P3-071,Complete six-state classification,OPEN,07_NEXT_GATE/RGPHI_MODULI_CLASSIFICATION_023.md

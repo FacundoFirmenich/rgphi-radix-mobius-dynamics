@@ -1,0 +1,23 @@
+{
+  "object": "RGPHI_PROJECTIVE_CONTENT_REDUCTION_AUTOMATON",
+  "date": "2026-11-11",
+  "theorem_stack": "v1.13",
+  "object_definition_status": "FROZEN_CANONICAL",
+  "closed": {
+    "rational_integral_conjugacy": true,
+    "content_cocycle": true,
+    "cycle_spectral_theorem": true,
+    "perfect_square_cycle_obstruction": true,
+    "fixed_cardinality_finite_type_decomposition": true,
+    "explicit_diophantine_moduli": true,
+    "elliptic_boundary_normal_form": true,
+    "coprime_slope_reduction": true
+  },
+  "open": {
+    "effective_relative_integral_enumeration": true,
+    "complete_five_state_arithmetic_realizability": true,
+    "countergraph_global_uniqueness": true,
+    "complete_six_state_type_catalogue": true
+  },
+  "binding_gate": "RGPHI_MODULI_CLASSIFICATION_023"
+}

@@ -1,0 +1,11 @@
+PASS
+projective_content_cocycle=PASS
+cycle_spectral_identity=PASS
+counterfamily_STST_cycle_defect=3
+PASS
+boundary_cubic_transform=PASS
+boundary_quartic_birational_identity=PASS
+n17_regression=PASS
+PASS
+finite_type_bound=d<2^floor(n/2)
+cardinalities_checked=2..20

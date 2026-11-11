@@ -1,0 +1,24 @@
+claim_id,claim,status,main_location,evidence
+RGI-001,Exact rational branch formulae,CLOSED_SYMBOLIC,Section 2,main proof
+RGI-002,Exact denominator and numerator reduction laws,CLOSED_SYMBOLIC,Proposition 2.1,main proof
+RGI-003,Primitive projective lift is exactly conjugate to rational dynamics,CLOSED_SYMBOLIC,Proposition 2.2,main proof
+RGI-004,Content product is a multiplicative cocycle,CLOSED_SYMBOLIC,Theorem 3.1,main proof
+RGI-005,Periodic branch products satisfy exact spectral trace identity,CLOSED_SYMBOLIC,Theorem 3.2,main proof
+RGI-006,Rational periodic branch product has square discriminant,CLOSED_SYMBOLIC,Theorem 3.2,main proof
+RGI-007,High-cycle reduction budget,CLOSED_SYMBOLIC,Theorem 4.1,main proof
+RGI-008,Least-prime cardinality obstruction,CLOSED_SYMBOLIC,Corollary 4.2,main proof
+RGI-009,Large-prime rigidity,CLOSED_SYMBOLIC,Corollary 4.3,main proof
+RGI-010,Directed-diameter-at-most-two rigidity,CLOSED_SYMBOLIC,Theorem 4.4,main proof
+RGI-011,Rigidity through cardinality three,CLOSED_SYMBOLIC,Corollary 4.5,main proof
+RGI-012,TTSS strict Hamiltonian word impossible,CLOSED_SYMBOLIC,Lemma 5.1,main proof
+RGI-013,TSTS strict-T architecture impossible,CLOSED_SYMBOLIC,Section 5.2,main proof
+RGI-014,TSTS strict-S architecture impossible,CLOSED_SYMBOLIC_PLUS_FINITE_CERTIFICATE,Section 5.3,37-row modular certificate
+RGI-015,Every four-state high closed SCC is permutational,CLOSED,Theorem 5.4,claims RGI-012:014
+RGI-016,Exact five-state action table for all bases in progression,CLOSED_SYMBOLIC_PLUS_CRT,Theorem 6.1,CRT certificate
+RGI-017,Five-state set is closed strongly connected and nonpermutational,CLOSED,Corollary 6.2,main proof
+RGI-018,Least nonpermutational cardinality is exactly five,CLOSED_SHARP,Corollary 6.3,RGI-015+RGI-017
+RGI-019,Fixed cardinality has finitely many abstract defect-decorated types,CLOSED_SYMBOLIC,Theorem 7.1,main proof
+RGI-020,Fixed primitive tuple has empty or one arithmetic-progression base fibre,CLOSED_SYMBOLIC,Theorem 7.2,generalized CRT
+RGI-021,Complete five-state arithmetic classification,NOT_CLAIMED,Scope boundary,future work
+RGI-022,Complete six-state classification,NOT_CLAIMED,Scope boundary,future work
+RGI-023,Physical model or physical law,NOT_CLAIMED,Section 8,analogy only

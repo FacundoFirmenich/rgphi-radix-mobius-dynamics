@@ -1,0 +1,3 @@
+PASS
+finite_type_bound=d<2^floor(n/2)
+cardinalities_checked=2..20

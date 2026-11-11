@@ -1,0 +1,24 @@
+{
+  "name": "RGPHI_abstract_type",
+  "data": {
+    "vertices": "finite set V",
+    "T_transition": "tau: V -> V",
+    "S_transition": "sigma: V -> V",
+    "T_defects": "g_i >= 1",
+    "S_defects": "h_i >= 1"
+  },
+  "realization_variables": ["B", "p_i", "q_i", "T_digit_i", "S_digit_i"],
+  "equations": [
+    "q_i = g_i q_tau(i)",
+    "B p_i - a_i q_i = g_i p_tau(i)",
+    "p_i = h_i p_sigma(i)",
+    "B(q_i-p_i)-b_i p_i = h_i(q_sigma(i)-p_sigma(i))"
+  ],
+  "open_conditions": [
+    "gcd(p_i,q_i)=1",
+    "q_i/2 < p_i < q_i",
+    "states pairwise distinct",
+    "exact gcd defects",
+    "strong connectivity"
+  ]
+}

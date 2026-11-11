@@ -1,0 +1,4 @@
+PASS
+projective_content_cocycle=PASS
+cycle_spectral_identity=PASS
+counterfamily_STST_cycle_defect=3

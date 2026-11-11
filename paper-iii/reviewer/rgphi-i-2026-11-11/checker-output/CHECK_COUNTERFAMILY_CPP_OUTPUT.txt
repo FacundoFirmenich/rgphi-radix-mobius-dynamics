@@ -1,0 +1,4 @@
+PASS
+counterfamily_bases_checked=1001
+cross_language_exact_edges=PASS
+unique_strict_edge=S3:x3->x0

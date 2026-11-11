@@ -1,0 +1,6 @@
+PASS
+counterfamily_bases_checked=1001
+five_state_closed_SCC=PASS
+unique_strict_edge=S3:x3->x0
+S_permutation=FALSE
+minimal_nonpermutation_cardinality=5

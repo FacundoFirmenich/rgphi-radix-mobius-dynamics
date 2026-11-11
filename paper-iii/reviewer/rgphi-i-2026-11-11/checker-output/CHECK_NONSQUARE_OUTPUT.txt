@@ -1,0 +1,3 @@
+PASS
+j_range=1..37
+moduli=68,55,71

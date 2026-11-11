@@ -1,0 +1,28 @@
+{
+  "gate": "RGPHI_STRENGTHENING_ROUND_017",
+  "verdicts": [
+    "PASS_EXACT_FIVE_STATE_COUNTERFAMILY",
+    "PASS_INFINITE_BASE_ARITHMETIC_PROGRESSION",
+    "PASS_SHARP_MINIMAL_CARDINALITY_FIVE",
+    "REFUTE_GLOBAL_ALL_HIGH_PERMUTATION_RIGIDITY",
+    "PASS_DF015_0015_ZERO_FACTOR_NO_GO",
+    "PASS_DF015_0015_FINITE_NECESSARY_AUDIT_Z5000",
+    "OPEN_COMPLETE_FIVE_STATE_CLASSIFICATION",
+    "OPEN_GLOBAL_DF015_0015"
+  ],
+  "counterexample": {
+    "branch": "DF015-0007-B2",
+    "R": 88011536665779,
+    "M": 223336848698040,
+    "states": ["406/731", "712/731", "712/1265", "1218/1265", "406/557"],
+    "T": [1, 0, 3, 2, 4],
+    "S": [4, 2, 1, 0, 0]
+  },
+  "secondary_audit": {
+    "z_max": 5000,
+    "divisor_core": 48518,
+    "primitive_core": 682,
+    "cubic_hits": 0
+  },
+  "scope_boundary": "Counterfamily unconditional; Round015/016 defect-one taxonomy conditional and non-exhaustive globally."
+}

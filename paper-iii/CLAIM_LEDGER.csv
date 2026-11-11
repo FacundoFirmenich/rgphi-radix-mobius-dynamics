@@ -16,27 +16,27 @@ P3-014,24 factor-specific classes historical,SUPERSEDED,five-state/SURVIVING_24_
 P3-015,12 structural forms historical,SUPERSEDED,five-state/DIOPHANTINE_NORMAL_FORMS_12.csv
 P3-016,20 defect-one forms from attached Round015 bundle,GLOBALIZED_BY_ROUND018_AND_ROUND019,theorems/FIVE_STATE_GLOBAL_CATALOGUE_019.md
 P3-017,7 of 20 defect-one forms closed in Round016,CLOSED_WITHIN_GLOBAL_CATALOGUE,round-016/FORM_ADJUDICATION_20.csv
-P3-018,Remaining defect-one arithmetic branches,OPEN_PARTIAL,gates/RGPHI_ARITHMETIC_REALIZABILITY_020.md
+P3-018,Remaining defect-one arithmetic branches,OPEN_PARTIAL,gates/RGPHI_EFFECTIVE_RELATIVE_INTEGRAL_022.md
 P3-019,Five-state all-high permutation rigidity,REFUTED_BY_COUNTEREXAMPLE,theorems/RGPHI_FIVE_STATE_COUNTERFAMILY_017.md
 P3-020,Global all-high permutation rigidity,REFUTED,theorems/RGPHI_SHARP_RIGIDITY_THRESHOLD_017.md
 P3-021,Exact infinite five-state nonpermutation counterfamily,CLOSED_SYMBOLIC_PLUS_CRT,theorems/RGPHI_FIVE_STATE_COUNTERFAMILY_017.md
 P3-022,Minimal all-high nonpermutation cardinality equals five,CLOSED,theorems/RGPHI_SHARP_RIGIDITY_THRESHOLD_017.md
 P3-023,Conditional branch DF015-0007-B2 is realizable,CLOSED_EXACT,round-017/STATES_AND_ACTIONS.csv
-P3-024,Complete arithmetic classification of five-state nonpermutation SCCs,OPEN,gates/RGPHI_COPRIME_INTEGRAL_POINTS_021.md
+P3-024,Complete arithmetic classification of five-state nonpermutation SCCs,OPEN,gates/RGPHI_EFFECTIVE_RELATIVE_INTEGRAL_022.md
 P3-025,DF015-0015 zero-factor subcase is impossible,CLOSED_SYMBOLIC,round-017/DF015_0015_EXACT_BOUNDARY_017.md
 P3-026,DF015-0015 necessary-condition audits,FINITE_EXHAUSTIVE,round-019/README.md
-P3-027,Global DF015-0015 adjudication,OPEN_COPRIME_INTEGRAL_ELLIPTIC,gates/RGPHI_COPRIME_INTEGRAL_POINTS_021.md
-P3-028,Existence of all-high nonpermutation SCCs for every cardinality n>=5,OPEN,gates/RGPHI_COPRIME_INTEGRAL_POINTS_021.md
+P3-027,Global DF015-0015 adjudication,OPEN_RELATIVE_INTEGRAL_ELLIPTIC,gates/RGPHI_EFFECTIVE_RELATIVE_INTEGRAL_022.md
+P3-028,Existence of all-high nonpermutation SCCs for every cardinality n>=5,OPEN,gates/RGPHI_EFFECTIVE_RELATIVE_INTEGRAL_022.md
 P3-029,Global strict-edge uniqueness for five-state nonpermutation all-high SCCs,CLOSED_COMPUTER_ASSISTED_EXACT,theorems/FIVE_STATE_STRICT_EDGE_UNIQUENESS_018.md
 P3-030,Defect-one hypothesis is discharged for five-state classification,CLOSED_USING_ROUND018_SCOPE_REPAIR,theorems/FIVE_STATE_GLOBAL_CATALOGUE_019.md
 P3-031,CRT classification of bases for the realized five-state action graph,CLOSED_SYMBOLIC,theorems/COUNTERGRAPH_CRT_CLASSIFICATION_018.md
-P3-032,Known graph tuple unique in expanded bounded search,FINITE_EXHAUSTIVE,round-019/README.md
-P3-033,Global uniqueness of state tuple for that action graph,OPEN,gates/RGPHI_COPRIME_INTEGRAL_POINTS_021.md
+P3-032,Known graph tuple unique in expanded bounded search,FINITE_EXHAUSTIVE,round-021/README.md
+P3-033,Global uniqueness of state tuple for that action graph,OPEN,gates/RGPHI_EFFECTIVE_RELATIVE_INTEGRAL_022.md
 P3-034,DF015-0015 factorized divisor reduction and zero branch,CLOSED_PARTIAL_SYMBOLIC,theorems/DF015_0015_DIVISOR_REDUCTION_018.md
 P3-035,DF015-0015 lies on nineteen smooth elliptic curves,CLOSED_SYMBOLIC_PLUS_CAS,theorems/DF015_0015_ELLIPTIC_REDUCTION_019.md
 P3-036,Global twenty-form combinatorial classification at n=5,CLOSED_COMPUTER_ASSISTED_EXACT,theorems/FIVE_STATE_GLOBAL_CATALOGUE_019.md
 P3-037,Universal fixed-tuple CRT realization theorem,CLOSED_SYMBOLIC,theorems/UNIVERSAL_CRT_REALIZATION_019.md
-P3-038,Only DF015-0007 is realizable among all twenty forms,OPEN,gates/RGPHI_COPRIME_INTEGRAL_POINTS_021.md
+P3-038,Only DF015-0007 is realizable among all twenty forms,OPEN,gates/RGPHI_EFFECTIVE_RELATIVE_INTEGRAL_022.md
 P3-039,Declared six-state extension architecture has no realization,FINITE_EXPLORATORY_ONLY,round-019/README.md
 P3-040,Coprime completion on every DF015-0015 cubic,CLOSED_SYMBOLIC,theorems/DF015_0015_COPRIME_COMPLETION_020.md
 P3-041,F_17 contains a primitive rational point in the strict chamber,CLOSED_EXACT,theorems/DF015_0015_N17_POSITIVE_RANK_CHAMBER_020.md
@@ -45,6 +45,16 @@ P3-043,Mordell-Weil rank of F_17 is at least one,CLOSED,theorems/DF015_0015_N17_
 P3-044,F_17 has infinitely many rational chamber points,CLOSED_REAL_ELLIPTIC_GROUP,theorems/DF015_0015_N17_POSITIVE_RANK_CHAMBER_020.md
 P3-045,The displayed n17 chamber point realizes DF015-0015,REFUTED_BY_GCD23,round-020/N17_CHAMBER_POINT.json
 P3-046,Eight open forms have no realization through N=20000,FINITE_EXHAUSTIVE,round-020/FINITE_AUDITS_020.csv
-P3-047,Round-017 tuple is globally unique,OPEN,gates/RGPHI_COPRIME_INTEGRAL_POINTS_021.md
+P3-047,Round-017 tuple is globally unique,OPEN,gates/RGPHI_EFFECTIVE_RELATIVE_INTEGRAL_022.md
 P3-048,Three natural six-state lifts have no realization through N=10000,FINITE_EXPLORATORY_ONLY,round-020/FINITE_AUDITS_020.csv
-P3-049,No six-state nonpermutation all-high SCC exists,OPEN,gates/RGPHI_COPRIME_INTEGRAL_POINTS_021.md
+P3-049,No six-state nonpermutation all-high SCC exists,OPEN,gates/RGPHI_EFFECTIVE_RELATIVE_INTEGRAL_022.md
+P3-050,Odd-index cubic divisibility is equivalent to A odd,CLOSED_SYMBOLIC,theorems/ODD_INDEX_PARITY_COLLAPSE_021.md
+P3-051,Coprimality equals avoidance of R=[1:2:2] in every finite reduction,CLOSED_SYMBOLIC,theorems/BOUNDARY_POINT_S_INTEGRAL_FINITE_021.md
+P3-052,Each elliptic curve has finitely many coprime relative-integral candidates,CLOSED_USING_SIEGEL,theorems/BOUNDARY_POINT_S_INTEGRAL_FINITE_021.md
+P3-053,Effective enumeration of all coprime relative-integral candidates,OPEN,gates/RGPHI_EFFECTIVE_RELATIVE_INTEGRAL_022.md
+P3-054,The exact point 44P is in the chamber with cubic defect four and boundary collision at 83,CLOSED_EXACT_CERTIFICATE,round-021/README.md
+P3-055,Dense priority forms satisfy near-coprime factor splitting,CLOSED_SYMBOLIC,theorems/FOUR_FIBRE_NEAR_COPRIME_SPLITTING_021.md
+P3-056,Known countergraph tuple is unique for Q1<=16000 and D<=48000,FINITE_EXHAUSTIVE,round-021/README.md
+P3-057,One-edge subdivisions of the known graph form exactly 66 profiles,CLOSED_FINITE_EXACT,theorems/N6_ONE_EDGE_SUBDIVISION_021.md
+P3-058,Known five-state tuple has no one-edge-subdivision six-state extension,CLOSED_FINITE_EXACT_CRT,theorems/N6_ONE_EDGE_SUBDIVISION_021.md
+P3-059,Complete six-state nonpermutation classification,OPEN,gates/RGPHI_EFFECTIVE_RELATIVE_INTEGRAL_022.md

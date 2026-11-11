@@ -1,11 +1,12 @@
 # OR-9 — 44P as a half-scale echo of the 88→96 differential
 
-## Historical framing recovered
+## Historical framing
 
-The prior origin construction used
+The historical construction used
 
 \[
-q_O=\pi/18,\qquad q_R=8q_O=4\pi/9,
+q_O=\pi/18,
+\qquad q_R=8q_O=4\pi/9,
 \]
 
 so that
@@ -13,38 +14,20 @@ so that
 \[
 88q_O=11q_R,
 \qquad
-96q_O=12q_R,
+96q_O=12q_R.
 \]
 
-and therefore
+Hence `88 -> 96` is an `11 -> 12` completion with differential 8.
 
-\[
-96-88=8.
-\]
+## Exact integer homothety
 
-The step `88 -> 96` was interpreted as one relational quantum `q_R` and as an `11 -> 12` closure.
-
-## Round-020 observation
-
-At the elliptic multiple `44P`, the cubic divisibility condition
-
-\[
-A\mid z^3+w^3
-\]
-
-fails exactly by the reduced denominator
-
-\[
-\delta_A(44P)=4.
-\]
-
-If one forms the arithmetic completion index
+Round 021 certifies that the elliptic multiple `44P` is in the strict chamber and its cubic divisibility defect is exactly 4. Therefore
 
 \[
 44+4=48,
 \]
 
-then
+and
 
 \[
 (44,4,48)\times2=(88,8,96).
@@ -54,46 +37,72 @@ Equivalently,
 
 \[
 44=11\cdot4,
-\qquad
-48=12\cdot4,
+\qquad 48=12\cdot4,
 \]
 
-while historically
+while
 
 \[
 88=11\cdot8,
-\qquad
-96=12\cdot8.
+\qquad96=12\cdot8.
 \]
 
-The normalized relations are identical:
+## Stronger selection of 44 and 88
+
+Among multiples `1P,...,50P`, only `P` and `44P` lie in the strict chamber.
+
+Moreover, modulo the boundary-collision prime 83,
 
 \[
-\frac4{44}=\frac8{88}=\frac1{11},
-\qquad
-\frac{48}{44}=\frac{96}{88}=\frac{12}{11}.
+[44]P=R=[1:2:2].
 \]
+
+The smooth reduction has
+
+\[
+\#F_{17}(\mathbb F_{83})=89,
+\]
+
+so
+
+\[
+44=(89-1)/2,
+\qquad88=89-1.
+\]
+
+Thus 44 and 88 are selected by an exact finite-field group relation rather than only by scaling the historical motif.
+
+## Dynamic falsification
+
+The defect 4 is not unique to 44: on every odd-index cubic it is forced whenever the primitive coordinate `A` is even.
+
+Direct exact computation gives:
+
+| multiple | strict chamber | cubic defect |
+|---:|:---:|---:|
+| `44P` | yes | 4 |
+| `48P` | no | 4 |
+| `88P` | no | 4 |
+| `96P` | no | 4 |
+
+Therefore neither
+
+\[
+44P\to48P
+\]
+
+nor
+
+\[
+88P\to96P
+\]
+
+is a chamber-completion law.
 
 ## Adjudication
 
-This is an exact dyadic homothety of the integer triple
+- integer homothety: `POSTHOC_EXACT`;
+- finite-field selection of 44 and 88: `CLOSED_EXACT`;
+- orbital completion interpretation: `REFUTED`.
 
-\[
-\text{index} \;\to\; \text{defect} \;\to\; \text{completion}.
-\]
-
-It is more specific than the superficial observation `44 = 88/2`: the defect and the completed value scale by the same factor, preserving the `11 -> 12` relational structure.
-
-However, `P` is an elliptic-curve point, while `q_O` and `q_R` belong to the historical origin construction. No identification
-
-\[
-P=q_O
-\]
-
-or physical equivalence is claimed.
-
-Current status:
-
-`POSTHOC_EXACT_HOMOTHETIC_RESONANCE`.
-
-The coprimality obstruction `83` at `44P` is recorded separately. It is not folded into the `88+8=96` relation without an independent derivation.
+No identification of the elliptic point `P` with the historical quanta is claimed.

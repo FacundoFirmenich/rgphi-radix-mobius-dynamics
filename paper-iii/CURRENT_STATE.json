@@ -2,47 +2,46 @@
   "object": "RGPHI_PAPER_III",
   "date": "2026-11-11",
   "status": "ACTIVE_RESEARCH_PREPRINT_NOT_FROZEN",
-  "theorem_stack": "v1.9",
+  "theorem_stack": "v1.10",
   "closed": {
     "all_high_rigidity_cardinalities": [2, 3, 4],
     "five_state_counterfamily": true,
     "sharp_minimal_nonpermutation_cardinality": 5,
     "five_state_global_strict_edge_uniqueness": true,
-    "countergraph_fixed_tuple_base_classification": true,
-    "DF015_0015_zero_remainder_branch": true
+    "five_state_global_twenty_form_catalogue": true,
+    "universal_fixed_tuple_CRT_realization": true
   },
-  "repaired_scope": {
-    "round015_global_one_strict_assumption": "PROVED_FOR_CARDINALITY_FIVE_BY_ROUND018",
-    "raw_labelled_gate_assignments": 156250,
-    "canonical_two_strict_profiles": 840,
-    "realisable_two_strict_profiles": 0,
-    "maximum_global_strict_edges": 1
+  "five_state_catalogue": {
+    "factor_specific_forms": 20,
+    "closed_impossible": 7,
+    "realized_form": "DF015-0007",
+    "realized_branch": "B2",
+    "open_forms_without_realization": 12,
+    "remaining_open_branches": 14
   },
-  "countergraph": {
-    "base_residue": 88011536665779,
-    "base_modulus": 223336848698040,
-    "state_tuple": ["406/557", "406/731", "712/731", "1218/1265", "712/1265"],
-    "T": [0, 2, 1, 4, 3],
-    "S": [1, 0, 4, 1, 2],
-    "authority": "CLOSED_SYMBOLIC_PLUS_CRT"
+  "exact_audits": {
+    "normal_form_candidate_tuples_N10000": 738129603,
+    "normal_form_hits": 1,
+    "known_graph_candidate_tuples_N15000": 430184128,
+    "known_graph_hits": 1,
+    "known_graph_bounds": "Q1<=15000,D<=45000"
   },
   "secondary_front": {
     "form": "DF015-0015",
-    "factorized_divisor_reduction": true,
-    "zero_remainder_branch": "CLOSED_SYMBOLIC",
-    "audit_z_max": 3000,
-    "admissible_divisor_candidates": 213800681,
-    "maximum_A_enumerated": 53973008999,
-    "global_status": "OPEN_REDUCED"
+    "elliptic_curves": 19,
+    "smooth_curves": 19,
+    "divisor_audit_z_max": 10000,
+    "divisor_candidates": 494021053,
+    "global_status": "OPEN_ELLIPTIC_REDUCED"
   },
   "open": {
-    "complete_five_state_nonpermutation_classification": true,
-    "countergraph_state_side_uniqueness": true,
-    "global_DF015_0015_nonexceptional": true,
+    "complete_five_state_arithmetic_realizability": true,
+    "countergraph_state_side_global_uniqueness": true,
+    "global_DF015_0015": true,
     "existence_for_all_cardinalities_at_least_five": true
   },
   "refuted": {
     "global_all_high_permutation_rigidity": true
   },
-  "binding_gate": "RGPHI_FIVE_STATE_CLASSIFICATION_019"
+  "binding_gate": "RGPHI_ARITHMETIC_REALIZABILITY_020"
 }

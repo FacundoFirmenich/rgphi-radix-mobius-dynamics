@@ -1,4 +1,4 @@
-# RGΦ Paper III — estado canónico v1.10 (2026-11-11)
+# RGΦ Paper III — estado canónico v1.11 (2026-11-11)
 
 Objeto exclusivo: trampas modulares, SCC racionales, cuencas universales y estructura all-high. Paper I, Paper II, Stage B2 y otras líneas no se modifican.
 
@@ -6,32 +6,32 @@ Objeto exclusivo: trampas modulares, SCC racionales, cuencas universales y estru
 
 - Rigidez all-high probada para cardinalidades 2, 3 y 4.
 - Cardinalidad 5 admite una contrafamilia infinita exacta no permutacional; el umbral mínimo de ruptura es 5 y la rigidez global está refutada.
-- Round 018 prueba unicidad global del edge estricto en toda SCC no permutacional de cinco estados.
-- Round 019 promueve las veinte formas defect-one a clasificación combinatoria globalmente exhaustiva de la ruptura en cardinalidad cinco.
-- Para cualquier tupla primitiva fija, la realización en bases es una dicotomía CRT exacta: ninguna base o una única progresión aritmética completa.
-- DF015-0015 queda reducido a diecinueve curvas elípticas lisas, con restricciones adicionales de divisibilidad y primitividad.
+- La ruptura de cinco estados posee una única arista estricta global y un catálogo combinatorio exhaustivo de veinte formas.
+- Para cualquier tupla primitiva fija, la realización en bases es una dicotomía CRT exacta.
+- `DF015-0015` se reduce a diecinueve curvas elípticas; Round 020 prueba coprime completion sobre esas curvas.
+- La curva F_17 tiene torsión racional trivial, rango al menos uno e infinitos puntos racionales en la cámara A>5z>w>0.
+- El punto [64233:11741:1138] satisface la cúbica y A|z^3+w^3, pero no realiza RGΦ porque gcd(2A-z,2A-w)=23.
 
-## Estado aritmético de las veinte formas
+## Estado aritmético
 
-- 7 formas imposibles;
-- DF015-0007 realizada en la rama B2; B1 permanece abierta;
-- 12 formas sin realización conocida;
-- clasificación aritmética completa: OPEN.
+- Clasificación combinatoria de cinco estados: CLOSED.
+- Clasificación aritmética de las veinte formas: OPEN.
+- Unicidad global de la tupla Round 017: OPEN.
+- DF015-0015: OPEN_COPRIME_INTEGRAL_ELLIPTIC.
+- Existencia para todas las cardinalidades n>=6: OPEN.
 
-## Canon Round 019
+## Canon Round 020
 
-- [Catálogo global de veinte formas](theorems/FIVE_STATE_GLOBAL_CATALOGUE_019.md)
-- [Teorema CRT universal](theorems/UNIVERSAL_CRT_REALIZATION_019.md)
-- [Reducción elíptica de DF015-0015](theorems/DF015_0015_ELLIPTIC_REDUCTION_019.md)
-- [Theorem stack v1.10](PAPER_III_THEOREM_STACK_v1_10.md)
-- [Round 019](round-019/)
-- [Gate 020](gates/RGPHI_ARITHMETIC_REALIZABILITY_020.md)
+- [Coprime-completion theorem](theorems/DF015_0015_COPRIME_COMPLETION_020.md)
+- [Positive-rank chamber theorem](theorems/DF015_0015_N17_POSITIVE_RANK_CHAMBER_020.md)
+- [Theorem stack v1.11](PAPER_III_THEOREM_STACK_v1_11.md)
+- [Round 020](round-020/)
+- [Gate 021](gates/RGPHI_COPRIME_INTEGRAL_POINTS_021.md)
 
 ## Controles de autoridad
 
-- `FIVE_STATE_COMBINATORIAL_CLASSIFICATION = CLOSED_COMPUTER_ASSISTED_EXACT`;
 - `FIVE_STATE_ARITHMETIC_REALIZABILITY_CLASSIFICATION = OPEN`;
-- `GLOBAL_ALL_HIGH_PERMUTATION_RIGIDITY = REFUTED`;
 - `ROUND017_STATE_TUPLE_GLOBAL_UNIQUENESS = OPEN`;
-- `DF015_0015 = OPEN_ELLIPTIC_REDUCED`;
-- `EXISTENCE_FOR_EVERY_N_GE5 = OPEN`.
+- `DF015_0015_REAL_CHAMBER_NONEMPTY_AND_POSITIVE_RANK = CLOSED`;
+- `DF015_0015_RGPHI_REALIZATION = OPEN`;
+- `N6_NONEXISTENCE = NOT_CLAIMED`.

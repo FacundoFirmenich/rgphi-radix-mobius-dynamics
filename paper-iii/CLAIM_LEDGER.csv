@@ -13,9 +13,17 @@ P3-011,A strict TTSS core cannot be repaired by a fifth closure state,INTERNAL_S
 P3-012,Defect-one functional lollipop theorem conditional on single global strict edge,CLOSED_CONDITIONAL,round-015/RGPHI_DEFECT_ONE_LOLLIPOP_THEOREM_015.md
 P3-013,Complete elimination of 540 of 560 five-state graph architectures,PENDING_EXHAUSTIVENESS_AUDIT,audits/ROUND015_016_SCOPE_AUDIT_2026-11-11.md
 P3-014,24 factor-specific classes historical,SUPERSEDED,five-state/SURVIVING_24_EXACT_CLASSES.csv
-P3-015,12 structural forms historical, SUPERSEDED,five-state/DIOPHANTINE_NORMAL_FORMS_12.csv
+P3-015,12 structural forms historical,SUPERSEDED,five-state/DIOPHANTINE_NORMAL_FORMS_12.csv
 P3-016,20 defect-one forms from attached Round015 bundle,CONDITIONAL_SCOPE_INTERNAL_CHECKED,round-015/DIOPHANTINE_NORMAL_FORMS.csv
 P3-017,7 of 20 defect-one forms closed in Round016,CONDITIONAL_SCOPE_INTERNAL_CLAIM,round-016/FORM_ADJUDICATION_20.csv
 P3-018,Remaining 13 defect-one forms and 15 branches,OPEN_PARTIAL,round-016/REMAINING_ARITHMETIC_BRANCHES.csv
-P3-019,All-high permutation rigidity for cardinality five,OPEN,audits/ROUND015_016_SCOPE_AUDIT_2026-11-11.md
-P3-020,Global all-high permutation rigidity,OPEN,audits/ROUND015_016_SCOPE_AUDIT_2026-11-11.md
+P3-019,Five-state all-high permutation rigidity,REFUTED_BY_COUNTEREXAMPLE,theorems/RGPHI_FIVE_STATE_COUNTERFAMILY_017.md
+P3-020,Global all-high permutation rigidity,REFUTED,theorems/RGPHI_SHARP_RIGIDITY_THRESHOLD_017.md
+P3-021,Exact infinite five-state nonpermutation counterfamily,CLOSED_SYMBOLIC_PLUS_CRT,theorems/RGPHI_FIVE_STATE_COUNTERFAMILY_017.md
+P3-022,Minimal all-high nonpermutation cardinality equals five,CLOSED,theorems/RGPHI_SHARP_RIGIDITY_THRESHOLD_017.md
+P3-023,Conditional branch DF015-0007-B2 is realizable,CLOSED_EXACT,round-017/STATES_AND_ACTIONS.csv
+P3-024,Complete classification of five-state nonpermutation SCCs,OPEN,gates/RGPHI_FIVE_STATE_CLASSIFICATION_018.md
+P3-025,DF015-0015 zero-factor subcase is impossible,CLOSED_SYMBOLIC,round-017/DF015_0015_EXACT_BOUNDARY_017.md
+P3-026,DF015-0015 necessary-condition audit for z<=5000,FINITE_EXHAUSTIVE,round-017/AUDIT_Z5000_OUTPUT.txt
+P3-027,Global DF015-0015 adjudication,OPEN,gates/RGPHI_FIVE_STATE_CLASSIFICATION_018.md
+P3-028,Existence of all-high nonpermutation SCCs for every cardinality n>=5,OPEN,gates/RGPHI_FIVE_STATE_CLASSIFICATION_018.md

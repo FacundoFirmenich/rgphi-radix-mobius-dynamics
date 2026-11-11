@@ -11,28 +11,26 @@ Base snapshot:
 - base commit: `700fa58e7420ddbf3a53003eccd56a64524a50cf`
 - date: `2026-11-11`
 
-## Purpose
+## Round-020 correction
 
-Turn recurring motifs noticed across the historical origin and the current Paper III frontier into falsifiable tests.
+The branch base already contained Round 020, but the first resonance adjudication did not incorporate its strongest arithmetic datum: among all nineteen curves, the only strict-chamber point found in the declared height-10000 rational-slope census lies on `F_17`; that point is non-torsion, proves rank at least one and generates infinitely many rational chamber points.
 
-This first gate addresses five hypotheses:
+This omission is corrected in branch version 0.2.
 
-1. Was the constant `4/9` structural or only a proof bound?
-2. Is the index range `1..19` sharp?
-3. Is the recurrence of 19 independent of the historical `17/19` origin?
-4. Does cardinality six exhibit a preregistered hexagonal / dual-triad signature?
-5. Does cardinality five act as a universal defect cell in larger nonpermutation SCCs?
+## Current adjudication
 
-## First adjudication
-
-- `4/9` is **not sharp**. The exact continuous supremum is `2/5`.
-- The integer bound `n <= 19` survives and is sharp at the level of real chamber geometry: `F_19=0` has a real point in `A>5z>w>0`.
-- No direct formal dependency from the user-declared `17/19` origin to the derivation of the nineteen curves is present in the current Paper III theorem chain. Historical independence is not yet proved.
-- The `n=6` and five-defect-cell hypotheses are now preregistered before the next canonical classification results.
+- `4/9` is not sharp; the exact continuous supremum is `2/5`.
+- `n <= 19` survives sharpening; `19` remains the exact real-envelope index.
+- `F_17` has a primitive non-torsion strict-chamber point and rank at least one.
+- The historical pair `17/19` therefore reappears in split roles: `17` as the currently activated arithmetic index and `19` as the exact envelope index. This is a post-hoc strong resonance candidate, not a prospectively confirmed origin theorem.
+- The Round-020 point has one exact common obstruction `d=23`; both missing cycle divisibilities have reduced denominator 23. A general defect-completion theorem shows that every such denominator divides `gcd(C,D)`.
+- The consecutive-prime pattern `17,19,23` is recorded with low authority. No prediction of 29 or any other prime is authorized.
+- The three six-state natural-lift scans in Round 020 found no class. They predate OR-4 preregistration and do not adjudicate DUAL_TRIAD or ALTERNATING_HEXAGON.
 
 ## Non-contamination rules
 
 - No result here changes `paper-iii/CURRENT_STATE.json` on canonical branches.
 - Resonances are hypotheses until independently tested.
-- A negative result is retained.
-- No numerical recurrence is counted twice when it comes from one algebraic chain.
+- Negative results are retained.
+- Numerical recurrences are not counted twice when they arise from one algebraic chain.
+- Post-hoc observations are labelled as such.

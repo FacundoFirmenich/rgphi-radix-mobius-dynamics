@@ -2,15 +2,22 @@
   "object": "RGPHI_PAPER_III",
   "date": "2026-11-11",
   "status": "ACTIVE_RESEARCH_PREPRINT_NOT_FROZEN",
-  "theorem_stack": "v1.6 (historical; jurisdiction under audit)",
+  "theorem_stack": "v1.8",
   "closed": {
-    "all_high_rigidity_cardinalities": [
-      2,
-      3,
-      4
-    ]
+    "all_high_rigidity_cardinalities": [2, 3, 4],
+    "five_state_counterfamily": true,
+    "sharp_minimal_nonpermutation_cardinality": 5,
+    "realized_conditional_branch": "DF015-0007-B2"
   },
-  "internal_evidence": {
+  "counterfamily": {
+    "base_residue": 88011536665779,
+    "base_modulus": 223336848698040,
+    "states": ["406/731", "712/731", "712/1265", "1218/1265", "406/557"],
+    "T": [1, 0, 3, 2, 4],
+    "S": [4, 2, 1, 0, 0],
+    "authority": "CLOSED_SYMBOLIC_PLUS_CRT"
+  },
+  "conditional_internal_evidence": {
     "round014_marked_cycle_architecture_classes": 560,
     "round015_one_global_strict_edge_subset_forms": 20,
     "round015_checker": "PASS (accounting only)",
@@ -18,16 +25,22 @@
     "round016_open_within_conditional_subset": 13,
     "round016_open_arithmetic_branches": 15
   },
-  "historical_superseded": {
-    "round015_earlier_factor_specific_classes": 24,
-    "round015_earlier_structural_forms": 12
+  "critical_scope_boundary": "Round012 restricts strictness on a selected witness cycle, not necessarily on all functional edges. The Round017 counterfamily is unconditional; the Round015/016 classification remains conditional and non-exhaustive globally.",
+  "secondary_front": {
+    "form": "DF015-0015",
+    "zero_factor_subcase": "CLOSED_SYMBOLIC",
+    "finite_audit": "z<=5000 FINITE_EXHAUSTIVE, zero hits",
+    "global_status": "OPEN"
   },
-  "critical_gap": "Round012 restricts strictness on selected witness cycle; it does not imply exactly one strict edge globally. The Round015 560-to-20 exclusion invokes this extra hypothesis and is not yet certified exhaustive for all five-state SCCs.",
   "open": {
-    "five_state_all_high_rigidity": true,
-    "global_all_high_permutation_rigidity": true,
-    "global_exhaustiveness_of_round015_quotient": true
+    "complete_five_state_classification": true,
+    "multi_strict_edge_architectures": true,
+    "global_DF015_0015": true,
+    "existence_for_all_cardinalities_at_least_five": true
   },
-  "binding_gate": "GLOBAL_STRICT_EDGE_EXHAUSTIVENESS_017",
-  "claim_boundary": "Never promote conditional 20-form classification or Round016 eliminations to unconditional cardinality-five/global rigidity."
+  "refuted": {
+    "global_all_high_permutation_rigidity": true
+  },
+  "binding_gate": "RGPHI_FIVE_STATE_CLASSIFICATION_018",
+  "claim_boundary": "Promote the exact counterfamily and sharp threshold; do not promote the conditional Round015/016 quotient to a complete five-state classification."
 }

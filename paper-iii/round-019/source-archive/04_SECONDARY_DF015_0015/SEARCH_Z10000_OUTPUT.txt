@@ -1,0 +1,2 @@
+Z=10000 pairs=49995000 divcand=494021053 primitive=178532177 cubic=3719 second=0 cycleA=0 crtpass=0 hits=0 maxA=999899
+TIME=29.73

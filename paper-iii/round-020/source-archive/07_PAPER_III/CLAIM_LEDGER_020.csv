@@ -1,0 +1,13 @@
+claim_id,claim,status,evidence
+P3-040,Coprime completion on every DF015-0015 cubic,CLOSED_SYMBOLIC,01_THEOREMS/DF015_0015_COPRIME_COMPLETION_020.md
+P3-041,F_17 contains a primitive rational point in the strict chamber,CLOSED_EXACT,01_THEOREMS/DF015_0015_N17_POSITIVE_RANK_CHAMBER_020.md
+P3-042,Rational torsion of F_17 is trivial,CLOSED_EXACT_FINITE_REDUCTION,06_TRUSTED_CHECKER/check_n17_rank_chamber_020.py
+P3-043,Mordell-Weil rank of F_17 is at least one,CLOSED,01_THEOREMS/DF015_0015_N17_POSITIVE_RANK_CHAMBER_020.md
+P3-044,F_17 has infinitely many rational points in A>5z>w>0,CLOSED_REAL_ELLIPTIC_GROUP,01_THEOREMS/DF015_0015_N17_POSITIVE_RANK_CHAMBER_020.md
+P3-045,The displayed n=17 chamber point realizes DF015-0015,REFUTED_BY_GCD23,02_ELLIPTIC_CHAMBER/N17_CHAMBER_POINT.json
+P3-046,The displayed n=17 point satisfies A divides z^3+w^3,CLOSED_EXACT,06_TRUSTED_CHECKER/check_n17_rank_chamber_020.py
+P3-047,Eight open forms have no realization through N=20000,FINITE_EXHAUSTIVE,03_ARITHMETIC_FORMS/EXTENDED_SPARSE_FORM_AUDIT_N20000.csv
+P3-048,Round-017 tuple is globally unique,OPEN,04_COUNTERGRAPH/COUNTERGRAPH_STATUS_020.md
+P3-049,Three natural six-state lifts have no realization through N=10000,FINITE_EXPLORATORY_ONLY,05_HIGHER_CARDINALITY/N6_NATURAL_LIFTS_SUMMARY.csv
+P3-050,No six-state nonpermutation all-high SCC exists,OPEN,08_NEXT_GATE/RGPHI_COPRIME_INTEGRAL_POINTS_021.md
+P3-051,DF015-0015 is globally realizable or impossible,OPEN_ARITHMETIC_REFINED,08_NEXT_GATE/RGPHI_COPRIME_INTEGRAL_POINTS_021.md

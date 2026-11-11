@@ -1,0 +1,4 @@
+architecture,N,candidates,hits,authority
+T_3cycle_inflation_round019,10000,65558942,0,FINITE_EXPLORATORY_ONLY
+T_leaf_2cycle_extension,10000,266958286,0,FINITE_EXPLORATORY_ONLY
+S_3cycle_extension,10000,17953,0,FINITE_EXPLORATORY_ONLY

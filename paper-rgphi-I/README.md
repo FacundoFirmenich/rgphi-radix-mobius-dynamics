@@ -1,11 +1,11 @@
-# RGΦ I — first mathematics publication candidate
+# RGΦ I — pre-submission RC1
 
 **External title:** *Primitive projective radix–Möbius dynamics: content cocycles and a sharp rigidity threshold*  
 **Internal provenance:** Paper III / Rounds 012–022  
-**Freeze date:** 2026-11-11  
-**Status:** `INTERNAL_CANDIDATE_FROZEN / NOT_YET_EXTERNALLY_REFEREED`
+**RC1 audit date:** 2026-11-11  
+**Status:** `RC1_INTERNAL_AUDIT_PASS / GO_WITH_EXTERNAL_GATES / NOT_SUBMITTED`
 
-RGΦ I is the first mathematics paper intended for external publication from the RGΦ programme. It is not the older benchmark/Bellman manuscript under `paper/`; that manuscript remains a separate project.
+RGΦ I is the first mathematics paper intended for external publication from the RGΦ programme. It is not the older benchmark/Bellman manuscript under `paper/`; that manuscript remains separate.
 
 ## Frozen mathematical arc
 
@@ -18,21 +18,36 @@ RGΦ I is the first mathematics paper intended for external publication from the
 7. finite defect-decorated type decomposition at fixed cardinality;
 8. universal CRT fibre theorem for a fixed primitive state tuple.
 
+## RC1 adversarial audit
+
+The pre-submission audit found twelve major issues and resolved all twelve. The principal corrections were:
+
+- one canonical labelling across article, supplement, CSV, JSON, Python and C++;
+- a new symbolic lemma proving global uniqueness of the strict edge in the four-state proof;
+- explicit proofs of the four-state normal-form reduction and forced alternate maps;
+- explicit quotient bounds and gcd/parity arguments in the conic elimination;
+- precise partial-domain formulation;
+- corrected MSC classification and nearest-prior-art framing;
+- removal of a non-substantive toy checker;
+- one-command `make verify` and `make pdf` workflows.
+
+## RC1 identities
+
+- Main article PDF SHA-256: `79520c306ec3c0cd1647859982fc157b441118410a1a29e9052dc2dd8483daad`
+- Supplement PDF SHA-256: `c73449d51e98d7ee80ed2e200493997f738e61b05c6ebafd7529f0b558914f9e`
+- Full RC1 bundle SHA-256: `c93e52391b5fd6e81636e45a1573d90c70cfdf31a2f38999dfd0954d14f67aac`
+- RC1 source/audit archive SHA-256: `2e6825639b56a9547cab8b7716a75cae8e6c451673965d86b63ab9a722e071da`
+
 ## Explicit exclusions
 
-The main article does not include the twenty-form arithmetic classification, elliptic relative-integral programme, six-state catalogue, Bellman targets, or a physical interpretation. Those are later papers.
+The article does not claim the twenty-form arithmetic classification, elliptic relative-integral programme, six-state catalogue, Bellman targets, or a physical interpretation. Those are later papers.
 
-## Archival identities
+## Binding external gates
 
-- Main article PDF SHA-256: `5afb8fec9cca98542ac91bef344a6f7296914a77669d9059b7cea0d77f7b24cf`
-- Supplement PDF SHA-256: `64ad5b9d1e7325f41c23cba8b10766ca17075245c0747af3610f9816f26e589a`
-- Full publication bundle SHA-256: `e67280eaf8cfbf10ed07b3fb9d27ac93847abf1ee551bf58e80bfeeb62e874b2`
-
-## External gates
-
-- adversarial review by Daniel Barraco;
+- author metadata confirmation;
+- written adversarial review by Daniel Barraco;
 - independent arithmetic-dynamics review;
-- clean-room compilation and replay;
+- independent clean-room compilation and replay;
 - final MathSciNet/zbMATH priority chaining;
 - immutable arXiv/Zenodo release;
 - journal submission.

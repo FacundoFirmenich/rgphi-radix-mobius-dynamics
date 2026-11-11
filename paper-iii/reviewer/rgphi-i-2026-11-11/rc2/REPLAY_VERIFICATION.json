@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-11",
+  "source_bundle_sha256": "d3e4acee5ad65fbe52f5d16169194100f1ccc2ae25143d27f49cd262dada94b2",
+  "source_bundle_zip_crc": "PASS_21_MEMBERS",
+  "replay_command": "python audit/exact_fixed_base.py --n 5 --bases 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17",
+  "replay_uses_original_checker": true,
+  "exact_jsonl_record_match": "PASS_16_OF_16",
+  "exact_csv_row_match": "PASS_16_OF_16",
+  "independent_overlap_existing_fixed_B_2_40": "PASS_16_OF_16_BASES",
+  "number_of_bases": 16,
+  "candidate_high_states": 82387,
+  "closed_scc": 4,
+  "nonpermutation_closed_scc_size_le_5": 0,
+  "scope": "Finite audit at B=2..17 and n<=5 within divisor-bounded high-state universe.",
+  "checker_proof_independently_reverified": false,
+  "global_classification_claim": "OPEN"
+}

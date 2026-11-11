@@ -1,0 +1,28 @@
+{
+  "date": "2026-11-11",
+  "status": "ACTIVE_REBUILD_FROM_ZERO_ROUTE",
+  "engine_commit": "a50ad61776d0e20eacdc00e407f09881b9e64487",
+  "drive_folder_id": "1kmOR7I-k6LWsFZiWnwVFpbWPZJ5lxd5G",
+  "drive_folder_url": "https://drive.google.com/drive/folders/1kmOR7I-k6LWsFZiWnwVFpbWPZJ5lxd5G",
+  "colab_notebook_file_id": "1ToZDl6ZZXEFjHGhOWrFsqj_2emU0Lnsj",
+  "colab_open_url": "https://colab.research.google.com/drive/1ToZDl6ZZXEFjHGhOWrFsqj_2emU0Lnsj",
+  "persistence": "Google Drive only for scientific state; /content only for compiled binaries and checkout",
+  "stages": [
+    "regenerate D10000 safe-state atlas and require historical SHA",
+    "rebuild exact earliest-arrival 1..171 with per-level historical matching",
+    "rebuild exact envelope 172..185 with per-level historical matching",
+    "require exact t185 state count, byte count and bucket-manifest SHA",
+    "run independent full checkpoint audit",
+    "run smoke and determinism tests",
+    "continue Stage B2 186..211 transactionally and resumably"
+  ],
+  "historical_compute_seconds": {
+    "earliest_1_171": 97.10046627,
+    "envelope_172_185": 983.17255,
+    "total_to_185": 1080.27301627
+  },
+  "canonical_claim_before_completion": "186 <= tau5 <= 212",
+  "b2_cost_status": "unknown until the exact 185->186 pilot or first rebuilt production level is measured",
+  "production_execution_started_by_chat": false,
+  "reason": "current ChatGPT native-app tool environment cannot control or start a Colab runtime; notebook and Drive state are fully staged"
+}

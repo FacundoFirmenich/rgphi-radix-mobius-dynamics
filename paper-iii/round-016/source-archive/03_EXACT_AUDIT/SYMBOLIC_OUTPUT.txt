@@ -1,0 +1,3 @@
+PASS
+odd_w_identity=4N_congruent_minus_wL_mod_d
+even_w_identity=N_congruent_W(m+7W-4z)_mod_D

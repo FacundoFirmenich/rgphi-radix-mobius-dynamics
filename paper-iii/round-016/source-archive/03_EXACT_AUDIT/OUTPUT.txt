@@ -1,0 +1,6 @@
+PASS
+input_forms=20
+closed_forms=7
+remaining_forms=13
+remaining_arithmetic_branches=15
+five_state_rigidity=OPEN_PARTIAL

@@ -1,0 +1,16 @@
+{
+  "curve_index_n": 17,
+  "projective_point": [64233, 11741, 1138],
+  "slope_parameter": "159/793",
+  "strict_chamber": true,
+  "cube_quotient": 25220421,
+  "C": 116725,
+  "D": 127328,
+  "gcd_C_D": 23,
+  "f_over_D": "80997/23",
+  "g_over_C": "2111575/23",
+  "finite_field_orders": {"7": 10, "11": 14, "13": 18, "17": 23},
+  "rational_torsion": "TRIVIAL",
+  "rank_lower_bound": 1,
+  "RGPHI_realization": false
+}

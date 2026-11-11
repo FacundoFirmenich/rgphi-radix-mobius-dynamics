@@ -1,4 +1,4 @@
-# RGΦ Paper III — estado canónico v1.11 (2026-11-11)
+# RGΦ Paper III — estado canónico v1.12 (2026-11-11)
 
 Objeto exclusivo: trampas modulares, SCC racionales, cuencas universales y estructura all-high. Paper I, Paper II, Stage B2 y otras líneas no se modifican.
 
@@ -8,30 +8,35 @@ Objeto exclusivo: trampas modulares, SCC racionales, cuencas universales y estru
 - Cardinalidad 5 admite una contrafamilia infinita exacta no permutacional; el umbral mínimo de ruptura es 5 y la rigidez global está refutada.
 - La ruptura de cinco estados posee una única arista estricta global y un catálogo combinatorio exhaustivo de veinte formas.
 - Para cualquier tupla primitiva fija, la realización en bases es una dicotomía CRT exacta.
-- `DF015-0015` se reduce a diecinueve curvas elípticas; Round 020 prueba coprime completion sobre esas curvas.
-- La curva F_17 tiene torsión racional trivial, rango al menos uno e infinitos puntos racionales en la cámara A>5z>w>0.
-- El punto [64233:11741:1138] satisface la cúbica y A|z^3+w^3, pero no realiza RGΦ porque gcd(2A-z,2A-w)=23.
+- `DF015-0015` se reduce a diecinueve curvas elípticas; \(F_{17}\) tiene rango positivo e infinitos puntos racionales en la cámara.
+- En las curvas de índice impar, la divisibilidad cúbica equivale exactamente a \(A\) impar; si \(A\) es par, el defecto es cuatro.
+- La coprimalidad \(\gcd(2A-z,2A-w)=1\) equivale a evitar el punto universal \(R=[1:2:2]\) en toda reducción. Por Siegel, cada curva tiene sólo finitos candidatos coprimos relativos-integrales.
+- El punto exacto \(44P\) sobre \(F_{17}\) está en la cámara, tiene defecto cuatro y colisión frontera en el primo 83.
+- Las formas densas quedan reducidas a asignaciones casi coprimas de divisores.
+- La tupla Round 017 no admite ninguna extensión de seis estados por subdivisión de una sola arista: 66 perfiles exhaustivos, diez supervivientes estructurales y 3.206 tests CRT sin hit.
 
-## Estado aritmético
+## Estado abierto
 
-- Clasificación combinatoria de cinco estados: CLOSED.
 - Clasificación aritmética de las veinte formas: OPEN.
+- Enumeración efectiva de los puntos relativos-integrales: OPEN.
 - Unicidad global de la tupla Round 017: OPEN.
-- DF015-0015: OPEN_COPRIME_INTEGRAL_ELLIPTIC.
-- Existencia para todas las cardinalidades n>=6: OPEN.
+- Clasificación completa en cardinalidad seis: OPEN.
 
-## Canon Round 020
+## Canon Round 021
 
-- [Coprime-completion theorem](theorems/DF015_0015_COPRIME_COMPLETION_020.md)
-- [Positive-rank chamber theorem](theorems/DF015_0015_N17_POSITIVE_RANK_CHAMBER_020.md)
-- [Theorem stack v1.11](PAPER_III_THEOREM_STACK_v1_11.md)
-- [Round 020](round-020/)
-- [Gate 021](gates/RGPHI_COPRIME_INTEGRAL_POINTS_021.md)
+- [Odd-index parity collapse](theorems/ODD_INDEX_PARITY_COLLAPSE_021.md)
+- [Boundary point and relative-integral finiteness](theorems/BOUNDARY_POINT_S_INTEGRAL_FINITE_021.md)
+- [Dense-form splitting](theorems/FOUR_FIBRE_NEAR_COPRIME_SPLITTING_021.md)
+- [Countergraph divisor allocation](theorems/COUNTERGRAPH_DIVISOR_ALLOCATION_021.md)
+- [One-edge-subdivision catalogue](theorems/N6_ONE_EDGE_SUBDIVISION_021.md)
+- [Theorem stack v1.12](PAPER_III_THEOREM_STACK_v1_12.md)
+- [Round 021](round-021/)
+- [Gate 022](gates/RGPHI_EFFECTIVE_RELATIVE_INTEGRAL_022.md)
 
 ## Controles de autoridad
 
-- `FIVE_STATE_ARITHMETIC_REALIZABILITY_CLASSIFICATION = OPEN`;
+- `RELATIVE_INTEGRAL_CANDIDATES_FINITE = CLOSED_USING_SIEGEL`;
+- `EFFECTIVE_RELATIVE_INTEGRAL_LIST = OPEN`;
 - `ROUND017_STATE_TUPLE_GLOBAL_UNIQUENESS = OPEN`;
-- `DF015_0015_REAL_CHAMBER_NONEMPTY_AND_POSITIVE_RANK = CLOSED`;
-- `DF015_0015_RGPHI_REALIZATION = OPEN`;
-- `N6_NONEXISTENCE = NOT_CLAIMED`.
+- `N6_ONE_EDGE_SUBDIVISION_EXTENSION = CLOSED_NEGATIVE_FOR_FIXED_TUPLE`;
+- `N6_GLOBAL_CLASSIFICATION = OPEN`.

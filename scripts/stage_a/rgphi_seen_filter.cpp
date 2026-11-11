@@ -21,6 +21,9 @@ static bool read_le64(std::istream &is,std::uint64_t &x) {
     x=0; for(int i=0;i<8;i++) x|=static_cast<std::uint64_t>(b[i])<<(8*i);
     return true;
 }
+static std::pair<std::uint32_t,std::uint32_t> unpack(std::uint64_t k) {
+    return {static_cast<std::uint32_t>(k>>32),static_cast<std::uint32_t>(k)};
+}
 struct Reader {
     std::ifstream in;
     std::uint64_t v=0,prev=0;
@@ -58,9 +61,20 @@ int main(int argc,char**argv){
         std::ofstream no(nt,std::ios::binary|std::ios::trunc),so(st,std::ios::binary|std::ios::trunc);
         if(!no||!so) throw std::runtime_error("cannot create outputs");
         std::uint64_t new_count=0,seen_in=0,seen_out=0,overlap=0,cand_count=0;
+        std::uint32_t max_den=0,max_q_num=0,max_q_den=1;
+        auto note_new=[&](std::uint64_t k){
+            auto [a,b]=unpack(k);
+            max_den=std::max(max_den,b);
+            const std::uint32_t d=b-a;
+            if(d && static_cast<unsigned __int128>(b)*max_q_den >
+                    static_cast<unsigned __int128>(max_q_num)*d){
+                max_q_num=b;max_q_den=d;
+            }
+        };
         while(c.valid||s.valid){
             if(!s.valid || (c.valid && c.v<s.v)){
-                write_le64(no,c.v);write_le64(so,c.v);new_count++;seen_out++;cand_count++;c.next();
+                write_le64(no,c.v);write_le64(so,c.v);note_new(c.v);
+                new_count++;seen_out++;cand_count++;c.next();
             } else if(!c.valid || s.v<c.v){
                 write_le64(so,s.v);seen_in++;seen_out++;s.next();
             } else {
@@ -75,7 +89,10 @@ int main(int argc,char**argv){
              <<"  \"seen_input\": "<<seen_in<<",\n"
              <<"  \"overlap_seen\": "<<overlap<<",\n"
              <<"  \"new_frontier\": "<<new_count<<",\n"
-             <<"  \"seen_output\": "<<seen_out<<"\n"
+             <<"  \"seen_output\": "<<seen_out<<",\n"
+             <<"  \"max_denominator\": "<<max_den<<",\n"
+             <<"  \"max_q_num\": "<<max_q_num<<",\n"
+             <<"  \"max_q_den\": "<<max_q_den<<"\n"
              <<"}\n";
         }
         return 0;

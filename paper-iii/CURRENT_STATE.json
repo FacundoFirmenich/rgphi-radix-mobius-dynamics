@@ -1,51 +1,31 @@
 {
-  "object": "RGPHI_PAPER_III",
+  "object": "RGPHI_PROJECTIVE_CONTENT_REDUCTION_AUTOMATON",
   "date": "2026-11-11",
   "status": "ACTIVE_RESEARCH_PREPRINT_NOT_FROZEN",
-  "theorem_stack": "v1.12",
+  "theorem_stack": "v1.13",
+  "object_definition_status": "FROZEN_CANONICAL",
   "closed": {
     "all_high_rigidity_cardinalities": [2, 3, 4],
     "sharp_minimal_nonpermutation_cardinality": 5,
     "five_state_global_twenty_form_catalogue": true,
     "universal_fixed_tuple_CRT_realization": true,
-    "DF015_0015_coprime_completion": true,
-    "F17_trivial_rational_torsion": true,
-    "F17_rank_lower_bound": 1,
-    "F17_infinitely_many_rational_chamber_points": true,
-    "odd_index_parity_collapse": true,
-    "universal_boundary_point": "[1:2:2]",
-    "relative_integral_finiteness_using_Siegel": true,
-    "dense_near_coprime_factor_splitting": true,
-    "n6_one_edge_subdivision_catalogue": true
-  },
-  "round021": {
-    "n17_multiple_44": {
-      "coordinate_digits": 16232,
-      "cubic_divisibility_defect": 4,
-      "boundary_collision_prime": 83
-    },
-    "countergraph_finite_audit": {
-      "Q1_max": 16000,
-      "D_max": 48000,
-      "candidates": 496924929,
-      "hits": 1
-    },
-    "n6_one_edge_subdivision": {
-      "raw_profiles": 66,
-      "structural_survivors": 10,
-      "fixed_tuple_candidate_states": 3206,
-      "CRT_hits": 0
-    }
+    "rational_integral_conjugacy": true,
+    "content_cocycle": true,
+    "cycle_spectral_theorem": true,
+    "perfect_square_cycle_obstruction": true,
+    "fixed_cardinality_finite_type_decomposition": true,
+    "explicit_diophantine_moduli": true,
+    "elliptic_boundary_normal_form": true,
+    "coprime_slope_reduction": true
   },
   "open": {
     "complete_five_state_arithmetic_realizability": true,
     "effective_relative_integral_enumeration": true,
     "countergraph_state_side_global_uniqueness": true,
-    "complete_six_state_classification": true
+    "complete_six_state_type_catalogue": true
   },
   "refuted": {
-    "global_all_high_permutation_rigidity": true,
-    "n17_displayed_point_is_RGPHI_realization": true
+    "global_all_high_permutation_rigidity": true
   },
-  "binding_gate": "RGPHI_EFFECTIVE_RELATIVE_INTEGRAL_022"
+  "binding_gate": "RGPHI_MODULI_CLASSIFICATION_023"
 }

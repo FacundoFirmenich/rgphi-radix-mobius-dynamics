@@ -2,35 +2,33 @@
 
 ## Status
 
-This is a **separate prospective research branch**. It has no authority to rewrite, reinterpret or promote claims in canonical Paper III.
+This is a separate prospective research branch. It has no authority to rewrite, reinterpret or promote claims in canonical Paper III.
 
-Base snapshot:
+- canonical source through Round 021;
+- branch version: `0.3.0`;
+- base canonical commit: `700fa58e7420ddbf3a53003eccd56a64524a50cf`;
+- authority: `SEPARATE_PROSPECTIVE_NO_CANONICAL_OVERRIDE`.
 
-- repository: `FacundoFirmenich/rgphi-radix-mobius-dynamics`
-- canonical branch: `main`
-- base commit: `700fa58e7420ddbf3a53003eccd56a64524a50cf`
-- date: `2026-11-11`
+## Current exact results
 
-## Round-020 correction
+1. `4/9` is not sharp; `sup |h|/z=2/5`.
+2. The integer envelope remains `n<=19`; `F_17` is the currently activated positive-rank chamber curve.
+3. On every odd-index cubic, even primitive `A` gives exact cubic defect `4`; this is a local parity-to-quaternary lift.
+4. The nineteen cubics form a pencil with common origin `O=[0:1:-1]` and universal double boundary point `R=[1:2:2]`.
+5. At the Round-021 collision prime 83, `#F_17(F_83)=89` and `[44]P=R`. Therefore `2R=-P`, `88P=-P`, and `88=89-1=2*44=83+5`.
+6. The integer homothety `(44,4,48)*2=(88,8,96)` is exact, but the dynamic interpretation is refuted: `48P`, `88P`, and `96P` are outside the strict chamber.
+7. The Round-021 one-edge-subdivision class has 66 raw profiles, 10 structural survivors, zero fixed-tuple realizations, and no DUAL_TRIAD or ALTERNATING_HEXAGON signature among the survivors. OR-4 remains untriggered.
 
-The branch base already contained Round 020, but the first resonance adjudication did not incorporate its strongest arithmetic datum: among all nineteen curves, the only strict-chamber point found in the declared height-10000 rational-slope census lies on `F_17`; that point is non-torsion, proves rank at least one and generates infinitely many rational chamber points.
+## Interpretation boundary
 
-This omission is corrected in branch version 0.2.
-
-## Current adjudication
-
-- `4/9` is not sharp; the exact continuous supremum is `2/5`.
-- `n <= 19` survives sharpening; `19` remains the exact real-envelope index.
-- `F_17` has a primitive non-torsion strict-chamber point and rank at least one.
-- The historical pair `17/19` therefore reappears in split roles: `17` as the currently activated arithmetic index and `19` as the exact envelope index. This is a post-hoc strong resonance candidate, not a prospectively confirmed origin theorem.
-- The Round-020 point has one exact common obstruction `d=23`; both missing cycle divisibilities have reduced denominator 23. A general defect-completion theorem shows that every such denominator divides `gcd(C,D)`.
-- The consecutive-prime pattern `17,19,23` is recorded with low authority. No prediction of 29 or any other prime is authorized.
-- The three six-state natural-lift scans in Round 020 found no class. They predate OR-4 preregistration and do not adjudicate DUAL_TRIAD or ALTERNATING_HEXAGON.
+- `O` and `R` provide an exact origin/boundary skeleton; connecting it to centrum and dual-helicoid prearchitecture remains branch-level.
+- The equality between the trace magnitude `5` at `p=83` and the normalized coordinate sum `1+2+2` is exact but post-hoc.
+- No orbital `44->48` or `88->96` law survives.
+- No complete six-state class has yet triggered the preregistered signatures.
 
 ## Non-contamination rules
 
-- No result here changes `paper-iii/CURRENT_STATE.json` on canonical branches.
-- Resonances are hypotheses until independently tested.
+- No result here changes canonical `paper-iii/CURRENT_STATE.json`.
 - Negative results are retained.
-- Numerical recurrences are not counted twice when they arise from one algebraic chain.
-- Post-hoc observations are labelled as such.
+- Post-hoc identities remain labelled as such.
+- No numerical recurrence is promoted without a selector or a prospective endpoint.

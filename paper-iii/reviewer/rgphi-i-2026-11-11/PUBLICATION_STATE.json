@@ -4,7 +4,7 @@
   "title": "Primitive projective radix–Mobius dynamics: content cocycles and a sharp rigidity threshold",
   "date": "2026-11-11",
   "language": "English",
-  "main_pages": 14,
+  "main_pages": 16,
   "supplement_pages": 4,
   "mathematical_freeze": "INTERNAL_CANDIDATE_FROZEN",
   "preprint_status": "READY_AFTER_EXTERNAL_REVIEW_AND_ARCHIVAL_FREEZE",
@@ -39,5 +39,27 @@
     "clean-room reproduction",
     "closed-database priority chaining",
     "immutable arXiv/Zenodo release"
-  ]
+  ],
+  "rc1_internal_audit": {
+    "version": "RC1",
+    "date": "2026-11-11",
+    "stage": "INTERNAL_AUDIT_PASS_GO_WITH_EXTERNAL_GATES",
+    "fatal_found": 0,
+    "major_found": 12,
+    "major_resolved": 12,
+    "major_open": 0,
+    "internal_clean_room_simulation": "PASS_REPORTED",
+    "external_clean_room": "PENDING",
+    "independently_verified_here": [
+      "main_article_pdf_sha256",
+      "supplement_pdf_sha256",
+      "pdf_page_counts"
+    ],
+    "main_article_sha256": "79520c306ec3c0cd1647859982fc157b441118410a1a29e9052dc2dd8483daad",
+    "supplement_sha256": "c73449d51e98d7ee80ed2e200493997f738e61b05c6ebafd7529f0b558914f9e",
+    "source_archive_sha256_reported": "2e6825639b56a9547cab8b7716a75cae8e6c451673965d86b63ab9a722e071da",
+    "external_validation": "PENDING",
+    "submission": "NOT_SUBMITTED",
+    "archive_path": "paper-iii/reviewer/rgphi-i-2026-11-11/rc1/"
+  }
 }

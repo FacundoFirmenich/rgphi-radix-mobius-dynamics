@@ -1,0 +1,19 @@
+{
+  "external_identity": "RGPHI_I",
+  "internal_provenance": "PAPER_III",
+  "version": "RC2",
+  "date": "2026-11-11",
+  "review_stage": "REVISED_INTERNAL",
+  "submission_readiness": "MAJOR_REVISION_REQUIRED",
+  "generalist_submission_ready": false,
+  "journal_submission": "NOT_SUBMITTED",
+  "external_validation": "PENDING",
+  "independent_TTSS_TSTS_proof_review": "PENDING",
+  "fixed_base_exact_replay": "PASS_B2_17_N5",
+  "global_five_state_arithmetic_classification": "OPEN",
+  "global_six_state_type_catalogue": "OPEN",
+  "promote_open_claims": false,
+  "main_theorem_stack_unchanged": "v1.13",
+  "main_gate_unchanged": "RGPHI_MODULI_CLASSIFICATION_023",
+  "article_and_supplement_archived_here": false
+}

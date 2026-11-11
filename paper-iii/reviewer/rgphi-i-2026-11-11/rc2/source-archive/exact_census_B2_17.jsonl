@@ -1,0 +1,16 @@
+{"B": 2, "n": 5, "N": "52080", "divisors": 80, "universe": 46, "maximal_closed_vertices": 0, "closed_scc": 0, "closed_scc_le_n": 0, "nonpermutation_scc_le_n": 0, "witnesses": []}
+{"B": 3, "n": 5, "N": "10193040", "divisors": 300, "universe": 178, "maximal_closed_vertices": 0, "closed_scc": 0, "closed_scc_le_n": 0, "nonpermutation_scc_le_n": 0, "witnesses": []}
+{"B": 4, "n": 5, "N": "467470080", "divisors": 864, "universe": 926, "maximal_closed_vertices": 0, "closed_scc": 0, "closed_scc_le_n": 0, "nonpermutation_scc_le_n": 0, "witnesses": []}
+{"B": 5, "n": 5, "N": "9442290000", "divisors": 800, "universe": 740, "maximal_closed_vertices": 0, "closed_scc": 0, "closed_scc_le_n": 0, "nonpermutation_scc_le_n": 0, "witnesses": []}
+{"B": 6, "n": 5, "N": "112220866800", "divisors": 1200, "universe": 1124, "maximal_closed_vertices": 0, "closed_scc": 0, "closed_scc_le_n": 0, "nonpermutation_scc_le_n": 0, "witnesses": []}
+{"B": 7, "n": 5, "N": "920007496800", "divisors": 1080, "universe": 618, "maximal_closed_vertices": 1, "closed_scc": 1, "closed_scc_le_n": 1, "nonpermutation_scc_le_n": 0, "witnesses": []}
+{"B": 8, "n": 5, "N": "5731593154560", "divisors": 2496, "universe": 2834, "maximal_closed_vertices": 0, "closed_scc": 0, "closed_scc_le_n": 0, "nonpermutation_scc_le_n": 0, "witnesses": []}
+{"B": 9, "n": 5, "N": "28908827307360", "divisors": 5184, "universe": 6982, "maximal_closed_vertices": 0, "closed_scc": 0, "closed_scc_le_n": 0, "nonpermutation_scc_le_n": 0, "witnesses": []}
+{"B": 10, "n": 5, "N": "123319766790000", "divisors": 3200, "universe": 4054, "maximal_closed_vertices": 0, "closed_scc": 0, "closed_scc_le_n": 0, "nonpermutation_scc_le_n": 0, "witnesses": []}
+{"B": 11, "n": 5, "N": "459117860031600", "divisors": 2400, "universe": 2459, "maximal_closed_vertices": 0, "closed_scc": 0, "closed_scc_le_n": 0, "nonpermutation_scc_le_n": 0, "witnesses": []}
+{"B": 12, "n": 5, "N": "1527005059557120", "divisors": 2880, "universe": 2512, "maximal_closed_vertices": 0, "closed_scc": 0, "closed_scc_le_n": 0, "nonpermutation_scc_le_n": 0, "witnesses": []}
+{"B": 13, "n": 5, "N": "4618671217458480", "divisors": 2400, "universe": 2125, "maximal_closed_vertices": 2, "closed_scc": 2, "closed_scc_le_n": 2, "nonpermutation_scc_le_n": 0, "witnesses": []}
+{"B": 14, "n": 5, "N": "12882242022489840", "divisors": 3200, "universe": 4224, "maximal_closed_vertices": 0, "closed_scc": 0, "closed_scc_le_n": 0, "nonpermutation_scc_le_n": 0, "witnesses": []}
+{"B": 15, "n": 5, "N": "33501652070040000", "divisors": 5600, "universe": 6093, "maximal_closed_vertices": 0, "closed_scc": 0, "closed_scc_le_n": 0, "nonpermutation_scc_le_n": 0, "witnesses": []}
+{"B": 16, "n": 5, "N": "81964184356454400", "divisors": 19584, "universe": 46560, "maximal_closed_vertices": 1, "closed_scc": 1, "closed_scc_le_n": 1, "nonpermutation_scc_le_n": 0, "witnesses": []}
+{"B": 17, "n": 5, "N": "190041681755759040", "divisors": 1680, "universe": 912, "maximal_closed_vertices": 0, "closed_scc": 0, "closed_scc_le_n": 0, "nonpermutation_scc_le_n": 0, "witnesses": []}

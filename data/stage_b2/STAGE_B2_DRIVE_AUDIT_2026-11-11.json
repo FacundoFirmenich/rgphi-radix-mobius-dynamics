@@ -1,0 +1,40 @@
+{
+  "audit_date": "2026-11-11",
+  "status": "STORAGE_READY_CHECKPOINT_PAYLOAD_NOT_LOCATED",
+  "drive_storage_recovered": true,
+  "stage_b2_folder": {
+    "id": "1KBBKkgdpYT0VBbECf5fkJn_bg92kDmFs",
+    "url": "https://drive.google.com/drive/folders/1KBBKkgdpYT0VBbECf5fkJn_bg92kDmFs"
+  },
+  "checkpoint_upload_folder": {
+    "id": "10B482cFJ_boGKQJhl4x7QtAmKvKmhECw",
+    "url": "https://drive.google.com/drive/folders/10B482cFJ_boGKQJhl4x7QtAmKvKmhECw"
+  },
+  "notebook_file": {
+    "id": "1RtiHJrJEajQVvoo3vmNk0Rb2nG8Mx15R",
+    "url": "https://drive.google.com/file/d/1RtiHJrJEajQVvoo3vmNk0Rb2nG8Mx15R/view?usp=drivesdk"
+  },
+  "execution_kit_file": {
+    "id": "1n3xDJxewaBzZ2OYtjp16KlckCfpVHRa6",
+    "url": "https://drive.google.com/file/d/1n3xDJxewaBzZ2OYtjp16KlckCfpVHRa6/view?usp=drivesdk",
+    "sha256": "ea5fb56705bdf0c9d3062c7d4b85075e79d2d6edbf2b598bf52fb303c8e38aa7"
+  },
+  "required_checkpoint": {
+    "time": 185,
+    "states": 2462600671,
+    "buckets": 128,
+    "bytes": 19700805368,
+    "manifest_sha256": "dbd2f4adda52315e05261b9328c03f8a44d2a31b8e293f3dd3ff7b80b3d2a6b7"
+  },
+  "checkpoint_payload_located": false,
+  "historical_checkpoint_found": {
+    "depth": 85,
+    "file": "rgphi036_ck85.bin",
+    "bytes": 91078398,
+    "sha256": "6b02ccecffcea45b0249643da9541888d1efaf265d70279a9c386d6ed672b899",
+    "accepted_for_stage_b2": false
+  },
+  "engine_ready": true,
+  "production_authorized": false,
+  "next_admissible_operation": "transfer the exact 128 t=185 buckets into checkpoint_t185/cur, validate all hashes and structure, then run only the 185-to-186 pilot"
+}

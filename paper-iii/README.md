@@ -1,63 +1,19 @@
-# RGΦ Paper III — finite modular traps, universal basins and closure rigidity
+# RGΦ Paper III — estado canónico revisado
 
-**Canonical status:** `ACTIVE_RESEARCH / PREPRINT_NOT_FROZEN`  
-**Current theorem stack:** `v1.7`  
-**Current frontier:** `Strict-S Normal Forms / Extended Strict-T 017`  
-**Last synchronized:** 2026-11-11
+Objeto exclusivo: trampas modulares, SCC racionales, cuencas universales y rigidez all-high de Paper III. No modificar la autoridad de Paper I, II, Stage B2 u otras ramas.
 
-This directory is the canonical in-repository home of **Paper III only**. It does not modify the authority or status of Paper I, Paper II, Stage B2, HDH, ODT or other isolated research lines.
+**Teoremas all-high sin modificación:** rigidez en cardinalidades 2, 3 y 4. **n=5 y rigidez global: OPEN.**
 
-## System
+## Frontera de cinco estados
 
-For an integer base `B >= 2`,
+Round 014 proporciona 560 clases de arquitecturas combinatorias bajo restricciones necesarias de un ciclo testigo. El bundle Round 015 comprobado produce 20 formas bajo una hipótesis adicional: **exactamente una arista estricta en todo el grafo**. El presupuesto Round 012 establece unicidad sólo en el ciclo testigo, no en las restantes aristas de la SCC.
 
-\[
-T_B(x)=\{Bx\},\qquad H(x)=\frac1{1+x},\qquad S_B=H\circ T_B\circ H^{-1},
-\]
+El checker de Round 015 dio PASS (560 entradas, 540 descartes contables, 20 formas), pero dicho PASS no convierte la restricción adicional en teorema global. Round 016 tiene 7 cierres y 13 formas abiertas, todos dentro del subconjunto condicionado. No promover `FIVE_STATE_RIGIDITY`.
 
-with `S_B` admissible on the high domain `[1/2,1]`.
+La tabla histórica de 24 clases / 12 formas está supersedida para este gate por el bundle de 20 formas, sin borrar los archivos históricos.
 
-## Closed theorem stack
+Ver [auditoría de jurisdicción](audits/ROUND015_016_SCOPE_AUDIT_2026-11-11.md), [fuentes Round 015](round-015/), [Round 016](round-016/) y [estado computable](CURRENT_STATE.json).
 
-- complete binary closed-SCC classification;
-- complete ternary closed-SCC classification;
-- all-low SCC classification at arbitrary finite cardinality by primitive necklaces;
-- exactly-one-high classification at arbitrary finite cardinality;
-- exact universal-predecessor divisor calculus;
-- fixed-base high finiteness and explicit non-sharp bounds;
-- directed-diameter-at-most-two rigidity;
-- cycle reduction budget and least-prime obstruction;
-- all-high permutation rigidity for cardinalities 2, 3 and 4;
-- impossibility of five-state Hamiltonian `TTSSS`;
-- impossibility of repairing a strict `TTSS` core by a fifth state;
-- defect-one lollipop normal form;
-- strict-edge predecessor-shift theorem at arbitrary finite cardinality;
-- global impossibility of defect-one strict-`T` factor two;
-- factor-three partial-rectangle no-go;
-- full-fibre collision exclusions.
+## Siguiente objetivo
 
-## Five-state frontier
-
-The five-state gate remains `OPEN_PARTIAL`.
-
-The source-grounded Round-015 jurisdiction contains **20 factor-specific forms**. Round 016 adjudicates them as follows:
-
-- closed symbolically: 7;
-- unresolved forms: 13;
-- exact arithmetic branches after predecessor-shift splitting: 15.
-
-The binding gate is [`gates/RGPHI_STRICT_S_NORMAL_FORMS_017.md`](gates/RGPHI_STRICT_S_NORMAL_FORMS_017.md).
-
-## Source boundary
-
-An earlier repository summary recorded `24 factor-specific classes / 12 structural forms`. For Gate 016 that historical summary is superseded by the independently checked attached Round-015 bundle and its explicit 20-form table. See [`round-016/SOURCE_BOUNDARY.md`](round-016/SOURCE_BOUNDARY.md). Historical files remain preserved; no five-state claim is promoted from the discrepancy.
-
-## Evidence boundary
-
-- `SYMBOLIC_EXACT`: algebraic theorem/proof;
-- `SYMBOLIC_PLUS_FINITE_CERTIFICATE`: symbolic reduction plus complete finite certificate;
-- `FINITE_EXHAUSTIVE`: complete finite jurisdiction only;
-- `OPEN_PARTIAL`: exact partial closure with unresolved certified branches;
-- `OPEN`: not promoted.
-
-Global all-high permutation rigidity remains `OPEN` for cardinality at least five.
+Resolver la exhaustividad global de aristas estrictas en cinco estados, o ampliar el quotient para permitir varias aristas estrictas fuera del ciclo testigo. Los tests numéricos siguen siendo evidencia subsidiaria, nunca pruebas globales.

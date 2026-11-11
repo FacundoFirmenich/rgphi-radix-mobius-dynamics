@@ -1,14 +1,9 @@
-# Round 016 source boundary and canonical correction
+# Round 016 — procedencia y jurisdicción corregidas
 
-Round 016 is grounded in the attached and independently checked Round-015 bundle `RGPHI_STRENGTHENING_ROUND_015_COMPLETO_2026-11-11.zip`.
+El bundle Round 015 efectivamente comprobado contiene 560 clases de entrada, 540 descartes y 20 formas de incidencia; el checker contable local da PASS. El esquema histórico 24/12 queda supersedido para esta jurisdicción.
 
-That source jurisdiction states:
+**Advertencia fundamental:** el teorema 015 de lollipop parte de una única arista estricta **en todo el grafo**, condición que no se deriva sin más del cycle reduction budget aplicado a un ciclo testigo. Por eso el paso 560→20 no constituye todavía una prueba de exhaustividad global para todas las SCC all-high de cinco estados.
 
-- 560 canonical graph classes;
-- 540 classes eliminated by the defect-one functional theorem;
-- 20 retained factor-specific Diophantine forms;
-- `FIVE_STATE_RIGIDITY = OPEN_PARTIAL`.
+Los resultados Round 016 (7 formas cerradas, 13 pendientes, 15 ramas) son internos a este subconjunto condicionado. No promover rigidez n=5 ni rigidez global.
 
-An earlier repository summary recorded `24 factor-specific classes / 12 structural forms`. That summary is retained as historical material but is **superseded for Gate 016** by the source-grounded 20-form jurisdiction above. Round 016 adjudicates those 20 forms explicitly and does not silently identify them with the older 12-form table.
-
-No five-state rigidity claim is authorized until every surviving Round-016 arithmetic branch is eliminated or realized exactly.
+Consultar ../audits/ROUND015_016_SCOPE_AUDIT_2026-11-11.md y ../round-015/ para las fuentes textuales originales.

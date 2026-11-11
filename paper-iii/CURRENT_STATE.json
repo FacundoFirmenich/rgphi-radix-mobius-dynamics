@@ -2,39 +2,32 @@
   "object": "RGPHI_PAPER_III",
   "date": "2026-11-11",
   "status": "ACTIVE_RESEARCH_PREPRINT_NOT_FROZEN",
-  "theorem_stack": "v1.7",
+  "theorem_stack": "v1.6 (historical; jurisdiction under audit)",
   "closed": {
-    "binary_scc_classification": true,
-    "ternary_scc_classification": true,
-    "all_low_arbitrary_cardinality": true,
-    "one_high_arbitrary_cardinality": true,
-    "universal_predecessor_calculus": true,
-    "fixed_base_high_finiteness": true,
-    "all_high_rigidity_cardinalities": [2, 3, 4],
-    "five_state_hamiltonian_TTSSS_impossible": true,
-    "five_state_TTSS_core_extension_impossible": true,
-    "defect_one_lollipop_normal_form": true,
-    "strict_edge_predecessor_shift": true,
-    "strict_T_factor_two_impossible": true,
-    "factor_three_partial_rectangle_impossible": true,
-    "four_full_fibre_collision_forms_impossible": true
+    "all_high_rigidity_cardinalities": [
+      2,
+      3,
+      4
+    ]
   },
-  "partial": {
-    "round015_source_forms": 20,
-    "round016_closed_forms": 7,
-    "round016_remaining_forms": 13,
-    "round016_remaining_arithmetic_branches": 15
+  "internal_evidence": {
+    "round014_marked_cycle_architecture_classes": 560,
+    "round015_one_global_strict_edge_subset_forms": 20,
+    "round015_checker": "PASS (accounting only)",
+    "round016_closed_within_conditional_subset": 7,
+    "round016_open_within_conditional_subset": 13,
+    "round016_open_arithmetic_branches": 15
   },
-  "historical_superseded_summary": {
-    "factor_specific_classes": 24,
-    "structural_forms": 12,
-    "status": "PRESERVED_BUT_NOT_BINDING_FOR_GATE_016"
+  "historical_superseded": {
+    "round015_earlier_factor_specific_classes": 24,
+    "round015_earlier_structural_forms": 12
   },
+  "critical_gap": "Round012 restricts strictness on selected witness cycle; it does not imply exactly one strict edge globally. The Round015 560-to-20 exclusion invokes this extra hypothesis and is not yet certified exhaustive for all five-state SCCs.",
   "open": {
     "five_state_all_high_rigidity": true,
     "global_all_high_permutation_rigidity": true,
-    "sharp_fixed_base_bound": true
+    "global_exhaustiveness_of_round015_quotient": true
   },
-  "binding_gate": "RGPHI_STRICT_S_NORMAL_FORMS_017",
-  "claim_boundary": "Five-state gate is OPEN_PARTIAL; 13 forms / 15 exact arithmetic branches remain."
+  "binding_gate": "GLOBAL_STRICT_EDGE_EXHAUSTIVENESS_017",
+  "claim_boundary": "Never promote conditional 20-form classification or Round016 eliminations to unconditional cardinality-five/global rigidity."
 }

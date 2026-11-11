@@ -1,0 +1,76 @@
+{
+  "input_classes": 560,
+  "surviving_classes": 20,
+  "eliminated_classes": 540,
+  "normal_forms": 20,
+  "normal_forms_by_architecture": {
+    "FOUR_CORE_TSTS_PLUS_ONE": 8,
+    "HAMILTONIAN_TSTSS": 12
+  },
+  "classes_by_architecture": {
+    "FOUR_CORE_TSTS_PLUS_ONE": 8,
+    "HAMILTONIAN_TSTSS": 12
+  },
+  "elimination_reasons": {
+    "OTHER_GENERATOR_NOT_PERMUTATION;STRICT_GENERATOR_NOT_LOLLIPOP": 320,
+    "STRICT_GENERATOR_NOT_LOLLIPOP": 56,
+    "OTHER_GENERATOR_NOT_PERMUTATION": 104,
+    "OTHER_GENERATOR_NOT_PERMUTATION;STRICT_SOURCE_HAS_PREIMAGE;STRICT_GENERATOR_NOT_LOLLIPOP": 52,
+    "STRICT_SOURCE_HAS_PREIMAGE;STRICT_GENERATOR_NOT_LOLLIPOP": 8
+  },
+  "schema": {
+    "FOUR_CORE_TSTS_PLUS_ONE_CLASSES.csv": {
+      "fields": [
+        "kind",
+        "word",
+        "factor",
+        "strict_position",
+        "strict_generator",
+        "strict_source",
+        "T",
+        "S",
+        "diameter",
+        "exact_margin",
+        "p_witness",
+        "q_witness",
+        "forced_unreduced_edges",
+        "marked_cycle_count",
+        "canonical_key"
+      ],
+      "T": "T",
+      "S": "S",
+      "key": "canonical_key",
+      "gen": "strict_generator",
+      "source": "strict_source",
+      "factor": "factor",
+      "rows": 332
+    },
+    "HAMILTONIAN_TSTSS_CLASSES.csv": {
+      "fields": [
+        "kind",
+        "word",
+        "factor",
+        "strict_position",
+        "strict_generator",
+        "strict_source",
+        "T",
+        "S",
+        "diameter",
+        "exact_margin",
+        "p_witness",
+        "q_witness",
+        "forced_unreduced_edges",
+        "marked_cycle_count",
+        "canonical_key"
+      ],
+      "T": "T",
+      "S": "S",
+      "key": "canonical_key",
+      "gen": "strict_generator",
+      "source": "strict_source",
+      "factor": "factor",
+      "rows": 228
+    }
+  },
+  "status": "OPEN_PARTIAL_DIOPHANTINE_QUOTIENT_COMPLETE"
+}

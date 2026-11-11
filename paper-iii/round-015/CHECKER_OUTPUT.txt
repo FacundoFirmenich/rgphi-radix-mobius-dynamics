@@ -1,0 +1,5 @@
+PASS
+input_classes=560
+eliminated_classes=540
+normal_forms=20
+five_state_rigidity=OPEN_PARTIAL

@@ -4,21 +4,18 @@ P3-002,Complete ternary closed-SCC classification,CLOSED_SYMBOLIC,theorems/RGPHI
 P3-003,All-low SCCs classified for every finite cardinality,CLOSED_SYMBOLIC,theorems/RGPHI_ALL_LOW_SCC_ARBITRARY_N_009.md
 P3-004,Exactly-one-high SCCs classified for every finite cardinality,CLOSED_SYMBOLIC,theorems/RGPHI_FINITE_CARDINALITY_STRUCTURE_011.md
 P3-005,Exact universal-predecessor divisor calculus,CLOSED_SYMBOLIC,theorems/RGPHI_UNIVERSAL_PREDECESSOR_CALCULUS_006.md
-P3-006,High universal basin finite for every fixed base and finite trap,CLOSED_S_UNIT_REDUCTION,theorems/RGPHI_FIXED_BASE_HIGH_FINITE_THEOREM_008.md
+P3-006,High universal basin finite for every fixed base,CLOSED_S_UNIT_REDUCTION,theorems/RGPHI_FIXED_BASE_HIGH_FINITE_THEOREM_008.md
 P3-007,Rigidity for directed diameter at most two,CLOSED_SYMBOLIC,theorems/DIAMETER_LE2_RIGIDITY_012.md
 P3-008,Cycle reduction budget and least-prime criterion,CLOSED_SYMBOLIC,theorems/RGPHI_CYCLE_REDUCTION_BUDGET_012.md
 P3-009,All-high permutation rigidity for cardinality four,CLOSED_SYMBOLIC_PLUS_FINITE_CERTIFICATE,theorems/RGPHI_FOUR_STATE_RIGIDITY_013.md
-P3-010,Hamiltonian five-state TTSSS strict architecture is impossible,CLOSED_SYMBOLIC,theorems/RGPHI_FIVE_STATE_ADVANCE_014.md
-P3-011,A strict TTSS core cannot be repaired by a fifth closure state,CLOSED_SYMBOLIC,theorems/RGPHI_FIVE_STATE_ADVANCE_014.md
-P3-012,Defect-one lollipop functional theorem,CLOSED_SYMBOLIC,theorems/RGPHI_DEFECT_ONE_LOLLIPOP_THEOREM_015.md
-P3-013,Earlier 24-class / 12-form quotient summary,SUPERSEDED_FOR_GATE_016,round-016/SOURCE_BOUNDARY.md
-P3-014,Round-015 source jurisdiction contains 20 factor-specific forms,CLOSED_SOURCE_BOUNDARY,round-016/SOURCE_BOUNDARY.md
-P3-015,Strict-edge predecessor-shift theorem,CLOSED_SYMBOLIC,theorems/STRICT_EDGE_PREDECESSOR_SHIFT_016.md
-P3-016,Defect-one strict-T factor two is globally impossible,CLOSED_SYMBOLIC,theorems/STRICT_T_FACTOR2_NO_GO_016.md
-P3-017,Factor-three partial rectangle DF015-0016 is impossible,CLOSED_SYMBOLIC,theorems/R3_PARTIAL_RECTANGLE_NO_GO_016.md
-P3-018,Four full-fibre collision forms are impossible,CLOSED_SYMBOLIC,theorems/FULL_FIBRE_COLLISION_NO_GO_016.md
-P3-019,Round-016 adjudication closes 7 of 20 source forms,CLOSED_EXACT_CERTIFICATE,round-016/FORM_ADJUDICATION_20.csv
-P3-020,Thirteen source forms remain as fifteen exact arithmetic branches,OPEN_PARTIAL,round-016/REMAINING_ARITHMETIC_BRANCHES.csv
-P3-021,Eliminate or realize all fifteen Round-016 branches,OPEN,gates/RGPHI_STRICT_S_NORMAL_FORMS_017.md
-P3-022,All-high permutation rigidity for cardinality five,OPEN,gates/RGPHI_STRICT_S_NORMAL_FORMS_017.md
-P3-023,Global all-high permutation rigidity,OPEN,gates/RGPHI_STRICT_S_NORMAL_FORMS_017.md
+P3-010,Hamiltonian five-state TTSSS strict architecture is impossible,INTERNAL_SYMBOLIC,theorems/RGPHI_FIVE_STATE_ADVANCE_014.md
+P3-011,A strict TTSS core cannot be repaired by a fifth closure state,INTERNAL_SYMBOLIC,theorems/RGPHI_FIVE_STATE_ADVANCE_014.md
+P3-012,Defect-one functional lollipop theorem conditional on single global strict edge,CLOSED_CONDITIONAL,round-015/RGPHI_DEFECT_ONE_LOLLIPOP_THEOREM_015.md
+P3-013,Complete elimination of 540 of 560 five-state graph architectures,PENDING_EXHAUSTIVENESS_AUDIT,audits/ROUND015_016_SCOPE_AUDIT_2026-11-11.md
+P3-014,24 factor-specific classes historical,SUPERSEDED,five-state/SURVIVING_24_EXACT_CLASSES.csv
+P3-015,12 structural forms historical, SUPERSEDED,five-state/DIOPHANTINE_NORMAL_FORMS_12.csv
+P3-016,20 defect-one forms from attached Round015 bundle,CONDITIONAL_SCOPE_INTERNAL_CHECKED,round-015/DIOPHANTINE_NORMAL_FORMS.csv
+P3-017,7 of 20 defect-one forms closed in Round016,CONDITIONAL_SCOPE_INTERNAL_CLAIM,round-016/FORM_ADJUDICATION_20.csv
+P3-018,Remaining 13 defect-one forms and 15 branches,OPEN_PARTIAL,round-016/REMAINING_ARITHMETIC_BRANCHES.csv
+P3-019,All-high permutation rigidity for cardinality five,OPEN,audits/ROUND015_016_SCOPE_AUDIT_2026-11-11.md
+P3-020,Global all-high permutation rigidity,OPEN,audits/ROUND015_016_SCOPE_AUDIT_2026-11-11.md

@@ -23,3 +23,6 @@ OR-C21,The boundary transform is a unimodular involution fixing O projectively a
 OR-C22,sup(D/C-1)=sup(-h/z)_+=1/9,CLOSED_SYMBOLIC
 OR-C23,The six-state strict-defect candidate set is exactly {2,3,4,5,6,7},CLOSED_DERIVED
 OR-C24,All six candidate defect values are realized in n=6,PREREGISTERED
+OR-C25,Every periodic word in the 16 certified closed SCCs for B=2..40 and n<=5 has Delta=1 log pitch=0 alpha=0,CLOSED_BOUNDED_39_BASES
+OR-C26,The bounded 39-base audit proves absence of nonpermutation five-state SCCs for every base,NOT_CLAIMED
+OR-C27,This audit activates OR4 OR5 or the n6 strict defect spectrum,NOT_TRIGGERED

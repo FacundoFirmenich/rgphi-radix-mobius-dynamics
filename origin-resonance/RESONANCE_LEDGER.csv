@@ -16,3 +16,4 @@ R-014,golden Fibonacci conjugacy,built-in structural,CLOSED_SYMBOLIC,H^2=H+I; ei
 R-015,boundary centrum involution,projective structural,CLOSED_SYMBOLIC,U^2=I; U fixes O projectively and sends R to [1:0:0],Ontology not claimed
 R-016,dual exact one-ninth endpoints,derived algebraic,CLOSED_SYMBOLIC,sup(D/C-1)=sup(-h/z)_+=1/9,Same chamber genealogy not independent
 R-017,n6 six-value defect spectrum,prospective derived,PREREGISTERED,d in {2,3,4,5,6,7},No preferred value predicted
+R-018,small-base monodromy baseline,finite exact,BOUNDED_NEGATIVE_39_BASES,39 bases B=2..40 890417 candidate states and 16 closed SCC all permutation; for every cycle Delta=1 log pitch=0 alpha=0,No n>=6 evidence and no inference for B>40; archive source in main commit 98dcb965

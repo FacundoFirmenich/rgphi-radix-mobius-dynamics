@@ -2,7 +2,7 @@
   "object": "RGPHI_PAPER_III",
   "date": "2026-11-11",
   "status": "ACTIVE_RESEARCH_PREPRINT_NOT_FROZEN",
-  "theorem_stack": "v1.11",
+  "theorem_stack": "v1.12",
   "closed": {
     "all_high_rigidity_cardinalities": [2, 3, 4],
     "sharp_minimal_nonpermutation_cardinality": 5,
@@ -11,32 +11,41 @@
     "DF015_0015_coprime_completion": true,
     "F17_trivial_rational_torsion": true,
     "F17_rank_lower_bound": 1,
-    "F17_infinitely_many_rational_chamber_points": true
+    "F17_infinitely_many_rational_chamber_points": true,
+    "odd_index_parity_collapse": true,
+    "universal_boundary_point": "[1:2:2]",
+    "relative_integral_finiteness_using_Siegel": true,
+    "dense_near_coprime_factor_splitting": true,
+    "n6_one_edge_subdivision_catalogue": true
   },
-  "near_realization": {
-    "curve_n": 17,
-    "point": [64233, 11741, 1138],
-    "cube_quotient": 25220421,
-    "gcd_C_D": 23,
-    "RGPHI_realization": false
-  },
-  "finite_audits": {
-    "sparse_form_candidates_N20000": 73388969,
-    "sparse_form_hits": 0,
-    "slope_tests_H10000": 231020848,
-    "strict_chamber_points": 1,
-    "six_state_lift_candidates_N10000": 332535181,
-    "six_state_lift_hits": 0
+  "round021": {
+    "n17_multiple_44": {
+      "coordinate_digits": 16232,
+      "cubic_divisibility_defect": 4,
+      "boundary_collision_prime": 83
+    },
+    "countergraph_finite_audit": {
+      "Q1_max": 16000,
+      "D_max": 48000,
+      "candidates": 496924929,
+      "hits": 1
+    },
+    "n6_one_edge_subdivision": {
+      "raw_profiles": 66,
+      "structural_survivors": 10,
+      "fixed_tuple_candidate_states": 3206,
+      "CRT_hits": 0
+    }
   },
   "open": {
     "complete_five_state_arithmetic_realizability": true,
+    "effective_relative_integral_enumeration": true,
     "countergraph_state_side_global_uniqueness": true,
-    "DF015_0015_coprime_integral_points": true,
-    "existence_for_all_cardinalities_at_least_six": true
+    "complete_six_state_classification": true
   },
   "refuted": {
     "global_all_high_permutation_rigidity": true,
     "n17_displayed_point_is_RGPHI_realization": true
   },
-  "binding_gate": "RGPHI_COPRIME_INTEGRAL_POINTS_021"
+  "binding_gate": "RGPHI_EFFECTIVE_RELATIVE_INTEGRAL_022"
 }

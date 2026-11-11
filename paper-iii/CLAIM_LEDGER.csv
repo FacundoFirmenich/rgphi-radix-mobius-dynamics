@@ -10,10 +10,15 @@ P3-008,Cycle reduction budget and least-prime criterion,CLOSED_SYMBOLIC,theorems
 P3-009,All-high permutation rigidity for cardinality four,CLOSED_SYMBOLIC_PLUS_FINITE_CERTIFICATE,theorems/RGPHI_FOUR_STATE_RIGIDITY_013.md
 P3-010,Hamiltonian five-state TTSSS strict architecture is impossible,CLOSED_SYMBOLIC,theorems/RGPHI_FIVE_STATE_ADVANCE_014.md
 P3-011,A strict TTSS core cannot be repaired by a fifth closure state,CLOSED_SYMBOLIC,theorems/RGPHI_FIVE_STATE_ADVANCE_014.md
-P3-012,Five-state fibre-closure theorem,CLOSED_SYMBOLIC,theorems/RGPHI_FIBRE_CLOSURE_QUOTIENT_015.md
-P3-013,Adjudication of all 560 Round-014 architecture classes,CLOSED_EXACT_CERTIFICATE,five-state/ADJUDICATION_560_CLASSES.csv.gz
-P3-014,Reduction to 24 factor-specific exact classes,CLOSED_EXACT_CERTIFICATE,five-state/SURVIVING_24_EXACT_CLASSES.csv
-P3-015,Reduction to 12 structural Diophantine normal forms,CLOSED_EXACT_CERTIFICATE,five-state/DIOPHANTINE_NORMAL_FORMS_12.json.gz
-P3-016,Elimination or realization of all 12 normal forms,OPEN,gates/RGPHI_FIVE_STATE_NORMAL_FORM_ELIMINATION_016.md
-P3-017,All-high permutation rigidity for cardinality five,OPEN,gates/RGPHI_FIVE_STATE_NORMAL_FORM_ELIMINATION_016.md
-P3-018,Global all-high permutation rigidity,OPEN,gates/RGPHI_FIVE_STATE_NORMAL_FORM_ELIMINATION_016.md
+P3-012,Defect-one lollipop functional theorem,CLOSED_SYMBOLIC,theorems/RGPHI_DEFECT_ONE_LOLLIPOP_THEOREM_015.md
+P3-013,Earlier 24-class / 12-form quotient summary,SUPERSEDED_FOR_GATE_016,round-016/SOURCE_BOUNDARY.md
+P3-014,Round-015 source jurisdiction contains 20 factor-specific forms,CLOSED_SOURCE_BOUNDARY,round-016/SOURCE_BOUNDARY.md
+P3-015,Strict-edge predecessor-shift theorem,CLOSED_SYMBOLIC,theorems/STRICT_EDGE_PREDECESSOR_SHIFT_016.md
+P3-016,Defect-one strict-T factor two is globally impossible,CLOSED_SYMBOLIC,theorems/STRICT_T_FACTOR2_NO_GO_016.md
+P3-017,Factor-three partial rectangle DF015-0016 is impossible,CLOSED_SYMBOLIC,theorems/R3_PARTIAL_RECTANGLE_NO_GO_016.md
+P3-018,Four full-fibre collision forms are impossible,CLOSED_SYMBOLIC,theorems/FULL_FIBRE_COLLISION_NO_GO_016.md
+P3-019,Round-016 adjudication closes 7 of 20 source forms,CLOSED_EXACT_CERTIFICATE,round-016/FORM_ADJUDICATION_20.csv
+P3-020,Thirteen source forms remain as fifteen exact arithmetic branches,OPEN_PARTIAL,round-016/REMAINING_ARITHMETIC_BRANCHES.csv
+P3-021,Eliminate or realize all fifteen Round-016 branches,OPEN,gates/RGPHI_STRICT_S_NORMAL_FORMS_017.md
+P3-022,All-high permutation rigidity for cardinality five,OPEN,gates/RGPHI_STRICT_S_NORMAL_FORMS_017.md
+P3-023,Global all-high permutation rigidity,OPEN,gates/RGPHI_STRICT_S_NORMAL_FORMS_017.md

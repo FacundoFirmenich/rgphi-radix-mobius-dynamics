@@ -1,13 +1,13 @@
 id,motif,kind,status,evidence,boundary
 R-001,4/9 constant,algebraic,REFUTED_AS_SHARP,Exact supremum is 2/5,Do not count 4/9 as structural
-R-002,2/5 exact supremum / five motif,derived-algebraic,DERIVED_NOT_INDEPENDENT,Comes from chamber A/z>5,Do not double-count with cardinality-five rupture
-R-003,1..19 index range,algebraic,SURVIVES_SHARPENING,Exact continuous envelope 892/45; F19 has strict real point,Rational/integral F19 open
-R-004,19 versus historical 17/19,historical-numerical,CURRENT_FORMAL_INDEPENDENCE,No edge in present theorem DAG,Full historical archive audit open
-R-005,five as minimal rigidity rupture,cross-branch structural,STRONG_RESONANCE_CANDIDATE,Rigidity 2 3 4; rupture 5,No causal identification
-R-006,six / hexagon / dual triad,prospective,PREREGISTERED,Exact graph signatures frozen,No exact n6 object yet
-R-007,open interval and hyperaccess,conceptual,CONCEPTUAL_ONLY,No operational access functional exists,Formal bridge required
-R-008,five as universal defect cell,prospective,PREREGISTERED,Short defect cycle and quotient endpoints frozen,Await n>=6 classifications
-R-009,17 arithmetic index / 19 envelope index,historical-arithmetic,POSTHOC_STRONG_RESONANCE_CANDIDATE,F17 rank>=1 and unique chamber hit H<=10000; 19 exact envelope,Not prospective; full 19-curve rank profile open
-R-010,common obstruction d=23,algebraic,CLOSED_POINT_SPECIFIC,Defect-completion theorem; both reduced defects equal 23 at P,Value 23 may vary on other points
-R-011,prime ladder 17 19 23,numerical,POSTHOC_LOW_AUTHORITY,Consecutive primes in three different roles,No p-value or further-prime prediction
-R-012,three natural n6 lifts,historical-negative,NO_HIT_PRE_REGISTRATION,332535181 candidates; no hit,Does not adjudicate OR4 signatures
+R-002,odd parity produces factor 4,local structural,CLOSED_SYMBOLIC,v2 gap exactly 2 on odd F_n,Not a universal binary-code theorem
+R-003,universal origin O and boundary R,geometric,CLOSED_SYMBOLIC,Pencil base points O=[0:1:-1] and double R=[1:2:2],Prearchitecture interpretation remains branch-level
+R-004,1:2:2 equals one plus dual two-two,structural,POSTHOC_RESONANCE_CANDIDATE,Exact ratio and normalized 1+2+2=5,No canonical architectural identification
+R-005,44P boundary return at 83,finite-field,CLOSED_EXACT,44P mod83=R and #E(F83)=89,Specific to F17 and point P
+R-006,88 autonomous selector,finite-field,CLOSED_EXACT,88=#E(F83)-1=2*44=83+5,Historical interpretation remains post-hoc
+R-007,44 4 48 / 88 8 96,integer-homothety,POSTHOC_EXACT_DYNAMIC_REFUTED,Homothety exact; 48P 88P 96P outside chamber,No orbital completion law
+R-008,66 one-edge profiles equals 11 times 6,combinatorial,POSTHOC_LOW_AUTHORITY,Complete raw count 66,No 72 completion or causal theorem
+R-009,n6 dual triad / alternating hexagon,prospective,NOT_TRIGGERED_STRUCTURAL_NEGATIVE,0 of 10 structural survivors; zero exact hits,Await exact n6 SCC/catalogue
+R-010,17 arithmetic / 19 envelope,historical-arithmetic,POSTHOC_STRONG_CANDIDATE,F17 rank>=1; 19 exact envelope,Full rank profile open
+R-011,five minimum rupture,cross-branch structural,STRONG_RESONANCE_CANDIDATE,Rigidity 2 3 4; rupture 5,No causal identification
+R-012,hyperaccess bridge,conceptual,OPEN,No operational access functional,Do not rename ratios

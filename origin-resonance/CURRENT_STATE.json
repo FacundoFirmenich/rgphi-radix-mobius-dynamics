@@ -1,0 +1,30 @@
+{
+  "object": "RGPHI_ORIGIN_RESONANCE_BRANCH",
+  "version": "0.1.0",
+  "date": "2026-11-11",
+  "base_commit": "700fa58e7420ddbf3a53003eccd56a64524a50cf",
+  "authority": "SEPARATE_PROSPECTIVE_NO_CANONICAL_OVERRIDE",
+  "closed": {
+    "OR1_exact_supremum": "2/5",
+    "OR2_continuous_supremum": "892/45",
+    "OR2_integer_index_max": 19,
+    "OR2_F19_real_chamber": true
+  },
+  "refuted": {
+    "four_ninths_is_sharp": true
+  },
+  "partial": {
+    "17_19_independence": "CURRENT_FORMAL_ONLY"
+  },
+  "preregistered": [
+    "OR4_DUAL_TRIAD",
+    "OR4_ALTERNATING_HEXAGON",
+    "OR5_SHORT_DEFECT_CYCLE",
+    "OR5_FIVE_STATE_DEFECT_QUOTIENT"
+  ],
+  "open": [
+    "F19_rational_integral_admissibility",
+    "historical_dependency_audit",
+    "formal_hyperaccess_bridge"
+  ]
+}

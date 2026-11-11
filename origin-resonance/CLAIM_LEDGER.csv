@@ -1,19 +1,18 @@
 id,claim,status
-OR-C1,sup |h|/z = 2/5,CLOSED_SYMBOLIC
-OR-C2,4/9 is the exact structural constant,REFUTED
-OR-C3,sup L/A = 892/45,CLOSED_SYMBOLIC
-OR-C4,n<=19 after sharpening,CLOSED_SYMBOLIC
-OR-C5,F19 has a strict real chamber point,CLOSED_REAL
-OR-C6,F19 has an admissible rational/integral point,OPEN
-OR-C7,17/19 is historically independent of the 19 curves,OPEN_PARTIAL
-OR-C8,F17 has a primitive non-torsion strict-chamber point,CLOSED_EXACT
-OR-C9,rank F17(Q) >= 1,CLOSED_EXACT
-OR-C10,F17 has infinitely many rational chamber points,CLOSED
-OR-C11,n17 is the unique positive-rank chamber curve among n=1..19,PREREGISTERED_POSTSELECTION
-OR-C12,17 arithmetic / 19 envelope is a structural split,POSTHOC_CANDIDATE
-OR-C13,C/d divides g and D/d divides f on F_n,CLOSED_SYMBOLIC
-OR-C14,the obstruction prime is universally 23,NOT_CLAIMED
-OR-C15,first exact n6 class has DUAL_TRIAD signature,PREREGISTERED
-OR-C16,first exact n6 class has ALTERNATING_HEXAGON signature,PREREGISTERED_SECONDARY
-OR-C17,five is a universal short defect cell,PREREGISTERED
-OR-C18,a Paper III ratio is formally hyperaccess,NOT_CLAIMED
+OR-C1,Odd-index even-A cubic defect equals 4,CLOSED_SYMBOLIC
+OR-C2,The parity-to-four theorem proves universal binary-quaternary identity,NOT_CLAIMED
+OR-C3,F_n form a pencil with common origin O and boundary R,CLOSED_SYMBOLIC
+OR-C4,R=[1:2:2] is a double base point,CLOSED_SYMBOLIC
+OR-C5,#F17(F83)=89 and the reduction is smooth,CLOSED_EXACT
+OR-C6,44P reduces to R modulo 83,CLOSED_EXACT
+OR-C7,2R=-P modulo 83,CLOSED_EXACT
+OR-C8,88 is selected as #E(F83)-1 and 2*44,CLOSED_EXACT
+OR-C9,44P->48P is a chamber completion law,REFUTED
+OR-C10,88P->96P is a chamber completion law,REFUTED
+OR-C11,The integer triples (44 4 48) and (88 8 96) are homothetic,CLOSED_ARITHMETIC_POSTHOC
+OR-C12,Round021 one-edge survivors satisfy DUAL_TRIAD,FINITE_REFUTED_0_OF_10
+OR-C13,Round021 one-edge survivors satisfy ALTERNATING_HEXAGON,FINITE_REFUTED_0_OF_10
+OR-C14,OR4 prospective test on an exact n6 SCC has been adjudicated,NOT_TRIGGERED
+OR-C15,Five is a universal short defect cell,PREREGISTERED
+OR-C16,F17 rank(Q)>=1 and 17 is the unique positive-rank chamber index among all curves,PREREGISTERED_POSTSELECTION
+OR-C17,A Paper III ratio is formally hyperaccess,NOT_CLAIMED

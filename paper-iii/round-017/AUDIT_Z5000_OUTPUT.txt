@@ -1,0 +1,2 @@
+Z=5000 divisor_core=48518 primitive_core=682 cubic=0
+0:31.31 1664KB

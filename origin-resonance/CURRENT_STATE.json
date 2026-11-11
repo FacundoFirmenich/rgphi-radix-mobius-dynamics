@@ -1,29 +1,41 @@
 {
   "object": "RGPHI_ORIGIN_RESONANCE_BRANCH",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "date": "2026-11-11",
   "base_commit": "700fa58e7420ddbf3a53003eccd56a64524a50cf",
+  "canonical_source_round": "020",
   "authority": "SEPARATE_PROSPECTIVE_NO_CANONICAL_OVERRIDE",
   "closed": {
     "OR1_exact_supremum": "2/5",
     "OR2_continuous_supremum": "892/45",
     "OR2_integer_index_max": 19,
-    "OR2_F19_real_chamber": true
+    "OR2_F19_real_chamber": true,
+    "OR6_F17_non_torsion_chamber_point": true,
+    "OR6_F17_rank_lower_bound": 1,
+    "OR6_F17_infinite_rational_chamber_points": true,
+    "OR7_defect_completion": "C/d|g and D/d|f"
   },
   "refuted": {
     "four_ninths_is_sharp": true
   },
   "partial": {
-    "17_19_independence": "CURRENT_FORMAL_ONLY"
+    "17_19_independence": "CURRENT_FORMAL_ONLY",
+    "17_19_split_recurrence": "POSTHOC_STRONG_CANDIDATE",
+    "17_19_23_prime_ladder": "POSTHOC_LOW_AUTHORITY"
   },
   "preregistered": [
     "OR4_DUAL_TRIAD",
     "OR4_ALTERNATING_HEXAGON",
     "OR5_SHORT_DEFECT_CYCLE",
-    "OR5_FIVE_STATE_DEFECT_QUOTIENT"
+    "OR5_FIVE_STATE_DEFECT_QUOTIENT",
+    "OR6_FULL_19_CURVE_RANK_PROFILE",
+    "OR6_F19_RATIONAL_CHAMBER",
+    "OR7_OBSTRUCTION_DISTRIBUTION"
   ],
   "open": [
     "F19_rational_integral_admissibility",
+    "F17_coprime_integral_admissibility",
+    "all_19_Mordell_Weil_profiles",
     "historical_dependency_audit",
     "formal_hyperaccess_bridge"
   ]

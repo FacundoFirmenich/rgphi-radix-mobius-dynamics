@@ -1,9 +1,9 @@
 {
   "object": "RGPHI_ORIGIN_RESONANCE_BRANCH",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "date": "2026-11-11",
   "base_commit": "700fa58e7420ddbf3a53003eccd56a64524a50cf",
-  "canonical_source_round": "021",
+  "canonical_source_round": "022",
   "authority": "SEPARATE_PROSPECTIVE_NO_CANONICAL_OVERRIDE",
   "closed": {
     "OR1_exact_supremum": "2/5",
@@ -15,13 +15,16 @@
     "OR11_pencil_boundary": "[1:2:2] double",
     "OR12_F17_F83_point_count": 89,
     "OR12_boundary_return": "44P mod83 = R",
-    "OR12_group_relation": "2R=-P; 88P=-P",
-    "OR13_dynamic_44_48": "REFUTED",
-    "OR13_dynamic_88_96": "REFUTED"
+    "OR15_projective_helical_lift": true,
+    "OR15_content_receipt": "I(w)=log Delta_w",
+    "OR16_golden_conjugacy": "H^2=H+I",
+    "OR17_boundary_involution": "U^2=I; UO=-O; UR=[1:0:0]",
+    "OR18_dual_ninths": "sup(D/C-1)=sup(-h/z)_+=1/9"
   },
   "partial": {
     "17_19_split_recurrence": "POSTHOC_STRONG_CANDIDATE",
     "origin_boundary_architecture": "STRUCTURAL_RESONANCE_CANDIDATE",
+    "content_access_hyperaccess_bridge": "FORMAL_CANDIDATE_NOT_IDENTIFICATION",
     "trace5_boundary_sum5": "POSTHOC_EXACT",
     "66_equals_11_times_6": "POSTHOC_LOW_AUTHORITY"
   },
@@ -32,7 +35,8 @@
     "OR5_FIVE_STATE_DEFECT_QUOTIENT",
     "OR6_FULL_19_CURVE_RANK_PROFILE",
     "OR7_OBSTRUCTION_DISTRIBUTION",
-    "OR12_BOUNDARY_RETURN_DISTRIBUTION"
+    "OR12_BOUNDARY_RETURN_DISTRIBUTION",
+    "OR19_N6_DEFECT_SPECTRUM"
   ],
   "open": [
     "F17_Mordell_Weil_relation_P_R",
@@ -40,6 +44,6 @@
     "F19_rational_integral_admissibility",
     "elliptic_pencil_surface_structure",
     "complete_six_state_catalogue",
-    "formal_hyperaccess_bridge"
+    "formal_identification_with_broader_hyperaccess"
   ]
 }

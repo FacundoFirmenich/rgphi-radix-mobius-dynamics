@@ -2,46 +2,41 @@
   "object": "RGPHI_PAPER_III",
   "date": "2026-11-11",
   "status": "ACTIVE_RESEARCH_PREPRINT_NOT_FROZEN",
-  "theorem_stack": "v1.10",
+  "theorem_stack": "v1.11",
   "closed": {
     "all_high_rigidity_cardinalities": [2, 3, 4],
-    "five_state_counterfamily": true,
     "sharp_minimal_nonpermutation_cardinality": 5,
-    "five_state_global_strict_edge_uniqueness": true,
     "five_state_global_twenty_form_catalogue": true,
-    "universal_fixed_tuple_CRT_realization": true
+    "universal_fixed_tuple_CRT_realization": true,
+    "DF015_0015_coprime_completion": true,
+    "F17_trivial_rational_torsion": true,
+    "F17_rank_lower_bound": 1,
+    "F17_infinitely_many_rational_chamber_points": true
   },
-  "five_state_catalogue": {
-    "factor_specific_forms": 20,
-    "closed_impossible": 7,
-    "realized_form": "DF015-0007",
-    "realized_branch": "B2",
-    "open_forms_without_realization": 12,
-    "remaining_open_branches": 14
+  "near_realization": {
+    "curve_n": 17,
+    "point": [64233, 11741, 1138],
+    "cube_quotient": 25220421,
+    "gcd_C_D": 23,
+    "RGPHI_realization": false
   },
-  "exact_audits": {
-    "normal_form_candidate_tuples_N10000": 738129603,
-    "normal_form_hits": 1,
-    "known_graph_candidate_tuples_N15000": 430184128,
-    "known_graph_hits": 1,
-    "known_graph_bounds": "Q1<=15000,D<=45000"
-  },
-  "secondary_front": {
-    "form": "DF015-0015",
-    "elliptic_curves": 19,
-    "smooth_curves": 19,
-    "divisor_audit_z_max": 10000,
-    "divisor_candidates": 494021053,
-    "global_status": "OPEN_ELLIPTIC_REDUCED"
+  "finite_audits": {
+    "sparse_form_candidates_N20000": 73388969,
+    "sparse_form_hits": 0,
+    "slope_tests_H10000": 231020848,
+    "strict_chamber_points": 1,
+    "six_state_lift_candidates_N10000": 332535181,
+    "six_state_lift_hits": 0
   },
   "open": {
     "complete_five_state_arithmetic_realizability": true,
     "countergraph_state_side_global_uniqueness": true,
-    "global_DF015_0015": true,
-    "existence_for_all_cardinalities_at_least_five": true
+    "DF015_0015_coprime_integral_points": true,
+    "existence_for_all_cardinalities_at_least_six": true
   },
   "refuted": {
-    "global_all_high_permutation_rigidity": true
+    "global_all_high_permutation_rigidity": true,
+    "n17_displayed_point_is_RGPHI_realization": true
   },
-  "binding_gate": "RGPHI_ARITHMETIC_REALIZABILITY_020"
+  "binding_gate": "RGPHI_COPRIME_INTEGRAL_POINTS_021"
 }

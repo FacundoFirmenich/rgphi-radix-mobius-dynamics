@@ -1,0 +1,6 @@
+PASS
+family_rows=1001
+minimal_nonpermutation_cardinality=5
+branch=DF015-0007-B2
+global_all_high_permutation_rigidity=REFUTED
+DF015-0015=OPEN_WITH_SYMBOLIC_SUBCASE_AND_FINITE_AUDIT

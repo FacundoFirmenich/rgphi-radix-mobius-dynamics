@@ -1,0 +1,18 @@
+{
+  "repository_commit_pinned_by_notebook": "98dcb9650ad559594b71a9c2957859a07f49ace6",
+  "drive_base_path": "/content/drive/MyDrive/RGPHI_TAU5_217_CUSTODIA_2026-09-29/RGPHI_STAGE_B2_COLAB_2026-11-11",
+  "checkpoint_path": "checkpoint_t185/cur",
+  "work_path": "work",
+  "receipts_path": "receipts",
+  "run_mode_default": "pilot",
+  "execute_default": false,
+  "pilot_source_time": 185,
+  "pilot_end_time": 186,
+  "canonical_end_time": 211,
+  "full_checkpoint_audit_required": true,
+  "minimum_free_gb": 100,
+  "recommended_free_gb": 400,
+  "claim_change_on_pilot": false,
+  "claim_change_on_interruption": false,
+  "claim_change_on_no_hit_through_211": "tau5=212"
+}

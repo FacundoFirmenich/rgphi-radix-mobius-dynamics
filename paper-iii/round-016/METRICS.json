@@ -1,0 +1,24 @@
+{
+  "gate": "RGPHI_STRENGTHENING_ROUND_016",
+  "input_forms": 20,
+  "closed_forms": 7,
+  "remaining_forms": 13,
+  "remaining_arithmetic_branches": 15,
+  "closed_form_ids": [
+    "DF015-0009",
+    "DF015-0010",
+    "DF015-0013",
+    "DF015-0014",
+    "DF015-0016",
+    "DF015-0019",
+    "DF015-0020"
+  ],
+  "status": "OPEN_PARTIAL",
+  "verdicts": [
+    "PASS_PREDECESSOR_SHIFT",
+    "PASS_STRICT_T_FACTOR2_NO_GO",
+    "PASS_R3_PARTIAL_RECTANGLE_NO_GO",
+    "PASS_FULL_FIBRE_COLLISIONS",
+    "OPEN_FIVE_STATE_RIGIDITY"
+  ]
+}

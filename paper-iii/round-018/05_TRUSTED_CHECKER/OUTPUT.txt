@@ -1,0 +1,13 @@
+PASS
+raw_assignments=156250
+canonical_two_strict_profiles=840
+farkas_infeasible=728
+state_collision=56
+fibre_injectivity=50
+arithmetic_exclusions=6
+realisable_two_strict_profiles=0
+global_strict_edge_uniqueness_n5=PASS
+PASS_ROUND_018
+countergraph_base_class=PASS
+small_height_state_tuple_audit=UNIQUE_IN_JURISDICTION
+DF015_0015=OPEN_REDUCED

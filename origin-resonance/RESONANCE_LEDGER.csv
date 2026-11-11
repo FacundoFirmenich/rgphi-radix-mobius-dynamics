@@ -10,4 +10,9 @@ R-008,66 one-edge profiles equals 11 times 6,combinatorial,POSTHOC_LOW_AUTHORITY
 R-009,n6 dual triad / alternating hexagon,prospective,NOT_TRIGGERED_STRUCTURAL_NEGATIVE,0 of 10 structural survivors; zero exact hits,Await exact n6 SCC/catalogue
 R-010,17 arithmetic / 19 envelope,historical-arithmetic,POSTHOC_STRONG_CANDIDATE,F17 rank>=1; 19 exact envelope,Full rank profile open
 R-011,five minimum rupture,cross-branch structural,STRONG_RESONANCE_CANDIDATE,Rigidity 2 3 4; rupture 5,No causal identification
-R-012,hyperaccess bridge,conceptual,OPEN,No operational access functional,Do not rename ratios
+R-012,projective helical lift,structural,CLOSED_SYMBOLIC,Projective cycle plus log-content translation,Not a physical helix claim
+R-013,content-access receipt,operational,FORMAL_CANDIDATE,I=log Delta additive; alpha normalized in [0,1],Not identified with global hyperaccess
+R-014,golden Fibonacci conjugacy,built-in structural,CLOSED_SYMBOLIC,H^2=H+I; eigenvalues phi and -phi^-1,Not independent late-stage evidence
+R-015,boundary centrum involution,projective structural,CLOSED_SYMBOLIC,U^2=I; U fixes O projectively and sends R to [1:0:0],Ontology not claimed
+R-016,dual exact one-ninth endpoints,derived algebraic,CLOSED_SYMBOLIC,sup(D/C-1)=sup(-h/z)_+=1/9,Same chamber genealogy not independent
+R-017,n6 six-value defect spectrum,prospective derived,PREREGISTERED,d in {2,3,4,5,6,7},No preferred value predicted

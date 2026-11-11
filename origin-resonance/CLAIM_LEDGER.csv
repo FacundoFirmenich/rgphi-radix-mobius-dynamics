@@ -1,0 +1,12 @@
+id,claim,status
+OR-C1,sup |h|/z = 2/5,CLOSED_SYMBOLIC
+OR-C2,4/9 is the exact structural constant,REFUTED
+OR-C3,sup L/A = 892/45,CLOSED_SYMBOLIC
+OR-C4,n<=19 after sharpening,CLOSED_SYMBOLIC
+OR-C5,F19 has a strict real chamber point,CLOSED_REAL
+OR-C6,F19 has an admissible rational/integral point,OPEN
+OR-C7,17/19 is historically independent of the 19 curves,OPEN_PARTIAL
+OR-C8,first exact n6 class has DUAL_TRIAD signature,PREREGISTERED
+OR-C9,first exact n6 class has ALTERNATING_HEXAGON signature,PREREGISTERED_SECONDARY
+OR-C10,five is a universal short defect cell,PREREGISTERED
+OR-C11,a Paper III ratio is formally hyperaccess,NOT_CLAIMED

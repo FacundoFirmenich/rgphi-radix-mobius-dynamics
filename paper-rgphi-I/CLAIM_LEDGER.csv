@@ -1,0 +1,15 @@
+claim_id,claim,status,evidence
+RGI-001,Exact reduction laws,CLOSED_SYMBOLIC,paper-iii/theorems/DIAMETER_LE2_RIGIDITY_012.md
+RGI-002,Primitive projective lift and exact conjugacy,CLOSED_SYMBOLIC,paper-iii/object/RGPHI_OBJECT_DEFINITION_022.md
+RGI-003,Matrix/content cocycle,CLOSED_SYMBOLIC,paper-iii/theorems/PROJECTIVE_CONTENT_COCYCLE_022.md
+RGI-004,Cycle spectral identity and square discriminant,CLOSED_SYMBOLIC,paper-iii/theorems/CYCLE_SPECTRAL_THEOREM_022.md
+RGI-005,High-cycle reduction budget,CLOSED_SYMBOLIC,paper-iii/theorems/RGPHI_CYCLE_REDUCTION_BUDGET_012.md
+RGI-006,Diameter-two rigidity,CLOSED_SYMBOLIC,paper-iii/theorems/DIAMETER_LE2_RIGIDITY_012.md
+RGI-007,All high components of cardinality at most four are permutational,CLOSED_SYMBOLIC_PLUS_FINITE_CERTIFICATE,paper-iii/theorems/RGPHI_FOUR_STATE_RIGIDITY_013.md
+RGI-008,Exact infinite five-state nonpermutation counterfamily,CLOSED_SYMBOLIC_PLUS_CRT,paper-iii/theorems/RGPHI_FIVE_STATE_COUNTERFAMILY_017.md
+RGI-009,Sharp minimal nonpermutation cardinality equals five,CLOSED_SHARP,paper-iii/theorems/RGPHI_FIVE_STATE_COUNTERFAMILY_017.md
+RGI-010,Fixed cardinality has finitely many abstract defect-decorated types,CLOSED_SYMBOLIC,paper-iii/theorems/FINITE_MODULI_DECOMPOSITION_022.md
+RGI-011,Fixed primitive tuple has empty or one arithmetic-progression base fibre,CLOSED_SYMBOLIC,paper-iii/theorems/UNIVERSAL_CRT_REALIZATION_019.md
+RGI-012,Complete five-state arithmetic classification,NOT_CLAIMED,paper-iii/gates/RGPHI_MODULI_CLASSIFICATION_023.md
+RGI-013,Complete six-state classification,NOT_CLAIMED,paper-iii/gates/RGPHI_MODULI_CLASSIFICATION_023.md
+RGI-014,Physical law or physical model,NOT_CLAIMED,paper-rgphi-I/PUBLICATION_FREEZE_2026-11-11.md

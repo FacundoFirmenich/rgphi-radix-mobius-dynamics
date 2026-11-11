@@ -2,7 +2,7 @@
   "object": "RGPHI_PAPER_III",
   "date": "2026-11-11",
   "status": "ACTIVE_RESEARCH_PREPRINT_NOT_FROZEN",
-  "theorem_stack": "v1.6",
+  "theorem_stack": "v1.7",
   "closed": {
     "binary_scc_classification": true,
     "ternary_scc_classification": true,
@@ -13,18 +13,28 @@
     "all_high_rigidity_cardinalities": [2, 3, 4],
     "five_state_hamiltonian_TTSSS_impossible": true,
     "five_state_TTSS_core_extension_impossible": true,
-    "five_state_fibre_closure_quotient": true
+    "defect_one_lollipop_normal_form": true,
+    "strict_edge_predecessor_shift": true,
+    "strict_T_factor_two_impossible": true,
+    "factor_three_partial_rectangle_impossible": true,
+    "four_full_fibre_collision_forms_impossible": true
   },
   "partial": {
-    "round014_canonical_classes": 560,
-    "round015_exact_survivors": 24,
-    "round015_structural_normal_forms": 12
+    "round015_source_forms": 20,
+    "round016_closed_forms": 7,
+    "round016_remaining_forms": 13,
+    "round016_remaining_arithmetic_branches": 15
+  },
+  "historical_superseded_summary": {
+    "factor_specific_classes": 24,
+    "structural_forms": 12,
+    "status": "PRESERVED_BUT_NOT_BINDING_FOR_GATE_016"
   },
   "open": {
     "five_state_all_high_rigidity": true,
     "global_all_high_permutation_rigidity": true,
     "sharp_fixed_base_bound": true
   },
-  "binding_gate": "RGPHI_FIVE_STATE_NORMAL_FORM_ELIMINATION_016",
-  "claim_boundary": "Five-state gate is OPEN_PARTIAL; the 12 exact normal forms remain to be eliminated or realized."
+  "binding_gate": "RGPHI_STRICT_S_NORMAL_FORMS_017",
+  "claim_boundary": "Five-state gate is OPEN_PARTIAL; 13 forms / 15 exact arithmetic branches remain."
 }

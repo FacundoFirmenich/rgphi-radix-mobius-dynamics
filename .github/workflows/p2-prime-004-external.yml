@@ -1,0 +1,45 @@
+name: P2 PRIME-004 external clean-room replication
+
+on:
+  pull_request:
+    paths:
+      - 'research/p2-prime-004/**'
+      - '.github/workflows/p2-prime-004-external.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  replicate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Compile standalone checker
+        run: |
+          cd research/p2-prime-004/external_replication
+          g++ -std=c++17 -O2 -Wall -Wextra -pedantic p2_gate04_cleanroom.cpp -o p2_gate04_cleanroom
+      - name: Execute theorem audit
+        run: |
+          cd research/p2-prime-004/external_replication
+          ./p2_gate04_cleanroom P2_EXTERNAL_REPLICATION_RECEIPT.json | tee P2_EXTERNAL_RUNNER_OUTPUT.txt
+          grep -F 'PASS_EXTERNAL_RUNNER_CLEANROOM' P2_EXTERNAL_RUNNER_OUTPUT.txt
+          python3 - <<'PY'
+          import json
+          p='P2_EXTERNAL_REPLICATION_RECEIPT.json'
+          d=json.load(open(p))
+          assert d['status']=='PASS_EXTERNAL_RUNNER_CLEANROOM'
+          assert d['power2_rows_verified']==24552
+          assert d['crt6_rows_verified']==6
+          assert d['independent_team_validation'] is False
+          print('PASS_RECEIPT')
+          PY
+          sha256sum p2_gate04_cleanroom.cpp P2_EXTERNAL_REPLICATION_RECEIPT.json P2_EXTERNAL_RUNNER_OUTPUT.txt > P2_EXTERNAL_REPLICATION_SHA256SUMS.txt
+      - name: Upload receipt
+        uses: actions/upload-artifact@v4
+        with:
+          name: p2-prime-004-external-replication-${{ github.sha }}
+          path: |
+            research/p2-prime-004/external_replication/P2_EXTERNAL_REPLICATION_RECEIPT.json
+            research/p2-prime-004/external_replication/P2_EXTERNAL_RUNNER_OUTPUT.txt
+            research/p2-prime-004/external_replication/P2_EXTERNAL_REPLICATION_SHA256SUMS.txt

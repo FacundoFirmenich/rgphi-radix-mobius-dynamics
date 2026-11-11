@@ -1,0 +1,43 @@
+{
+  "external_identity": "RGPHI_I",
+  "internal_provenance": "PAPER_III",
+  "title": "Primitive projective radix–Mobius dynamics: content cocycles and a sharp rigidity threshold",
+  "date": "2026-11-11",
+  "language": "English",
+  "main_pages": 14,
+  "supplement_pages": 4,
+  "mathematical_freeze": "INTERNAL_CANDIDATE_FROZEN",
+  "preprint_status": "READY_AFTER_EXTERNAL_REVIEW_AND_ARCHIVAL_FREEZE",
+  "journal_status": "NOT_SUBMITTED",
+  "external_validation": "PENDING",
+  "recommended_arxiv_primary": "math.DS",
+  "recommended_arxiv_crosslist": "math.NT",
+  "recommended_journal_route": [
+    "Journal of Number Theory",
+    "Ergodic Theory and Dynamical Systems (stretch after strong external review)",
+    "Experimental Mathematics"
+  ],
+  "main_claims": {
+    "primitive_projective_lift": "CLOSED_SYMBOLIC",
+    "content_cocycle": "CLOSED_SYMBOLIC",
+    "cycle_spectral_identity": "CLOSED_SYMBOLIC",
+    "cycle_reduction_budget": "CLOSED_SYMBOLIC",
+    "rigidity_cardinalities_1_to_4": "CLOSED",
+    "five_state_infinite_counterfamily": "CLOSED_SYMBOLIC_PLUS_CRT",
+    "minimal_nonpermutation_cardinality": 5,
+    "fixed_cardinality_finite_types": "CLOSED_SYMBOLIC",
+    "fixed_tuple_base_fibre": "EMPTY_OR_ONE_ARITHMETIC_PROGRESSION"
+  },
+  "computer_assisted_boundary": {
+    "finite_nonsquare_rows": 37,
+    "independent_checker": true,
+    "counterfamily_finite_replay_is_proof": false,
+    "counterfamily_infinite_claim_basis": "GENERALIZED_CRT"
+  },
+  "binding_external_gates": [
+    "two specialist reviews",
+    "clean-room reproduction",
+    "closed-database priority chaining",
+    "immutable arXiv/Zenodo release"
+  ]
+}

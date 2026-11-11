@@ -1,0 +1,41 @@
+{
+  "candidate": "RGPHI_I_2026-11-11",
+  "gates": [
+    {
+      "id": "EXT-01",
+      "name": "Daniel Barraco adversarial mathematical review",
+      "status": "READY_FOR_EXTERNAL_ACTION",
+      "promotion_condition": "written assessment of theorem correctness and completeness"
+    },
+    {
+      "id": "EXT-02",
+      "name": "Independent arithmetic-dynamics specialist review",
+      "status": "READY_FOR_EXTERNAL_ACTION",
+      "promotion_condition": "written assessment of novelty, literature and venue"
+    },
+    {
+      "id": "EXT-03",
+      "name": "Clean-room reproduction",
+      "status": "READY_FOR_EXTERNAL_ACTION",
+      "promotion_condition": "independent compilation and exact checker replay"
+    },
+    {
+      "id": "EXT-04",
+      "name": "Closed-database priority chaining",
+      "status": "ACTIVE_PARTIAL",
+      "promotion_condition": "MathSciNet/zbMATH review of nearest arithmetic-dynamics and finite-orbit literature"
+    },
+    {
+      "id": "EXT-05",
+      "name": "Immutable archival release",
+      "status": "DEPENDENCY_BLOCKED",
+      "promotion_condition": "arXiv submission and Zenodo/GitHub release after EXT-01 through EXT-04"
+    },
+    {
+      "id": "EXT-06",
+      "name": "Journal submission",
+      "status": "DEPENDENCY_BLOCKED",
+      "promotion_condition": "journal chosen after external reviews; signed final candidate"
+    }
+  ]
+}

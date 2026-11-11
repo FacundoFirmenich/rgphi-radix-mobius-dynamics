@@ -1,0 +1,24 @@
+{
+  "entrypoint": "code/check_publication.py",
+  "expected_output_file": "metadata/CHECK_PUBLICATION_OUTPUT.txt",
+  "exact_arithmetic": true,
+  "floating_point_used_for_proofs": false,
+  "certificates": [
+    "certificates/NONSQUARE_CERTIFICATE_J1_37.csv",
+    "certificates/COUNTERFAMILY_CYCLE_CERTIFICATE.json",
+    "certificates/CRT_CONGRUENCES.csv",
+    "certificates/STATES_AND_ACTIONS.csv",
+    "certificates/ARITHMETIC_PROGRESSION.json"
+  ],
+  "independent_checkers": [
+    "code/check_nonsquare_certificate.py",
+    "code/trusted_checker_017.py",
+    "code/trusted_checker_017.cpp",
+    "code/check_object_and_cocycle_022.py",
+    "code/check_finite_type_bound_022.py"
+  ],
+  "main_pdf": "paper/main.pdf",
+  "supplement_pdf": "supplement/supplement.pdf",
+  "latex_engine": "pdfLaTeX",
+  "bibliography_tool": "bibtex8"
+}

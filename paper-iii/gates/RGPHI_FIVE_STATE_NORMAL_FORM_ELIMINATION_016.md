@@ -1,5 +1,8 @@
 # RGΦ Five-State Normal-Form Elimination 016
 
+> **GATE HISTÓRICO:** la orden de procesar 12 formas está supersedida. El bundle Round 015 contiene 20 formas de defecto uno y Round 016 trata ese dominio condicionado; no está establecida la exhaustividad para todas las SCC de cinco estados. Gate actual: `GLOBAL_STRICT_EDGE_EXHAUSTIVENESS_017.md`.
+
+
 Starting from the 12 exact structural normal forms in `DIOPHANTINE_NORMAL_FORMS_12.json.gz`:
 
 1. derive a minimal integer parameterization for each form;

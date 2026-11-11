@@ -1,5 +1,8 @@
 # RGΦ Five-State Diophantine Quotient 015 — fibre closure theorem
 
+> **ADVERTENCIA DE ALCANCE:** el quotient numérico 560→24→12 de este documento es histórico, no debe utilizarse como conclusión canónica ni exhaustiva. El archivo original se conserva para trazabilidad; el bundle Round 015 establece 20 formas bajo la hipótesis adicional de una arista estricta global. Los lemas de fibra deben evaluarse separadamente de esa enumeración. Auditoría: `../audits/ROUND015_016_SCOPE_AUDIT_2026-11-11.md`.
+
+
 ## Status
 
 `OPEN_PARTIAL`

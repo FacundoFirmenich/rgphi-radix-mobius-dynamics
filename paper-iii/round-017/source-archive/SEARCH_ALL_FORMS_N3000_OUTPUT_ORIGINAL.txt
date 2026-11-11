@@ -1,0 +1,16 @@
+precompute roots to 9000
+form 0001 candidates=641616 found=0
+form 0002 candidates=604 found=0
+form 0003 candidates=11087981 found=0
+form 0004 candidates=2 found=0
+form 0005 candidates=641616 found=0
+form 0006 candidates=754 found=0
+FOUND 0007 406/557 406/731 712/731 1218/1265 712/1265
+form 0007 candidates=456036 found=1
+form 0008 candidates=1 found=0
+form 0011 candidates=12234316 found=0
+form 0012 candidates=2 found=0
+form 0015 candidates=5993784 found=0
+form 0017 candidates=12234316 found=0
+form 0018 candidates=1 found=0
+elapsed=24.78

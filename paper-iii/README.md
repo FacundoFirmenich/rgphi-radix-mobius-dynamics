@@ -1,31 +1,37 @@
-# RGΦ Paper III — estado canónico v1.9 (2026-11-11)
+# RGΦ Paper III — estado canónico v1.10 (2026-11-11)
 
-Objeto exclusivo: trampas modulares, SCC racionales, cuencas universales y rigidez all-high. Paper I, Paper II, Stage B2 y otras líneas no se modifican.
+Objeto exclusivo: trampas modulares, SCC racionales, cuencas universales y estructura all-high. Paper I, Paper II, Stage B2 y otras líneas no se modifican.
 
-## Resultado principal
+## Resultado central
 
 - Rigidez all-high probada para cardinalidades 2, 3 y 4.
-- Round 017: contrafamilia infinita exacta de cardinalidad cinco; umbral mínimo de ruptura = **5**; rigidez permutacional global **REFUTADA**.
-- Round 018: unicidad global de la arista estricta para una SCC all-high no permutacional de cinco estados, bajo certificado combinatorio y racional exacto (teorema asistido por ordenador).
-- El quotient defect-one/lollipop de Round 015 ya tiene resuelta para n=5 su hipótesis adicional de unicidad; conservar la auditoría histórica sin borrarla.
-- Clasificación CRT completa de las bases para cada tupla primitiva que realice el grafo conocido; **no** se prueba unicidad global de la tupla.
-- La rama excepcional de DF015-0015 está cerrada; su sector general continúa **OPEN_REDUCED**.
+- Cardinalidad 5 admite una contrafamilia infinita exacta no permutacional; el umbral mínimo de ruptura es 5 y la rigidez global está refutada.
+- Round 018 prueba unicidad global del edge estricto en toda SCC no permutacional de cinco estados.
+- Round 019 promueve las veinte formas defect-one a clasificación combinatoria globalmente exhaustiva de la ruptura en cardinalidad cinco.
+- Para cualquier tupla primitiva fija, la realización en bases es una dicotomía CRT exacta: ninguna base o una única progresión aritmética completa.
+- DF015-0015 queda reducido a diecinueve curvas elípticas lisas, con restricciones adicionales de divisibilidad y primitividad.
 
-## Canon de Round 018
+## Estado aritmético de las veinte formas
 
-- [Teorema de unicidad strict-edge](theorems/FIVE_STATE_STRICT_EDGE_UNIQUENESS_018.md)
-- [Clasificación CRT del grafo realizado](theorems/COUNTERGRAPH_CRT_CLASSIFICATION_018.md)
-- [Reducción de divisores DF015-0015](theorems/DF015_0015_DIVISOR_REDUCTION_018.md)
-- [Theorem stack v1.9](PAPER_III_THEOREM_STACK_v1_9.md)
-- [Certificados y verificación Round 018](round-018/)
-- [Gate 019](gates/RGPHI_FIVE_STATE_CLASSIFICATION_019.md)
+- 7 formas imposibles;
+- DF015-0007 realizada en la rama B2; B1 permanece abierta;
+- 12 formas sin realización conocida;
+- clasificación aritmética completa: OPEN.
+
+## Canon Round 019
+
+- [Catálogo global de veinte formas](theorems/FIVE_STATE_GLOBAL_CATALOGUE_019.md)
+- [Teorema CRT universal](theorems/UNIVERSAL_CRT_REALIZATION_019.md)
+- [Reducción elíptica de DF015-0015](theorems/DF015_0015_ELLIPTIC_REDUCTION_019.md)
+- [Theorem stack v1.10](PAPER_III_THEOREM_STACK_v1_10.md)
+- [Round 019](round-019/)
+- [Gate 020](gates/RGPHI_ARITHMETIC_REALIZABILITY_020.md)
 
 ## Controles de autoridad
 
-- `FIVE_STATE_GLOBAL_STRICT_EDGE_UNIQUENESS = CLOSED_COMPUTER_ASSISTED_EXACT`;
+- `FIVE_STATE_COMBINATORIAL_CLASSIFICATION = CLOSED_COMPUTER_ASSISTED_EXACT`;
+- `FIVE_STATE_ARITHMETIC_REALIZABILITY_CLASSIFICATION = OPEN`;
 - `GLOBAL_ALL_HIGH_PERMUTATION_RIGIDITY = REFUTED`;
-- `COMPLETE_FIVE_STATE_CLASSIFICATION = OPEN`;
-- `DF015_0015_NONEXCEPTIONAL = OPEN_REDUCED`;
+- `ROUND017_STATE_TUPLE_GLOBAL_UNIQUENESS = OPEN`;
+- `DF015_0015 = OPEN_ELLIPTIC_REDUCED`;
 - `EXISTENCE_FOR_EVERY_N_GE5 = OPEN`.
-
-La prueba asistida por ordenador depende de la exhaustividad del generador de perfiles y de los certificados correspondientes. El bundle fuente íntegro Round 018 sigue identificado por SHA-256 en `round-018/README.md`, incluidos los componentes de auditoría no duplicados en este mirror de trabajo.

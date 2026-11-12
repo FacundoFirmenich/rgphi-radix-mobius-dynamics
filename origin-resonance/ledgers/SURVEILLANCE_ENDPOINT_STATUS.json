@@ -1,14 +1,14 @@
 {
   "schema": "origin-resonance/surveillance-endpoints/1",
-  "date": "2026-11-11",
+  "date": "2026-11-12",
   "canonical_branch": "main",
-  "canonical_head": "5b9c424c2749de16f3d3246dc20607a106a76774",
-  "canonical_head_date_utc": "2026-11-11T19:39:11Z",
+  "canonical_head": "b5fcdc4b50faedeae00de9fb46d04e3113295de1",
+  "canonical_head_date_utc": "2026-11-12T02:50:49Z",
   "authority": "BRANCH_ONLY_NO_CANONICAL_PROMOTION",
-  "source_paper_iii_state": "v1.13 / Gate 023 / new source RC2 is bounded reviewer audit without canonical claim promotion",
+  "source_paper_iii_state": "v1.13 / Gate 023; RC3 source archive added to main; internally verified source snapshot, no promotion to canonical master claim ledger",
   "six_state": {
     "exact_complete_catalogue": "OPEN",
-    "new_exact_six_state_minimal_nonpermutation_classes": "NONE_IN_LATEST_VERIFIED_CANONICAL_UPDATE",
+    "new_exact_six_state_minimal_nonpermutation_classes": "NONE_IN_RC3",
     "OR4_DUAL_TRIAD": "NOT_TRIGGERED",
     "OR4_ALTERNATING_HEXAGON": "NOT_TRIGGERED",
     "OR5_SHORT_DEFECT_CYCLE": "NOT_TRIGGERED_FOR_N_GE_6",
@@ -24,7 +24,8 @@
     "OR19_realized_defects": "NOT_ENUMERATED",
     "OR19_complete_spectrum_test": "NOT_TRIGGERED",
     "old_one_edge_structural_survivors": "NEGATIVE_0_OF_10_NOT_PROSPECTIVE",
-    "old_three_n6_lift_searches": "BOUNDED_NEGATIVE_NOT_COMPLETE_CATALOGUE"
+    "old_three_n6_lift_searches": "BOUNDED_NEGATIVE_NOT_COMPLETE_CATALOGUE",
+    "last_canonical_update_scope": "RC3 N_LE_5_ONLY; NOT AN N6 CATALOGUE"
   },
   "cycle_receipts": {
     "n5_counterfamily_simple_cycles": 6,
@@ -35,7 +36,9 @@
     "strict_cycle_alpha": "log(3)/(4*log(B_k))",
     "remaining_five_cycles": "Delta=1; log pitch=0; alpha=0",
     "fixed_base_B2_40_n_le_5": "16 closed components; all permutation; all periodic products Delta=1",
-    "source_boundary": "The five-state counterfamily is previously canonical, not a newly discovered six-state class"
+    "source_boundary": "The five-state counterfamily is previously canonical, not a newly discovered six-state class",
+    "rc3_new_canonical_cycle_count": 0,
+    "rc3_note": "RC3 proves exact content identity for directed cycles; no new canonical periodic object or positive cycle supplied; existing six receipts retained unchanged."
   },
   "elliptic_frontier": {
     "uniform_curves": 19,
@@ -49,26 +52,52 @@
     "n19_arithmetic": "OPEN",
     "uniform_2026_11_11_survey": "231020848 slope tests across n=1..19; one strict chamber hit at n=17; finite height <=10000",
     "obstruction_general": "d=gcd(2A-z,2A-w); coprime completion requires d=1",
-    "no_posthoc_prime_selection": true
+    "no_posthoc_prime_selection": true,
+    "rc3_impact": "NO_NEW_ELLIPTIC_RESULTS; all nineteen curve rows and F17/F19 open boundaries retained"
   },
   "structural": {
     "projective_helical_lift": "ALREADY_PROVED_SYMBOLIC_NO_NEW_OBJECT_LEVEL_ADJUDICATION",
     "golden_conjugacy": "ALREADY_BUILT_IN_NOT_INDEPENDENT_EVIDENCE",
     "projective_centrum_involution": "ALREADY_PROVED_SYMBOLIC_NO_NEW_OBJECT_LEVEL_ADJUDICATION",
     "dual_one_ninth": "ALREADY_DERIVED_NO_INDEPENDENT_CONFIRMATION",
-    "general_hyperaccess_identification": "NOT_CLAIMED"
+    "general_hyperaccess_identification": "NOT_CLAIMED",
+    "rc3_new_object_level_endpoint_evidence": "NONE",
+    "rc3_exact_cycle_identity": "ALGEBRAIC_REINFORCEMENT_OF_CONTENT_CALCULUS_NOT_AN_INDEPENDENT_NEW_HELICAL_OBJECT"
   },
   "newest_canonical_audit": {
-    "sha": "5b9c424c2749de16f3d3246dc20607a106a76774",
+    "sha": "b5fcdc4b50faedeae00de9fb46d04e3113295de1",
+    "title": "RC3 exact bounded census and symbolic proof-source snapshot",
+    "source_path": "paper-iii/reviewer/rgphi-i-2026-11-11/rc3",
     "B_min": 2,
-    "B_max": 17,
-    "candidates": 82387,
-    "closed_scc": 4,
+    "B_max": 60,
+    "bases_total": 59,
+    "exact_enumerated_bases": 47,
+    "cycle_budget_deduction_bases": 12,
+    "enumerated_candidate_universe_total": 2210941,
+    "closed_scc_total_reported_in_rc3": 14,
+    "closed_scc_total_authority": "PARTIAL_ENUMERATED_ONLY_NOT_THE_FULL_B2_60_TOTAL",
+    "historical_closed_scc_in_skipped_bases_B29_B31_B37": 6,
+    "closed_scc_lower_bound_combined_sources": 20,
     "nonpermutation_closed_n_le_5": 0,
-    "replay": "PASS_16_OF_16",
-    "matched_existing_B2_40": "PASS_16_OF_16",
-    "verification_scope": "FINITE_BOUNDED_ONLY",
-    "original_checker_proof_independently_verified": false
+    "crosscheck_covered_bases_B2_40": 34,
+    "crosscheck_discrepancies_in_exact_enumerated_overlap": 0,
+    "data_warning": "RC3 zero/blank closed-SCC entries at 12 cycle-budget-only bases do not count permutation closed SCCs. B29/B31/B37 had 1/3/2 exactly witnessed closed SCCs in prior OR20; total 14 is only for 47 enumerated bases. At least 20 SCCs from combined sources; full total over 59 bases not enumerated.",
+    "claimed_checker_scope": "Source provenance reports independently re-enumerated optimized B2..18 and reference B2..10 only; 42 bases were not fully independently recomputed; per-base negative classification is source-declared not new clean-room certification.",
+    "source_unchanged": true
   },
-  "posthoc_boundary": "No historical 17/19, numerological or already built-in signature is elevated to prospective evidence."
+  "posthoc_boundary": "No historical 17/19, numerological or already built-in signature is elevated to prospective evidence. RC3 bounded RC2/OR20 cross-audit discrepancies are explicitly retained; zero strict-defect observations do not prove global absence.",
+  "previous_canonical_audits": [
+    {
+      "sha": "5b9c424c2749de16f3d3246dc20607a106a76774",
+      "B_min": 2,
+      "B_max": 17,
+      "candidates": 82387,
+      "closed_scc": 4,
+      "nonpermutation_closed_n_le_5": 0,
+      "replay": "PASS_16_OF_16",
+      "matched_existing_B2_40": "PASS_16_OF_16",
+      "verification_scope": "FINITE_BOUNDED_ONLY",
+      "original_checker_proof_independently_verified": false
+    }
+  ]
 }

@@ -34,7 +34,7 @@ def archived(ref, path):
 
 def verify_git_blob(data, expected):
     calculated = hashlib.sha1(
-        b"blob " + str(len(data)).encode() + b"\\x00" + data
+        b"blob " + str(len(data)).encode() + bytes([0]) + data
     ).hexdigest()
     assert calculated == expected, (calculated, expected)
 

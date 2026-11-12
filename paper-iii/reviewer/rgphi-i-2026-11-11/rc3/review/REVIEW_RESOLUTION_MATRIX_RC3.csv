@@ -1,0 +1,39 @@
+id,review_issue,resolution,status,evidence
+R01,Section 5 not auditable,Expanded strict-T and strict-S congruence chains and added supplement audit tables,RESOLVED,en/main.tex; supp_en/supplement.tex
+R02,Origin of A|u^2-t^2 and D|A^2-s^2 omitted,Derived both from the forced 2-cycles line by line,RESOLVED,en/main.tex Section 5; supplement Section 2
+R03,Three strict-S divisibilities asserted without derivation,Added fibre congruences and exact differences of squares,RESOLVED,en/main.tex; supplement Section 2
+R04,"Quotient bounds m(p,w) insufficiently uniform",Added explicit derivatives and factored boundary inequalities on full open regions,RESOLVED,en/main.tex Section 5
+R05,Range 1<=j<=37 unexplained,Proved stronger range 1<=j<=18 from high inequalities,RESOLVED,en/main.tex Lemma nonsquare
+R06,Finite certificate presented as computer-assisted,Replaced logical premise by a hand proof modulo 4 5 11 17; code is redundant,RESOLVED,en/main.tex; code/check_nonsquare_18.py
+R07,Parity of C in m=7 branch omitted,Added mod 2 and mod 8 argument,RESOLVED,en/main.tex Section 5
+R08,Implicit fixed-point congruences B=1 mod A or Q,Made congruence origins explicit in proof and supplement tables,RESOLVED,supp_en/supplement.tex
+R09,Unjustified T/S exchange symmetry,Removed the symmetry claim and treats strict T and strict S separately,RESOLVED,en/main.tex Lemma normal form
+R10,Fibre injectivity used but not proved,Added symmetric primitive-fibre injectivity lemma,RESOLVED,en/main.tex Lemma fibre-injectivity
+R11,Theorem hierarchy inflated,Downgraded cocycle spectral finite-type and CRT statements to proposition/corollary where appropriate,RESOLVED,en/main.tex
+R12,Spectral identity unused in main proof,Reframed as structural corollary and based budget on a new exact cycle identity,RESOLVED,en/main.tex Sections 3-4
+R13,Infinitude of base family presented as independent depth,Reframed as one exact five-state realization whose full base fibre follows by CRT,RESOLVED,abstract; Theorem five-action
+R14,Six CRT congruences not independent,Reduced to five independent congruences and records the mod-406 consequence,RESOLVED,en/main.tex Section 6
+R15,Counterexample appeared numerological,Added modular-involution lemma explaining all four defect-one 2-cycles,RESOLVED,en/main.tex Lemma involutive-fibres
+R16,GCD constancy on progression not proved,Added lcm/residue argument for every local gcd including gcd(B_t 1218)=3,RESOLVED,en/main.tex Theorem five-action
+R17,No base-minimality data,Added exact B=2..60 census with theorem-defined finite universe; no nonpermutation SCC <=5,RESOLVED_WITH_BOUNDARY,audit/exact_census_B2_60.csv
+R18,Fixed-base computability claim overstrong,Proved bounded-(B n) decision and states n_min(B) only effectively searchable when finite,RESOLVED,en/main.tex Section 8
+R19,No exact finite-base theorem,Added divisor-universe theorem p q | B^(n-1) lcm(B^k-1),NEW_THEOREM,en/main.tex Theorem fixed-base
+R20,Content cocycle novelty overstated,Added determinant-content lemma and explicitly identifies degree-one resultant/height context,RESOLVED,en/main.tex Proposition content-determinant
+R21,Generality under projective coordinate changes unclear,Proved invariance of primitive content under GL_2(Z) conjugacy,NEW_THEOREM,en/main.tex Proposition content-determinant
+R22,Scientific niche unclear,Defines finite arithmetic subdynamics as labelled graph plus primitive coordinates plus Diophantine realization,RESOLVED,introduction; Section 9
+R23,Comparison with Kurka insufficient,Added technical positioning table and precise difference from coding/convergence questions,RESOLVED,en/main.tex Table positioning
+R24,Piecewise Mobius literature treated vaguely,Added Calta-Kraaikamp-Schmidt and Leriche-Sienra with explicit measure-theoretic boundary,RESOLVED,Section 9; references.bib
+R25,Connections to x-b invariant rational points absent,Added survivor-set relation and recent rational Cantor literature,RESOLVED,Section 9; references.bib
+R26,Shift radix and rational-base systems absent,Added explicit neighboring paradigms and references,RESOLVED,Section 9; references.bib
+R27,Rigidity terminology potentially misleading,Changed title and main language to sharp permutation threshold while retaining rigidity only for standard local criteria,RESOLVED,title; abstract
+R28,Physical analogies inflated significance,Removed physical analogy from the manuscript,RESOLVED,en/main.tex
+R29,Scope/completeness rhetoric too broad,States exact scope in introduction abstract comparison table and conclusion,RESOLVED,en/main.tex
+R30,Grafo epistémico could be mistaken for evidence,States it is navigation/provenance metadata only,RESOLVED,Section 10; supplement
+R31,Cross references/language inconsistent,English canonical version fully normalized; Spanish cleveref/babel labels added,RESOLVED,en/main.tex; es/main.tex
+R32,MSC classification weak,Updated primary to 37P35 and added 11D09 with 37E05/37B10 secondary,RESOLVED,metadata
+R33,Submission package not bilingual,Delivered EN/ES LaTeX and PDF for article and supplement,RESOLVED,deliverables
+R34,Reproducibility layer lacks independent bounded-census check,Cross-checked reference and optimized implementations for B=2..17 and added census checker,RESOLVED,audit/census_reference_B2_17.jsonl; audit/check_census_B2_60.py
+R35,Complete five-state arithmetic classification requested,Explicitly reserved for companion work; not silently claimed,OPEN_OUTSIDE_SCOPE,claim boundary
+R36,Existence for every n>=5 requested,Not proved and not claimed,OPEN_OUTSIDE_SCOPE,claim boundary
+R37,Ergodicity pressure or Lyapunov theory suggested,Not added without a genuine invariant-measure theorem,DECLINED_AS_SCOPE_INFLATION,Section 9
+R38,Formal Lean/Coq proof suggested,Not required for correctness; retained as future optional enhancement,OPTIONAL_FUTURE,submission strategy

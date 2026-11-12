@@ -1,0 +1,9 @@
+# RGΦ-I RC3: source provenance and claim authority
+
+Canonical source: RGPHI_RC3_COMPLETE.zip (Library, 2026-11-11); cross-reference RGPHI_RC3_REPO_PATCH.zip. The files in this directory are an RC3 source snapshot, not replacements for the authoritative Paper III theorem stack or claim ledger. Original checkers and full bounded-census CSV remain in the named upstream source packages.
+
+Verification performed for this sync: upstream ZIP SHA-256 matches the published RC3 checksum; 18-case nonsquare checker PASS; 1001-iteration counterfamily Python checker PASS; C++17 counterfamily checker PASS; projective content/spectral-cycle checker PASS; declared census CSV internal checker PASS. The optimized finite divisor enumeration was independently re-executed and matched all declared columns for bases 2 through 18; the separate reference enumerator matched bases 2 through 10. The remaining 42 bases were not fully independently recomputed in this sync; 12 of the 59 rows are cycle-budget deductions, not divisor-universe enumerations.
+
+The unmodified release's 'make verify' fails because code/check_manuscript_consistency.py points to en/main.tex, es/main.tex, supp_en/supplement.tex and supp_es/supplement.tex, while the extracted release uses article_en/ and article_es/ paths. With temporary symlinks mapping those source paths, the manuscript consistency checker passed. This is a packaging-path issue, not an independent clean-room proof certification.
+
+Scientific authority: Paper III canonical theorem stack remains v1.13, binding Gate 023. All previous OPEN and OPEN_PARTIAL claims, including complete five-state arithmetic classification and effective relative-integral enumeration, retain their statuses. RC3 reports no external mathematical referee or independent clean-room certification, so its new theorem notes are preserved as internally reviewed source records rather than silently promoted into the master ledger.

@@ -1,0 +1,9 @@
+{
+  "bases": 59,
+  "exact_divisor_universe": 47,
+  "cycle_budget_obstruction": 12,
+  "candidate_states_total": 2210941,
+  "closed_scc_total": 14,
+  "nonpermutation_scc_le_5": 0,
+  "conclusion": "No nonpermutation high closed SCC of cardinality at most five for 2 <= B <= 60."
+}

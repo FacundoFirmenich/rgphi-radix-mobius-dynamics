@@ -1,0 +1,27 @@
+{
+  "bases": 59,
+  "mathematical_partition": {
+    "symbolically_ruled_out_gcd_B_6_eq_1": 19,
+    "remaining_bases": 40
+  },
+  "computational_methods": {
+    "exact_divisor_universe_runs": 47,
+    "redundant_exact_runs_inside_symbolic_set": 7,
+    "cycle_budget_only": 12
+  },
+  "candidate_states_total_across_exact_runs": 2210941,
+  "closed_scc_total_across_exact_runs": 14,
+  "bases_with_nonempty_closed_scc": [
+    7,
+    13,
+    16,
+    19,
+    21,
+    25,
+    36,
+    46,
+    57
+  ],
+  "nonpermutation_scc_le_5": 0,
+  "conclusion": "No nonpermutation high closed SCC of cardinality at most five for 2 <= B <= 60."
+}

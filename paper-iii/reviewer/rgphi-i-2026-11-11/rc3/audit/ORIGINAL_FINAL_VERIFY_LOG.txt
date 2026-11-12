@@ -1,0 +1,17 @@
+python3 code/check_nonsquare_18.py
+PASS nonsquare_18
+python3 code/check_counterfamily.py
+PASS counterfamily_1001
+five_independent_CRT_congruences=PASS
+involutive_fibres=PASS
+python3 code/check_projective_content.py
+PASS projective_content_spectral_cycle
+python3 audit/check_census_B2_60.py
+PASS
+bases=2..60
+nonpermutation_scc_le_5=0
+python3 code/check_manuscript_consistency.py
+PASS bilingual_manuscript_consistency
+g++ -std=c++17 -O2 code/trusted_checker.cpp -o /tmp/rgphi_rc3_checker
+/tmp/rgphi_rc3_checker
+PASS C++ counterfamily_1001

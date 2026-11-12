@@ -1,0 +1,23 @@
+id,title,status,evidence,layer
+D01,Primitive radix–Möbius system,DEFINITION,en/main.tex,Object
+P01,Exact local reduction laws,PROVED_SYMBOLIC,en/main.tex,Object
+P02,Determinant controls primitive content,PROVED_SYMBOLIC,en/main.tex,Structure
+P03,Unimodular invariance of content,PROVED_SYMBOLIC,en/main.tex,Structure
+P04,Fibre injectivity,PROVED_SYMBOLIC,en/main.tex,Structure
+P05,Defect-free components are Schreier graphs,PROVED_SYMBOLIC,en/main.tex,Structure
+P06,Content cocycle,PROVED_SYMBOLIC,en/main.tex,Cycle calculus
+P07,Periodic spectral identity,PROVED_SYMBOLIC,en/main.tex,Cycle calculus
+P08,Exact cycle content identity,PROVED_SYMBOLIC,en/main.tex,Cycle calculus
+P09,High-cycle budget,PROVED_SYMBOLIC,en/main.tex,Cycle calculus
+P10,Diameter-two permutation criterion,PROVED_SYMBOLIC,en/main.tex,Rigidity
+P11,Four-state permutation theorem,PROVED_SYMBOLIC_PLUS_FINITE_LEMMA,en/main.tex,Rigidity
+P12,Exact five-state realization,PROVED_SYMBOLIC_PLUS_CRT,en/main.tex,Realization
+P13,Sharp permutation threshold equals five,PROVED_SHARP,en/main.tex,Threshold
+P14,Finitely many abstract types at fixed cardinality,PROVED_SYMBOLIC,en/main.tex,Effective theory
+P15,Fixed tuple has empty or one CRT base fibre,PROVED_SYMBOLIC,en/main.tex,Effective theory
+P16,Fixed-base bounded-cardinality decision,PROVED_SYMBOLIC,en/main.tex,Effective theory
+E01,No nonpermutation SCC <=5 for bases 2..60,EXACT_FINITE_CENSUS,audit/exact_census_B2_60.csv,Finite evidence
+B01,Complete five-state arithmetic classification,NOT_CLAIMED,,Boundary
+B02,Minimality of displayed base,NOT_CLAIMED,,Boundary
+B03,Existence for every base or every n>=5,NOT_CLAIMED,,Boundary
+B04,Ergodic or physical theory,NOT_CLAIMED,,Boundary

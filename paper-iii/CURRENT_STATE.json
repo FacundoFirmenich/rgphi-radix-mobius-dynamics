@@ -1,12 +1,24 @@
 {
   "object": "RGPHI_PROJECTIVE_CONTENT_REDUCTION_AUTOMATON",
-  "date": "2026-11-11",
+  "date": "2026-11-13",
   "status": "ACTIVE_RESEARCH_PREPRINT_NOT_FROZEN",
-  "theorem_stack": "v1.13",
+  "theorem_stack": "v1.14",
   "object_definition_status": "FROZEN_CANONICAL",
+  "publication_companion": {
+    "repository": "FacundoFirmenich/radix-mobius-rigidity",
+    "status": "BARRACO_REVIEW_CANDIDATE",
+    "commit": "cd657285f8b98f79e51caa713c138941d7489b12",
+    "manuscript_embargo": "ACTIVE"
+  },
   "closed": {
-    "all_high_rigidity_cardinalities": [2, 3, 4],
+    "all_high_rigidity_cardinalities": [
+      2,
+      3,
+      4
+    ],
     "sharp_minimal_nonpermutation_cardinality": 5,
+    "transitive_generator_rigidity_arbitrary_n": true,
+    "five_state_global_strict_edge_uniqueness": true,
     "five_state_global_twenty_form_catalogue": true,
     "universal_fixed_tuple_CRT_realization": true,
     "rational_integral_conjugacy": true,
@@ -16,16 +28,18 @@
     "fixed_cardinality_finite_type_decomposition": true,
     "explicit_diophantine_moduli": true,
     "elliptic_boundary_normal_form": true,
-    "coprime_slope_reduction": true
+    "coprime_slope_reduction": true,
+    "six_state_minimal_rank2_2_3_no_go": true
   },
   "open": {
     "complete_five_state_arithmetic_realizability": true,
     "effective_relative_integral_enumeration": true,
     "countergraph_state_side_global_uniqueness": true,
-    "complete_six_state_type_catalogue": true
+    "complete_six_state_type_catalogue": true,
+    "global_six_state_nonexistence": true
   },
   "refuted": {
     "global_all_high_permutation_rigidity": true
   },
-  "binding_gate": "RGPHI_MODULI_CLASSIFICATION_023"
+  "binding_gate": "HA006_COMPLETE_SIX_STATE_AND_EFFECTIVE_ARITHMETIC"
 }

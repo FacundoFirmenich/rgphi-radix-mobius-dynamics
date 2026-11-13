@@ -1,50 +1,33 @@
-# RGΦ Paper III — estado canónico v1.13 (Object Freeze)
+# RGΦ Paper III — estado canónico v1.14
 
 Objeto exclusivo: dinámica racional radix–Möbius, subautómatas finitos, SCC, cuencas universales y realizabilidad aritmética.
 
 ## Definición canónica
 
-RGΦ es el **sistema proyectivo de reducción de contenido radix–Möbius**:
+RGΦ es el sistema proyectivo de reducción de contenido radix–Möbius: rayos primitivos, matrices de rama de determinante B, normalización primitiva y defectos gcd exactos.
 
-- estados: rayos primitivos \((p,q)\) con \(0<p<q\);
-- generadores: dos familias conjugadas de matrices enteras de determinante \(B\);
-- dinámica: matriz de rama seguida de normalización primitiva;
-- defecto: contenido gcd eliminado en cada arista;
-- objetos finitos: subautómatas invariantes y fuertemente conexos en el cono high.
+## Theorem stack v1.14
 
-La formulación proyectivo-entera es exactamente conjugada a \(T_B(x)=\{Bx\}\) y \(S_B=\Phi T_B\Phi^{-1}\).
+El stack objeto/cociclo/módulos de Round 022 permanece canónico. HA-005 añade, con jurisdicción exacta: (i) no-go en seis estados para la clase minimal rank-two con exactamente dos aristas estrictas 2 y 3; (ii) partición 839=383+354+80+22; (iii) estratificación universal de ciclos simples de seis estados; (iv) factor splitting de la frontera elíptica. Nada de esto es un teorema global de inexistencia en seis estados.
 
-## Resultados estructurales Round 022
+## Línea de publicación RGΦ-I
 
-- cociclo matricial/contenido para toda palabra admisible;
-- teorema espectral de ciclos;
-- discriminante cuadrado obligatorio para todo ciclo racional;
-- descomposición finita en tipos abstractos para cada cardinalidad;
-- espacios de realización diofánticos explícitos;
-- forma elíptica de frontera en coordenadas \((A,C,D)\);
-- reducción coprima por pendiente a una ecuación de discriminante cuadrado.
+El repositorio privado FacundoFirmenich/radix-mobius-rigidity es el companion reproducible del primer paper matemático. El candidato Barraco integra el theorem simbólico: si un generador restringido es un n-ciclo en una componente all-high finita, el otro es la identidad y n<=tau(B-1).
 
-## Status conceptual
+La unicidad global de la arista estricta en n=5 y el catálogo de veinte formas quedan como estructura adyacente, no incorporada automáticamente al main.
 
-`RGPHI_MATHEMATICAL_OBJECT = FROZEN_CANONICAL`.
+## Punteros
 
-No hace falta terminar la clasificación para definir el objeto. Lo abierto es la clasificación de sus subobjetos finitos y de sus puntos enteros.
+- object/RGPHI_OBJECT_DEFINITION_022.md
+- PAPER_III_THEOREM_STACK_v1_14.md
+- ha-005/README.md
+- gates/HA006_COMPLETE_SIX_STATE_AND_EFFECTIVE_ARITHMETIC.md
 
-## Canon Round 022
+## Frontera abierta
 
-- [Object definition](object/RGPHI_OBJECT_DEFINITION_022.md)
-- [Content cocycle](theorems/PROJECTIVE_CONTENT_COCYCLE_022.md)
-- [Cycle spectral theorem](theorems/CYCLE_SPECTRAL_THEOREM_022.md)
-- [Finite moduli decomposition](theorems/FINITE_MODULI_DECOMPOSITION_022.md)
-- [Elliptic boundary normal form](theorems/ELLIPTIC_BOUNDARY_NORMAL_FORM_022.md)
-- [Coprime slope reduction](theorems/COPRIME_SLOPE_REDUCTION_022.md)
-- [Theorem stack v1.13](PAPER_III_THEOREM_STACK_v1_13.md)
-- [Round 022](round-022/)
-- [Gate 023](gates/RGPHI_MODULI_CLASSIFICATION_023.md)
+- realizabilidad aritmética completa n=5;
+- enumeración efectiva relative-integral;
+- unicidad global de la tupla conocida;
+- catálogo/arithmetic adjudication completo n=6.
 
-## Estado abierto
-
-- enumeración efectiva de puntos relativos-integrales;
-- clasificación aritmética completa en cardinalidad cinco;
-- unicidad global del countergraph;
-- catálogo completo de tipos en cardinalidad seis.
+RGPHI_MATHEMATICAL_OBJECT = FROZEN_CANONICAL. RGPHI_RESEARCH_PROGRAMME = ACTIVE.

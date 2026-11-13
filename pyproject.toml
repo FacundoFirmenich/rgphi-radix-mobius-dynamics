@@ -29,7 +29,7 @@ classifiers = [
 dependencies = ["networkx>=3.2,<4"]
 
 [project.optional-dependencies]
-dev = ["pytest>=8,<9", "ruff>=0.7,<1", "build>=1.2,<2"]
+dev = ["pytest>=8,<10", "ruff>=0.7,<1", "build>=1.2,<2"]
 
 [project.urls]
 Homepage = "https://github.com/FacundoFirmenich/rgphi-radix-mobius-dynamics"

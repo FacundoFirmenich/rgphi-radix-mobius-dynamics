@@ -6,9 +6,13 @@
   "object_definition_status": "FROZEN_CANONICAL",
   "publication_companion": {
     "repository": "FacundoFirmenich/radix-mobius-rigidity",
-    "status": "BARRACO_REVIEW_CANDIDATE_EPISTEMIC_LAYER",
-    "commit": "a9029019a547e8385a08c4a2f12afa2dd9715232",
-    "manuscript_embargo": "ACTIVE"
+    "status": "BARRACO_REVIEW_CANDIDATE_FINAL",
+    "commit": "7b06e834ea541333f0a627bdf1e554247d29054c",
+    "manuscript_embargo": "ACTIVE",
+    "display_name": "Radix–Möbius Finite Components",
+    "current_slug": "radix-mobius-rigidity",
+    "target_slug": "radix-mobius-finite-components",
+    "preferred_article_title": "A Sharp Permutation Threshold for Finite High Components in Primitive Radix–Möbius Dynamics"
   },
   "closed": {
     "all_high_rigidity_cardinalities": [

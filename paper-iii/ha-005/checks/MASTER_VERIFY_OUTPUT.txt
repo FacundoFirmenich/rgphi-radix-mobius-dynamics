@@ -1,0 +1,26 @@
+{
+  "ha004_high_survivors": 102,
+  "profiles_with_component_nullstellensatz": 80,
+  "component_certificates": 160,
+  "finite_divisor_cases": 278,
+  "residual_profiles": 22,
+  "residual_direct_strip": 15,
+  "residual_forced_zero_primitive": 7,
+  "arithmetically_eliminated": 102,
+  "minimal_rank2_2_3_jurisdiction_realizations": 0,
+  "status": "CLOSED_GLOBAL_NO_GO"
+}
+PASS_HA005_PRIMARY
+component_certificates=160
+finite_divisor_cases=278
+residual_direct_strip=15
+residual_zero_then_nonprimitive=7
+minimal_rank2_2_3_realizations=0
+PASS_HA005_INDEPENDENT
+HA004_partition=383+354+102
+HA005_arithmetic_partition=80+22
+minimal_rank2_2_3_global_no_go=PASS
+PASS_HA005_AUXILIARY
+six_state_cycle_stratification=PASS
+elliptic_boundary_factor_splitting=PASS
+PASS_HA005_MASTER

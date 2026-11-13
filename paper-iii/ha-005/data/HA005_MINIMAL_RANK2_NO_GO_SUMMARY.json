@@ -1,0 +1,12 @@
+{
+  "ha004_high_survivors": 102,
+  "profiles_with_component_nullstellensatz": 80,
+  "component_certificates": 160,
+  "finite_divisor_cases": 278,
+  "residual_profiles": 22,
+  "residual_direct_strip": 15,
+  "residual_forced_zero_primitive": 7,
+  "arithmetically_eliminated": 102,
+  "minimal_rank2_2_3_jurisdiction_realizations": 0,
+  "status": "CLOSED_GLOBAL_NO_GO"
+}

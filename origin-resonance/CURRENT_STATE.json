@@ -1,9 +1,9 @@
 {
   "object": "RGPHI_ORIGIN_RESONANCE_BRANCH",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "date": "2026-11-17",
   "authority": "SEPARATE_PROSPECTIVE_NO_CANONICAL_OVERRIDE",
-  "current_turn": "006",
+  "current_turn": "007",
   "closed": {
     "OR1_exact_supremum": "2/5",
     "OR2_continuous_supremum": "892/45",
@@ -17,33 +17,38 @@
     "OR21_positive_pressure_nonpermutation_equivalence": true,
     "T006_content_holonomy_lattice": true,
     "T006_equal_length_alias_lattice": true,
-    "T006_relative_hyperaccess": true,
+    "T006_superaccess_profile": true,
     "T006_access_rate_polytope": true,
     "T006_six_state_marked_skeletons": 2160,
     "T006_six_state_decorated_profiles": 8640,
     "T006_centrum_cross_frame": true,
-    "T006_R_not_integer_multiple_of_P": true
+    "T006_R_not_integer_multiple_of_P": true,
+    "T007_holonomy_Smith_diagonal": [1],
+    "T007_equal_length_Smith_diagonal": [1],
+    "T007_superaccess_block_capacity": "1/4 bit per edge",
+    "T007_coherent_hyperaccess": "one bit; normalized cost 1/(4N); gain N log 3",
+    "T007_angular_hyperkey": "sign(cos theta)",
+    "T007_n6_alternating_hexagon_forced": true,
+    "T007_relation_sieve_min_norm": 11220870885800329
   },
   "corrections": {
     "exact_alpha_loses_prime_channel_information": false,
-    "reason": "For fixed B and word length, nu, Delta, log Delta and alpha are mutually determining by unique factorization."
+    "T006_relative_hyperaccess_name": "RENAMED_SUPERACCESS",
+    "reason": "Exact receipt encodings are mutually determining; hyperaccess is a separate qualitative completion key."
   },
   "partial": {
     "17_19_split_recurrence": "POSTHOC_STRONG_CANDIDATE",
     "origin_boundary_architecture": "STRUCTURAL_RESONANCE_CANDIDATE",
-    "content_access_hyperaccess_bridge": "RGPHI_RELATIVE_FORMALIZED_GENERAL_BRIDGE_OPEN"
+    "general_hyperaccess_bridge": "LOCAL_RGPHI_PHASE_KEY_FORMALIZED"
   },
   "preregistered": [
-    "OR4_DUAL_TRIAD",
-    "OR4_ALTERNATING_HEXAGON",
-    "OR5_SHORT_DEFECT_CYCLE",
     "OR5_FIVE_STATE_DEFECT_QUOTIENT",
     "OR19_N6_DEFECT_SPECTRUM"
   ],
   "open": [
-    "six_state_arithmetic_realization",
+    "six_state_TSTSTS_arithmetic_realization",
     "general_hyperaccess_bridge",
-    "holonomy_Smith_normal_forms",
+    "nontrivial_Smith_phase_groups",
     "full_Mordell_Weil_relation_lattice",
     "elliptic_pencil_surface",
     "centrum_bundle_morphism"

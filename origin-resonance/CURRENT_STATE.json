@@ -1,6 +1,6 @@
 {
   "object": "RGPHI_ORIGIN_RESONANCE_BRANCH",
-  "version": "0.5.1",
+  "version": "0.6.1",
   "date": "2026-11-17",
   "authority": "SEPARATE_PROSPECTIVE_NO_CANONICAL_OVERRIDE",
   "current_turn": "007",
@@ -30,7 +30,6 @@
     "T007_superaccess_block_capacity": "1/4 bit per edge",
     "T007_coherent_hyperaccess": "one bit; normalized cost 1/(4N); gain N log 3",
     "T007_angular_hyperkey": "sign(cos theta)",
-    "T007_n6_alternating_hexagon_forced": true,
     "T007_relation_sieve_min_norm": 11220870885800328
   },
   "corrections": {
@@ -45,7 +44,9 @@
   },
   "preregistered": [
     "OR5_FIVE_STATE_DEFECT_QUOTIENT",
-    "OR19_N6_DEFECT_SPECTRUM"
+    "OR19_N6_DEFECT_SPECTRUM",
+    "OR4_DUAL_TRIAD",
+    "OR4_ALTERNATING_HEXAGON"
   ],
   "open": [
     "six_state_TSTSTS_arithmetic_realization",
@@ -54,7 +55,8 @@
     "full_Mordell_Weil_relation_lattice",
     "elliptic_pencil_surface",
     "centrum_bundle_morphism",
-    "six_state_oriented_necklace_quotient"
+    "six_state_oriented_necklace_quotient",
+    "six_state_TTSSTS_highness_case"
   ],
   "audit_holds": {
     "T006_balanced_oriented_orbits": {
@@ -70,6 +72,15 @@
       "arithmetic_realization": "OPEN",
       "checker": "origin-resonance/turnos/turno-006/check_balanced_necklace_orbits_T006.py",
       "note": "Three published representatives are dihedral bracelets, not the four rotational necklaces. No oriented reversal/swap equivalence theorem is recorded."
+    },
+    "T007_alternating_hexagon_exhaustiveness": {
+      "status": "AUDIT_HOLD_MISSING_TTSSTS_ROTATIONAL_CLASS",
+      "historically_reported_forced": true,
+      "highness_exclusions_verified_here": "NOT_INDEPENDENTLY_RECHECKED",
+      "untested_rotational_class": "TTSSTS",
+      "arithmetic_realization": "OPEN",
+      "significance": "TSTSTS-only claim cannot be declared exhaustive without fourth class adjudication or justified dihedral equivalence",
+      "source": "origin-resonance/turnos/turno-006/AUDIT_BALANCED_ORBITS_T006.md"
     }
   }
 }

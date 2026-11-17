@@ -1,60 +1,56 @@
 {
   "object": "RGPHI_ORIGIN_RESONANCE_BRANCH",
-  "version": "0.8.0",
+  "version": "0.9.0",
   "date": "2026-11-17",
   "authority": "SEPARATE_PROSPECTIVE_NO_CANONICAL_OVERRIDE",
-  "current_turn": "009",
+  "current_turn": "010",
   "closed": {
     "T007_coherent_hyperaccess": "one bit; normalized cost 1/(4N); gain N log 3",
     "T008_zero_error_key_complexity": "ceil(log2 max observation-fibre size)",
-    "T008_full_path_superaccess_capacity": "1 bit per edge",
-    "T008_receipt_superaccess_capacity": 0.42045559577649394,
-    "T008_terminal_holonomy_capacity": 0.0,
     "T008_TSTSTS_forced_lollipop_jurisdiction": true,
-    "T008_d4_Smith_phase_group": "Z/2Z",
-    "T008_equivariant_Veroneses_bridge": true,
     "T009_UMI_correspondence_model": true,
-    "T009_latent_active_block_metric": true,
-    "T009_FST11_tower": "Sigma* -> 8+9Z -> H",
     "T009_FST11_superaccess": "Pi7+Pi2 recover K",
     "T009_FST11_hyperaccess": "prefix/length key selects literal representative",
-    "T009_prefix_key_normalized_complexity": "O(log L / L) -> 0",
     "T009_royal_cubit_gauge_model": true,
-    "T009_royal_cubit_subdivision": "7 palms = 28 digits",
-    "T009_known_strict_event_rate": "1/28"
+    "T010_latent_seed": "(pi/6)*10^(+n_scalar)",
+    "T010_tripolar_formula": "U_n,sigma=(pi/24)(40*10^n+3sigma)",
+    "T010_superunitary_ratio": 10,
+    "T010_absolute_span": "pi/4",
+    "T010_relative_span": "(3/20)*10^-n",
+    "T010_projective_limit": "[1:1:1]",
+    "T010_integer_shadow": "(40*10^n-3,40*10^n,40*10^n+3) for integer n",
+    "T010_tripolar_hyperaccess": "one trit / two fixed binary bits",
+    "T010_biplanar_phase_key": "same sigma selects both planes"
   },
   "corrections": {
     "T006_relative_hyperaccess_name": "RENAMED_SUPERACCESS",
     "T006_three_necklace_count": "SUPERSEDED_BY_FOUR_ORIENTED_CLASSES_T008",
     "T007_missing_TTSSTS": "RESOLVED_BY_HIGHNESS_NO_GO_T008",
-    "FST11_original_hyperaccess_label": "RECLASSIFIED_AS_SUPERACCESS_PLUS_HYPERACCESS_KEY_T009"
+    "FST11_original_hyperaccess_label": "RECLASSIFIED_AS_SUPERACCESS_PLUS_HYPERACCESS_KEY_T009",
+    "T010_multifractal_claim": "CURRENT_LAW_IS_MONOSCALE; MULTIFRACTALITY_REQUIRES_BRANCH_DEPENDENT_SCALING",
+    "T010_uncertainty_claim": "CLASSICAL_DISPERSION_UNLESS_NONCOMMUTATIVE_OBSERVABLES_ARE_SPECIFIED"
   },
   "partial": {
     "general_hyperaccess_bridge": "ZERO_ERROR_PHASE_KEY_FORMALIZED",
-    "origin_boundary_architecture": "EQUIVARIANT_QUADRATIC_BRIDGE_CLOSED",
-    "d4_intrinsic_phase": "STRUCTURALLY_CLOSED_ARITHMETIC_REALIZATION_OPEN",
+    "origin_boundary_architecture": "POSTTRANSCENDENTAL_PROJECTIVE_LIMIT_CLOSED",
     "T009_UMI_superconstant": "operator spectrum formalized; empirical realization open",
-    "T009_Royal_Cubit_28": "POSTHOC_EXACT_RESONANCE",
-    "T009_multifractal_interrelation": "definition closed; concrete spectrum open"
+    "T010_qutrit_uncertainty": "conditional mathematical model; physical realization open"
   },
   "preregistered": [
-    "OR5_FIVE_STATE_DEFECT_QUOTIENT",
-    "OR19_N6_DEFECT_SPECTRUM",
     "T009_RC28_FIRST_INDEPENDENT_COMPONENT",
-    "T009_UMI_FRAME_INVARIANCE",
-    "T009_UMI_LATENT_ACTIVE_SELECTOR",
-    "T009_RAM_OPERATOR_DEFINITION"
+    "T010_MF_UMI_NONLINEAR_TAU",
+    "T010_TRIPOLAR_HYPERACCESS_INDEPENDENT_REALIZATION",
+    "T010_BIPLANAR_PHASE_LOCK",
+    "T010_NONCOMMUTATIVE_UNCERTAINTY_MODEL"
   ],
   "open": [
     "global_n6_alternating_hexagon_realizability",
     "actual_nontrivial_Smith_phase_component",
-    "nested_hyperaccess_composition",
     "Mordell_Weil_independence_P_R",
     "exact_Ramanujan_nesting_operator",
     "physical_or_empirical_UMI_realization",
-    "cross_plane_coupling_data",
-    "universality_of_royal_cubit_gauge",
-    "independent_RC28_confirmation",
-    "concrete_multifractal_spectrum"
+    "branch_dependent_multifractal_scaling",
+    "physical_meaning_of_n_scalar",
+    "physical_uncertainty_realization"
   ]
 }

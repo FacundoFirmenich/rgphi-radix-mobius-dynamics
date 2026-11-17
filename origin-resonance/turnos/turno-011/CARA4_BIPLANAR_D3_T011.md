@@ -1,4 +1,67 @@
-# Cara 4 — Biplanaridad y cosimultaneidad D3
+# Cara 4 — Biplanaridad y cosimultaneidad \(D_3\)
+
+## 1. Hexafacialidad
+
+Como conjunto,
+
+\[
+\mathcal F_6=\{M,m\}\times\mathbb Z_3.
+\]
+
+Como simetría, no es el producto directo abeliano. La ley correcta es
+
+\[
+\boxed{
+D_3\cong\mathbb Z_3\rtimes_{-1}\mathbb Z_2
+=
+\langle r,s\mid r^3=s^2=e,\ srs=r^{-1}\rangle.
+}
+\]
+
+Representamos una cara por \((\varepsilon,k)=r^ks^\varepsilon\), con
+\(\varepsilon\in\mathbb Z_2\) y \(k\in\mathbb Z_3\). Entonces
+
+\[
+\boxed{
+(\varepsilon,k)(\eta,\ell)
+=
+(\varepsilon+\eta,\ k+(-1)^\varepsilon\ell).
+}
+\]
+
+## 2. Cambio de plano e inversión polar
+
+La operación de cambio de plano actúa como
+
+\[
+\boxed{
+S(P,k)=(\bar P,-k).
+}
+\]
+
+Por tanto:
+
+\[
+(M,+)\leftrightarrow(m,-),
+\qquad
+(M,-)\leftrightarrow(m,+),
+\qquad
+(M,0)\leftrightarrow(m,0).
+\]
+
+En los valores normalizados
+
+\[
+\left(\frac{14}{15},1,\frac{16}{15}\right),
+\]
+
+el cambio de plano es la involución
+
+\[
+\boxed{x\mapsto2-x.}
+\]
+
+## 3. Fases discretas
 
 Sean
 
@@ -22,7 +85,9 @@ Si \(\kappa>0\), los mínimos satisfacen
 \boxed{k_M-k_m=\delta\pmod3.}
 \]
 
-En fase continua:
+Hay tres pares bloqueados, uno por fase global.
+
+## 4. Fases continuas
 
 \[
 E_{\kappa,\Delta}
@@ -38,13 +103,7 @@ Bajo flujo gradiente, con \(\phi=\theta_M-\theta_m-\Delta\):
 
 Para \(\kappa>0\), \(\phi=0\) es estable y \(\phi=\pi\) inestable.
 
-Las seis caras forman
-
-\[
-D_3=\langle r,s\mid r^3=s^2=e,\ srs=r^{-1}\rangle.
-\]
-
-La relación `srs=r^-1` expresa que cambiar de plano invierte el sentido tripolar.
+## 5. Cosimultaneidad
 
 El estado bloqueado es
 
@@ -53,3 +112,7 @@ El estado bloqueado es
 \]
 
 Una fase global y un desfase determinan las dos manifestaciones cosimultáneas.
+
+## 6. Resultado
+
+La expresión trifásica está gobernada por \(\mathbb Z_3\); el intercambio de planos está gobernado por \(\mathbb Z_2\); y la inversión de fase convierte su combinación en \(D_3\), no en \(C_6\).

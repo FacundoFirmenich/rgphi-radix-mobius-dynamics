@@ -1,33 +1,45 @@
-# Origin–Resonance · Turno 010 — Transmutación postrascendental
+# Origin–Resonance · Turno 010 RC1
 
-Con la notación corregida
+## Corrección vinculante
 
-\[
-\lambda_n=\frac{\pi}{6}10^{+n_{\rm escalar}},
-\]
-
-la UMI ascendida queda
+La UMI latente es
 
 \[
-\boxed{U_{n,\sigma}=10\lambda_n+\sigma\frac{\pi}{8}=\frac{\pi}{24}(40\,10^n+3\sigma),\quad\sigma\in\{-1,0,+1\}.}
+\lambda_n=\frac{\pi}{6}10^n.
 \]
 
-La magnitud absoluta conserva \(\pi\), pero la geometría proyectiva se convierte en
+El centrum ascendido es
 
 \[
-[40\,10^n-3:40\,10^n:40\,10^n+3].
+C_n=10\lambda_n.
 \]
 
-Para escalas enteras es una terna entera primitiva. La supernormalización central produce
+Las cotas laterales son
 
 \[
-1-\frac{3}{40}10^{-n},\quad1,\quad1+\frac{3}{40}10^{-n},
+\boxed{a_n=\frac{2}{30}C_n=\frac{\pi}{9}10^n.}
 \]
 
-que converge al centrum \([1:1:1]\), mientras la separación absoluta permanece \(\pi/8\) entre hitos adyacentes.
+Por tanto
 
-Un trit \(\sigma\) evita ese geocolapso y sincroniza simultáneamente las dos proyecciones UMI. Su coste relativo tiende a cero con la escala.
+\[
+\boxed{U_{n,\sigma}=\frac{\pi}{9}10^n(15+\sigma).}
+\]
 
-La ley entregada posee una sola razón de contracción \(1/10\): es monoescalar, no todavía multifractal. La multifractalización requiere contracciones o exponentes dependientes de rama.
+La sombra postrascendental es
 
-La oscilación clásica produce dispersión. Una relación de incertidumbre genuina exige una estructura no conmutativa; se entrega un modelo qutrit condicional, no una afirmación física.
+\[
+\boxed{[14:15:16].}
+\]
+
+No converge a `[1:1:1]`: permanece fija bajo toda ascensión `n -> n+1`.
+
+La supernormalización es
+
+\[
+\boxed{(14/15,1,16/15).}
+\]
+
+Un trit selecciona la rama; en una torre coherente su tasa tiende a cero mientras las separaciones absolutas crecen como `10^n`.
+
+Este documento supersede las fórmulas de cota `pi/8` del Turno 010 original.

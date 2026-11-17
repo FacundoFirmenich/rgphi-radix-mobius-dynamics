@@ -1,0 +1,23 @@
+{
+  "object": "RGPHI_ORIGIN_RESONANCE",
+  "turn": "006",
+  "date": "2026-11-17",
+  "closed": {
+    "content_holonomy_lattice": true,
+    "relative_hyperaccess": true,
+    "access_rate_polytope": true,
+    "six_state_marked_skeletons": 2160,
+    "six_state_decorated_profiles": 8640,
+    "centrum_cross_frame": true,
+    "R_not_integer_multiple_of_P": true
+  },
+  "corrections": {
+    "exact_alpha_loses_prime_channel_information": false
+  },
+  "open": [
+    "six_state_arithmetic_realization",
+    "general_hyperaccess_bridge",
+    "full_Mordell_Weil_relation",
+    "elliptic_pencil_surface"
+  ]
+}

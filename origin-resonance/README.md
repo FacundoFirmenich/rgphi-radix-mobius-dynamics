@@ -4,44 +4,27 @@
 
 This is a separate prospective research branch. It has no authority to rewrite, reinterpret or promote claims in the canonical line.
 
-- canonical source through the object-freeze stage;
-- branch version: `0.5.0`;
+- branch version: `0.6.0`;
 - authority: `SEPARATE_PROSPECTIVE_NO_CANONICAL_OVERRIDE`;
-- current local frontier: **Turno 006**.
+- current frontier: **Turno 007**.
+
+## Terminology
+
+The Turno-006 conditional-entropy construction is **superaccess**: recovery of hidden internal/subsystemic information omitted by an observation.
+
+**Hyperaccess** is a different object: a qualitatively small completion key at a nesting boundary. It resolves a phase/branch ambiguity and synchronizes an almost complete internal description with the external completion.
 
 ## Current exact results
 
-1. `4/9` is not sharp; `sup |h|/z=2/5`.
-2. The integer envelope remains `n<=19`; `F_17` is the currently activated positive-rank chamber curve.
-3. On every odd-index cubic, even primitive `A` gives exact cubic defect `4`.
-4. The nineteen cubics form a pencil with common origin `O=[0:1:-1]` and universal double boundary point `R=[1:2:2]`.
-5. At prime 83, `#F_17(F_83)=89` and `[44]P=R`.
-6. Projective cycles admit an exact content lift and log-radial monodromy.
-7. Nonpermutation is equivalent to positive content holonomy on a finite all-high SCC.
-8. The content cycle map defines prime-valued holonomy and equal-length alias lattices.
-9. Exact scalar receipts and prime vectors are equivalent for fixed base and length; observer-relative loss, not vectorization, defines hyperaccess.
-10. The known alias pair carries exactly one bit of hidden terminal and path content for an endpoint-length observer.
-11. Long-run content rates form a cycle-mean polytope; for the known component it is `[0,e_3/4]`.
-12. Marked six-state defects `4..7` admit exactly `2160` normalized skeletons: `720` per balanced word. DUAL_TRIAD is impossible there; ALTERNATING_HEXAGON occurs exactly for `TSTSTS`.
-13. The projective centrum cross-frame consists of `K`, opposite finite wings `R,E`, and symmetric/antisymmetric points at infinity `I_+,O`.
-14. The local relation `44P=R mod 83` is not global: good reduction modulo seven proves `R notin <P>` over `Q`.
-
-## Formal hyperaccess bridge
-
-The Turno-006 RGΦ-superaccess profile is
-
-\[
-\mathfrak H_{F,\mu,O}=
-(\mathcal A_F,\mathsf H^{\rm path}_\mu(O),\mathsf H^{\rm term}_\mu(O)).
-\]
-
-It combines:
-
-- the structural long-run access-rate polytope;
-- observer-relative hidden path receipt;
-- observer-relative hidden terminal holonomy.
-
-It obeys data processing. It is not identified with the user's broader hyperaccess programme outside RGΦ.
+1. The content cycle map defines prime-valued holonomy and equal-length alias lattices.
+2. The known component has Smith diagonals `[1]` for both lattices: nonzero free holonomy, no finite phase torsion.
+3. The return-block observer channel contains an exact `1/4` bit-per-edge superaccess subchannel.
+4. The coherent paths `(TTTT)^N` and `(TSTS)^N` are completed by one hyperaccess bit whose normalized cost is `1/(4N)` while their radial separation is `N log 3`.
+5. The angular projection `sin(theta)` is completed on `(0,pi)` by the qualitative key `sign(cos theta)`.
+6. In the six-state high-defect lollipop jurisdiction, `TTTSSS` and `TTSTSS` are impossible by highness; `TSTSTS` is forced. Global arithmetic realization remains open.
+7. The projective content and elliptic ambient spaces share a tautological projectivization architecture, without a proved cross-dimensional identification.
+8. A certified local Mordell–Weil sieve excludes every nonzero relation `aP+bR=O` with coefficient Euclidean norm below `11220870885800329`; independence is not proved.
+9. Long-run content rates form a cycle-mean polytope, and pressure supplies mean, variance and large-deviation geometry.
 
 ## Non-contamination rules
 

@@ -4,9 +4,9 @@
 
 This is a separate prospective research branch. It has no authority to rewrite, reinterpret or promote claims in the canonical line.
 
-- branch version: `1.0.0`;
+- branch version: `1.1.0`;
 - authority: `SEPARATE_PROSPECTIVE_NO_CANONICAL_OVERRIDE`;
-- current frontier: **Turno 011**.
+- current frontier: **Turno 012**.
 
 ## Terminology
 
@@ -50,19 +50,37 @@ The six faces are
 
 The conventional Koch snowflake is treated as a cryptoglyphic realization of this six-face architecture, not as the universal UMI itself.
 
-Closed Turno-011 results:
+Closed Turno-011 results include nonlinear multifractal `tau(q)`, radial posttranscendental ascent, coherent hexafacial hyperaccess, biplanar phase locking, a conditional noncommutative six-state model, and a defined internal subnesting operator.
 
-1. the active Koch measure derived from `(14,15,16)` has strictly nonlinear `tau(q)`;
-2. scalar ascent is radial multiplication by ten with fixed projective shape `[14:15:16]`;
-3. a coherent six-face tower has hyperaccess rate `log2(6)/N -> 0`;
-4. biplanar phase locking is `D3`-covariant;
-5. phase and plane-inversion operators anticommute in a conditional six-state model and admit a saturating state;
-6. an internal Ramanujanian subnesting operator is defined by domain, substitution, composition, endpoint invariant, scale cocycle and face cocycle.
+## Turno 012 — FST inverse geometry
+
+FST-12/13 supplies an exact arithmetic realization of the superaccess/hyperaccess distinction.
+
+For each admissible primitive label,
+
+\[
+w=8^tC(K_0\,343^j),
+\qquad(j,t)\in\mathbb N_0^2.
+\]
+
+- complementary primitive channels recover `K`: superaccess;
+- a residual rank selects the exact literal word: hyperaccess.
+
+With exact length, the optimal worst-case key is
+
+\[
+\left\lceil\log_2\left(1+\left\lfloor\ell/\log_{10}343\right\rfloor\right)\right\rceil
+=\log_2\ell+O(1).
+\]
+
+With only a length bound, the cost is `2 log2 L + O(1)`; without a bound, no finite uniform key exists. The limiting ambiguity probability is `685/117649` and the residual entropy is `0.005837332402614633262...` bits. All complete fibres remain non-context-free and have the unit circle as a natural boundary.
 
 ## Boundaries
 
 - No physical diamond lattice is claimed.
 - No physical quantum six-level realization is claimed.
 - The name “Ramanujanian” is internal and not attributed historically.
+- The FST residual-entropy constant is distribution-dependent, not universal.
+- Small conditional inverse keys do not compress arbitrary words or simplify the global fibre language.
 - Finite or symbolic results are not promoted to empirical physics.
 - Negative results and corrections are retained.

@@ -1,0 +1,23 @@
+{
+  "block0": "TTTT",
+  "block1": "TSTS",
+  "block_length": 4,
+  "holonomy_block0": 0,
+  "holonomy_block1": "e3",
+  "coherent_family": {
+    "paths": ["(TTTT)^N", "(TSTS)^N"],
+    "key_bits": 1,
+    "normalized_key_cost": "1/(4N)",
+    "radial_separation": "N log 3"
+  },
+  "independent_blocks": {
+    "path_superaccess_bits": "N",
+    "rate_bits_per_edge": "1/4",
+    "terminal_values": "N+1",
+    "terminal_zero_error_rate": 0
+  },
+  "terminology": {
+    "full_hidden_recovery": "SUPERACCESS",
+    "qualitative_completion_key": "HYPERACCESS"
+  }
+}

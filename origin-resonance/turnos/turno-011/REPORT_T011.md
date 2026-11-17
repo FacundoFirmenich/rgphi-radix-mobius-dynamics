@@ -1,5 +1,25 @@
 # Origin–Resonance · Turno 011 — Seis caras/lados de la UMI
 
+## Fundamentum
+
+La UMI no se introduce como metáfora ni como construcción conceptual improvisada. Su genealogía es:
+
+\[
+\boxed{
+\text{aritmética exacta}
++
+\text{geometría proyectiva/fractal}
++
+\text{trigonometría de fases}
+\longrightarrow
+\text{UMI}.
+}
+\]
+
+El autor declara haber llegado conceptualmente a la UMI aproximadamente `8.8` años antes de noviembre de 2026, alrededor de enero–febrero de 2018. Esta procedencia histórica es declarada; la formalización reproducible corresponde a 2026.
+
+El copo de Koch no origina la UMI: constituye una de sus representaciones criptoglíficas operacionales más claras.
+
 ## Corrección de base
 
 Las cotas laterales correctas son
@@ -41,4 +61,4 @@ La envolvente Koch posee la misma simetría diédrica global. Sus seis sectores 
 
 ## Boundary
 
-La estructura es matemática y geosimbólica. No se afirma una red física de diamante ni una realización cuántica experimental.
+La estructura es matemática y geosimbólica. No se afirma una red física de diamante ni una realización cuántica experimental. La procedencia histórica, los teoremas actuales y las interpretaciones físicas potenciales permanecen en capas separadas.

@@ -1,14 +1,10 @@
-id,claim,status
-T011-C1,The corrected tripolar shape is [14:15:16],CLOSED_CORRECTION
-T011-C2,The UMI has six faces as two planes times three phases,CLOSED_DEFINITIONAL
-T011-C3,The six faces carry a D3 action,CLOSED_GROUP_THEORETIC
-T011-C4,The Koch generator preserves endpoints in all three phases,CLOSED_EXACT
-T011-C5,The active Koch measure derived from 14:15:16 has nonlinear tau(q),CLOSED_MULTIFRACTAL
-T011-C6,The posttranscendental operator is radial multiplication by ten,CLOSED_SYMBOLIC
-T011-C7,The projective tripolar shape is fixed under scalar ascent,CLOSED_SYMBOLIC
-T011-C8,A coherent six-face tower has hyperaccess rate log2(6)/N to zero,CLOSED_ZERO_ERROR
-T011-C9,The biplanar model has exactly three locked minima for each discrete offset,CLOSED_MODEL
-T011-C10,The six-face conditional observables admit a saturated uncertainty relation,CLOSED_CONDITIONAL_MODEL
-T011-C11,The Ramanujanian UMI operator has domain composition and invariants,CLOSED_INTERNAL_OPERATOR
-T011-C12,The UMI is physically a diamond crystal,NOT_CLAIMED
-T011-C13,The UMI is physically a six-level quantum system,NOT_CLAIMED
+id,claim,status,jurisdiction
+T011-H1,Zero-error key has ceil(log2 card(A_N)) bits for endpoints-only observation,CLOSED_CONDITIONAL_COMBINATORIAL,Indexed N cells with common observed endpoints
+T011-H2,Independent tripolar cell choices yield non-vanishing key rate log2(3),CLOSED_CONDITIONAL_COMBINATORIAL,All 3^N configurations admissible
+T011-H3,Globally coherent tripolar phase uses a fixed two-bit key,CLOSED_CONDITIONAL_COMBINATORIAL,Three coherent configurations for N cells
+T011-H4,Branch-dependent multifractality and subextensive key are universally incompatible,NOT_CLAIMED,Constraints may reduce configuration entropy
+T011-P1,Primitivity of projective integer shadow for all integer n,OVERBROAD_CORRECTED,n in Z_ge_0 certified; n=-2 noninteger
+T011-F1,FST-11 executable corpus verified in sinus-math current snapshot,NOT_VERIFIED_PROVENANCE_GAP,README-only commit a771a611
+T011-M1,Current ratio 1/10 demonstrates nontrivial multifractality,REFUTED_BY_CURRENT_FORMULA,Single scalar ratio
+T011-Q1,Classical tripolar oscillation alone implies Heisenberg uncertainty,REFUTED,Classical model only
+T011-R1,Ramanujan exact operator specified and verified,OPEN,Domain composition invariants pending

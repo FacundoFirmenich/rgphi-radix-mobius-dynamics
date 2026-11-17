@@ -1,0 +1,13 @@
+id,claim,status,supersedes
+T008-C01,Minimum zero-error completion key size equals maximum observation-fibre cardinality,CLOSED_SYMBOLIC,
+T008-C02,Coherent RGPhi paths form a one-bit zero-rate hyperaccess family with divergent radial gain,CLOSED_EXACT,
+T008-C03,Full-path receipt-history and terminal superaccess capacities are 1 log2(rho) and 0,CLOSED_EXACT,
+T008-C04,There are four oriented balanced six-letter rotation classes,CLOSED_COMBINATORIAL,OR-C43;OR-C61
+T008-C05,TTSSTS is impossible by highness in the declared high-defect lollipop jurisdiction,CLOSED_SYMBOLIC,OR-C62
+T008-C06,TSTSTS is forced in that declared jurisdiction,CLOSED_SYMBOLIC,OR-C55
+T008-C07,Corrected witness-tagged counts are 2880 and 11520,CLOSED_TAGGED_COUNT_BOUNDARY,OR-C43
+T008-C08,Q<=5000 alternating-hexagon audit leaves three fully divisible tuples and zero CRT hits,CLOSED_FINITE_JURISDICTION,
+T008-C09,Among defects 4 5 6 7 only d=4 has intrinsic Smith phase Z/2Z,CLOSED_SYMBOLIC,
+T008-C10,The equivariant quadratic Veronese bridge maps the quadratic basis to R E O and 2K,CLOSED_SYMBOLIC,
+T008-C11,The p<=1000 local sieve excludes all nonzero P R relations below the certified 67-digit norm,CLOSED_EXACT_LOCAL_SIEVE,OR-C57
+T008-C12,Global six-state nonexistence and Mordell-Weil independence remain open,NOT_CLAIMED,

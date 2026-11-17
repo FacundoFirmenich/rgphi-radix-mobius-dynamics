@@ -54,3 +54,21 @@ exhaustiveness claim `AUDIT_HOLD_ORIENTATION_QUOTIENT` in the live
 resonance ledgers until a formal equivalence and a corrected
 exhaustive catalogue are established. No result here is promoted to
 canonical `main`.
+
+## Effect on Turno 007 (added after its concurrent publication)
+
+The new `turno-007/SIX_STATE_ALTERNATING_HEXAGON_T007.md` derives
+`TSTSTS` as the only remaining word after excluding `TTTSSS` and
+`TTSTSS`, but does **not** adjudicate the fourth rotational necklace
+`TTSSTS`. Its assertion `TSTSTS forced` therefore has an unclosed
+orientation-class coverage obligation, even if the two reported
+highness obstructions are correct.
+
+This does not exhibit a realizable non-alternating component, nor does
+it falsify the preregistered ALTERNATING_HEXAGON endpoint. It prevents
+promotion of the purported exhaustive structural confirmation until
+the omitted case is independently excluded or a valid reversal
+equivalence is proved. The Turno-007 three-row checker is a regression
+check against its declared table, **not** an exhaustive rotational
+orbit enumeration. An explicit audit hold in the current branch state
+and in the claim ledger is required.

@@ -2,12 +2,12 @@
 
 ## Status
 
-This is a separate prospective research branch. It has no authority to rewrite, reinterpret or promote claims in canonical Paper III.
+This is a separate prospective research branch. It has no authority to rewrite, reinterpret or promote claims in the canonical line.
 
-- canonical source through Round 022;
-- branch version: `0.4.0`;
-- base canonical commit: `700fa58e7420ddbf3a53003eccd56a64524a50cf`;
-- authority: `SEPARATE_PROSPECTIVE_NO_CANONICAL_OVERRIDE`.
+- canonical source through the object-freeze stage;
+- branch version: `0.5.0`;
+- authority: `SEPARATE_PROSPECTIVE_NO_CANONICAL_OVERRIDE`;
+- current local frontier: **Turno 006**.
 
 ## Current exact results
 
@@ -15,40 +15,38 @@ This is a separate prospective research branch. It has no authority to rewrite, 
 2. The integer envelope remains `n<=19`; `F_17` is the currently activated positive-rank chamber curve.
 3. On every odd-index cubic, even primitive `A` gives exact cubic defect `4`.
 4. The nineteen cubics form a pencil with common origin `O=[0:1:-1]` and universal double boundary point `R=[1:2:2]`.
-5. At prime 83, `#F_17(F_83)=89` and `[44]P=R`; hence `2R=-P` and `88P=-P` modulo 83.
-6. Round 022 defines the projective content-reduction object and proves an exact content cocycle.
-7. Every projective cycle has an exact log-radial lift: the projective phase returns while the fibre translates by `log Delta`. This is a genuine discrete helical/screw lift.
-8. The conjugacy matrix satisfies `H^2=H+I`; its eigenvalues are `phi` and `-phi^{-1}` and its powers are Fibonacci matrices.
-9. The boundary-coordinate transform is a unimodular involution: it fixes `O` projectively and sends `R` to `[1:0:0]`.
-10. Two different chamber observables have exact sharp supremum `1/9`.
+5. At prime 83, `#F_17(F_83)=89` and `[44]P=R`.
+6. Projective cycles admit an exact content lift and log-radial monodromy.
+7. Nonpermutation is equivalent to positive content holonomy on a finite all-high SCC.
+8. The content cycle map defines prime-valued holonomy and equal-length alias lattices.
+9. Exact scalar receipts and prime vectors are equivalent for fixed base and length; observer-relative loss, not vectorization, defines hyperaccess.
+10. The known alias pair carries exactly one bit of hidden terminal and path content for an endpoint-length observer.
+11. Long-run content rates form a cycle-mean polytope; for the known component it is `[0,e_3/4]`.
+12. Marked six-state defects `4..7` admit exactly `2160` normalized skeletons: `720` per balanced word. DUAL_TRIAD is impossible there; ALTERNATING_HEXAGON occurs exactly for `TSTSTS`.
+13. The projective centrum cross-frame consists of `K`, opposite finite wings `R,E`, and symmetric/antisymmetric points at infinity `I_+,O`.
+14. The local relation `44P=R mod 83` is not global: good reduction modulo seven proves `R notin <P>` over `Q`.
 
-## Formal access bridge
+## Formal hyperaccess bridge
 
-The additive receipt
-
-\[
-\mathcal I(w)=\log\Delta_w
-\]
-
-and the normalized share
+The Turno-006 RGΦ-superaccess profile is
 
 \[
-\alpha(w)=\frac{\log\Delta_w}{|w|\log B}
+\mathfrak H_{F,\mu,O}=
+(\mathcal A_F,\mathsf H^{\rm path}_\mu(O),\mathsf H^{\rm term}_\mu(O)).
 \]
 
-are exact operational candidates for an RGΦ-specific access functional. They are not identified with the user's broader hyperaccess programme.
+It combines:
 
-## Prospective tests
+- the structural long-run access-rate polytope;
+- observer-relative hidden path receipt;
+- observer-relative hidden terminal holonomy.
 
-- OR-4 DUAL_TRIAD and ALTERNATING_HEXAGON for the first complete exact six-state jurisdiction;
-- OR-5 five-state defect quotient in higher cardinality;
-- OR-19 exact six-state defect spectrum `{2,3,4,5,6,7}`;
-- all nineteen Mordell–Weil profiles and the F17/F19 arithmetic split.
+It obeys data processing. It is not identified with the user's broader hyperaccess programme outside RGΦ.
 
 ## Non-contamination rules
 
-- No result here changes canonical `paper-iii/CURRENT_STATE.json`.
-- Negative results are retained.
-- Built-in structures such as the golden conjugacy are not counted as independent late-stage evidence.
+- No result here changes canonical claims.
+- Negative results and corrections are retained.
+- Built-in structures are not counted as independent late-stage evidence.
 - Post-hoc identities remain labelled as such.
-- No numerical recurrence is promoted without a selector or a prospective endpoint.
+- Numerical recurrences are not promoted without selectors or prospective endpoints.

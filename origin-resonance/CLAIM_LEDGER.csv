@@ -34,3 +34,17 @@ OR-C32,Canonical finite-cardinality strict bound together with defect divisibili
 OR-C33,The exact five-state counterfamily has pressure mean log(3)/28 and asymptotic variance 3(log(3))^2/112 under independent fair generator choices,BRANCH_PROVED_SYMBOLIC_CHECKED_OR21
 OR-C34,The same infinite five-state family retains strict monodromy but its maximal radix-normalized periodic share converges to zero,BRANCH_PROVED_THEOREM_OR21
 OR-C35,The OR21 finite-state content receipt is identical to broader hyperaccess,NOT_CLAIMED
+OR-C36,For fixed B and word length nu Delta logDelta and alpha are exact equivalent encodings,CLOSED_SYMBOLIC_T006
+OR-C37,The content holonomy lattice has rank at most min(omega(B) n+1),CLOSED_SYMBOLIC_T006
+OR-C38,The equal-length alias lattice has rank at most min(omega(B) n),CLOSED_SYMBOLIC_T006
+OR-C39,Observer-relative path and terminal hyperaccess obey data processing,CLOSED_INFORMATION_THEORETIC_T006
+OR-C40,The known equal-length alias pair hides exactly one bit for an endpoint-length observer,CLOSED_EXACT_T006
+OR-C41,The access-rate polytope is the convex hull of directed-cycle receipt means,CLOSED_SYMBOLIC_T006
+OR-C42,The known component access-rate polytope is the segment [0 e3/4],CLOSED_EXACT_T006
+OR-C43,Marked six-state defects 4..7 have exactly 2160 normalized skeletons and 8640 decorated profiles,CLOSED_COMBINATORIAL_T006
+OR-C44,DUAL_TRIAD is impossible in the marked high-defect six-state jurisdiction,CLOSED_SYMBOLIC_T006
+OR-C45,ALTERNATING_HEXAGON occurs exactly in the TSTSTS word class in that jurisdiction,CLOSED_SYMBOLIC_T006
+OR-C46,The projective centrum cross-frame separates K R E Iplus and O exactly,CLOSED_SYMBOLIC_T006
+OR-C47,R is not an integer multiple of P over Q,CLOSED_GOOD_REDUCTION_T006
+OR-C48,The local relation 44P=R mod83 is a global equality,REFUTED_T006
+OR-C49,The RGPhI superaccess profile is identical to general hyperaccess,NOT_CLAIMED

@@ -1,10 +1,9 @@
 {
   "object": "RGPHI_ORIGIN_RESONANCE_BRANCH",
-  "version": "0.4.0",
-  "date": "2026-11-11",
-  "base_commit": "700fa58e7420ddbf3a53003eccd56a64524a50cf",
-  "canonical_source_round": "022",
+  "version": "0.5.0",
+  "date": "2026-11-17",
   "authority": "SEPARATE_PROSPECTIVE_NO_CANONICAL_OVERRIDE",
+  "current_turn": "006",
   "closed": {
     "OR1_exact_supremum": "2/5",
     "OR2_continuous_supremum": "892/45",
@@ -14,36 +13,39 @@
     "OR11_pencil_origin": "[0:1:-1]",
     "OR11_pencil_boundary": "[1:2:2] double",
     "OR12_F17_F83_point_count": 89,
-    "OR12_boundary_return": "44P mod83 = R",
     "OR15_projective_helical_lift": true,
-    "OR15_content_receipt": "I(w)=log Delta_w",
-    "OR16_golden_conjugacy": "H^2=H+I",
-    "OR17_boundary_involution": "U^2=I; UO=-O; UR=[1:0:0]",
-    "OR18_dual_ninths": "sup(D/C-1)=sup(-h/z)_+=1/9"
+    "OR21_positive_pressure_nonpermutation_equivalence": true,
+    "T006_content_holonomy_lattice": true,
+    "T006_equal_length_alias_lattice": true,
+    "T006_relative_hyperaccess": true,
+    "T006_access_rate_polytope": true,
+    "T006_six_state_marked_skeletons": 2160,
+    "T006_six_state_decorated_profiles": 8640,
+    "T006_centrum_cross_frame": true,
+    "T006_R_not_integer_multiple_of_P": true
+  },
+  "corrections": {
+    "exact_alpha_loses_prime_channel_information": false,
+    "reason": "For fixed B and word length, nu, Delta, log Delta and alpha are mutually determining by unique factorization."
   },
   "partial": {
     "17_19_split_recurrence": "POSTHOC_STRONG_CANDIDATE",
     "origin_boundary_architecture": "STRUCTURAL_RESONANCE_CANDIDATE",
-    "content_access_hyperaccess_bridge": "FORMAL_CANDIDATE_NOT_IDENTIFICATION",
-    "trace5_boundary_sum5": "POSTHOC_EXACT",
-    "66_equals_11_times_6": "POSTHOC_LOW_AUTHORITY"
+    "content_access_hyperaccess_bridge": "RGPHI_RELATIVE_FORMALIZED_GENERAL_BRIDGE_OPEN"
   },
   "preregistered": [
     "OR4_DUAL_TRIAD",
     "OR4_ALTERNATING_HEXAGON",
     "OR5_SHORT_DEFECT_CYCLE",
     "OR5_FIVE_STATE_DEFECT_QUOTIENT",
-    "OR6_FULL_19_CURVE_RANK_PROFILE",
-    "OR7_OBSTRUCTION_DISTRIBUTION",
-    "OR12_BOUNDARY_RETURN_DISTRIBUTION",
     "OR19_N6_DEFECT_SPECTRUM"
   ],
   "open": [
-    "F17_Mordell_Weil_relation_P_R",
-    "F17_coprime_integral_admissibility",
-    "F19_rational_integral_admissibility",
-    "elliptic_pencil_surface_structure",
-    "complete_six_state_catalogue",
-    "formal_identification_with_broader_hyperaccess"
+    "six_state_arithmetic_realization",
+    "general_hyperaccess_bridge",
+    "holonomy_Smith_normal_forms",
+    "full_Mordell_Weil_relation_lattice",
+    "elliptic_pencil_surface",
+    "centrum_bundle_morphism"
   ]
 }

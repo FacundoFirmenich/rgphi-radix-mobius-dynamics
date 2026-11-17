@@ -1,0 +1,36 @@
+{
+  "object": "ORIGIN_RESONANCE_HEXAFACIAL_UMI",
+  "version": "1.0.0",
+  "date": "2026-11-17",
+  "current_turn": "011",
+  "authority": "SEPARATE_PROSPECTIVE_NO_CANONICAL_OVERRIDE",
+  "corrections": {
+    "T010_lateral_bound": "(2/30)*center=(pi/9)*10^n",
+    "T010_projective_shape": "[14:15:16]",
+    "T010_geocollapse": "REFUTED; shape is projectively stationary",
+    "T010_pi_over_8": "SUPERSEDED"
+  },
+  "closed": {
+    "T011_hexafacial_structure": "{M,m} x {-,0,+} is D3",
+    "T011_koch_cryptoglyph": true,
+    "T011_active_koch_multifractal_measure": true,
+    "T011_tau_nonlinearity": "tau''(q)<0",
+    "T011_posttranscendental_operator": "times 10; fixed projective shape",
+    "T011_nested_coherent_hyperaccess": "log2(6)/N -> 0",
+    "T011_biplanar_phase_locking": true,
+    "T011_six_face_uncertainty_saturation": true,
+    "T011_ramanujanian_operator_defined": true
+  },
+  "partial": {
+    "T011_geometric_multifractal_projection": "closed for standard Koch measure; general overlaps open",
+    "T011_physical_crystal": "NOT_CLAIMED",
+    "T011_quantum_physical_realization": "NOT_CLAIMED"
+  },
+  "open": [
+    "empirical_UMI_realization",
+    "general_koch_umi_overlap_theory",
+    "cross_scale_face_dynamics",
+    "physical_noncommutative_observables",
+    "ramanujanian_operator_relation_to_other_program_branches"
+  ]
+}

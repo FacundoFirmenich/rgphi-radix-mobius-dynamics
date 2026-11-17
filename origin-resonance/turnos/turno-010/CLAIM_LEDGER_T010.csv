@@ -1,14 +1,14 @@
 id,claim,status
 T010-C1,The latent seed is (pi/6)*10^(+n_scalar),USER_FIXED_NOTATION
-T010-C2,The tripolar values equal (pi/24)(40*10^n+3sigma),CLOSED_SYMBOLIC
-T010-C3,For integer n the projective shadow is a primitive integer triple,CLOSED_ARITHMETIC
-T010-C4,The projective triplet converges to K=[1:1:1],CLOSED_SYMBOLIC
-T010-C5,The absolute span is pi/4 and the relative span is (3/20)10^-n,CLOSED_SYMBOLIC
-T010-C6,The center is exactly ten times the latent seed,CLOSED_SYMBOLIC
-T010-C7,A single trit selects the exact tripolar branch,CLOSED_ZERO_ERROR
-T010-C8,The same trit can synchronize the two UMI plane projections,CLOSED_MODEL
-T010-C9,The stated single-ratio hierarchy is already multifractal,REFUTED_WITH_CURRENT_DATA
-T010-C10,A branch-dependent scaling extension can generate a nontrivial multifractal spectrum,PREREGISTERED
-T010-C11,Classical tripolar oscillation alone is Heisenberg uncertainty,REFUTED
-T010-C12,A conditional qutrit model yields genuine noncommutative uncertainty,CLOSED_CONDITIONAL_MODEL
-T010-C13,The UMI tripolar model is a physical qutrit,NOT_CLAIMED
+T010-C2,The lateral bound equals (2/30) of the center,CLOSED_CORRECTION
+T010-C3,The tripolar values equal (pi/9)*10^n*(15+sigma),CLOSED_SYMBOLIC
+T010-C4,The projective shadow is [14:15:16],CLOSED_ARITHMETIC
+T010-C5,The normalized half-width is 1/15 and full width 2/15,CLOSED_SYMBOLIC
+T010-C6,The projective shape converges to [1:1:1] as n grows,REFUTED_RC1
+T010-C7,The whole triplet scales by ten under n to n+1,CLOSED_SYMBOLIC
+T010-C8,A single trit selects the exact tripolar branch,CLOSED_ZERO_ERROR
+T010-C9,The previous pi/8 lateral bound remains valid,SUPERSEDED_RC1
+T010-C10,The current single-scale hierarchy is already multifractal,REFUTED_WITH_CURRENT_DATA
+T010-C11,A nonuniform Koch-UMI measure can yield a nonlinear tau(q),PREREGISTERED_T010_CLOSED_T011
+T010-C12,Classical tripolar oscillation alone is Heisenberg uncertainty,REFUTED
+T010-C13,A conditional noncommutative model yields a genuine uncertainty inequality,CLOSED_CONDITIONAL_MODEL

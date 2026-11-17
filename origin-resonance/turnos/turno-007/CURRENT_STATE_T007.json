@@ -1,0 +1,28 @@
+{
+  "object": "RGPHI_ORIGIN_RESONANCE_BRANCH",
+  "version": "0.6.0",
+  "date": "2026-11-17",
+  "current_turn": "007",
+  "authority": "SEPARATE_PROSPECTIVE_NO_CANONICAL_OVERRIDE",
+  "terminology": {
+    "T006_relative_hyperaccess": "RENAMED_SUPERACCESS",
+    "hyperaccess": "QUALITATIVE_PHASE_COMPLETION_KEY"
+  },
+  "closed": {
+    "T007_holonomy_SNF_known_component": [1],
+    "T007_equal_length_SNF_known_component": [1],
+    "T007_superaccess_block_capacity": "1/4 bit per edge",
+    "T007_coherent_hyperaccess": "1 bit with normalized cost 1/(4N)",
+    "T007_angular_phase_key": "sign(cos theta)",
+    "T007_n6_high_defect_word": "TSTSTS forced in declared lollipop jurisdiction",
+    "T007_centrum_tautological_bundle": true,
+    "T007_relation_sieve_min_norm": 11220870885800329
+  },
+  "open": [
+    "n6_TSTSTS_global_realizability",
+    "general_hyperaccess_bridge",
+    "F17_Mordell_Weil_independence",
+    "finite_phase_torsion_in_other_components",
+    "canonical_cross_dimension_bundle_morphism"
+  ]
+}

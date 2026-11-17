@@ -41,9 +41,9 @@ OR-C39,Observer-relative path and terminal superaccess obey data processing,CLOS
 OR-C40,The known equal-length alias pair hides exactly one bit of superaccess for an endpoint-length observer,CLOSED_EXACT_T006_RENAMED_T007
 OR-C41,The access-rate polytope is the convex hull of directed-cycle receipt means,CLOSED_SYMBOLIC_T006
 OR-C42,The known component access-rate polytope is the segment [0 e3/4],CLOSED_EXACT_T006
-OR-C43,Marked six-state defects 4..7 have exactly 2160 normalized skeletons and 8640 decorated profiles,CLOSED_COMBINATORIAL_T006
+OR-C43,Marked six-state defects 4..7 have exactly 2160 normalized skeletons and 8640 decorated profiles,AUDIT_HOLD_ORIENTATION_QUOTIENT_T006
 OR-C44,DUAL_TRIAD is impossible in the marked high-defect six-state jurisdiction,CLOSED_SYMBOLIC_T006
-OR-C45,ALTERNATING_HEXAGON occurs exactly in the TSTSTS word class in that jurisdiction,CLOSED_SYMBOLIC_T006
+OR-C45,ALTERNATING_HEXAGON occurs exactly in the TSTSTS word class in that jurisdiction,CLOSED_WORD_SIGNATURE_NUMERIC_FRACTION_HOLD_T006
 OR-C46,The projective centrum cross-frame separates K R E Iplus and O exactly,CLOSED_SYMBOLIC_T006
 OR-C47,R is not an integer multiple of P over Q,CLOSED_GOOD_REDUCTION_T006
 OR-C48,The local relation 44P=R mod83 is a global equality,REFUTED_T006
@@ -58,3 +58,5 @@ OR-C56,No TSTSTS n6 realization exists globally,NOT_CLAIMED
 OR-C57,Any nonzero Mordell-Weil relation aP+bR has local-sieve Euclidean norm at least 11220870885800329,CLOSED_EXACT_LOCAL_SIEVE_T007
 OR-C58,P and R are Mordell-Weil independent,NOT_CLAIMED
 OR-C59,The projective content bundle and elliptic tautological bundle are canonically identical,NOT_CLAIMED
+OR-C60,The twenty balanced six-letter words form four rotational necklaces and three dihedral bracelets,CLOSED_EXACT_ORBIT_AUDIT
+OR-C61,The three T006 representatives exhaust oriented six-state balanced words,REFUTED_UNLESS_NONSTANDARD_REVERSAL_QUOTIENT_PROVED

@@ -1,56 +1,62 @@
 {
   "object": "RGPHI_ORIGIN_RESONANCE_BRANCH",
-  "version": "0.9.0",
+  "version": "1.0.0",
   "date": "2026-11-17",
   "authority": "SEPARATE_PROSPECTIVE_NO_CANONICAL_OVERRIDE",
-  "current_turn": "010",
+  "current_turn": "011",
   "closed": {
     "T007_coherent_hyperaccess": "one bit; normalized cost 1/(4N); gain N log 3",
     "T008_zero_error_key_complexity": "ceil(log2 max observation-fibre size)",
-    "T008_TSTSTS_forced_lollipop_jurisdiction": true,
     "T009_UMI_correspondence_model": true,
     "T009_FST11_superaccess": "Pi7+Pi2 recover K",
     "T009_FST11_hyperaccess": "prefix/length key selects literal representative",
-    "T009_royal_cubit_gauge_model": true,
     "T010_latent_seed": "(pi/6)*10^(+n_scalar)",
-    "T010_tripolar_formula": "U_n,sigma=(pi/24)(40*10^n+3sigma)",
-    "T010_superunitary_ratio": 10,
-    "T010_absolute_span": "pi/4",
-    "T010_relative_span": "(3/20)*10^-n",
-    "T010_projective_limit": "[1:1:1]",
-    "T010_integer_shadow": "(40*10^n-3,40*10^n,40*10^n+3) for integer n",
-    "T010_tripolar_hyperaccess": "one trit / two fixed binary bits",
-    "T010_biplanar_phase_key": "same sigma selects both planes"
+    "T010_corrected_lateral_bound": "(2/30)*center=(pi/9)*10^n",
+    "T010_corrected_tripolar_formula": "U_n,sigma=(pi/9)*10^n*(15+sigma)",
+    "T010_corrected_projective_shape": "[14:15:16]",
+    "T011_hexafacial_structure": "{M,m} x {-,0,+} is D3",
+    "T011_koch_cryptoglyph": true,
+    "T011_active_koch_multifractal_measure": true,
+    "T011_tau_nonlinearity": "tau''(q)<0",
+    "T011_posttranscendental_operator": "times 10; fixed projective shape",
+    "T011_nested_coherent_hyperaccess": "log2(6)/N -> 0",
+    "T011_biplanar_phase_locking": true,
+    "T011_six_face_uncertainty_saturation": true,
+    "T011_ramanujanian_operator_defined": true
   },
   "corrections": {
     "T006_relative_hyperaccess_name": "RENAMED_SUPERACCESS",
-    "T006_three_necklace_count": "SUPERSEDED_BY_FOUR_ORIENTED_CLASSES_T008",
-    "T007_missing_TTSSTS": "RESOLVED_BY_HIGHNESS_NO_GO_T008",
     "FST11_original_hyperaccess_label": "RECLASSIFIED_AS_SUPERACCESS_PLUS_HYPERACCESS_KEY_T009",
-    "T010_multifractal_claim": "CURRENT_LAW_IS_MONOSCALE; MULTIFRACTALITY_REQUIRES_BRANCH_DEPENDENT_SCALING",
-    "T010_uncertainty_claim": "CLASSICAL_DISPERSION_UNLESS_NONCOMMUTATIVE_OBSERVABLES_ARE_SPECIFIED"
+    "T010_pi_over_8": "SUPERSEDED_RC1",
+    "T010_old_shadow": "SUPERSEDED_RC1",
+    "T010_projective_geocollapse": "REFUTED_BY_CORRECTED_RELATIVE_BOUNDS",
+    "T010_current_shape": "PROJECTIVELY_STATIONARY"
   },
   "partial": {
     "general_hyperaccess_bridge": "ZERO_ERROR_PHASE_KEY_FORMALIZED",
-    "origin_boundary_architecture": "POSTTRANSCENDENTAL_PROJECTIVE_LIMIT_CLOSED",
+    "origin_boundary_architecture": "HEXAFACIAL_D3_AND_KOCH_CRYPTOGLYPH_CLOSED",
     "T009_UMI_superconstant": "operator spectrum formalized; empirical realization open",
-    "T010_qutrit_uncertainty": "conditional mathematical model; physical realization open"
+    "T011_geometric_multifractal_projection": "closed for standard Koch measure; general overlaps open",
+    "T011_physical_crystal": "NOT_CLAIMED",
+    "T011_quantum_physical_realization": "NOT_CLAIMED"
   },
   "preregistered": [
     "T009_RC28_FIRST_INDEPENDENT_COMPONENT",
-    "T010_MF_UMI_NONLINEAR_TAU",
-    "T010_TRIPOLAR_HYPERACCESS_INDEPENDENT_REALIZATION",
-    "T010_BIPLANAR_PHASE_LOCK",
-    "T010_NONCOMMUTATIVE_UNCERTAINTY_MODEL"
+    "T012_FULL_LEGENDRE_SPECTRUM",
+    "T012_HEXAFACIAL_SKEW_PRODUCT",
+    "T012_COSIMULTANEOUS_HYPERACCESS_MASKS",
+    "T012_BIPLANAR_BIFURCATIONS",
+    "T012_OPERATOR_ALGEBRA",
+    "T012_GRAPH_DIRECTED_CRYSTAL_GEOMETRY"
   ],
   "open": [
     "global_n6_alternating_hexagon_realizability",
     "actual_nontrivial_Smith_phase_component",
     "Mordell_Weil_independence_P_R",
-    "exact_Ramanujan_nesting_operator",
     "physical_or_empirical_UMI_realization",
-    "branch_dependent_multifractal_scaling",
-    "physical_meaning_of_n_scalar",
-    "physical_uncertainty_realization"
+    "general_koch_umi_overlap_theory",
+    "cross_scale_face_dynamics",
+    "physical_noncommutative_observables",
+    "ramanujanian_operator_relation_to_other_program_branches"
   ]
 }

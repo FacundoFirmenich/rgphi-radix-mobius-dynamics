@@ -4,55 +4,56 @@
 
 This is a separate prospective research branch. It has no authority to rewrite, reinterpret or promote claims in the canonical line.
 
-- branch version: `0.8.0`;
+- branch version: `0.9.0`;
 - authority: `SEPARATE_PROSPECTIVE_NO_CANONICAL_OVERRIDE`;
-- current frontier: **Turno 009**.
+- current frontier: **Turno 010**.
 
 ## Terminology
 
-**Superaccess** is recovery or quantification of hidden internal/subsystemic information omitted by an observation.
+**Superaccess** reconstructs or quantifies hidden internal/subsystemic information omitted by an observation.
 
-**Hyperaccess** is a qualitatively small zero-error completion key at a nesting boundary. It resolves a phase ambiguity and synchronizes an almost complete internal description with an external completion. Its normalized cost may vanish while its completion effect remains macroscopic or diverges.
+**Hyperaccess** is a qualitatively small zero-error completion key at a nesting boundary. It resolves a phase ambiguity and synchronizes an almost complete internal description with an external completion. Its normalized cost may vanish while its completion effect remains nonzero or diverges.
 
-## Turno 009 — UMI
+## Turno 010 — posttranscendental UMI
 
-The **Unidad Multifractal de Interrelación (UMI)** is formalized as a correspondence object
-
-\[
-X_M\xleftarrow{\pi_M}\mathcal U\xrightarrow{\pi_m}X_m
-\]
-
-with two simultaneous observer projections. Its latent metric is block-diagonal; correlational activation introduces an off-diagonal operator. The observer-invariant coupling object is the singular spectrum of the normalized inter-plane operator, not an arbitrary scalar.
-
-FST-11 supplies an exact arithmetic prototype:
+The user-fixed latent seed is
 
 \[
-\Sigma^*\to 8+9\mathbb Z\to\mathcal H,
-\qquad
-w\leftrightarrow(h,j,t).
+\lambda_n=(\pi/6)10^{+n_{\rm scalar}}.
 \]
 
-Under the corrected taxonomy:
+The ascended tripolar UMI is
 
-- `Pi_7 + Pi_2 -> K` is superaccess;
-- prefix depth / literal length is a hyperaccess key selecting the exact word inside the prefix-8 fibre.
+\[
+U_{n,\sigma}=10\lambda_n+\sigma\pi/8=(\pi/24)(40\,10^n+3\sigma),
+\qquad\sigma\in\{-1,0,+1\}.
+\]
 
-The Royal Egyptian Cubit is used only as a covariant gauge model. Its historical subdivision `7 palms = 28 digits` is compared with the exact known strict-edge stationary rate `1/28` and pressure mean `log(3)/28`; this is labelled `POSTHOC_EXACT_METROLOGICAL_RESONANCE`. A prospective RC28 test is frozen.
+Its projective shadow is
 
-## Current exact results retained
+\[
+[40\,10^n-3:40\,10^n:40\,10^n+3],
+\]
 
-1. The exact zero-error key complexity of an observation family is `ceil(log2(max fibre size))`.
-2. The coherent paths `(TTTT)^N` and `(TSTS)^N` form a strong hyperaccess family: one key bit, normalized rate `1/(4N)`, log-radial separation `N log 3`.
-3. The canonical five-state component has exact full-path, receipt-history and terminal-holonomy superaccess scales.
-4. The six-state orientation audit is repaired and `TSTSTS` is forced in the declared high-defect lollipop jurisdiction; global arithmetic realization remains open.
-5. The quadratic Veronese–centrum bridge and the local Mordell–Weil relation sieve remain preserved.
+which is a primitive integer triple for integer `n` and converges to the projective centrum `[1:1:1]`. The absolute span remains `pi/4`, while the relative span is `(3/20)10^-n`.
+
+A single trit selects the exact branch and can synchronize the same phase across both UMI planes. Its normalized key cost vanishes with scale.
+
+## Scientific boundaries
+
+- The current `1/10` scale law is monofractal/monoscale, not yet multifractal.
+- Multifractality requires branch-dependent contractions or local exponents and a non-linear `tau(q)`.
+- Classical tripolar oscillation produces dispersion, not automatically Heisenberg uncertainty.
+- A genuine uncertainty relation is available only in a conditional noncommutative qutrit model; no physical qutrit realization is claimed.
+- “Ramanujanian nesting” remains open until an exact operator, domain, composition law and invariants are specified.
+
+## Retained results
+
+The UMI correspondence model, FST-11 superaccess/hyperaccess split, Royal-Cubit gauge boundary, zero-error hyperaccess theory, six-state orientation repair, Veronese–centrum bridge and Mordell–Weil relation sieve remain preserved.
 
 ## Non-contamination rules
 
 - No result here changes canonical claims.
 - Negative results and corrections are retained.
-- Built-in structures are not counted as independent late-stage evidence.
 - Post-hoc identities remain labelled as such.
 - Finite jurisdictions are never promoted to global no-go theorems.
-- The Royal Cubit gauge is not claimed to be a universal physical constant.
-- “Ramanujanian nesting” remains open until an exact operator is specified.

@@ -37,8 +37,8 @@ OR-C35,The OR21 finite-state content receipt is identical to broader hyperaccess
 OR-C36,For fixed B and word length nu Delta logDelta and alpha are exact equivalent encodings,CLOSED_SYMBOLIC_T006
 OR-C37,The content holonomy lattice has rank at most min(omega(B) n+1),CLOSED_SYMBOLIC_T006
 OR-C38,The equal-length alias lattice has rank at most min(omega(B) n),CLOSED_SYMBOLIC_T006
-OR-C39,Observer-relative path and terminal hyperaccess obey data processing,CLOSED_INFORMATION_THEORETIC_T006
-OR-C40,The known equal-length alias pair hides exactly one bit for an endpoint-length observer,CLOSED_EXACT_T006
+OR-C39,Observer-relative path and terminal superaccess obey data processing,CLOSED_INFORMATION_THEORETIC_T006_RENAMED_T007
+OR-C40,The known equal-length alias pair hides exactly one bit of superaccess for an endpoint-length observer,CLOSED_EXACT_T006_RENAMED_T007
 OR-C41,The access-rate polytope is the convex hull of directed-cycle receipt means,CLOSED_SYMBOLIC_T006
 OR-C42,The known component access-rate polytope is the segment [0 e3/4],CLOSED_EXACT_T006
 OR-C43,Marked six-state defects 4..7 have exactly 2160 normalized skeletons and 8640 decorated profiles,CLOSED_COMBINATORIAL_T006
@@ -48,3 +48,13 @@ OR-C46,The projective centrum cross-frame separates K R E Iplus and O exactly,CL
 OR-C47,R is not an integer multiple of P over Q,CLOSED_GOOD_REDUCTION_T006
 OR-C48,The local relation 44P=R mod83 is a global equality,REFUTED_T006
 OR-C49,The RGPhI superaccess profile is identical to general hyperaccess,NOT_CLAIMED
+OR-C50,Known holonomy and equal-length alias Smith diagonals are both [1],CLOSED_EXACT_T007
+OR-C51,The exact return-block superaccess subchannel has rate 1/4 bit per edge,CLOSED_EXACT_T007
+OR-C52,A one-bit coherent key completes paths of length 4N with normalized cost 1/(4N) and radial separation Nlog3,CLOSED_EXACT_HYPERACCESS_T007
+OR-C53,sin(theta) plus sign(cos(theta)) reconstructs theta on (0 pi),CLOSED_SYMBOLIC_T007
+OR-C54,TTTSSS and TTSTSS are impossible in the n6 high-defect lollipop jurisdiction,CLOSED_SYMBOLIC_T007
+OR-C55,TSTSTS is forced in that declared n6 jurisdiction,CLOSED_COMBINATORIAL_SYMBOLIC_T007
+OR-C56,No TSTSTS n6 realization exists globally,NOT_CLAIMED
+OR-C57,Any nonzero Mordell-Weil relation aP+bR has local-sieve Euclidean norm at least 11220870885800329,CLOSED_EXACT_LOCAL_SIEVE_T007
+OR-C58,P and R are Mordell-Weil independent,NOT_CLAIMED
+OR-C59,The projective content bundle and elliptic tautological bundle are canonically identical,NOT_CLAIMED

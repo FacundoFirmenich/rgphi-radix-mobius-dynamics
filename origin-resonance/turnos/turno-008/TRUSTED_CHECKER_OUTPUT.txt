@@ -1,0 +1,8 @@
+PASS_TURNO_008
+zero_error_hyperaccess=PASS
+superaccess_capacities=1,log2(rho),0
+n6_orientation_repair=4 classes; TTSSTS no-go; TSTSTS forced
+n6_Q<=5000: full_divisibility=3 CRT_hits=0
+d4_intrinsic_phase=Z/2Z
+equivariant_Veroneses_bridge=PASS
+F17_relation_sieve_p<=1000: 102 logs; 67-digit exclusion

@@ -4,7 +4,7 @@
 
 This is a separate prospective research branch. It has no authority to rewrite, reinterpret or promote claims in the canonical line.
 
-- branch version: `0.6.0`;
+- branch version: `0.6.1`;
 - authority: `SEPARATE_PROSPECTIVE_NO_CANONICAL_OVERRIDE`;
 - current frontier: **Turno 007**.
 
@@ -21,10 +21,14 @@ The Turno-006 conditional-entropy construction is **superaccess**: recovery of h
 3. The return-block observer channel contains an exact `1/4` bit-per-edge superaccess subchannel.
 4. The coherent paths `(TTTT)^N` and `(TSTS)^N` are completed by one hyperaccess bit whose normalized cost is `1/(4N)` while their radial separation is `N log 3`.
 5. The angular projection `sin(theta)` is completed on `(0,pi)` by the qualitative key `sign(cos theta)`.
-6. In the six-state high-defect lollipop jurisdiction, `TTTSSS` and `TTSTSS` are impossible by highness; `TSTSTS` is forced. Global arithmetic realization remains open.
+6. In the six-state high-defect lollipop jurisdiction, the `TTTSSS` and `TTSTSS` highness obstructions are recorded, but the `TSTSTS`-forced conclusion is now under **audit hold**: the fourth oriented balanced necklace `TTSSTS` was omitted. Global arithmetic realization and the missing orientation case remain open.
 7. The projective content and elliptic ambient spaces share a tautological projectivization architecture, without a proved cross-dimensional identification.
 8. A certified local Mordell–Weil sieve excludes every nonzero relation `aP+bR=O` with coefficient Euclidean norm below `11220870885800329`; independence is not proved.
 9. Long-run content rates form a cycle-mean polytope, and pressure supplies mean, variance and large-deviation geometry.
+
+## Turno-006/007 orbit audit
+
+There are exactly **four rotational necklaces** of length six with three `T` and three `S` symbols, versus **three dihedral bracelets**. The existing three-class T006 and T007 tables do not establish a justified reflection quotient for directed labelled cycles. Their exhaustive counts and forced-alternation endpoint remain `AUDIT_HOLD` pending adjudication of `TTSSTS`. See `turnos/turno-006/AUDIT_BALANCED_ORBITS_T006.md` and the independent fail-closed T006/T007 orbit checkers. The earlier papers and negative results remain preserved.
 
 ## Non-contamination rules
 

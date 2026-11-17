@@ -1,0 +1,11 @@
+{
+  "edge_order": ["T0","T1","T2","T3","T4","S0","S1","S2","S3","S4"],
+  "cycle_lattice_rank": 6,
+  "holonomy_generator_matrix": [[0,0,0,0,0,1]],
+  "holonomy_smith_diagonal": [1],
+  "holonomy_phase_group": "trivial",
+  "equal_length_alias_vector": [-1,-2,1,0,0,0,1,0,1,0],
+  "equal_length_alias_receipt_v3": 1,
+  "equal_length_smith_diagonal": [1],
+  "equal_length_phase_group": "trivial"
+}

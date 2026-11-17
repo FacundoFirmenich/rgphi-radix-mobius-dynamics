@@ -1,0 +1,75 @@
+{
+  "schema": "ORIGIN_RESONANCE_CONNECTED_SINUS_FST_MONITOR_T013_V1",
+  "date": "2026-11-17",
+  "authority": "RESONANCE_ONLY_NO_CANONICAL_OVERRIDE",
+  "canonical_rgphi": {
+    "branch": "main",
+    "sha": "c25857e53eea8585a4f10e0a5a42295a315151ec",
+    "compare_to_baseline": "IDENTICAL",
+    "writes": 0
+  },
+  "resonance": {
+    "baseline_sha": "ad682292f834bb4fd1a6ad091e5766a2b3a3728b",
+    "audit": "AUDIT_CONNECTED_SINUS_V06_T013_2026-11-17.md",
+    "checker": "check_connected_sinus_v06_T013.py"
+  },
+  "connected_sinus_pi": {
+    "v05": {
+      "branch": "research/sinus-pi-centrum-v0.5.0",
+      "sha": "4e4ccdb874c1ff31e62dc23713c6c1f29561d124",
+      "commits_since_cb644a6": 9,
+      "new_source_visible": true,
+      "ci_run": 44140178760,
+      "ci_conclusion": "failure"
+    },
+    "v06": {
+      "branch": "research/sinus-pi-centrum-v0.6.0",
+      "sha": "b368a8e365ae2c3d79da975c4755825073990a5d",
+      "commits_since_v05_head": 15,
+      "ci_run": 44147596941,
+      "ci_conclusion": "failure"
+    },
+    "ci_failure_cause": "UNDETERMINED_EMPTY_STEPS_LOG_BLOB_NOT_FOUND",
+    "claimed_local_tests": "40/40 v0.5 and 48/48 v0.6 upstream-reported only, not CI-certified",
+    "new_independent_audit": {
+      "status": "PASS_T013_CONNECTED_SINUS_V06_INDEPENDENT_NARROW",
+      "strict_min_rational_margin": "89/1131900",
+      "self_similar_alphabet_size": 37,
+      "dimension": "log(37)/log(100)",
+      "depth_contracts_checked": 45242,
+      "unique": 1555,
+      "not_identifiable": 1555,
+      "inconsistent": 42132,
+      "pi_specific_claim": false,
+      "historical_3m_replay": false
+    }
+  },
+  "taxonomy": {
+    "SUPERACCESS": "reconstructs hidden internal, subsystemic or historical information",
+    "HYPERACCESS": "residual zero-error completion key selecting exact observation-fibre representative",
+    "borrow_code_no_go": "applies to five partial common-resolution binary observables for arbitrary phases only"
+  },
+  "nota02": {
+    "direct_168_mantissas": "NEGATIVE_ALL_FIVE_FROZEN_JURISDICTIONS_UNCHANGED",
+    "cyclotomic": "N=18; Phi1=17; Phi2=19; Phi3=343=(111)_18; 343^2=1 mod 36",
+    "H_infinity": "EXACT_FST13_IDENTITY_NOT_UNIVERSAL_CODING_CONSTANT",
+    "independent_preregistered_recurrence": "NO_NEW_EVIDENCE",
+    "UMI_causal_link": "OPEN_POST_HOC"
+  },
+  "unaffected_open": [
+    "FST14_original_full_suite_50_50_replay",
+    "FSTxD3_nontrivial_composition",
+    "Markov_asymptotic_source_entropy",
+    "analytic_general_natural_boundary",
+    "universal_minimax_residual_code",
+    "higher_language_conditional_closure",
+    "RC28_first_independent_component"
+  ],
+  "labels": [
+    "EXACT_NARROW",
+    "UPSTREAM_CI_FAILURE_UNRESOLVED",
+    "NO_POST_HOC_PROMOTION",
+    "NO_CANONICAL_MODIFICATION",
+    "NEGATIVES_PRESERVED"
+  ]
+}

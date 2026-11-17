@@ -1,0 +1,38 @@
+{
+  "object": "ORIGIN_RESONANCE_POSTTRANSCENDENTAL_UMI",
+  "version": "0.9.0",
+  "date": "2026-11-17",
+  "current_turn": "010",
+  "authority": "SEPARATE_PROSPECTIVE_NO_CANONICAL_OVERRIDE",
+  "notation": {
+    "latent_seed": "(pi/6)*10^(+n_scalar)",
+    "umi_literal": "{i\\**^+01}",
+    "center": "10*UMI",
+    "polar_amplitude": "pi/8"
+  },
+  "closed": {
+    "tripolar_formula": "U_n,sigma=(pi/24)(40*10^n+3sigma)",
+    "superunitary_ratio": 10,
+    "absolute_span": "pi/4",
+    "relative_span": "(3/20)*10^-n",
+    "projective_limit": "[1:1:1]",
+    "integer_shadow": "(40*10^n-3,40*10^n,40*10^n+3) for integer n",
+    "hyperaccess_key": "one trit / two fixed binary bits",
+    "biplanar_phase_key": "same sigma selects both planes"
+  },
+  "corrections": {
+    "multifractal_claim": "CURRENT_LAW_IS_MONOSCALE; MULTIFRACTALITY_REQUIRES_BRANCH_DEPENDENT_SCALING",
+    "uncertainty_claim": "CLASSICAL_DISPERSION_UNLESS_NONCOMMUTATIVE_OBSERVABLES_ARE_SPECIFIED"
+  },
+  "partial": {
+    "posttranscendental": "closed as projective removal of common pi gauge",
+    "qutrit_uncertainty": "conditional mathematical model; physical realization open"
+  },
+  "open": [
+    "branch_dependent_multifractal_scaling",
+    "physical_meaning_of_n_scalar",
+    "empirical_UMI_realization",
+    "ramanujan_nesting_operator",
+    "physical_uncertainty_realization"
+  ]
+}

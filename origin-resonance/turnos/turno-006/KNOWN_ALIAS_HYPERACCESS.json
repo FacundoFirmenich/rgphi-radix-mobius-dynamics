@@ -1,0 +1,28 @@
+{
+  "component": "known five-state counterfamily",
+  "start_state": 0,
+  "word_length": 4,
+  "coarse_observation": "(start,end,length)",
+  "words": [
+    {
+      "word": "TTTT",
+      "end": 0,
+      "terminal_receipt": [0,0],
+      "delta": 1
+    },
+    {
+      "word": "TSTS",
+      "end": 0,
+      "terminal_receipt": [1,0],
+      "delta": 3
+    }
+  ],
+  "uniform_path_entropy_bits": 1.0,
+  "uniform_terminal_entropy_bits": 1.0,
+  "full_word_observer_entropy_bits": 0.0,
+  "access_rate_polytope": {
+    "raw_prime_rate": "[0,e_3/4]",
+    "normalized_3_channel": "[0,e_3/16]",
+    "scalar_log_rate": "[0,log(3)/4]"
+  }
+}

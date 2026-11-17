@@ -1,0 +1,7 @@
+observable_or_data,exact_FST11_result,Turno009_taxonomy,remaining_information
+Pi_7(K),normalized multiplicative class h,partial observation,j and t
+Pi_7(K) plus Pi_2(K),recovers K by lcm,arithmetic superaccess,prefix t or literal length
+K plus literal length,recovers exact word,complete superaccess activated by hyperaccess key,none
+K without length,fibre {8^t C(K)},almost-complete state,qualitative key t
+prefix t or length in a bounded fibre,selects literal representative,zero-error hyperaccess,none inside fibre
+two truncated residues plus regular-language prior,UNIQUE or NOT_IDENTIFIABLE or INCONSISTENT,conditional superaccess; hyperaccess only if a small key selects the fibre,depends on exact count

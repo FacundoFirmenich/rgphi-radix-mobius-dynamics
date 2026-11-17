@@ -1,0 +1,36 @@
+{
+  "object": "ORIGIN_RESONANCE_FST_UMI_INVERSE_GEOMETRY",
+  "version": "1.1.0",
+  "date": "2026-11-17",
+  "current_turn": "012",
+  "authority": "SEPARATE_PROSPECTIVE_NO_CANONICAL_OVERRIDE",
+  "closed": {
+    "T012_FST_UMI_fibre_geometry": "N0^2 with exact-length staircase sections",
+    "T012_fixed_length_optimal_key": "ceil(log2 A_h(ell))",
+    "T012_minimax_fibre": "1+floor(ell/log10(343))",
+    "T012_fixed_length_hyperaccess_dimension": 1,
+    "T012_bounded_length_hyperaccess_dimension": 2,
+    "T012_unbounded_uniform_key": "IMPOSSIBLE",
+    "T012_ambiguity_probability": "685/117649",
+    "T012_residual_entropy_bits": "0.005837332402614633262...",
+    "T012_general_superaccess_criterion": "intersection of erased-prime sets subset {3}",
+    "T012_modular_uniform_recovery": "M/gcd(9,M) >= 10^ell",
+    "T012_all_fibres_non_CFL": true,
+    "T012_natural_boundary": "|z|=1"
+  },
+  "corrections": {
+    "T012_ell1000_max_fibre": "395 not 394",
+    "FST_historical_hyperaccess": "split into superaccess plus residual hyperaccess under current taxonomy"
+  },
+  "partial": {
+    "T012_hyperaccess_needle": "exact under uniform fixed-length ensemble; not universal",
+    "T012_global_local_duality": "theorem for FST fibres; broader UMI generalization open"
+  },
+  "open": [
+    "optimal_time_complexity_of_inverse",
+    "broader_grammar_conditioning",
+    "general_UMI_dimensional_hyperaccess_law",
+    "link_to_hexafacial_Koch_UMI",
+    "nonuniform_source_distributions"
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "object": "RGPHI_ORIGIN_RESONANCE_BRANCH",
-  "version": "0.6.0",
+  "version": "0.5.1",
   "date": "2026-11-17",
   "authority": "SEPARATE_PROSPECTIVE_NO_CANONICAL_OVERRIDE",
   "current_turn": "007",
@@ -19,17 +19,19 @@
     "T006_equal_length_alias_lattice": true,
     "T006_superaccess_profile": true,
     "T006_access_rate_polytope": true,
-    "T006_six_state_marked_skeletons": 2160,
-    "T006_six_state_decorated_profiles": 8640,
     "T006_centrum_cross_frame": true,
     "T006_R_not_integer_multiple_of_P": true,
-    "T007_holonomy_Smith_diagonal": [1],
-    "T007_equal_length_Smith_diagonal": [1],
+    "T007_holonomy_Smith_diagonal": [
+      1
+    ],
+    "T007_equal_length_Smith_diagonal": [
+      1
+    ],
     "T007_superaccess_block_capacity": "1/4 bit per edge",
     "T007_coherent_hyperaccess": "one bit; normalized cost 1/(4N); gain N log 3",
     "T007_angular_hyperkey": "sign(cos theta)",
     "T007_n6_alternating_hexagon_forced": true,
-    "T007_relation_sieve_min_norm": 11220870885800329
+    "T007_relation_sieve_min_norm": 11220870885800328
   },
   "corrections": {
     "exact_alpha_loses_prime_channel_information": false,
@@ -51,6 +53,23 @@
     "nontrivial_Smith_phase_groups",
     "full_Mordell_Weil_relation_lattice",
     "elliptic_pencil_surface",
-    "centrum_bundle_morphism"
-  ]
+    "centrum_bundle_morphism",
+    "six_state_oriented_necklace_quotient"
+  ],
+  "audit_holds": {
+    "T006_balanced_oriented_orbits": {
+      "status": "AUDIT_HOLD_ORIENTATION_QUOTIENT",
+      "exact_binary_balanced_words": 20,
+      "exact_rotational_necklaces": 4,
+      "exact_dihedral_bracelets": 3,
+      "missing_rotational_class": "TTSSTS",
+      "historically_reported_normalized_skeletons": 2160,
+      "historically_reported_decorated_profiles": 8640,
+      "conditional_recount_four_necklaces": 2880,
+      "conditional_recount_four_defects": 11520,
+      "arithmetic_realization": "OPEN",
+      "checker": "origin-resonance/turnos/turno-006/check_balanced_necklace_orbits_T006.py",
+      "note": "Three published representatives are dihedral bracelets, not the four rotational necklaces. No oriented reversal/swap equivalence theorem is recorded."
+    }
+  }
 }

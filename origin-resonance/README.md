@@ -4,56 +4,65 @@
 
 This is a separate prospective research branch. It has no authority to rewrite, reinterpret or promote claims in the canonical line.
 
-- branch version: `0.9.0`;
+- branch version: `1.0.0`;
 - authority: `SEPARATE_PROSPECTIVE_NO_CANONICAL_OVERRIDE`;
-- current frontier: **Turno 010**.
+- current frontier: **Turno 011**.
 
 ## Terminology
 
-**Superaccess** reconstructs or quantifies hidden internal/subsystemic information omitted by an observation.
+**Superaccess** reconstructs hidden internal/subsystemic information omitted by an observation.
 
-**Hyperaccess** is a qualitatively small zero-error completion key at a nesting boundary. It resolves a phase ambiguity and synchronizes an almost complete internal description with an external completion. Its normalized cost may vanish while its completion effect remains nonzero or diverges.
+**Hyperaccess** is a small zero-error completion key at a nesting boundary. It resolves a phase ambiguity and can have vanishing normalized cost while synchronizing a coherent completion.
 
-## Turno 010 — posttranscendental UMI
+## Turno 010 RC1
 
 The user-fixed latent seed is
 
 \[
-\lambda_n=(\pi/6)10^{+n_{\rm scalar}}.
+\lambda_n=(\pi/6)10^{n_{\rm scalar}}.
 \]
 
-The ascended tripolar UMI is
+The corrected lateral bound is
 
 \[
-U_{n,\sigma}=10\lambda_n+\sigma\pi/8=(\pi/24)(40\,10^n+3\sigma),
-\qquad\sigma\in\{-1,0,+1\}.
+a_n=(2/30)C_n=(\pi/9)10^n,
+\qquad
+C_n=10\lambda_n.
 \]
 
-Its projective shadow is
+Therefore
 
 \[
-[40\,10^n-3:40\,10^n:40\,10^n+3],
+U_{n,\sigma}=(\pi/9)10^n(15+\sigma),
+\qquad
+[U_{n,-}:U_{n,0}:U_{n,+}]=[14:15:16].
 \]
 
-which is a primitive integer triple for integer `n` and converges to the projective centrum `[1:1:1]`. The absolute span remains `pi/4`, while the relative span is `(3/20)10^-n`.
+The previous `pi/8` bound and projective geocollapse are superseded. The corrected shape is projectively stationary and scales radially by ten.
 
-A single trit selects the exact branch and can synchronize the same phase across both UMI planes. Its normalized key cost vanishes with scale.
+## Turno 011 — hexafacial UMI
 
-## Scientific boundaries
+The six faces are
 
-- The current `1/10` scale law is monofractal/monoscale, not yet multifractal.
-- Multifractality requires branch-dependent contractions or local exponents and a non-linear `tau(q)`.
-- Classical tripolar oscillation produces dispersion, not automatically Heisenberg uncertainty.
-- A genuine uncertainty relation is available only in a conditional noncommutative qutrit model; no physical qutrit realization is claimed.
-- “Ramanujanian nesting” remains open until an exact operator, domain, composition law and invariants are specified.
+\[
+\mathcal F_6=\{M,m\}\times\{-,0,+\}\cong D_3.
+\]
 
-## Retained results
+The conventional Koch snowflake is treated as a cryptoglyphic realization of this six-face architecture, not as the universal UMI itself.
 
-The UMI correspondence model, FST-11 superaccess/hyperaccess split, Royal-Cubit gauge boundary, zero-error hyperaccess theory, six-state orientation repair, Veronese–centrum bridge and Mordell–Weil relation sieve remain preserved.
+Closed Turno-011 results:
 
-## Non-contamination rules
+1. the active Koch measure derived from `(14,15,16)` has strictly nonlinear `tau(q)`;
+2. scalar ascent is radial multiplication by ten with fixed projective shape `[14:15:16]`;
+3. a coherent six-face tower has hyperaccess rate `log2(6)/N -> 0`;
+4. biplanar phase locking is `D3`-covariant;
+5. phase and plane-inversion operators anticommute in a conditional six-state model and admit a saturating state;
+6. an internal Ramanujanian subnesting operator is defined by domain, substitution, composition, endpoint invariant, scale cocycle and face cocycle.
 
-- No result here changes canonical claims.
+## Boundaries
+
+- No physical diamond lattice is claimed.
+- No physical quantum six-level realization is claimed.
+- The name “Ramanujanian” is internal and not attributed historically.
+- Finite or symbolic results are not promoted to empirical physics.
 - Negative results and corrections are retained.
-- Post-hoc identities remain labelled as such.
-- Finite jurisdictions are never promoted to global no-go theorems.

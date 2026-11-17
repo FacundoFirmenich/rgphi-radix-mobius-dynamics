@@ -1,46 +1,51 @@
-# Auditoría T010-G — Oscilación e incertidumbre
+# Auditoría T010-G RC1 — Oscilación e incertidumbre
 
-Una oscilación clásica con fase desconocida produce dispersión estadística, pero no es automáticamente el principio de incertidumbre de Heisenberg.
-
-La tripolaridad demuestra \(\operatorname{Var}(U)>0\) bajo una distribución no degenerada. Eso es incertidumbre clásica o epistémica.
-
-Para obtener una relación cuántica genuina se añade condicionalmente un modelo qutrit. Sea
+La semiamplitud correcta es
 
 \[
-J_z=\operatorname{diag}(-1,0,1)
+a_n=\frac{\pi}{9}10^n.
 \]
 
-y sea \(F_3\) la transformada discreta de Fourier de dimensión tres. Definimos
+Con pesos uniformes sobre los tres hitos:
 
 \[
-J_x=F_3J_zF_3^\dagger,
+\boxed{\operatorname{Var}(U)=\frac23a_n^2=\frac{2\pi^2}{243}10^{2n}.}
+\]
+
+Con fase continua uniforme:
+
+\[
+\boxed{\operatorname{Var}(U)=\frac12a_n^2=\frac{\pi^2}{162}10^{2n}.}
+\]
+
+Esto es dispersión clásica.
+
+Para un modelo no conmutativo condicional, sea
+
+\[
+J_z=\operatorname{diag}(-1,0,1),
 \qquad
-\widehat U_n=C_nI+aJ_z,
+J_x=F_3J_zF_3^\dagger.
+\]
+
+Definimos
+
+\[
+\widehat U_n=C_nI+a_nJ_z,
 \qquad
-\widehat V=aJ_x.
+\widehat V_n=a_nJ_x.
 \]
 
 Entonces
 
 \[
-[J_z,J_x]\neq0
+[\widehat U_n,\widehat V_n]=a_n^2[J_z,J_x]\neq0
 \]
 
-y, para cualquier estado,
+y
 
 \[
-\boxed{\Delta U_n\,\Delta V\ge\frac12|\langle[\widehat U_n,\widehat V]\rangle|.}
+\Delta U_n\Delta V_n\ge\frac12\left|\langle[\widehat U_n,\widehat V_n]\rangle\right|.
 \]
 
-Las dos bases son mutuamente insesgadas, por lo que sus entropías obedecen
-
-\[
-\boxed{H_z+H_x\ge\log3.}
-\]
-
-Corolario autorizado:
-
-- oscilación intrínseca sola: dispersión clásica;
-- tripolaridad cuantizada con observable conjugado: incertidumbre no conmutativa genuina del modelo.
-
-No se afirma que la UMI sea físicamente un qutrit.
+No se afirma una realización física.

@@ -1,0 +1,7 @@
+PASS_TURNO_013
+temporal_decode=Omega(ell)_to_softO(ell)
+uniform_huffman_limit=0.005839403722087393458
+FST_D3_product_fibres=6^(N-1)
+analytic_local_tail=EXPONENTIAL_INSIDE_UNIT_DISK
+CFL_prefix_orbit=EVENTUALLY_PERIODIC_THEOREM
+universal_rank_code=ELIAS_DELTA_ZERO_RATE

@@ -68,5 +68,13 @@
     "physical_noncommutative_observables",
     "ramanujanian_operator_relation_to_other_program_branches",
     "documentary_audit_of_2018_UMI_provenance"
-  ]
+  ],
+  "audit_holds": {
+    "T010_FROZEN_INPUT_VS_RC1": "INPUT_CONFLICT_OPEN: monitor explicitly preserves U=(pi/24)*(40*10^n+3sigma); RC1 adopts different lateral bound U=(pi/9)*10^n*(15+sigma); do not conflate models or claim algebraic falsification of frozen formula",
+    "T011_MULTIFRACTAL_LIMIT": "NONLINEAR_TAU_PASS_FOR_NONUNIFORM_SELF_SIMILAR_KOCH_MEASURE_ONLY; not derived from frozen T010 or empirical UMI",
+    "T011_INDEPENDENT_FIBRES": "GLOBAL_PHASE_KEY_SUBEXTENSIVE_ONLY_FOR_SUBEXPONENTIAL_ADMISSIBLE_CONFIGURATIONS; independent labels have extensive key",
+    "FST11_PROVENANCE": "sinus-math a771a611 README-only in verified Git tree; tests and engine not reproduced in connected snapshot",
+    "T011_RAMANUJAN_SCOPE": "INTERNAL_SUBSTITUTION_DEFINED; variable face updates and cross-branch relation remain open",
+    "AUDIT_FILES": "turno-011/AUDIT_COMPETING_T010_RC1_GEOMETRIES_T011.md; turno-011/AUDIT_HYPERACCESS_BRANCH_COMPLEXITY_T011.md"
+  }
 }

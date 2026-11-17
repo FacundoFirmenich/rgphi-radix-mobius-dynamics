@@ -1,49 +1,60 @@
 {
   "object": "RGPHI_ORIGIN_RESONANCE_BRANCH",
-  "version": "0.7.0",
+  "version": "0.8.0",
   "date": "2026-11-17",
   "authority": "SEPARATE_PROSPECTIVE_NO_CANONICAL_OVERRIDE",
-  "current_turn": "008",
+  "current_turn": "009",
   "closed": {
     "T007_coherent_hyperaccess": "one bit; normalized cost 1/(4N); gain N log 3",
     "T008_zero_error_key_complexity": "ceil(log2 max observation-fibre size)",
     "T008_full_path_superaccess_capacity": "1 bit per edge",
     "T008_receipt_superaccess_capacity": 0.42045559577649394,
     "T008_terminal_holonomy_capacity": 0.0,
-    "T008_balanced_rotational_classes": 4,
-    "T008_TTSSTS_highness_no_go": true,
     "T008_TSTSTS_forced_lollipop_jurisdiction": true,
-    "T008_witness_tagged_skeletons": 2880,
-    "T008_witness_tagged_decorated_profiles": 11520,
-    "T008_n6_search_Q_max": 5000,
-    "T008_n6_full_divisibility_candidates": 3,
-    "T008_n6_CRT_hits": 0,
     "T008_d4_Smith_phase_group": "Z/2Z",
     "T008_equivariant_Veroneses_bridge": true,
-    "T008_F17_relation_sieve_prime_bound": 1000,
-    "T008_F17_discrete_log_primes": 102,
-    "T008_F17_relation_exclusion_norm_floor": "8545304353067071849899288697544026718324675836661131573707357233455"
+    "T009_UMI_correspondence_model": true,
+    "T009_latent_active_block_metric": true,
+    "T009_FST11_tower": "Sigma* -> 8+9Z -> H",
+    "T009_FST11_superaccess": "Pi7+Pi2 recover K",
+    "T009_FST11_hyperaccess": "prefix/length key selects literal representative",
+    "T009_prefix_key_normalized_complexity": "O(log L / L) -> 0",
+    "T009_royal_cubit_gauge_model": true,
+    "T009_royal_cubit_subdivision": "7 palms = 28 digits",
+    "T009_known_strict_event_rate": "1/28"
   },
   "corrections": {
     "T006_relative_hyperaccess_name": "RENAMED_SUPERACCESS",
     "T006_three_necklace_count": "SUPERSEDED_BY_FOUR_ORIENTED_CLASSES_T008",
-    "T007_missing_TTSSTS": "RESOLVED_BY_HIGHNESS_NO_GO_T008"
+    "T007_missing_TTSSTS": "RESOLVED_BY_HIGHNESS_NO_GO_T008",
+    "FST11_original_hyperaccess_label": "RECLASSIFIED_AS_SUPERACCESS_PLUS_HYPERACCESS_KEY_T009"
   },
   "partial": {
     "general_hyperaccess_bridge": "ZERO_ERROR_PHASE_KEY_FORMALIZED",
     "origin_boundary_architecture": "EQUIVARIANT_QUADRATIC_BRIDGE_CLOSED",
-    "d4_intrinsic_phase": "STRUCTURALLY_CLOSED_ARITHMETIC_REALIZATION_OPEN"
+    "d4_intrinsic_phase": "STRUCTURALLY_CLOSED_ARITHMETIC_REALIZATION_OPEN",
+    "T009_UMI_superconstant": "operator spectrum formalized; empirical realization open",
+    "T009_Royal_Cubit_28": "POSTHOC_EXACT_RESONANCE",
+    "T009_multifractal_interrelation": "definition closed; concrete spectrum open"
   },
+  "preregistered": [
+    "OR5_FIVE_STATE_DEFECT_QUOTIENT",
+    "OR19_N6_DEFECT_SPECTRUM",
+    "T009_RC28_FIRST_INDEPENDENT_COMPONENT",
+    "T009_UMI_FRAME_INVARIANCE",
+    "T009_UMI_LATENT_ACTIVE_SELECTOR",
+    "T009_RAM_OPERATOR_DEFINITION"
+  ],
   "open": [
     "global_n6_alternating_hexagon_realizability",
     "actual_nontrivial_Smith_phase_component",
     "nested_hyperaccess_composition",
     "Mordell_Weil_independence_P_R",
-    "Veronese_conic_elliptic_pencil_intersection",
-    "elliptic_pencil_surface"
-  ],
-  "resolved_audits": {
-    "T006_balanced_oriented_orbits": "FOUR_ROTATIONAL_CLASSES_CONFIRMED_T008",
-    "T007_alternating_hexagon_exhaustiveness": "TTSSTS_EXCLUDED_T008_TSTSTS_FORCED_IN_DECLARED_JURISDICTION"
-  }
+    "exact_Ramanujan_nesting_operator",
+    "physical_or_empirical_UMI_realization",
+    "cross_plane_coupling_data",
+    "universality_of_royal_cubit_gauge",
+    "independent_RC28_confirmation",
+    "concrete_multifractal_spectrum"
+  ]
 }

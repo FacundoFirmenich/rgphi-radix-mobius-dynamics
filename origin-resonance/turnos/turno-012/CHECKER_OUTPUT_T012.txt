@@ -1,0 +1,10 @@
+PASS_TURNO_012
+Amax_1000=395; bits=9
+Smax_1000=197913; bits=18
+distribution_ell6=994178,2899,8
+ambiguity_probability=685/117649
+residual_entropy_bits=0.005837332402614633262...
+fixed_code_mean_bits=0.005847854308123188049...
+hyperaccess_dimension_exact_length=1
+hyperaccess_dimension_bounded_length=2
+unbounded_length_uniform_key=IMPOSSIBLE

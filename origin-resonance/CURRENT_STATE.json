@@ -1,9 +1,9 @@
 {
   "object": "RGPHI_ORIGIN_RESONANCE_BRANCH",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "date": "2026-11-17",
   "authority": "SEPARATE_PROSPECTIVE_NO_CANONICAL_OVERRIDE",
-  "current_turn": "011",
+  "current_turn": "012",
   "provenance": {
     "UMI_conceptual_arrival": "USER_DECLARED_APPROX_8.8_YEARS_BEFORE_2026-11; CIRCA_2018-01_TO_2018-02",
     "UMI_formalization": "2026_RECONSTRUCTION_AND_AUDIT",
@@ -29,7 +29,19 @@
     "T011_nested_coherent_hyperaccess": "log2(6)/N -> 0",
     "T011_biplanar_phase_locking": true,
     "T011_six_face_uncertainty_saturation": true,
-    "T011_ramanujanian_operator_defined": true
+    "T011_ramanujanian_operator_defined": true,
+    "T012_FST_UMI_fibre_geometry": "N0^2 with exact-length staircase sections",
+    "T012_fixed_length_optimal_key": "ceil(log2 A_h(ell))",
+    "T012_minimax_fibre": "1+floor(ell/log10(343))",
+    "T012_fixed_length_hyperaccess_dimension": 1,
+    "T012_bounded_length_hyperaccess_dimension": 2,
+    "T012_unbounded_uniform_key": "IMPOSSIBLE",
+    "T012_ambiguity_probability": "685/117649",
+    "T012_residual_entropy_bits": "0.005837332402614633262...",
+    "T012_general_superaccess_criterion": "intersection of erased-prime sets subset {3}",
+    "T012_modular_uniform_recovery": "M/gcd(9,M) >= 10^ell",
+    "T012_all_fibres_non_CFL": true,
+    "T012_natural_boundary": "|z|=1"
   },
   "corrections": {
     "T006_relative_hyperaccess_name": "RENAMED_SUPERACCESS",
@@ -38,7 +50,9 @@
     "T010_old_shadow": "SUPERSEDED_RC1",
     "T010_projective_geocollapse": "REFUTED_BY_CORRECTED_RELATIVE_BOUNDS",
     "T010_current_shape": "PROJECTIVELY_STATIONARY",
-    "T011_UMI_as_new_metaphor": "REFUTED_BY_USER_DECLARED_HISTORICAL_AND_MATHEMATICAL_GENEALOGY"
+    "T011_UMI_as_new_metaphor": "REFUTED_BY_USER_DECLARED_HISTORICAL_AND_MATHEMATICAL_GENEALOGY",
+    "T012_ell1000_max_fibre": "395 not 394",
+    "T012_FST_historical_hyperaccess": "SPLIT_INTO_SUPERACCESS_PLUS_RESIDUAL_HYPERACCESS"
   },
   "partial": {
     "general_hyperaccess_bridge": "ZERO_ERROR_PHASE_KEY_FORMALIZED",
@@ -47,16 +61,18 @@
     "T011_geometric_multifractal_projection": "closed for standard Koch measure; general overlaps open",
     "T011_historical_priority_documentation": "OPEN_DOCUMENTARY_AUDIT",
     "T011_physical_crystal": "NOT_CLAIMED",
-    "T011_quantum_physical_realization": "NOT_CLAIMED"
+    "T011_quantum_physical_realization": "NOT_CLAIMED",
+    "T012_hyperaccess_needle": "EXACT_UNDER_UNIFORM_FIXED_LENGTH_ENSEMBLE_NOT_UNIVERSAL",
+    "T012_global_local_duality": "THEOREM_FOR_FST_FIBRES_BROADER_UMI_GENERALIZATION_OPEN"
   },
   "preregistered": [
     "T009_RC28_FIRST_INDEPENDENT_COMPONENT",
-    "T012_FULL_LEGENDRE_SPECTRUM",
-    "T012_HEXAFACIAL_SKEW_PRODUCT",
-    "T012_COSIMULTANEOUS_HYPERACCESS_MASKS",
-    "T012_BIPLANAR_BIFURCATIONS",
-    "T012_OPERATOR_ALGEBRA",
-    "T012_GRAPH_DIRECTED_CRYSTAL_GEOMETRY"
+    "T013_OPTIMAL_TIME_COMPLEXITY",
+    "T013_NONUNIFORM_SOURCE_ENTROPY",
+    "T013_FST_HEXAFACIAL_COMPOSITION",
+    "T013_ANALYTIC_OBSERVER_BOUNDARY",
+    "T013_HIGHER_LANGUAGE_CONDITIONING",
+    "T013_UNIVERSAL_RESIDUAL_CODING"
   ],
   "open": [
     "global_n6_alternating_hexagon_realizability",
@@ -67,7 +83,10 @@
     "cross_scale_face_dynamics",
     "physical_noncommutative_observables",
     "ramanujanian_operator_relation_to_other_program_branches",
-    "documentary_audit_of_2018_UMI_provenance"
+    "documentary_audit_of_2018_UMI_provenance",
+    "optimal_time_complexity_of_FST_inverse",
+    "nonuniform_FST_source_distributions",
+    "general_UMI_dimensional_hyperaccess_law"
   ],
   "audit_holds": {
     "T010_FROZEN_INPUT_VS_RC1": "INPUT_CONFLICT_OPEN: monitor explicitly preserves U=(pi/24)*(40*10^n+3sigma); RC1 adopts different lateral bound U=(pi/9)*10^n*(15+sigma); do not conflate models or claim algebraic falsification of frozen formula",
@@ -75,6 +94,7 @@
     "T011_INDEPENDENT_FIBRES": "GLOBAL_PHASE_KEY_SUBEXTENSIVE_ONLY_FOR_SUBEXPONENTIAL_ADMISSIBLE_CONFIGURATIONS; independent labels have extensive key",
     "FST11_PROVENANCE": "sinus-math a771a611 README-only in verified Git tree; tests and engine not reproduced in connected snapshot",
     "T011_RAMANUJAN_SCOPE": "INTERNAL_SUBSTITUTION_DEFINED; variable face updates and cross-branch relation remain open",
+    "T012_INFORMATION_BOUNDARY": "H_INFINITY_IS_CONDITIONAL_RESIDUAL_INFORMATION; not total word compression and not universal",
     "AUDIT_FILES": "turno-011/AUDIT_COMPETING_T010_RC1_GEOMETRIES_T011.md; turno-011/AUDIT_HYPERACCESS_BRANCH_COMPLEXITY_T011.md"
   }
 }

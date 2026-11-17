@@ -1,0 +1,17 @@
+{
+  "number_of_discrete_log_primes": 29,
+  "N_lcm_orders": 486350841114209042571600,
+  "b_step": 581981400,
+  "a_for_b_step": 397929094518522627660600,
+  "lattice_basis": [
+    [486350841114209042571600, 0],
+    [397929094518522627660600, 581981400]
+  ],
+  "gauss_reduced_basis": [
+    [-6721598835151200, -8984879105202000],
+    [21459192394840200, -13425212699098200]
+  ],
+  "shortest_squared_norm": 125907943435801460896187665440000,
+  "integer_floor_shortest_norm": 11220870885800329,
+  "status": "LOCAL_RELATION_SIEVE_NOT_INDEPENDENCE_PROOF"
+}

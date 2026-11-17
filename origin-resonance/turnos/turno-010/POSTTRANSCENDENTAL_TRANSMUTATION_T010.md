@@ -1,57 +1,51 @@
-# Teorema T010-A — Transmutación postrascendental
+# Teorema T010-A RC1 — Transmutación postrascendental corregida
 
 Sea
 
 \[
-\lambda_n=\frac{\pi}{6}10^n,\qquad C_n=10\lambda_n=\frac{5\pi}{3}10^n,\qquad a=\frac{\pi}{8}.
+\lambda_n=\frac{\pi}{6}10^n,
+\qquad
+C_n=10\lambda_n=\frac{5\pi}{3}10^n.
 \]
 
-Para \(\sigma\in\{-1,0,+1\}\) definimos
+La cota lateral vinculante es
 
 \[
-\boxed{U_{n,\sigma}=C_n+\sigma a.}
+a_n=\frac{2}{30}C_n=\frac{C_n}{15}=\frac{\pi}{9}10^n.
 \]
 
-Entonces
+Para \(\sigma\in\{-1,0,+1\}\):
 
 \[
-\boxed{U_{n,\sigma}=\frac{\pi}{24}(40\,10^n+3\sigma).}
+\boxed{
+U_{n,\sigma}=C_n+\sigma a_n=\frac{\pi}{9}10^n(15+\sigma).
+}
 \]
 
-Por tanto
+La tripolaridad es
 
 \[
-[U_{n,-}:U_{n,0}:U_{n,+}]=[40\,10^n-3:40\,10^n:40\,10^n+3].
+\boxed{
+\left(\frac{14\pi}{9}10^n,\frac{15\pi}{9}10^n,\frac{16\pi}{9}10^n\right).
+}
 \]
 
-La magnitud absoluta conserva el factor trascendente común \(\pi/24\); la geometría proyectiva no. Ésta es la transmutación postrascendental exacta del modelo.
-
-Si \(n\in\mathbb Z_{\ge0}\), con \(c_n=40\,10^n\), la sombra
+Extrayendo el gauge común:
 
 \[
-\mathbf c_n=(c_n-3,c_n,c_n+3)
+\boxed{[U_{n,-}:U_{n,0}:U_{n,+}]=[14:15:16].}
 \]
 
-es entera y primitiva:
+La sombra entera primitiva es independiente de \(n\):
 
 \[
-\gcd(c_n-3,c_n,c_n+3)=1.
+\boxed{(14,15,16).}
 \]
 
-Además,
+La ascensión satisface
 
 \[
-\frac{C_n}{\lambda_n}=10,
+\boxed{\mathbf U_{n+1}=10\mathbf U_n.}
 \]
 
-\[
-U_{n,+}-U_{n,-}=\frac{\pi}{4},
-\]
-
-mientras
-
-\[
-\frac{U_{n,+}-U_{n,-}}{C_n}=\frac{3}{20}10^{-n}.
-\]
-
-La oscilación permanece absolutamente no nula y se vuelve relativamente microscópica.
+La transmutación no contrae la forma: transporta una figura proyectiva fija a través de una órbita radial decádica.

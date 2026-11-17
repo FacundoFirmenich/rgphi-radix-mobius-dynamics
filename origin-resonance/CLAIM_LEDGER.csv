@@ -53,10 +53,11 @@ OR-C51,The exact return-block superaccess subchannel has rate 1/4 bit per edge,C
 OR-C52,A one-bit coherent key completes paths of length 4N with normalized cost 1/(4N) and radial separation Nlog3,CLOSED_EXACT_HYPERACCESS_T007
 OR-C53,sin(theta) plus sign(cos(theta)) reconstructs theta on (0 pi),CLOSED_SYMBOLIC_T007
 OR-C54,TTTSSS and TTSTSS are impossible in the n6 high-defect lollipop jurisdiction,CLOSED_SYMBOLIC_T007
-OR-C55,TSTSTS is forced in that declared n6 jurisdiction,CLOSED_COMBINATORIAL_SYMBOLIC_T007
+OR-C55,TSTSTS is forced in the declared n6 high-defect lollipop jurisdiction,AUDIT_HOLD_MISSING_TTSSTS_ROTATIONAL_CLASS_T007
 OR-C56,No TSTSTS n6 realization exists globally,NOT_CLAIMED
 OR-C57,Any nonzero Mordell-Weil relation aP+bR has local-sieve Euclidean norm at least 11220870885800329,CLOSED_EXACT_LOCAL_SIEVE_T007
 OR-C58,P and R are Mordell-Weil independent,NOT_CLAIMED
 OR-C59,The projective content bundle and elliptic tautological bundle are canonically identical,NOT_CLAIMED
 OR-C60,The twenty balanced six-letter words form four rotational necklaces and three dihedral bracelets,CLOSED_EXACT_ORBIT_AUDIT
 OR-C61,The three T006 representatives exhaust oriented six-state balanced words,REFUTED_UNLESS_NONSTANDARD_REVERSAL_QUOTIENT_PROVED
+OR-C62,The T007 proof exhausts all oriented balanced six-cycle word classes before forcing TSTSTS,AUDIT_HOLD_MISSING_TTSSTS_CASE

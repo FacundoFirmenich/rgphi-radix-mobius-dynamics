@@ -1,41 +1,31 @@
-# Teorema-marco T010-D — Cosimultaneidad biplanar
+# Teorema T010-D RC1 — Cosimultaneidad biplanar corregida
 
-Sean los dos planos UMI
-
-\[
-X_M\leftarrow\mathcal U\rightarrow X_m.
-\]
-
-La fase total se manifiesta mediante
+En cada plano \(P\in\{M,m\}\):
 
 \[
-U_M(\theta_M)=C_n+a\cos\theta_M,
-\qquad
-U_m(\theta_m)=C_n+a\cos\theta_m.
+U^P_{n,\sigma}=C_n\left(1+\frac{\sigma}{15}\right).
 \]
 
-En latencia:
+Sin acoplamiento, las fases
 
 \[
-(\theta_M,\theta_m)\in S^1\times S^1.
+\sigma_M,\sigma_m\in\mathbb Z_3
 \]
 
-Definimos
+son independientes.
+
+Con energía
 
 \[
-E_\kappa(\theta_M,\theta_m)=\kappa[1-\cos(\theta_M-\theta_m)].
+E_{\kappa,\delta}
+=
+\kappa\left[1-\cos\left(\frac{2\pi}{3}(\sigma_M-\sigma_m-\delta)\right)\right],
 \]
 
-Para \(\kappa>0\), el mínimo selecciona
+los mínimos para \(\kappa>0\) satisfacen
 
 \[
-\theta_M=\theta_m\pmod{2\pi}.
+\boxed{\sigma_M-\sigma_m=\delta\pmod3.}
 \]
 
-La manifestación efectiva se reduce a la diagonal \(\Delta_{S^1}\). Para \(\sigma\in\{-1,0,+1\}\), una sola llave selecciona simultáneamente
-
-\[
-\boxed{(U_{n,\sigma}^{M},U_{n,\sigma}^{m}).}
-\]
-
-La cosimultaneidad no exige coordenadas idénticas en ambos planos: exige una fase total compartida y dos proyecciones coherentes.
+Para sincronía directa \(\delta=0\), un único trit selecciona la misma rama en ambos planos.

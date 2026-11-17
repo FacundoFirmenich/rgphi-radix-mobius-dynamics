@@ -4,9 +4,9 @@
 
 This is a separate prospective research branch. It has no authority to rewrite, reinterpret or promote claims in the canonical line.
 
-- branch version: `1.1.0`;
+- branch version: `1.2.0`;
 - authority: `SEPARATE_PROSPECTIVE_NO_CANONICAL_OVERRIDE`;
-- current frontier: **Turno 012**.
+- current frontier: **Turno 013**.
 
 ## Terminology
 
@@ -14,7 +14,7 @@ This is a separate prospective research branch. It has no authority to rewrite, 
 
 **Hyperaccess** is a small zero-error completion key at a nesting boundary. It resolves a phase ambiguity and can have vanishing normalized cost while synchronizing a coherent completion.
 
-## Turno 010 RC1
+## Corrected UMI geometry
 
 The user-fixed latent seed is
 
@@ -38,23 +38,13 @@ U_{n,\sigma}=(\pi/9)10^n(15+\sigma),
 [U_{n,-}:U_{n,0}:U_{n,+}]=[14:15:16].
 \]
 
-The previous `pi/8` bound and projective geocollapse are superseded. The corrected shape is projectively stationary and scales radially by ten.
-
-## Turno 011 — hexafacial UMI
-
 The six faces are
 
 \[
 \mathcal F_6=\{M,m\}\times\{-,0,+\}\cong D_3.
 \]
 
-The conventional Koch snowflake is treated as a cryptoglyphic realization of this six-face architecture, not as the universal UMI itself.
-
-Closed Turno-011 results include nonlinear multifractal `tau(q)`, radial posttranscendental ascent, coherent hexafacial hyperaccess, biplanar phase locking, a conditional noncommutative six-state model, and a defined internal subnesting operator.
-
 ## Turno 012 — FST inverse geometry
-
-FST-12/13 supplies an exact arithmetic realization of the superaccess/hyperaccess distinction.
 
 For each admissible primitive label,
 
@@ -63,24 +53,27 @@ w=8^tC(K_0\,343^j),
 \qquad(j,t)\in\mathbb N_0^2.
 \]
 
-- complementary primitive channels recover `K`: superaccess;
-- a residual rank selects the exact literal word: hyperaccess.
+Complementary primitive channels recover `K` (superaccess); a residual rank selects the literal word (hyperaccess). With exact length the minimax key is logarithmic, with bounded unknown length it is `2 log2 L + O(1)`, and without a bound no finite uniform key exists. The limiting ambiguity probability is `685/117649` and the uniform residual entropy is `0.005837332402614633262...` bits.
 
-With exact length, the optimal worst-case key is
+## Turno 013 — complexity, sources and observers
 
-\[
-\left\lceil\log_2\left(1+\left\lfloor\ell/\log_{10}343\right\rfloor\right)\right\rceil
-=\log_2\ell+O(1).
-\]
+Closed results include:
 
-With only a length bound, the cost is `2 log2 L + O(1)`; without a bound, no finite uniform key exists. The limiting ambiguity probability is `685/117649` and the residual entropy is `0.005837332402614633262...` bits. All complete fibres remain non-context-free and have the unit circle as a natural boundary.
+1. explicit decoding complexity between `Omega(ell)` and `soft-O(ell)`;
+2. source-adapted residual entropy and conditional Huffman coding;
+3. uniform-source Huffman limit `0.005839403722087393458...` bits;
+4. exact FST–D3 composition counts, with `6^(N-1)` histories per fixed product;
+5. a D-finite observer no-go together with exponential local approximation inside every `r<1`;
+6. eventual periodicity of prefix indices for every context-free conditioning language;
+7. a distribution-free Elias-delta residual code of zero normalized rate.
 
 ## Boundaries
 
-- No physical diamond lattice is claimed.
-- No physical quantum six-level realization is claimed.
-- The name “Ramanujanian” is internal and not attributed historically.
-- The FST residual-entropy constant is distribution-dependent, not universal.
-- Small conditional inverse keys do not compress arbitrary words or simplify the global fibre language.
-- Finite or symbolic results are not promoted to empirical physics.
+- Exact temporal optimality remains open up to polylogarithmic factors.
+- Residual entropy is source-dependent and not universal.
+- A D3 product does not recover its complete history.
+- Natural boundary is a representation-class obstruction, not an ontological barrier.
+- Context-free periodicity does not extend to all decidable languages.
+- Small residual keys do not compress arbitrary complete words.
+- No physical diamond lattice or quantum realization is claimed.
 - Negative results and corrections are retained.

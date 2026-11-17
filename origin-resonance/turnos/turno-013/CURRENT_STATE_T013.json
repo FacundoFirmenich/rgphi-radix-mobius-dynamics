@@ -1,0 +1,35 @@
+{
+  "object": "ORIGIN_RESONANCE_FST_UMI_COMPLEXITY",
+  "version": "1.2.0",
+  "date": "2026-11-17",
+  "current_turn": "013",
+  "authority": "SEPARATE_PROSPECTIVE_NO_CANONICAL_OVERRIDE",
+  "closed": {
+    "T013_decode_time_lower": "Omega(ell) explicit output",
+    "T013_decode_time_upper": "soft-O(ell) under fast integer arithmetic/conversion",
+    "T013_list_fibre": "output-optimal up to polylog factors",
+    "T013_source_adapted_entropy": true,
+    "T013_uniform_huffman_limit": "0.005839403722087393458...",
+    "T013_FST_D3_product_fibre": "6^(N-1)",
+    "T013_coherent_hexafacial_key": "log2(6) constant; rate -> 0",
+    "T013_Dfinite_observer_no_go": true,
+    "T013_local_analytic_approximation": "exponential inside every r<1",
+    "T013_CFL_prefix_orbit": "eventually periodic",
+    "T013_context_sensitive_square_counterexample": true,
+    "T013_Elias_delta_rank_code": "log A + 2 log log A + O(1)"
+  },
+  "partial": {
+    "T013_exact_time_optimality": "polylog gap remains",
+    "T013_nonuniform_limits": "general theorem closed; source-specific limits open",
+    "T013_FST_D3_semidirect_action": "not defined",
+    "T013_higher_language_constructive_complexity": "CFL eventual periodicity closed; efficient conversion open"
+  },
+  "open": [
+    "exact_temporal_lower_bounds_beyond_output",
+    "Markov_asymptotic_entropy_limits",
+    "nontrivial_D3_action_on_FST_coordinates",
+    "efficient_CFL_prefix_period_computation",
+    "universal_coding_redundancy_minimax",
+    "analytic_observer_classes_beyond_Dfinite"
+  ]
+}

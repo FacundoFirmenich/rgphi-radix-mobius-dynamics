@@ -1,9 +1,15 @@
 {
   "object": "RGPHI_ORIGIN_RESONANCE_BRANCH",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "date": "2026-11-17",
   "authority": "SEPARATE_PROSPECTIVE_NO_CANONICAL_OVERRIDE",
   "current_turn": "011",
+  "provenance": {
+    "UMI_conceptual_arrival": "USER_DECLARED_APPROX_8.8_YEARS_BEFORE_2026-11; CIRCA_2018-01_TO_2018-02",
+    "UMI_formalization": "2026_RECONSTRUCTION_AND_AUDIT",
+    "status": "USER_DECLARED_HISTORICAL_PROVENANCE_NOT_YET_DOCUMENTARY_AUDITED",
+    "genealogy": "EXACT_ARITHMETIC + PROJECTIVE_FRACTAL_GEOMETRY + TRIGONOMETRY_OF_PHASES"
+  },
   "closed": {
     "T007_coherent_hyperaccess": "one bit; normalized cost 1/(4N); gain N log 3",
     "T008_zero_error_key_complexity": "ceil(log2 max observation-fibre size)",
@@ -14,6 +20,7 @@
     "T010_corrected_lateral_bound": "(2/30)*center=(pi/9)*10^n",
     "T010_corrected_tripolar_formula": "U_n,sigma=(pi/9)*10^n*(15+sigma)",
     "T010_corrected_projective_shape": "[14:15:16]",
+    "T011_mathematical_genealogy": "ARITHMETIC_GEOMETRY_TRIGONOMETRY_TO_UMI",
     "T011_hexafacial_structure": "{M,m} x {-,0,+} is D3",
     "T011_koch_cryptoglyph": true,
     "T011_active_koch_multifractal_measure": true,
@@ -30,13 +37,15 @@
     "T010_pi_over_8": "SUPERSEDED_RC1",
     "T010_old_shadow": "SUPERSEDED_RC1",
     "T010_projective_geocollapse": "REFUTED_BY_CORRECTED_RELATIVE_BOUNDS",
-    "T010_current_shape": "PROJECTIVELY_STATIONARY"
+    "T010_current_shape": "PROJECTIVELY_STATIONARY",
+    "T011_UMI_as_new_metaphor": "REFUTED_BY_USER_DECLARED_HISTORICAL_AND_MATHEMATICAL_GENEALOGY"
   },
   "partial": {
     "general_hyperaccess_bridge": "ZERO_ERROR_PHASE_KEY_FORMALIZED",
     "origin_boundary_architecture": "HEXAFACIAL_D3_AND_KOCH_CRYPTOGLYPH_CLOSED",
     "T009_UMI_superconstant": "operator spectrum formalized; empirical realization open",
     "T011_geometric_multifractal_projection": "closed for standard Koch measure; general overlaps open",
+    "T011_historical_priority_documentation": "OPEN_DOCUMENTARY_AUDIT",
     "T011_physical_crystal": "NOT_CLAIMED",
     "T011_quantum_physical_realization": "NOT_CLAIMED"
   },
@@ -57,6 +66,7 @@
     "general_koch_umi_overlap_theory",
     "cross_scale_face_dynamics",
     "physical_noncommutative_observables",
-    "ramanujanian_operator_relation_to_other_program_branches"
+    "ramanujanian_operator_relation_to_other_program_branches",
+    "documentary_audit_of_2018_UMI_provenance"
   ]
 }

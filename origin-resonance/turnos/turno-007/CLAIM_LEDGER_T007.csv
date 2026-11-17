@@ -1,0 +1,12 @@
+id,claim,status
+T007-C1,Turno-006 conditional-entropy profile is superaccess,CLOSED_TERMINOLOGY_CORRECTION
+T007-C2,Known holonomy and equal-length alias Smith diagonals are [1],CLOSED_EXACT
+T007-C3,Independent return blocks give a 1/4 bit-per-edge superaccess subchannel,CLOSED_EXACT
+T007-C4,Coherent block phase is an exact hyperaccess key of normalized cost 1/(4N),CLOSED_EXACT
+T007-C5,sin(theta) plus sign(cos(theta)) reconstructs theta on (0 pi),CLOSED_SYMBOLIC
+T007-C6,TTTSSS and TTSTSS are impossible in the n6 high-defect lollipop jurisdiction,CLOSED_SYMBOLIC
+T007-C7,TSTSTS is forced in that jurisdiction,CLOSED_COMBINATORIAL_SYMBOLIC
+T007-C8,No n6 TSTSTS realization exists globally,NOT_CLAIMED
+T007-C9,P and R are Mordell-Weil independent,NOT_CLAIMED
+T007-C10,Every nonzero relation has local-sieve norm at least 11220870885800329,CLOSED_EXACT_LOCAL_SIEVE
+T007-C11,The projective content bundle is identical to the elliptic tautological bundle,NOT_CLAIMED
